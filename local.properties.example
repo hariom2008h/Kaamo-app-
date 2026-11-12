@@ -1,0 +1,5 @@
+# Optional. Copy to local.properties to override the Supabase values in gradle.properties.
+# A line with an empty value (SUPABASE_URL=) turns the app into demo mode (sample data, any 6-digit OTP).
+# SUPABASE_URL=https://xxxx.supabase.co
+# SUPABASE_ANON_KEY=<anon/public key only, never service_role>
+# sdk.dir=/path/to/Android/sdk   (Android Studio fills this in)

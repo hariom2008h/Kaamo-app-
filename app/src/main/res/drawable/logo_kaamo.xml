@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Kaamo logo mark (icon only), vector version of the brand logo.
+  Used in headers via KaamoLogo(). The splash adds a text wordmark from AppConfig.NAME.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="70dp"
+    android:height="104dp"
+    android:viewportWidth="525"
+    android:viewportHeight="781">
+    <group
+        android:translateX="-377"
+        android:translateY="-177">
+        <path android:pathData="M377,180H464A88,88 0 0 1 552,268V870A88,88 0 0 1 464,958H377Z M815,177H902V453A88,88 0 0 1 814,541H572V453A88,88 0 0 1 660,365H727V265A88,88 0 0 1 815,177Z M572,653A88,88 0 0 1 660,565H814A88,88 0 0 1 902,653V955H815A88,88 0 0 1 727,867V740H660A88,88 0 0 1 572,653Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="0"
+                    android:startY="177"
+                    android:endX="0"
+                    android:endY="958"
+                    android:startColor="#036450"
+                    android:endColor="#05918A"
+                    android:type="linear" />
+            </aapt:attr>
+        </path>
+    </group>
+</vector>
