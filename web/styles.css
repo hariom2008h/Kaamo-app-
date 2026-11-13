@@ -29,7 +29,7 @@ p{margin:0}
 .splash-name{font-size:42px;font-weight:700;color:var(--forest);letter-spacing:-.5px}
 
 /* controls */
-.btn{display:block;width:100%;border:0;border-radius:16px;padding:16px 18px;font:inherit;font-size:16px;font-weight:600;
+.btn{text-decoration:none;display:block;width:100%;border:0;border-radius:16px;padding:16px 18px;font:inherit;font-size:16px;font-weight:600;
   background:var(--grad);color:#fff;cursor:pointer;text-align:center}
 .btn:disabled{background:var(--border);color:var(--muted);cursor:not-allowed}
 .btn.sm{display:inline-block;width:auto;padding:11px 18px;font-size:15px}
