@@ -285,6 +285,7 @@ const langSeg = () => `<div class="seg" role="group" aria-label="${esc(t("langua
 const topbar = (back, right) => `<div class="top">${back ? `<button class="link" data-act="back">← ${esc(t("back"))}</button>` : `<div class="brand">${LOGO}${APP_NAME}</div>`}${right || langSeg()}</div>`;
 const field = (id, label, val, opts = {}) => `<div class="field ${S.err[id] ? "err" : ""}"><label for="${id}">${esc(label)}</label><input id="${id}" value="${esc(val)}" ${opts.ph ? `placeholder="${esc(opts.ph)}"` : ""} ${opts.mode ? `inputmode="${opts.mode}"` : ""} ${opts.max ? `maxlength="${opts.max}"` : ""} autocomplete="off">${S.err[id] ? `<div class="errtxt">${esc(S.err[id])}</div>` : ""}</div>`;
 const steps = (n, total) => `<div class="steps">${Array.from({length:total}, (_, i) => `<i class="${i < n ? "on" : ""}"></i>`).join("")}</div>`;
+const legalLinks = () => ["terms:"+t("terms"), "privacy:"+t("privacy"), "rules:"+(S.lang==="hi"?"नियम":"Rules"), "grievance:"+(S.lang==="hi"?"शिकायत":"Grievance")].map(x => { const [k,l] = x.split(":"); return `<a href="${k}.html?lang=${S.lang}" target="_blank" rel="noopener">${esc(l)}</a>`; }).join(" · ");
 const catName = c => S.lang === "hi" ? c.hi : c.en;
 const catPill = c => S.lang === "hi" ? c.phi : c.pen;
 
@@ -314,6 +315,7 @@ const views = {
       : `<div class="field ${S.err.mobile ? "err" : ""}"><label for="mobile">${esc(t("mobile"))}</label><div class="prefix"><span>+91</span><input id="mobile" value="${esc(S.mobile)}" inputmode="numeric" maxlength="10" autocomplete="tel-national"></div>${S.err.mobile ? `<div class="errtxt">${esc(S.err.mobile)}</div>` : ""}</div>
         <label class="check"><input type="checkbox" id="terms" ${S.termsOk ? "checked" : ""}><span>${esc(t("agreeTerms"))}</span></label>
         ${S.err.terms ? `<div class="errtxt">${esc(S.err.terms)}</div>` : ""}
+        <p class="xs">${legalLinks()}</p>
         <button class="btn" data-act="sendOtp" ${S.otpBusy ? "disabled" : ""}>${esc(t("sendOtp"))}</button>
         <div class="notice">${esc(t("directoryOnly"))}</div>`}
       </div></div>`;
@@ -393,7 +395,7 @@ const views = {
       ${isPartner ? `<div class="card"><div class="spread"><span>${esc(t("yourPhone"))}</span><label class="switch"><input type="checkbox" id="phoneAcc" ${S.phonePublic ? "checked" : ""}><i></i></label></div>${S.lastChange ? `<p class="xs muted" style="margin-top:8px">${esc(t("lastChange"))}${esc(new Date(S.lastChange).toLocaleString())}</p>` : ""}</div>
       <button class="btn danger" data-act="remove">${esc(t("removeListing"))}</button>` : ""}
       <div class="card gap8"><h3>${esc(t("help"))}</h3><p class="small">${esc(t("directoryOnly"))}</p>
-        <p class="small"><b>${esc(t("grievance"))}:</b> <a href="mailto:${GRIEVANCE_EMAIL}">${GRIEVANCE_EMAIL}</a></p><p class="xs muted">${esc(t("grievanceSla"))}</p></div>
+        <p class="small"><b>${esc(t("grievance"))}:</b> <a href="mailto:${GRIEVANCE_EMAIL}">${GRIEVANCE_EMAIL}</a></p><p class="xs muted">${esc(t("grievanceSla"))}</p><p class="xs">${legalLinks()}</p></div>
       <button class="btn ghost" data-act="signOut">${esc(t("signOut"))}</button></div></div>`;
   },
 };

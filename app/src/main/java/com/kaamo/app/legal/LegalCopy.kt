@@ -13,8 +13,8 @@ object LegalConfig {
     const val NOTICE_VERSION = "v1.0_2026"
     const val DECLARATION_VERSION = "v1.0_2026"
 
-    const val TERMS_URL = "https://kaamo.com/terms"        // TODO real URL
-    const val PRIVACY_URL = "https://kaamo.com/privacy"    // TODO real URL
+    const val TERMS_URL = "https://kaamo-web.vercel.app/terms.html"
+    const val PRIVACY_URL = "https://kaamo-web.vercel.app/privacy.html"
     const val GRIEVANCE_EMAIL = "grievance@kaamo.com"      // TODO confirm
     const val GRIEVANCE_OFFICER = "[Name of Resident Grievance Officer]" // TODO appoint (IT Rules 2021, Rule 3(2))
     const val GRIEVANCE_ADDRESS = "[Registered office address]"          // TODO
