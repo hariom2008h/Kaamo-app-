@@ -89,6 +89,9 @@ data class PartnerRegistration(
     val fitnessValidUntil: LocalDate?,
     val phonePublic: Boolean,
     val noticeLanguage: String,
+    /** Optional work location from GPS. The server stores it rounded to about 1 km and never returns it. */
+    val latitude: Double? = null,
+    val longitude: Double? = null,
 )
 
 /**

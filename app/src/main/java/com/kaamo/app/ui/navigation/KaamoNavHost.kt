@@ -20,6 +20,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.kaamo.app.data.Backend
+import com.kaamo.app.location.DeviceLocation
 import com.kaamo.app.legal.LegalConfig
 import com.kaamo.app.model.ConsentAction
 import com.kaamo.app.model.ConsentEvent
@@ -63,7 +64,8 @@ fun KaamoNavHost() {
 
     var partners by remember { mutableStateOf(emptyList<Partner>()) }
     var reloadKey by remember { mutableStateOf(0) }
-    LaunchedEffect(reloadKey) { partners = services.partners.listPartners() }
+    var userLocation by remember { mutableStateOf<DeviceLocation?>(null) }
+    LaunchedEffect(reloadKey, userLocation) { partners = services.partners.listPartners(userLocation) }
 
     fun record(type: ConsentType, action: ConsentAction, version: String) {
         scope.launch { services.consent.record(ConsentEvent(type, action, version, vm.language.code)) }
@@ -210,6 +212,8 @@ fun KaamoNavHost() {
         composable(Routes.DIRECTORY) {
             DirectoryScreen(
                 partners = partners,
+                hasLocation = userLocation != null,
+                onLocation = { userLocation = it },
                 contacts = services.contacts,
                 onOpenAccount = { nav.navigateSingleTop(Routes.ACCOUNT) },
                 onReport = { partnerId, reason ->

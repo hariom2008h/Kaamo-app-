@@ -26,7 +26,7 @@ create table if not exists public.profiles (
 
 create table if not exists public.partners (
   id              uuid primary key default gen_random_uuid(),
-  user_id         uuid not null unique references auth.users (id) on delete cascade,
+  user_id         uuid unique references auth.users (id) on delete cascade, -- null only for demo rows
   full_name       text not null,
   village         text not null,
   district        text not null,
@@ -43,8 +43,13 @@ create table if not exists public.partners (
   phone_public    boolean not null default false,
   notice_language text not null default 'en',
   status          text not null default 'active' check (status in ('active', 'removed', 'suspended')),
+  -- Coarse work location (rounded to 2 decimals, about 1 km). Never returned by the API, only used for distance.
+  latitude        double precision check (latitude between -90 and 90),
+  longitude       double precision check (longitude between -180 and 180),
+  is_demo         boolean not null default false,
   created_at      timestamptz not null default now(),
-  updated_at      timestamptz not null default now()
+  updated_at      timestamptz not null default now(),
+  check (is_demo or user_id is not null)
 );
 create index if not exists partners_listing_idx on public.partners (status, phone_public, category);
 
@@ -133,6 +138,15 @@ language sql immutable as $$
   );
 $$;
 
+-- Great-circle distance in whole km (haversine).
+create or replace function public.distance_km(lat1 double precision, lon1 double precision,
+                                              lat2 double precision, lon2 double precision) returns integer
+language sql immutable set search_path = public as $$
+  select round(6371 * 2 * asin(least(1, sqrt(
+           power(sin(radians(lat2 - lat1) / 2), 2) +
+           cos(radians(lat1)) * cos(radians(lat2)) * power(sin(radians(lon2 - lon1) / 2), 2)))))::integer;
+$$;
+
 -- Vehicle categories must hold unexpired documents to stay listed.
 create or replace function public.listing_is_current(p public.partners) returns boolean
 language sql immutable as $$
@@ -168,7 +182,9 @@ create or replace function public.register_partner(
   p_rc_number       text default null,
   p_insurance_until date default null,
   p_fitness_until   date default null,
-  p_cev_use         text default null
+  p_cev_use         text default null,
+  p_latitude        double precision default null,
+  p_longitude       double precision default null
 ) returns void
 language plpgsql security definer set search_path = public as $$
 declare
@@ -189,13 +205,18 @@ begin
 
   insert into public.partners (
     user_id, full_name, village, district, category, sub_categories, service_areas, cev_use,
-    indicative_rate, rc_number, insurance_until, fitness_until, phone, phone_public, notice_language
+    indicative_rate, rc_number, insurance_until, fitness_until, phone, phone_public, notice_language,
+    latitude, longitude
   ) values (
     auth.uid(), trim(p_full_name), trim(p_village), trim(p_district), p_category,
     coalesce(p_sub_categories, '{}'), coalesce(p_service_areas, '{}'), p_cev_use,
     nullif(trim(coalesce(p_indicative_rate, '')), ''), nullif(trim(coalesce(p_rc_number, '')), ''),
     p_insurance_until, p_fitness_until, v_mobile, coalesce(p_phone_public, false),
-    coalesce(p_notice_language, 'en')
+    coalesce(p_notice_language, 'en'),
+    case when p_latitude between -90 and 90 and p_longitude between -180 and 180
+         then round(p_latitude::numeric, 2)::double precision end,
+    case when p_latitude between -90 and 90 and p_longitude between -180 and 180
+         then round(p_longitude::numeric, 2)::double precision end
   )
   on conflict (user_id) do update set
     full_name = excluded.full_name, village = excluded.village, district = excluded.district,
@@ -204,6 +225,7 @@ begin
     indicative_rate = excluded.indicative_rate, rc_number = excluded.rc_number,
     insurance_until = excluded.insurance_until, fitness_until = excluded.fitness_until,
     phone_public = excluded.phone_public, notice_language = excluded.notice_language,
+    latitude = excluded.latitude, longitude = excluded.longitude,
     status = 'active', updated_at = now();
 end;
 $$;
@@ -228,21 +250,30 @@ end;
 $$;
 
 -- Directory list. No phone number, no ranking: ordered by name only.
-create or replace function public.list_partners()
+-- p_lat / p_lng are the caller's live GPS position. They are used only to compute distance_km in this
+-- call and are never stored. Without them distance_km is null and the list is ordered by name.
+create or replace function public.list_partners(p_lat double precision default null,
+                                                p_lng double precision default null)
 returns table (
   id uuid, full_name text, service_category text, sub_categories text[],
-  village text, district text, masked_phone text, phone_verified boolean, indicative_rate text
+  village text, district text, masked_phone text, phone_verified boolean, indicative_rate text,
+  distance_km integer
 )
 language plpgsql stable security definer set search_path = public as $$
+declare
+  v_lat double precision := case when p_lat between -90 and 90 then p_lat end;
+  v_lng double precision := case when p_lng between -180 and 180 then p_lng end;
 begin
   if auth.uid() is null then return; end if;
   return query
     select p.id, p.full_name, p.category, p.sub_categories, p.village, p.district,
            '+91 ' || left(p.phone, 2) || 'XXX XX' || right(p.phone, 3),
-           true, p.indicative_rate
+           true, p.indicative_rate,
+           case when v_lat is not null and v_lng is not null and p.latitude is not null and p.longitude is not null
+                then public.distance_km(v_lat, v_lng, p.latitude, p.longitude) end
     from public.partners p
     where p.status = 'active' and p.phone_public and public.listing_is_current(p)
-    order by p.full_name
+    order by 10, p.full_name
     limit 200;
 end;
 $$;
@@ -303,17 +334,18 @@ $$;
 
 revoke all on function
   public.current_mobile(), public.has_prohibited_term(text), public.listing_is_current(public.partners),
+  public.distance_km(double precision, double precision, double precision, double precision),
   public.register_customer(text, text),
-  public.register_partner(text, text, text, text, text[], text[], boolean, text, text, text, date, date, text),
-  public.set_phone_visibility(boolean), public.remove_listing(), public.list_partners(),
+  public.register_partner(text, text, text, text, text[], text[], boolean, text, text, text, date, date, text, double precision, double precision),
+  public.set_phone_visibility(boolean), public.remove_listing(), public.list_partners(double precision, double precision),
   public.reveal_contact(uuid), public.record_consent(text, text, text, text),
   public.report_listing(uuid, text, text)
-from public, anon;
+from public, anon, authenticated;
 
 grant execute on function
   public.register_customer(text, text),
-  public.register_partner(text, text, text, text, text[], text[], boolean, text, text, text, date, date, text),
-  public.set_phone_visibility(boolean), public.remove_listing(), public.list_partners(),
+  public.register_partner(text, text, text, text, text[], text[], boolean, text, text, text, date, date, text, double precision, double precision),
+  public.set_phone_visibility(boolean), public.remove_listing(), public.list_partners(double precision, double precision),
   public.reveal_contact(uuid), public.record_consent(text, text, text, text),
   public.report_listing(uuid, text, text)
 to authenticated;

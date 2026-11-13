@@ -29,6 +29,8 @@ class OnboardingViewModel : ViewModel() {
     var subCategories by mutableStateOf(emptyList<String>())
     var cevUse by mutableStateOf<CevUse?>(null)
     var serviceAreas by mutableStateOf(emptyList<String>())
+    var workLatitude by mutableStateOf<Double?>(null)
+    var workLongitude by mutableStateOf<Double?>(null)
     var indicativeRate by mutableStateOf("")
     var rcNumber by mutableStateOf("")
     var insuranceText by mutableStateOf("")
@@ -64,5 +66,7 @@ class OnboardingViewModel : ViewModel() {
         fitnessValidUntil = DateInput.parse(fitnessText),
         phonePublic = phonePublic,
         noticeLanguage = language.code,
+        latitude = workLatitude,
+        longitude = workLongitude,
     )
 }

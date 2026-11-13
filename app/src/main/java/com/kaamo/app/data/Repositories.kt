@@ -1,9 +1,12 @@
 package com.kaamo.app.data
 
+import com.kaamo.app.location.DeviceLocation
+import com.kaamo.app.location.distanceKm
 import com.kaamo.app.model.ConsentEvent
 import com.kaamo.app.model.CustomerRegistration
 import com.kaamo.app.model.Partner
 import com.kaamo.app.model.PartnerRegistration
+import com.kaamo.app.model.SampleCoordinates
 import com.kaamo.app.model.SamplePartners
 import kotlinx.coroutines.delay
 
@@ -19,7 +22,8 @@ interface AuthRepository {
 }
 
 interface PartnerRepository {
-    suspend fun listPartners(): List<Partner>
+    /** [location] is the live GPS fix (null = unknown). It is used for distance only and never stored. */
+    suspend fun listPartners(location: DeviceLocation? = null): List<Partner>
 }
 
 sealed interface RevealResult {
@@ -72,11 +76,22 @@ class FakeAuthRepository : AuthRepository {
 }
 
 class FakePartnerRepository : PartnerRepository {
-    override suspend fun listPartners(): List<Partner> = SamplePartners
+    override suspend fun listPartners(location: DeviceLocation?): List<Partner> =
+        SamplePartners.map { partner ->
+            val coords = SampleCoordinates[partner.id]
+            partner.copy(
+                distanceKm = if (location != null && coords != null) {
+                    distanceKm(location.latitude, location.longitude, coords.first, coords.second)
+                } else {
+                    null
+                },
+            )
+        }
 }
 
 class FakeContactRepository : ContactRepository {
-    private val demoNumbers = SamplePartners.associate { it.id to "900000000${it.id}" }
+    // Deliberately invalid numbers so a demo call can never ring a real person.
+    private val demoNumbers = SamplePartners.associate { it.id to "00000000" + it.id.padStart(2, '0') }
     private val revealTimes = ArrayDeque<Long>()
 
     override suspend fun reveal(partnerId: String): RevealResult {

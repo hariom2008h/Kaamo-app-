@@ -25,6 +25,7 @@ import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.kaamo.app.legal.ProhibitedTerms
+import com.kaamo.app.location.rememberLocationRequester
 import com.kaamo.app.model.CevUse
 import com.kaamo.app.model.ServiceCategory
 import com.kaamo.app.model.NoticeLanguage
@@ -106,6 +107,27 @@ fun PartnerDetailsScreen(
             label = "City / District",
             keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Words, imeAction = ImeAction.Done),
         )
+
+        Spacer(Modifier.height(16.dp))
+        var gpsMessage by rememberSaveable { mutableStateOf<String?>(null) }
+        val requestLocation = rememberLocationRequester { fix ->
+            if (fix != null) {
+                vm.workLatitude = fix.latitude
+                vm.workLongitude = fix.longitude
+                gpsMessage = "Location added."
+            } else {
+                gpsMessage = "Couldn't get your location. Turn on location and allow permission, or skip this."
+            }
+        }
+        NoticeCard(
+            title = "Show your distance to customers (optional)",
+            text = "Kaamo can use your phone's GPS once to work out how far you are from people searching. " +
+                "Only an approximate position (about 1 km) is stored, and it is never shown to anyone.",
+        )
+        TextButton(onClick = requestLocation) {
+            Text(if (vm.workLatitude != null) "Update my location" else "Use my current location")
+        }
+        gpsMessage?.let { Text(it, style = MaterialTheme.typography.bodyMedium, color = KaamoColors.Muted) }
 
         Spacer(Modifier.height(32.dp))
         Text("What do you offer?", style = MaterialTheme.typography.titleMedium)

@@ -57,6 +57,8 @@ import androidx.compose.ui.unit.dp
 import com.kaamo.app.AppConfig
 import com.kaamo.app.data.ContactRepository
 import com.kaamo.app.data.ReportReason
+import com.kaamo.app.location.DeviceLocation
+import com.kaamo.app.location.rememberLocationRequester
 import com.kaamo.app.data.RevealResult
 import com.kaamo.app.legal.LegalCopy
 import com.kaamo.app.model.ServiceCategory
@@ -79,6 +81,8 @@ import kotlinx.coroutines.launch
 @Composable
 fun DirectoryScreen(
     partners: List<Partner>,
+    hasLocation: Boolean,
+    onLocation: (DeviceLocation?) -> Unit,
     contacts: ContactRepository,
     onOpenAccount: () -> Unit,
     onReport: (partnerId: String, reason: ReportReason) -> Unit,
@@ -92,6 +96,13 @@ fun DirectoryScreen(
     var pending by remember { mutableStateOf<Partner?>(null) }
     var busy by remember { mutableStateOf(false) }
     var reporting by remember { mutableStateOf<Partner?>(null) }
+
+    val requestLocation = rememberLocationRequester { fix ->
+        onLocation(fix)
+        if (fix == null) {
+            scope.launch { snackbar.showSnackbar("Couldn't get your location. Turn on location and allow permission.") }
+        }
+    }
 
     val results = remember(partners, query, filter) {
         partners
@@ -135,12 +146,28 @@ fun DirectoryScreen(
                 }
             }
             Spacer(Modifier.height(12.dp))
-            Text(
-                text = if (results.any { it.distanceKm != null }) "Sorted by distance" else "Listed alphabetically",
-                style = MaterialTheme.typography.labelMedium,
-                color = KaamoColors.Muted,
-                modifier = Modifier.padding(horizontal = 24.dp),
-            )
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(
+                    text = if (results.any { it.distanceKm != null }) "Sorted by distance from you" else "Listed alphabetically",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = KaamoColors.Muted,
+                    modifier = Modifier.weight(1f),
+                )
+                TextButton(onClick = requestLocation) {
+                    Text(if (hasLocation) "Update my location" else "Use my live location")
+                }
+            }
+            if (!hasLocation) {
+                Text(
+                    text = "Your GPS position is used only to work out distance. It is not stored.",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = KaamoColors.Muted,
+                    modifier = Modifier.padding(horizontal = 24.dp),
+                )
+            }
             Spacer(Modifier.height(8.dp))
 
             LazyColumn(

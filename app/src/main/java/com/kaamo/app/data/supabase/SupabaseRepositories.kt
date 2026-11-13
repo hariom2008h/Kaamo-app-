@@ -7,6 +7,7 @@ import com.kaamo.app.data.ContactRepository
 import com.kaamo.app.data.PartnerRepository
 import com.kaamo.app.data.ReportReason
 import com.kaamo.app.data.RevealResult
+import com.kaamo.app.location.DeviceLocation
 import com.kaamo.app.model.CevUse
 import com.kaamo.app.model.ConsentEvent
 import com.kaamo.app.model.CustomerRegistration
@@ -35,8 +36,10 @@ class SupabaseAuthRepository(private val api: SupabaseApi) : AuthRepository {
 }
 
 class SupabasePartnerRepository(private val api: SupabaseApi) : PartnerRepository {
-    override suspend fun listPartners(): List<Partner> {
-        val response = api.rpc("list_partners")
+    override suspend fun listPartners(location: DeviceLocation?): List<Partner> {
+        val args = JSONObject()
+        if (location != null) args.put("p_lat", location.latitude).put("p_lng", location.longitude)
+        val response = api.rpc("list_partners", args)
         if (!response.ok) return emptyList()
         return try {
             val rows = JSONArray(response.body)
@@ -53,7 +56,7 @@ class SupabasePartnerRepository(private val api: SupabaseApi) : PartnerRepositor
                             subCategories = buildList { if (subs != null) for (j in 0 until subs.length()) add(subs.getString(j)) },
                             village = row.optString("village"),
                             district = row.optString("district"),
-                            distanceKm = null, // no location yet; the list is ordered by name
+                            distanceKm = if (row.isNull("distance_km")) null else row.getInt("distance_km"),
                             maskedPhone = row.optString("masked_phone").ifEmpty { maskIndianMobile("") },
                             phoneVerifiedAccount = row.optBoolean("phone_verified", false),
                             indicativeRate = row.optString("indicative_rate").ifEmpty { null },
@@ -131,6 +134,8 @@ class SupabaseAccountRepository(private val api: SupabaseApi) : AccountRepositor
                     null -> JSONObject.NULL
                 },
             )
+            .put("p_latitude", registration.latitude ?: JSONObject.NULL)
+            .put("p_longitude", registration.longitude ?: JSONObject.NULL)
         return api.rpc("register_partner", args).ok
     }
 

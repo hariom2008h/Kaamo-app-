@@ -11,10 +11,11 @@ Android app (Kotlin, Jetpack Compose) for a local-services directory: plumbers, 
 - Partner registration (category and sub-categories, area, optional rate, documents only for vehicles, declaration, separate "show my number" consent, default OFF)
 - Directory with search and category filter pills; masked numbers; a pre-call acknowledgement before every call; call opens the dialer
 - One-tap report of a listing; account screen with phone-visibility toggle and listing removal
+- Live GPS: the directory asks (on a button tap) for location permission and sorts providers by distance. The position is sent for one query and is never stored. Partners can optionally add their work location at registration; only an approximate position (about 1 km) is stored and it is never returned by the API
 - Supabase backend (`supabase/schema.sql`): tables, RLS, rate-limited contact reveal, append-only consent log
 - Demo mode with sample data when no Supabase keys are set
 
-Not in this version: listing detail page, location-based distance, push notifications, admin panel for reports, English/Hindi UI strings (the app is English with Hindi on legal notices; see `res` for where to add translations).
+Not in this version: listing detail page, push notifications, admin panel for reports, English/Hindi UI strings (the app is English with Hindi on legal notices; see `res` for where to add translations).
 
 ## Run it
 
@@ -22,6 +23,10 @@ Not in this version: listing detail page, location-based distance, push notifica
 2. The app is already pointed at the Supabase project "kaamo" (`SUPABASE_URL` and the public anon key in `gradle.properties`; `supabase/schema.sql` is already applied there). Put different values in `local.properties` to override them, or blank values to run in demo mode (sample data, any 6-digit OTP).
 3. **Phone login must be switched on in the Supabase dashboard** (Authentication > Providers > Phone) with an SMS provider that works in India (DLT registration is required). For testing without SMS, add test phone numbers with fixed OTPs in the same place.
 4. GitHub Actions builds a debug APK on every push (`.github/workflows/android.yml`).
+
+## Demo data
+
+`supabase/seed_demo.sql` adds 15 made-up providers (Bhopal, Indore, Delhi) with deliberately invalid phone numbers (`0000000001` ...) so a test call never rings a real person. It is already loaded in the "kaamo" project. Remove it before launch with `delete from public.partners where is_demo;`. Demo mode (no Supabase keys) has its own 12 sample providers.
 
 ## How the backend protects phone numbers
 
