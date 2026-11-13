@@ -80,10 +80,13 @@ private fun readLocation(context: Context, done: (DeviceLocation?) -> Unit) {
         return
     }
     var delivered = false
-    LocationManagerCompat.getCurrentLocation(manager, providers.first(), null, ContextCompat.getMainExecutor(context)) { fix ->
-        if (delivered) return@getCurrentLocation
-        delivered = true
-        val best = fix ?: last
-        done(best?.let { DeviceLocation(it.latitude, it.longitude) })
+    val noSignal: android.os.CancellationSignal? = null
+    val callback = androidx.core.util.Consumer<android.location.Location?> { fix ->
+        if (!delivered) {
+            delivered = true
+            val best = fix ?: last
+            done(best?.let { DeviceLocation(it.latitude, it.longitude) })
+        }
     }
+    LocationManagerCompat.getCurrentLocation(manager, providers.first(), noSignal, ContextCompat.getMainExecutor(context), callback)
 }
