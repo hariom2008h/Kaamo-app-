@@ -50,13 +50,13 @@ object LegalCopy {
     fun phoneNotice(language: NoticeLanguage): String = when (language) {
         NoticeLanguage.English ->
             "We collect your name, mobile number, village or area and service category to create and display your " +
-                "service-partner listing. If you turn on \"Show my number\", your mobile number will be visible " +
+                "service-provider listing. If you turn on \"Show my number\", your mobile number will be visible " +
                 "to Kaamo customers, who may contact you directly by phone. Kaamo does not arrange or " +
                 "guarantee any resulting hire. You can turn off phone visibility or remove your listing in " +
                 "your account at any time. This stops new Kaamo disclosures but cannot retrieve information " +
                 "already copied by third parties."
         NoticeLanguage.Hindi ->
-            "हम आपकी सेवा-साझेदार लिस्टिंग बनाने और दिखाने के लिए आपका नाम, मोबाइल नंबर, गाँव/इलाका और सेवा की श्रेणी लेते हैं। " +
+            "हम आपकी सेवा देने वाले की लिस्टिंग बनाने और दिखाने के लिए आपका नाम, मोबाइल नंबर, गाँव/इलाका और सेवा की श्रेणी लेते हैं। " +
                 "यदि आप \"मेरा नंबर दिखाएँ\" चालू करते हैं, तो आपका मोबाइल नंबर Kaamo के ग्राहकों को दिखेगा और वे आपको " +
                 "सीधे फ़ोन कर सकते हैं। Kaamo किसी भी किराये की व्यवस्था नहीं करता और न ही उसकी गारंटी देता है। आप कभी भी " +
                 "अपने अकाउंट में फ़ोन नंबर दिखाना बंद कर सकते हैं या अपनी लिस्टिंग हटा सकते हैं। इससे Kaamo द्वारा आगे का " +

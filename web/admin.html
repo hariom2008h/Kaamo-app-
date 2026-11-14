@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kaamo Admin</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #app.admin{max-width:900px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 18px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px} .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+    @media(max-width:640px){.grid2,.grid3{grid-template-columns:1fr}}
+    .savebar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--border);padding:12px 0;margin-top:24px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .savebar .btn{width:auto;padding:12px 26px}
+    .mini{font-size:13px;padding:7px 12px;border-radius:12px;border:1px solid var(--border);background:#fff;cursor:pointer;font:inherit}
+    .mini.red{color:var(--error);border-color:#FCA5A5}
+    textarea{width:100%;border:1px solid var(--border);border-radius:14px;padding:12px;font:inherit;font-size:15px}
+    code.link{display:block;background:var(--tint);border:1px solid #CFE9E5;border-radius:12px;padding:10px;font-size:13px;word-break:break-all;margin:8px 0}
+    table.inv{width:100%;border-collapse:collapse;font-size:14px} table.inv td,table.inv th{border-bottom:1px solid var(--border);padding:8px 6px;text-align:left;vertical-align:top}
+    .tablewrap{overflow-x:auto}
+  </style>
+</head>
+<body>
+  <main id="app" class="admin"></main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="config.js"></script>
+  <script src="defaults.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

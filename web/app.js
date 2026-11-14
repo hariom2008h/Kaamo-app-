@@ -14,16 +14,16 @@ const store = {
 };
 
 /* ---------------- i18n ---------------- */
-const CATS = [
-  {code:"plumber", en:"Plumber", hi:"प्लंबर", pen:"Plumbers", phi:"प्लंबर", vehicle:false, subs:["Pipe fitting","Leak repair","Bathroom fitting","Water tank"]},
-  {code:"electrician", en:"Electrician", hi:"इलेक्ट्रीशियन", pen:"Electricians", phi:"इलेक्ट्रीशियन", vehicle:false, subs:["House wiring","Fan / light repair","Inverter / UPS"]},
-  {code:"construction", en:"Construction workers", hi:"निर्माण मज़दूर", pen:"Workers", phi:"मज़दूर", vehicle:false, subs:["Mason (mistri)","Labour","Painter","Carpenter","Tiles"]},
-  {code:"borewell", en:"Borewell", hi:"बोरवेल", pen:"Borewell", phi:"बोरवेल", vehicle:true, fitness:true, subs:["Borewell drilling","Motor / pump repair","Flushing"]},
-  {code:"jcb", en:"JCB / Earthmover", hi:"JCB / अर्थमूवर", pen:"JCB", phi:"JCB", vehicle:true, fitness:true, subs:["Excavation","Loading","Demolition","Leveling"]},
-  {code:"tractor", en:"Tractor", hi:"ट्रैक्टर", pen:"Tractors", phi:"ट्रैक्टर", vehicle:true, subs:["Trolley","Cultivator","Water Tanker","Thresher"]},
-  {code:"transport", en:"Transport / Trailer", hi:"ट्रांसपोर्ट / ट्रेलर", pen:"Transport", phi:"ट्रांसपोर्ट", vehicle:true, fitness:true, subs:[]},
-];
-const catBy = c => CATS.find(x => x.code === c);
+const DEFAULT_CFG = window.KAAMO_DEFAULT_CFG;
+let CFG_LIVE = DEFAULT_CFG;
+const cats = () => CFG_LIVE.categories.filter(c => c.enabled !== false);
+const catBy = code => CFG_LIVE.categories.find(x => x.code === code);
+const fstate = k => { const f = (CFG_LIVE.fields || {})[k] || {}; if (f.enabled === false) return "off"; return f.required ? "required" : "optional"; };
+const flabel = (k, fallbackKey) => { const f = (CFG_LIVE.fields || {})[k] || {}; const v = S.lang === "hi" ? f.label_hi : f.label_en; return v || T[S.lang][fallbackKey]; };
+const customFor = code => (CFG_LIVE.custom || []).filter(cf => cf.enabled !== false && (!cf.categories || cf.categories.includes("*") || cf.categories.includes(code)));
+const subLabel = (code, en) => { const c = catBy(code); const s = c && (c.subs || []).find(x => x.en === en); return s ? (S.lang === "hi" ? s.hi : s.en) : en; };
+const optLabel = (cf, en) => { const o = (cf.options || []).find(x => x.en === en); return o ? (S.lang === "hi" ? o.hi : o.en) : en; };
+const cfLabel = cf => S.lang === "hi" ? (cf.label_hi || cf.label_en) : cf.label_en;
 
 const T = {
   en: {
@@ -48,7 +48,7 @@ const T = {
     noticeLang:"Notice language", phoneTitle:"Show my phone number?", phoneLead:"Customers can call you only if you allow it. You can change this any time.",
     phoneToggle:"Show my number to Kaamo customers", phoneConsent:"Done — open directory",
     search:"Search plumber, JCB, borewell…", all:"All", live:"Use my live location", liveOn:"Showing nearest first", liveFail:"Location not available. Allow location access in your browser.",
-    away:"km away", verifiedAcc:"Phone verified account", selfDecl:"Self-declared by provider", call:"Call partner", report:"Report",
+    away:"km away", verifiedAcc:"Phone verified account", selfDecl:"Self-declared by provider", call:"Call", report:"Report",
     noResults:"No one found. Try another category or clear search.", loading:"Loading…",
     precallTitle:"Before you call", precall:"You are speaking directly with the service provider. Kaamo does not verify the person, machine, licence, insurance or skill. Please check these yourself and agree the price before any work begins.",
     precallCheck:"I understand and will check the provider, documents and site safety myself.", callNow:"Call now", cancel:"Cancel",
@@ -58,6 +58,8 @@ const T = {
     account:"Account", yourPhone:"Show my number to customers", lastChange:"Last changed: ", removeListing:"Remove my listing", removeAsk:"Remove your listing? You can register again later.", removed:"Your listing has been removed.",
     signOut:"Sign out", help:"Help & legal", grievance:"Grievance Officer", grievanceSla:"We acknowledge every complaint within 24 hours and aim to resolve it within 15 days.",
     directory:"Directory", myListing:"Your listing", saved:"Saved.", fail:"Something went wrong. Try again.",
+    policyTitle:"Our terms have changed", policyAnnual:"Yearly reminder: please review our Terms of Use, Privacy Notice and Listing & Safety Rules.", policyNew:"We have updated our Terms of Use, Privacy Notice or Rules. Please review the changes.", policyWhat:"What changed", policyAgree:"I have read and agree to the updated Terms of Use, Privacy Notice and Listing & Safety Rules.", policyAccept:"Accept and continue",
+    inviteBanner:"You have been invited to list on Kaamo", inviteInvalid:"This invite link is not valid or has expired.", inviteMobile:"This invite is for a different mobile number.", inviteRequired:"Listing is by invitation only right now.", yes:"Yes", no:"No", pickOne:"Select…",
     required:"Please fill this in.", mobileBad:"Enter a valid 10-digit mobile number.", tick:"Please tick to continue.",
   },
   hi: {
@@ -92,6 +94,8 @@ const T = {
     account:"अकाउंट", yourPhone:"ग्राहकों को मेरा नंबर दिखाएँ", lastChange:"आख़िरी बदलाव: ", removeListing:"मेरी लिस्टिंग हटाएँ", removeAsk:"अपनी लिस्टिंग हटाएँ? आप बाद में फिर रजिस्टर कर सकते हैं।", removed:"आपकी लिस्टिंग हटा दी गई है।",
     signOut:"साइन आउट", help:"सहायता और कानूनी", grievance:"शिकायत अधिकारी", grievanceSla:"हम हर शिकायत की 24 घंटे में पावती देते हैं और 15 दिनों में निपटाने का लक्ष्य रखते हैं।",
     directory:"डायरेक्टरी", myListing:"आपकी लिस्टिंग", saved:"सेव हो गया।", fail:"कुछ गड़बड़ हुई। फिर कोशिश करें।",
+    policyTitle:"हमारी शर्तें बदली हैं", policyAnnual:"सालाना याद-दिहानी: कृपया हमारी उपयोग की शर्तें, गोपनीयता सूचना और लिस्टिंग व सुरक्षा नियम एक बार देख लें।", policyNew:"हमने उपयोग की शर्तें, गोपनीयता सूचना या नियम अपडेट किए हैं। कृपया बदलाव देखें।", policyWhat:"क्या बदला", policyAgree:"मैंने अपडेट की गई उपयोग की शर्तें, गोपनीयता सूचना और लिस्टिंग व सुरक्षा नियम पढ़ लिए हैं और सहमत हूँ।", policyAccept:"स्वीकार करें और आगे बढ़ें",
+    inviteBanner:"आपको Kaamo पर लिस्ट होने का न्योता मिला है", inviteInvalid:"यह इनवाइट लिंक सही नहीं है या समाप्त हो गया है।", inviteMobile:"यह इनवाइट किसी दूसरे मोबाइल नंबर के लिए है।", inviteRequired:"अभी लिस्टिंग केवल इनवाइट से होती है।", yes:"हाँ", no:"नहीं", pickOne:"चुनें…",
     required:"कृपया यह भरें।", mobileBad:"सही 10 अंकों का मोबाइल नंबर डालें।", tick:"आगे बढ़ने के लिए टिक करें।",
   },
 };
@@ -107,7 +111,7 @@ const DECL = {
     dir:"I understand Kaamo is only a digital directory. It does not guarantee any machine's fitness or the quality of any work.",
     resp:"I am personally responsible for any accident, fine or challan, and I will keep Kaamo harmless from related claims.",
     valid:"I will keep my documents valid. My listing is hidden automatically when a document expires, and Kaamo may suspend or remove it if information is false or a prohibited use is detected.",
-    phone:"We collect your name, mobile number, village or area and service category to create and display your service-partner listing. If you turn on \"Show my number\", your mobile number will be visible to Kaamo customers, who may contact you directly by phone. Kaamo does not arrange or guarantee any resulting hire. You can turn off phone visibility or remove your listing in your account at any time. This stops new Kaamo disclosures but cannot retrieve information already copied by third parties.",
+    phone:"We collect your name, mobile number, village or area and service category to create and display your service-provider listing. If you turn on \"Show my number\", your mobile number will be visible to Kaamo customers, who may contact you directly by phone. Kaamo does not arrange or guarantee any resulting hire. You can turn off phone visibility or remove your listing in your account at any time. This stops new Kaamo disclosures but cannot retrieve information already copied by third parties.",
   },
   hi: {
     intro:"मैं पुष्टि करता/करती हूँ कि मेरे द्वारा दिए गए सभी विवरण और दस्तावेज़ सही और वैध हैं।",
@@ -119,12 +123,13 @@ const DECL = {
     dir:"मैं समझता/समझती हूँ कि Kaamo केवल एक डिजिटल डायरेक्टरी है। वह किसी मशीन की फिटनेस या काम की गुणवत्ता की गारंटी नहीं देता।",
     resp:"किसी भी हादसे, जुर्माने या चालान के लिए मैं स्वयं ज़िम्मेदार रहूँगा/रहूँगी और Kaamo को संबंधित दावों से मुक्त रखूँगा/रखूँगी।",
     valid:"मैं अपने दस्तावेज़ वैध रखूँगा/रखूँगी। समाप्त हो चुके दस्तावेज़ों पर मेरी लिस्टिंग अपने-आप छिप जाएगी, और जानकारी गलत पाए जाने या प्रतिबंधित उपयोग मिलने पर Kaamo लिस्टिंग निलंबित या हटा सकता है।",
-    phone:"हम आपकी सेवा-साझेदार लिस्टिंग बनाने और दिखाने के लिए आपका नाम, मोबाइल नंबर, गाँव/इलाका और सेवा की श्रेणी लेते हैं। यदि आप \"मेरा नंबर दिखाएँ\" चालू करते हैं, तो आपका मोबाइल नंबर Kaamo के ग्राहकों को दिखेगा और वे आपको सीधे फ़ोन कर सकते हैं। Kaamo किसी भी किराये की व्यवस्था नहीं करता और न ही उसकी गारंटी देता है। आप कभी भी अपने अकाउंट में फ़ोन नंबर दिखाना बंद कर सकते हैं या अपनी लिस्टिंग हटा सकते हैं। इससे Kaamo द्वारा आगे का प्रदर्शन रुक जाएगा, लेकिन जो जानकारी तीसरे पक्ष पहले ही कॉपी कर चुके हैं उसे वापस नहीं लिया जा सकता।",
+    phone:"हम आपकी सेवा देने वाले की लिस्टिंग बनाने और दिखाने के लिए आपका नाम, मोबाइल नंबर, गाँव/इलाका और सेवा की श्रेणी लेते हैं। यदि आप \"मेरा नंबर दिखाएँ\" चालू करते हैं, तो आपका मोबाइल नंबर Kaamo के ग्राहकों को दिखेगा और वे आपको सीधे फ़ोन कर सकते हैं। Kaamo किसी भी किराये की व्यवस्था नहीं करता और न ही उसकी गारंटी देता है। आप कभी भी अपने अकाउंट में फ़ोन नंबर दिखाना बंद कर सकते हैं या अपनी लिस्टिंग हटा सकते हैं। इससे Kaamo द्वारा आगे का प्रदर्शन रुक जाएगा, लेकिन जो जानकारी तीसरे पक्ष पहले ही कॉपी कर चुके हैं उसे वापस नहीं लिया जा सकता।",
   },
 };
 const declFor = (cat, lang) => {
   const d = DECL[lang];
-  const specific = {tractor:d.tractor, jcb:d.jcb, transport:d.transport, borewell:d.borewell}[cat] || d.other;
+  const cc = catBy(cat);
+  const specific = {tractor:d.tractor, jcb:d.jcb, transport:d.transport, borewell:d.borewell}[cat] || (cc && cc.vehicle ? d.transport : d.other);
   return [d.intro, specific, d.dir, d.resp, d.valid];
 };
 
@@ -139,6 +144,7 @@ const S = {
   mobile: "", otpStage: false, otpBusy: false, termsOk: false, err: {},
   // registration
   name:"", area:"", village:"", district:"", cat:"plumber", subs:[], cev:"on_site", areas:[], rate:"", lat:null, lng:null, gpsMsg:"",
+  extra:{}, invite:null, policy:null, afterPolicy:null, policyOk:false,
   rc:"", insurance:"", fitnessDate:"", declOk:false, noticeLang:"hi", phonePublic:false, lastChange:null,
   // directory
   partners:[], loading:false, q:"", filter:"all", userLoc:null, locMsg:"", reloadKey:0,
@@ -232,7 +238,7 @@ const repo = {
     return r.json;
   },
   async consent(type, action, version){
-    if (DEMO) return true;
+    if (DEMO) { if (type === "TermsAndPrivacy" && action === "Granted") store.set("kaamo.demo.acc", JSON.stringify({ version, at:Date.now() })); return true; }
     return (await api.rpc("record_consent", { p_type:type, p_action:action, p_version:version, p_language:S.lang })).ok;
   },
   async saveCustomer(){
@@ -240,15 +246,43 @@ const repo = {
     return (await api.rpc("register_customer", { p_full_name:S.name.trim(), p_location:S.area.trim() })).ok;
   },
   async savePartner(){
-    if (DEMO) return true;
+    if (DEMO) return { ok:true };
     const c = catBy(S.cat);
-    return (await api.rpc("register_partner", {
+    const extra = {}; customFor(S.cat).forEach(cf => { if (S.extra[cf.id] !== undefined && S.extra[cf.id] !== "") extra[cf.id] = String(S.extra[cf.id]); });
+    const r = await api.rpc("register_partner", {
       p_full_name:S.name.trim(), p_village:S.village.trim(), p_district:S.district.trim(), p_category:S.cat,
       p_sub_categories:S.subs, p_service_areas:S.areas, p_phone_public:S.phonePublic, p_notice_language:S.noticeLang,
       p_indicative_rate:S.rate.trim() || null, p_rc_number:c.vehicle ? (S.rc.trim() || null) : null,
       p_insurance_until:c.vehicle ? isoDate(S.insurance) : null, p_fitness_until:c.fitness ? isoDate(S.fitnessDate) : null,
-      p_cev_use:S.cat === "jcb" ? S.cev : null, p_latitude:S.lat, p_longitude:S.lng,
-    })).ok;
+      p_cev_use:c.cev ? S.cev : null, p_latitude:S.lat, p_longitude:S.lng,
+      p_extra:extra, p_invite_code:S.invite ? S.invite.code : null,
+    });
+    return { ok:r.ok, err:(r.json && r.json.message) || "" };
+  },
+  async config(){
+    if (DEMO) { try { const o = JSON.parse(store.get("kaamo.demo.cfg") || "null"); if (o) return o; } catch(e){} return DEFAULT_CFG; }
+    const r = await api.rpc("get_form_config", {});
+    return r.ok && r.json && r.json.config ? r.json.config : DEFAULT_CFG;
+  },
+  async policy(){
+    if (DEMO) {
+      const cur = CFG_LIVE.policy || DEFAULT_CFG.policy; let acc = null;
+      try { acc = JSON.parse(store.get("kaamo.demo.acc") || "null"); } catch(e){}
+      const reason = !acc ? "none" : acc.version !== cur.version ? "new_version" : (Date.now() - acc.at > 365*864e5 ? "annual" : null);
+      return { current_version:cur.version, summary_en:cur.summary_en, summary_hi:cur.summary_hi, accepted_version:acc && acc.version, needs_accept:!!reason, reason };
+    }
+    const r = await api.rpc("get_policy_status", {});
+    return r.ok ? r.json : null;
+  },
+  async getInvite(code){
+    if (DEMO) {
+      let list = []; try { list = JSON.parse(store.get("kaamo.demo.invites") || "[]"); } catch(e){}
+      const hit = list.find(i => i.code === code.toUpperCase() && i.status === "active");
+      if (hit) return { status:"ok", name:hit.name, category:hit.category };
+      return code.toUpperCase() === "DEMO" ? { status:"ok", name:"Demo Invitee", category:"plumber" } : { status:"invalid" };
+    }
+    const r = await api.raw("/rest/v1/rpc/get_invite", { p_code:code });
+    return r.ok && r.json ? r.json : { status:"invalid" };
   },
   async setPhone(v){ if (DEMO) return true; return (await api.rpc("set_phone_visibility", { p_visible:v })).ok; },
   async remove(){ if (DEMO) return true; return (await api.rpc("remove_listing", {})).ok; },
@@ -286,8 +320,14 @@ const topbar = (back, right) => `<div class="top">${back ? `<button class="link"
 const field = (id, label, val, opts = {}) => `<div class="field ${S.err[id] ? "err" : ""}"><label for="${id}">${esc(label)}</label><input id="${id}" value="${esc(val)}" ${opts.ph ? `placeholder="${esc(opts.ph)}"` : ""} ${opts.mode ? `inputmode="${opts.mode}"` : ""} ${opts.max ? `maxlength="${opts.max}"` : ""} autocomplete="off">${S.err[id] ? `<div class="errtxt">${esc(S.err[id])}</div>` : ""}</div>`;
 const steps = (n, total) => `<div class="steps">${Array.from({length:total}, (_, i) => `<i class="${i < n ? "on" : ""}"></i>`).join("")}</div>`;
 const legalLinks = () => ["terms:"+t("terms"), "privacy:"+t("privacy"), "rules:"+(S.lang==="hi"?"नियम":"Rules"), "grievance:"+(S.lang==="hi"?"शिकायत":"Grievance")].map(x => { const [k,l] = x.split(":"); return `<a href="${k}.html?lang=${S.lang}" target="_blank" rel="noopener">${esc(l)}</a>`; }).join(" · ");
-const catName = c => S.lang === "hi" ? c.hi : c.en;
-const catPill = c => S.lang === "hi" ? c.phi : c.pen;
+const catName = c => S.lang === "hi" ? (c.label_hi || c.label_en) : c.label_en;
+const extrasHtml = p => {
+  const ex = p.extra || {}; const parts = [];
+  (CFG_LIVE.custom || []).forEach(cf => { if (!cf.show_public || ex[cf.id] === undefined) return;
+    const v = cf.type === "yesno" ? t(ex[cf.id] === "true" ? "yes" : "no") : cf.type === "select" ? optLabel(cf, ex[cf.id]) : ex[cf.id];
+    parts.push(`<span class="chip">${esc(cfLabel(cf))}: ${esc(v)}</span>`); });
+  return parts.length ? `<div class="row wrap">${parts.join("")}</div>` : "";
+};
 
 /* ---------------- screens ---------------- */
 const views = {
@@ -306,7 +346,7 @@ const views = {
   auth(){
     const stage = S.otpStage;
     return `<div class="screen">${topbar(true)}
-      <div class="stack" style="margin-top:12px"><h2>${esc(stage ? t("enterOtp") : t("mobile"))}</h2>
+      <div class="stack" style="margin-top:12px">${S.invite ? `<div class="notice"><b>${esc(t("inviteBanner"))}</b>${S.invite.name ? esc(S.invite.name) : ""}</div>` : ""}<h2>${esc(stage ? t("enterOtp") : t("mobile"))}</h2>
       ${stage ? `<p class="muted small">${esc(t("otpSent"))}${esc(S.mobile)}</p>
         <div class="field ${S.err.otp ? "err" : ""}"><input id="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" aria-label="OTP" style="letter-spacing:8px;text-align:center;font-size:22px">${S.err.otp ? `<div class="errtxt">${esc(S.err.otp)}</div>` : ""}</div>
         ${DEMO ? `<p class="xs muted">${esc(t("demoNote"))}</p>` : ""}
@@ -328,21 +368,33 @@ const views = {
   },
 
   partner(){
-    const c = catBy(S.cat);
+    const c = catBy(S.cat) || cats()[0];
+    const cfs = customFor(S.cat);
+    const cfHtml = cf => {
+      const id = "cf_" + cf.id, v = S.extra[cf.id] ?? "", lab = cfLabel(cf) + (cf.required ? " *" : "");
+      let inner;
+      if (cf.type === "select") inner = `<select id="${id}" data-cf="${cf.id}"><option value="">${esc(t("pickOne"))}</option>${(cf.options||[]).map(o => `<option value="${esc(o.en)}" ${v===o.en?"selected":""}>${esc(S.lang==="hi"?o.hi:o.en)}</option>`).join("")}</select>`;
+      else if (cf.type === "yesno") inner = `<select id="${id}" data-cf="${cf.id}"><option value="">${esc(t("pickOne"))}</option><option value="true" ${v==="true"?"selected":""}>${esc(t("yes"))}</option><option value="false" ${v==="false"?"selected":""}>${esc(t("no"))}</option></select>`;
+      else inner = `<input id="${id}" data-cf="${cf.id}" value="${esc(v)}" ${cf.type==="number"?'inputmode="decimal"':""} maxlength="200" autocomplete="off">`;
+      return `<div class="field ${S.err[id] ? "err" : ""}"><label for="${id}">${esc(lab)}</label>${inner}${S.err[id] ? `<div class="errtxt">${esc(S.err[id])}</div>` : ""}</div>`;
+    };
     return `<div class="screen">${topbar(true)}${steps(1,3)}<div class="stack">
+      ${S.invite ? `<div class="notice"><b>${esc(t("inviteBanner"))}</b></div>` : ""}
       ${field("name", t("yourName"), S.name)}
-      ${field("village", t("homeVillage"), S.village)}${field("district", t("district"), S.district)}
-      <div class="field"><label>${esc(t("category"))}</label><div class="pills" style="flex-wrap:wrap;overflow:visible">${CATS.map(x => `<button class="pill ${x.code===S.cat?"on":""}" data-cat="${x.code}">${esc(catName(x))}</button>`).join("")}</div></div>
-      ${c.subs.length ? `<div><label class="small muted">${esc(t("subs"))}</label>${c.subs.map(s => `<label class="check"><input type="checkbox" data-sub="${esc(s)}" ${S.subs.includes(s) ? "checked" : ""}><span>${esc(s)}</span></label>`).join("")}</div>` : ""}
-      ${S.cat === "jcb" ? `<div><label class="small muted">${esc(t("cevUse"))}</label>
+      ${fstate("village") !== "off" ? field("village", flabel("village","homeVillage") + (fstate("village")==="required" ? " *" : ""), S.village) : ""}
+      ${fstate("district") !== "off" ? field("district", flabel("district","district") + (fstate("district")==="required" ? " *" : ""), S.district) : ""}
+      <div class="field"><label>${esc(t("category"))}</label><div class="pills" style="flex-wrap:wrap;overflow:visible">${cats().map(x => `<button class="pill ${x.code===S.cat?"on":""}" data-cat="${x.code}">${esc(catName(x))}</button>`).join("")}</div></div>
+      ${(c.subs||[]).length ? `<div><label class="small muted">${esc(t("subs"))}</label>${c.subs.map(sb => `<label class="check"><input type="checkbox" data-sub="${esc(sb.en)}" ${S.subs.includes(sb.en) ? "checked" : ""}><span>${esc(S.lang==="hi"?sb.hi:sb.en)}</span></label>`).join("")}</div>` : ""}
+      ${c.cev ? `<div><label class="small muted">${esc(t("cevUse"))}</label>
         <label class="check"><input type="radio" name="cev" value="on_site" ${S.cev==="on_site"?"checked":""}><span>${esc(t("cevOn"))}</span></label>
         <label class="check"><input type="radio" name="cev" value="low_bed_transport" ${S.cev==="low_bed_transport"?"checked":""}><span>${esc(t("cevLow"))}</span></label></div>` : ""}
-      <div class="field ${S.err.areas ? "err" : ""}"><label for="areaIn">${esc(t("serviceAreas"))}</label>
+      ${fstate("areas") !== "off" ? `<div class="field ${S.err.areas ? "err" : ""}"><label for="areaIn">${esc(flabel("areas","serviceAreas"))}${fstate("areas")==="required" ? " *" : ""}</label>
         <div class="row"><input id="areaIn" placeholder="${esc(t("areaPh"))}" style="flex:1;border:1px solid var(--border);border-radius:14px;padding:14px;font:inherit;font-size:16px"><button class="btn sm" data-act="addArea">${esc(t("addArea"))}</button></div>
         ${S.err.areas ? `<div class="errtxt">${esc(S.err.areas)}</div>` : ""}
-        <div class="tags" style="margin-top:10px">${S.areas.map((a,i) => `<span class="tag">${esc(a)}<button data-rm="${i}" aria-label="remove">×</button></span>`).join("")}</div></div>
-      ${field("rate", t("rate"), S.rate, {ph:t("ratePh")})}
-      <div class="card"><button class="btn ghost sm" data-act="gps">${esc(t("useGps"))}</button><p class="xs muted" style="margin-top:8px">${esc(S.gpsMsg || t("gpsNote"))}</p></div>
+        <div class="tags" style="margin-top:10px">${S.areas.map((a,i) => `<span class="tag">${esc(a)}<button data-rm="${i}" aria-label="remove">×</button></span>`).join("")}</div></div>` : ""}
+      ${fstate("rate") !== "off" ? field("rate", flabel("rate","rate") + (fstate("rate")==="required" ? " *" : ""), S.rate, {ph:t("ratePh")}) : ""}
+      ${cfs.map(cfHtml).join("")}
+      ${fstate("gps") !== "off" ? `<div class="card ${S.err.gps ? "err" : ""}"><button class="btn ghost sm" data-act="gps">${esc(flabel("gps","useGps"))}${fstate("gps")==="required" ? " *" : ""}</button><p class="xs muted" style="margin-top:8px">${esc(S.err.gps || S.gpsMsg || t("gpsNote"))}</p></div>` : ""}
       <button class="btn" data-act="partnerNext">${esc(t("continue"))}</button></div></div>`;
   },
 
@@ -351,12 +403,23 @@ const views = {
     const lines = declFor(S.cat, S.lang);
     return `<div class="screen">${topbar(true)}${steps(2,3)}<div class="stack"><h2>${esc(t("declTitle"))}</h2>
       <div class="field"><label>${esc(t("noticeLang"))}</label><div class="seg"><button data-nl="en" class="${S.noticeLang==="en"?"on":""}">English</button><button data-nl="hi" class="${S.noticeLang==="hi"?"on":""}">हिन्दी</button></div></div>
-      ${c.vehicle ? `<h3>${esc(t("docs"))}</h3>${field("rc", t("rc"), S.rc)}${field("insurance", t("insurance"), S.insurance, {ph:"DD/MM/YYYY", mode:"numeric", max:10})}${c.fitness ? field("fitnessDate", t("fitness"), S.fitnessDate, {ph:"DD/MM/YYYY", mode:"numeric", max:10}) : ""}` : ""}
+      ${c.vehicle ? `<h3>${esc(t("docs"))}</h3>${field("rc", flabel("rc","rc"), S.rc)}${field("insurance", flabel("insurance","insurance"), S.insurance, {ph:"DD/MM/YYYY", mode:"numeric", max:10})}${c.fitness ? field("fitnessDate", flabel("fitness","fitness"), S.fitnessDate, {ph:"DD/MM/YYYY", mode:"numeric", max:10}) : ""}` : ""}
       <div class="card gap8">${declFor(S.cat, S.noticeLang).map(l => `<p class="small">• ${esc(l)}</p>`).join("")}</div>
       <label class="check"><input type="checkbox" id="declOk" ${S.declOk ? "checked" : ""}><span>${esc(t("declAgree"))}</span></label>
       ${S.err.decl ? `<div class="errtxt">${esc(S.err.decl)}</div>` : ""}
       ${flagged([...S.subs, ...S.areas, S.rate].join(" ")) ? `<div class="errtxt">${esc(t("flagged"))}</div>` : ""}
       <button class="btn" data-act="declNext">${esc(t("continue"))}</button></div></div>`;
+  },
+
+  policy(){
+    const st = S.policy || {}; const sum = S.lang === "hi" ? st.summary_hi : st.summary_en;
+    return `<div class="screen">${topbar(false)}<div class="stack" style="margin-top:12px"><h2>${esc(t("policyTitle"))}</h2>
+      <p class="muted">${esc(t(st.reason === "annual" ? "policyAnnual" : "policyNew"))}</p>
+      ${sum ? `<div class="notice"><b>${esc(t("policyWhat"))}</b>${esc(sum)}</div>` : ""}
+      <p class="small">${legalLinks()}</p>
+      <label class="check"><input type="checkbox" id="polOk" ${S.policyOk ? "checked" : ""}><span>${esc(t("policyAgree"))}</span></label>
+      ${S.err.pol ? `<div class="errtxt">${esc(S.err.pol)}</div>` : ""}
+      <button class="btn" data-act="policyAccept">${esc(t("policyAccept"))}</button></div></div>`;
   },
 
   consent(){
@@ -370,20 +433,21 @@ const views = {
     const f = S.filter;
     let rows = S.partners.filter(p => (f === "all" || p.service_category === f));
     const q = S.q.trim().toLowerCase();
-    if (q) rows = rows.filter(p => [p.full_name, p.village, p.district, ...(p.sub_categories || []), (catBy(p.service_category) || {}).en, (catBy(p.service_category) || {}).hi].join(" ").toLowerCase().includes(q));
+    if (q) rows = rows.filter(p => [p.full_name, p.village, p.district, ...(p.sub_categories || []), (catBy(p.service_category) || {}).label_en, (catBy(p.service_category) || {}).label_hi].join(" ").toLowerCase().includes(q));
     if (S.userLoc) rows = rows.slice().sort((a,b) => (a.distance_km ?? 1e9) - (b.distance_km ?? 1e9));
     const cards = rows.map(p => {
-      const c = catBy(p.service_category) || {en:p.service_category, hi:p.service_category};
+      const c = catBy(p.service_category) || {label_en:p.service_category, label_hi:p.service_category};
       return `<div class="card dir-card">
-        <div class="spread"><div class="grow"><div class="name">${esc(p.full_name)}</div><div class="meta">${esc(catName(c))}${p.sub_categories && p.sub_categories.length ? " · " + esc(p.sub_categories.join(", ")) : ""}</div></div>${p.distance_km != null ? `<span class="chip ok">${p.distance_km} ${esc(t("away"))}</span>` : ""}</div>
+        <div class="spread"><div class="grow"><div class="name">${esc(p.full_name)}</div><div class="meta">${esc(catName(c))}${p.sub_categories && p.sub_categories.length ? " · " + esc(p.sub_categories.map(x => subLabel(p.service_category, x)).join(", ")) : ""}</div></div>${p.distance_km != null ? `<span class="chip ok">${p.distance_km} ${esc(t("away"))}</span>` : ""}</div>
         <div class="meta">${esc([p.village, p.district].filter(Boolean).join(", "))}${p.indicative_rate ? " · " + esc(p.indicative_rate) : ""}</div>
+        ${extrasHtml(p)}
         <div class="row wrap"><span class="phone">${esc(p.masked_phone || "")}</span><span class="chip ${p.phone_verified ? "ok" : ""}">${esc(p.phone_verified ? t("verifiedAcc") : t("selfDecl"))}</span></div>
         <div class="row"><button class="btn sm grow" data-call="${esc(p.id)}">${esc(t("call"))}</button><button class="btn ghost sm" data-report="${esc(p.id)}">${esc(t("report"))}</button></div></div>`;
     }).join("");
     return `<div class="screen">${topbar(false, `<div class="row">${langSeg()}<button class="link" data-act="account">${esc(t("account"))}</button></div>`)}
       <div class="stack"><h1>${esc(t("ask"))}</h1>
       <div class="field"><input id="q" type="search" value="${esc(S.q)}" placeholder="${esc(t("search"))}" aria-label="search"></div>
-      <div class="pills"><button class="pill ${f==="all"?"on":""}" data-filter="all">${esc(t("all"))}</button>${CATS.map(c => `<button class="pill ${f===c.code?"on":""}" data-filter="${c.code}">${esc(catPill(c))}</button>`).join("")}</div>
+      <div class="pills"><button class="pill ${f==="all"?"on":""}" data-filter="all">${esc(t("all"))}</button>${cats().map(c => `<button class="pill ${f===c.code?"on":""}" data-filter="${c.code}">${esc(catName(c))}</button>`).join("")}</div>
       <div class="row wrap"><button class="btn ghost sm" data-act="live">📍 ${esc(t("live"))}</button>${S.locMsg ? `<span class="xs muted">${esc(S.locMsg)}</span>` : ""}</div>
       <div class="notice xs">${esc(t("directoryOnly"))}</div>
       <div class="list">${S.loading ? `<p class="empty">${esc(t("loading"))}</p>` : cards || `<p class="empty">${esc(t("noResults"))}</p>`}</div></div></div>`;
@@ -447,6 +511,19 @@ async function loadPartners(){
   S.loading = false; render();
 }
 
+async function loadCfg(){ try { CFG_LIVE = await repo.config() || DEFAULT_CFG; } catch(e){ CFG_LIVE = DEFAULT_CFG; } if (!cats().find(c => c.code === S.cat)) S.cat = (cats()[0] || {}).code; }
+
+// Policy gate: a new user who ticked the box on the sign-in screen is recorded silently.
+// Returning users see the "terms changed" screen when the version changed or a year has passed.
+async function gate(next){
+  let st = null; try { st = await repo.policy(); } catch(e){}
+  if (st && st.needs_accept) {
+    if (!st.accepted_version) { await repo.consent("TermsAndPrivacy", "Granted", st.current_version); }
+    else { S.policy = st; S.afterPolicy = next; S.policyOk = false; return go("policy"); }
+  }
+  next();
+}
+
 async function enterDirectory(){
   go("directory");
   loadPartners();
@@ -454,7 +531,7 @@ async function enterDirectory(){
 
 const actions = {
   back(){
-    const prev = { auth:"role", customer:"auth", partner:"auth", declaration:"partner", consent:"declaration", account:"directory" }[S.screen];
+    const prev = { policy:"role", auth:"role", customer:"auth", partner:"auth", declaration:"partner", consent:"declaration", account:"directory" }[S.screen];
     if (S.screen === "auth" && S.otpStage) { S.otpStage = false; return render(); }
     go(prev || "role");
   },
@@ -477,9 +554,14 @@ const actions = {
     S.otpBusy = false;
     if (!ok) { S.err.otp = t("otpBad"); return render(); }
     store.set("kaamo.role", S.role);
-    repo.consent("TermsAndPrivacy", "Granted", VER);
     S.otpStage = false;
-    go(S.role === "partner" ? "partner" : "customer");
+    await loadCfg();
+    gate(() => go(S.role === "partner" ? "partner" : "customer"));
+  },
+  async policyAccept(){
+    if (!$("#polOk").checked) { S.err.pol = t("tick"); S.policyOk = false; return render(); }
+    await repo.consent("TermsAndPrivacy", "Granted", S.policy.current_version);
+    const next = S.afterPolicy; S.afterPolicy = null; S.policyOk = false; if (next) next();
   },
   async saveCustomer(){
     S.name = ($("#name").value || ""); S.area = ($("#area").value || "");
@@ -502,9 +584,17 @@ const actions = {
   partnerNext(){
     syncPartner(); S.err = {};
     if (!S.name.trim()) S.err.name = t("required");
-    if (!S.village.trim()) S.err.village = t("required");
-    if (!S.district.trim()) S.err.district = t("required");
-    if (!S.areas.length) S.err.areas = t("required");
+    if (fstate("village") === "required" && !S.village.trim()) S.err.village = t("required");
+    if (fstate("district") === "required" && !S.district.trim()) S.err.district = t("required");
+    if (fstate("areas") === "required" && !S.areas.length) S.err.areas = t("required");
+    if (fstate("rate") === "required" && !S.rate.trim()) S.err.rate = t("required");
+    if (fstate("gps") === "required" && S.lat == null) S.err.gps = t("gpsFail");
+    customFor(S.cat).forEach(cf => {
+      const v = (S.extra[cf.id] ?? "").toString().trim();
+      if (cf.required && !v) S.err["cf_" + cf.id] = t("required");
+      else if (v && cf.type === "number" && !/^-?\d{1,12}(\.\d{1,4})?$/.test(v)) S.err["cf_" + cf.id] = t("required");
+      else if (v && cf.type === "text" && flagged(v)) S.err["cf_" + cf.id] = t("flagged");
+    });
     if (flagged([...S.subs, ...S.areas, S.rate, S.village].join(" "))) S.err.areas = t("flagged");
     if (Object.keys(S.err).length) return render();
     go("declaration");
@@ -524,7 +614,11 @@ const actions = {
   },
   async partnerFinish(){
     S.phonePublic = $("#phonePub").checked;
-    if (!(await repo.savePartner())) return toast(t("fail"));
+    const sv = await repo.savePartner();
+    if (!sv.ok) {
+      const m = sv.err || "";
+      return toast(/invite_invalid/.test(m) ? t("inviteInvalid") : /invite_mobile/.test(m) ? t("inviteMobile") : /invite_required/.test(m) ? t("inviteRequired") : /prohibited/.test(m) ? t("flagged") : t("fail"));
+    }
     if (S.phonePublic) { S.lastChange = new Date().toISOString(); repo.consent("PublicDirectoryPhone", "Granted", VER); }
     enterDirectory();
   },
@@ -549,6 +643,7 @@ function syncPartner(){
   const v = id => { const e = document.getElementById(id); return e ? e.value : null; };
   const set = (k, id) => { const x = v(id); if (x !== null) S[k] = x; };
   set("name","name"); set("village","village"); set("district","district"); set("rate","rate");
+  document.querySelectorAll("[data-cf]").forEach(e => { S.extra[e.dataset.cf] = e.value; });
 }
 function syncDecl(){
   const v = id => { const e = document.getElementById(id); return e ? e.value.trim() : null; };
@@ -574,7 +669,7 @@ document.addEventListener("click", e => {
   if (el.dataset.lang) return setLang(el.dataset.lang);
   if (el.dataset.act) return actions[el.dataset.act] && actions[el.dataset.act]();
   if (el.dataset.role) { S.role = el.dataset.role; S.otpStage = false; return go("auth"); }
-  if (el.dataset.cat) { syncPartner(); S.cat = el.dataset.cat; S.subs = []; return render(); }
+  if (el.dataset.cat) { syncPartner(); S.cat = el.dataset.cat; S.subs = []; S.err = {}; return render(); }
   if (el.dataset.rm) { syncPartner(); S.areas.splice(+el.dataset.rm, 1); return render(); }
   if (el.dataset.filter) { S.filter = el.dataset.filter; return render(); }
   if (el.dataset.nl) { syncDecl(); S.noticeLang = el.dataset.nl; return render(); }
@@ -587,6 +682,7 @@ document.addEventListener("change", async e => {
   const el = e.target;
   if (el.dataset && el.dataset.sub) { syncPartner(); const s = el.dataset.sub; S.subs = el.checked ? [...S.subs, s] : S.subs.filter(x => x !== s); return; }
   if (el.name === "cev") { S.cev = el.value; return; }
+  if (el.dataset && el.dataset.cf) { S.extra[el.dataset.cf] = el.value; return; }
   if (el.id === "phoneAcc") {
     const v = el.checked;
     if (await repo.setPhone(v)) { S.phonePublic = v; S.lastChange = new Date().toISOString(); repo.consent("PublicDirectoryPhone", v ? "Granted" : "Withdrawn", VER); toast(t("saved")); render(); }
@@ -602,7 +698,17 @@ document.addEventListener("input", e => {
 api.load();
 document.documentElement.lang = S.lang;
 render();
-setTimeout(() => {
-  if (api.signedIn && S.role && !DEMO) { enterDirectory(); } else go("role");
-}, 1200);
+(async () => {
+  const code = (new URLSearchParams(location.search).get("invite") || "").trim();
+  if (code) {
+    const inv = await repo.getInvite(code);
+    if (inv && inv.status === "ok") {
+      S.invite = { code, name:inv.name || "" }; S.role = "partner"; if (inv.name) S.name = inv.name;
+      await loadCfg(); if (inv.category && cats().find(c => c.code === inv.category)) S.cat = inv.category;
+    } else toast(t("inviteInvalid"));
+  }
+  await new Promise(r => setTimeout(r, 1000));
+  if (api.signedIn && S.role && !DEMO) { await loadCfg(); gate(() => S.invite ? go("partner") : enterDirectory()); }
+  else go(S.invite ? "auth" : "role");
+})();
 })();
