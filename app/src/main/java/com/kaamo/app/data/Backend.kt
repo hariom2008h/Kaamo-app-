@@ -35,6 +35,7 @@ object Backend {
             policy = SupabasePolicyRepository(api),
             account = SupabaseAccountRepository(api),
             isDemo = false,
+            api = api,
         )
     }
 }

@@ -19,6 +19,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.kaamo.app.AppConfig
 import com.kaamo.app.data.Backend
 import com.kaamo.app.location.DeviceLocation
 import com.kaamo.app.legal.LegalConfig
@@ -37,6 +38,7 @@ import com.kaamo.app.ui.screens.PolicyUpdateScreen
 import com.kaamo.app.data.PolicyStatus
 import com.kaamo.app.ui.screens.PartnerDeclarationScreen
 import com.kaamo.app.ui.screens.PartnerDetailsScreen
+import com.kaamo.app.ui.screens.PartnerWebFormScreen
 import com.kaamo.app.ui.screens.RoleSelectionScreen
 import com.kaamo.app.ui.screens.SplashScreen
 import kotlinx.coroutines.launch
@@ -49,6 +51,7 @@ private object Routes {
     const val POLICY = "policy"
     const val CUSTOMER = "customer-details"
     const val PARTNER_DETAILS = "partner-details"
+    const val PARTNER_WEB = "partner-web"
     const val PARTNER_DECLARATION = "partner-declaration"
     const val PARTNER_CONSENT = "partner-consent"
     const val DIRECTORY = "directory"
@@ -56,7 +59,7 @@ private object Routes {
 }
 
 @Composable
-fun KaamoNavHost() {
+fun KaamoNavHost(inviteCode: String? = null) {
     val nav = rememberNavController()
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
@@ -64,6 +67,14 @@ fun KaamoNavHost() {
 
     // Demo data unless Supabase keys are set in local.properties (see README).
     val services = remember { Backend.create(context) }
+    // An invite link (kaamo-web.vercel.app/?invite=CODE) opens the app straight on sign-in as a service provider.
+    LaunchedEffect(inviteCode) {
+        if (inviteCode != null) {
+            vm.role = UserRole.Partner
+            val route = nav.currentDestination?.route
+            if (route != null && route != Routes.SPLASH && route != Routes.AUTH) nav.navigate(Routes.AUTH) { launchSingleTop = true }
+        }
+    }
     var policyStatus by remember { mutableStateOf<PolicyStatus?>(null) }
     var policyNext by remember { mutableStateOf(Routes.CUSTOMER) }
 
@@ -90,7 +101,7 @@ fun KaamoNavHost() {
     fun goToDirectory() {
         reloadKey++
         nav.navigate(Routes.DIRECTORY) {
-            popUpTo(Routes.ROLE) { inclusive = true }
+            popUpTo(nav.graph.id) { inclusive = true }
             launchSingleTop = true
         }
     }
@@ -118,7 +129,9 @@ fun KaamoNavHost() {
     ) {
         composable(Routes.SPLASH) {
             SplashScreen(
-                onFinished = { nav.navigate(Routes.ROLE) { popUpTo(Routes.SPLASH) { inclusive = true } } },
+                onFinished = {
+                    nav.navigate(if (inviteCode != null) Routes.AUTH else Routes.ROLE) { popUpTo(Routes.SPLASH) { inclusive = true } }
+                },
             )
         }
 
@@ -149,7 +162,12 @@ fun KaamoNavHost() {
                         done(ok)
                         if (ok) {
                             vm.mobile = mobile
-                            val next = if (vm.role == UserRole.Partner) Routes.PARTNER_DETAILS else Routes.CUSTOMER
+                            val next = when {
+                                // Live backend: the registration form is the hosted web form, managed from the admin panel.
+                                vm.role == UserRole.Partner && !services.isDemo -> Routes.PARTNER_WEB
+                                vm.role == UserRole.Partner -> Routes.PARTNER_DETAILS
+                                else -> Routes.CUSTOMER
+                            }
                             val status = services.policy.status()
                             when {
                                 // No server check available (demo): behave as before.
@@ -208,6 +226,30 @@ fun KaamoNavHost() {
                     }
                 },
             )
+        }
+
+        composable(Routes.PARTNER_WEB) {
+            val api = services.api
+            if (api == null) {
+                LaunchedEffect(Unit) { nav.navigate(Routes.PARTNER_DETAILS) { popUpTo(Routes.PARTNER_WEB) { inclusive = true } } }
+            } else {
+                val lang = vm.language.code
+                val url = remember(lang, inviteCode) {
+                    val base = "${AppConfig.WEB_URL}/?embed=1&lang=$lang"
+                    if (inviteCode != null) "$base&invite=${Uri.encode(inviteCode)}" else base
+                }
+                PartnerWebFormScreen(
+                    url = url,
+                    api = api,
+                    onClose = { nav.popBackStack() },
+                    onDone = { phonePublic ->
+                        vm.phonePublic = phonePublic
+                        if (phonePublic) vm.lastConsentChange = Instant.now()
+                        goToDirectory()
+                    },
+                    onOpenExternal = ::openUrl,
+                )
+            }
         }
 
         composable(Routes.PARTNER_DETAILS) {

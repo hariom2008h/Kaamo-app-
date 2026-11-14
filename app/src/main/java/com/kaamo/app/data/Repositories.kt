@@ -1,5 +1,6 @@
 package com.kaamo.app.data
 
+import com.kaamo.app.data.supabase.SupabaseApi
 import com.kaamo.app.location.DeviceLocation
 import com.kaamo.app.location.distanceKm
 import com.kaamo.app.model.ConsentEvent
@@ -82,6 +83,8 @@ class Services(
     val policy: PolicyRepository,
     val account: AccountRepository,
     val isDemo: Boolean,
+    /** Live backend client (null in demo mode); the embedded web form shares its sign-in. */
+    val api: SupabaseApi? = null,
 )
 
 // ---- Demo implementations (no network) ----

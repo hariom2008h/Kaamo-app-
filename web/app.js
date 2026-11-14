@@ -4,6 +4,11 @@ const APP_NAME = "Kaamo";
 const CFG = window.KAAMO_CONFIG || {};
 const DEMO = !CFG.url || !CFG.anonKey || /[?&]demo\b/.test(location.search);
 const VER = "v1.0_2026";
+// Embed mode: the Android app opens this page inside a WebView (?embed=1) and hands over its sign-in
+// through the KaamoAndroid bridge, so the service-provider form is one shared codebase.
+const QS = new URLSearchParams(location.search);
+const BR = QS.get("embed") === "1" && window.KaamoAndroid ? window.KaamoAndroid : null;
+const bridge = (fn, ...a) => { try { return BR && typeof BR[fn] === "function" ? BR[fn](...a) : null; } catch(e){ return null; } };
 const GRIEVANCE_EMAIL = "grievance@kaamo.com";
 
 /* ---------------- storage helpers ---------------- */
@@ -138,7 +143,7 @@ const flagged = s => (s || "").toLowerCase().split(/[^\p{L}\p{M}]+/u).some(w => 
 
 /* ---------------- state ---------------- */
 const S = {
-  lang: store.get("kaamo.lang") || "hi",
+  lang: (BR && ["hi","en"].includes(QS.get("lang")) ? QS.get("lang") : null) || store.get("kaamo.lang") || "hi",
   screen: "splash",
   role: store.get("kaamo.role") || null,
   mobile: "", otpStage: false, otpBusy: false, termsOk: false, err: {},
@@ -161,17 +166,20 @@ function toast(msg){
 /* ---------------- Supabase client (fetch-based) ---------------- */
 const api = {
   session: null,
-  load(){ try { this.session = JSON.parse(store.get("kaamo.session") || "null"); } catch(e){ this.session = null; } },
+  load(){
+    try { this.session = JSON.parse((BR ? bridge("getSession") : null) || store.get("kaamo.session") || "null"); } catch(e){ this.session = null; }
+  },
   save(body){
     try {
       const j = typeof body === "string" ? JSON.parse(body) : body;
       if (!j.access_token) return false;
       this.session = { access_token:j.access_token, refresh_token:j.refresh_token };
       store.set("kaamo.session", JSON.stringify(this.session));
+      bridge("saveSession", JSON.stringify(this.session)); // keep the app's copy in step: refresh tokens rotate
       return true;
     } catch(e){ return false; }
   },
-  clear(){ this.session = null; store.del("kaamo.session"); },
+  clear(){ this.session = null; store.del("kaamo.session"); bridge("clearSession"); },
   get signedIn(){ return !!(this.session && this.session.access_token); },
   async raw(path, body, bearer){
     const headers = { "apikey":CFG.anonKey, "Content-Type":"application/json", "Authorization":"Bearer " + (bearer || CFG.anonKey) };
@@ -531,6 +539,7 @@ async function enterDirectory(){
 
 const actions = {
   back(){
+    if (BR && (S.screen === "partner" || S.screen === "policy")) return bridge("close");
     const prev = { policy:"role", auth:"role", customer:"auth", partner:"auth", declaration:"partner", consent:"declaration", account:"directory" }[S.screen];
     if (S.screen === "auth" && S.otpStage) { S.otpStage = false; return render(); }
     go(prev || "role");
@@ -619,7 +628,8 @@ const actions = {
       const m = sv.err || "";
       return toast(/invite_invalid/.test(m) ? t("inviteInvalid") : /invite_mobile/.test(m) ? t("inviteMobile") : /invite_required/.test(m) ? t("inviteRequired") : /prohibited/.test(m) ? t("flagged") : t("fail"));
     }
-    if (S.phonePublic) { S.lastChange = new Date().toISOString(); repo.consent("PublicDirectoryPhone", "Granted", VER); }
+    if (S.phonePublic) { S.lastChange = new Date().toISOString(); await repo.consent("PublicDirectoryPhone", "Granted", VER); }
+    if (BR) return bridge("done", S.phonePublic);
     enterDirectory();
   },
   async live(){
@@ -694,6 +704,12 @@ document.addEventListener("input", e => {
   if (e.target.id === "q") { S.q = e.target.value; render(); }
 });
 
+// Hardware back button in the app: returns true when the page handled it, false to let the app leave.
+window.kaamoBack = () => {
+  if (!BR || ["partner","policy","splash"].includes(S.screen)) return false;
+  actions.back(); return true;
+};
+
 /* ---------------- boot ---------------- */
 api.load();
 document.documentElement.lang = S.lang;
@@ -706,6 +722,12 @@ render();
       S.invite = { code, name:inv.name || "" }; S.role = "partner"; if (inv.name) S.name = inv.name;
       await loadCfg(); if (inv.category && cats().find(c => c.code === inv.category)) S.cat = inv.category;
     } else toast(t("inviteInvalid"));
+  }
+  if (BR) { // inside the Android app: straight to the form, no splash, role or sign-in screens
+    S.role = "partner";
+    if (!api.signedIn && !DEMO) return bridge("close");
+    await loadCfg();
+    return gate(() => go("partner"));
   }
   await new Promise(r => setTimeout(r, 1000));
   if (api.signedIn && S.role && !DEMO) { await loadCfg(); gate(() => S.invite ? go("partner") : enterDirectory()); }

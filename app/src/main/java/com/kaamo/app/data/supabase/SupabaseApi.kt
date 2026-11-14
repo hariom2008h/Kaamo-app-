@@ -45,6 +45,12 @@ class SupabaseApi(context: Context, baseUrl: String, private val anonKey: String
         refreshToken = json.optString("refresh_token").ifEmpty { null }
     }
 
+    /** The current session as JSON for the embedded web form, or null when signed out. */
+    fun sessionJson(): String? {
+        val access = accessToken ?: return null
+        return JSONObject().put("access_token", access).put("refresh_token", refreshToken.orEmpty()).toString()
+    }
+
     fun clearSession() {
         accessToken = null
         refreshToken = null
