@@ -38,6 +38,21 @@ interface ContactRepository {
     suspend fun reveal(partnerId: String): RevealResult
 }
 
+/** Result of the server-side check: has the user accepted the current Terms/Privacy version within the last year? */
+data class PolicyStatus(
+    val currentVersion: String,
+    val summaryEn: String,
+    val summaryHi: String,
+    val acceptedVersion: String?,
+    val needsAccept: Boolean,
+    val reason: String?,
+)
+
+interface PolicyRepository {
+    /** Null when the check is unavailable (demo mode or no network); the app then continues without the gate. */
+    suspend fun status(): PolicyStatus?
+}
+
 interface ConsentRepository {
     suspend fun record(event: ConsentEvent)
 }
@@ -64,6 +79,7 @@ class Services(
     val partners: PartnerRepository,
     val contacts: ContactRepository,
     val consent: ConsentRepository,
+    val policy: PolicyRepository,
     val account: AccountRepository,
     val isDemo: Boolean,
 )
@@ -103,6 +119,10 @@ class FakeContactRepository : ContactRepository {
         revealTimes.addLast(now)
         return RevealResult.Success(number)
     }
+}
+
+class FakePolicyRepository : PolicyRepository {
+    override suspend fun status(): PolicyStatus? = null
 }
 
 class FakeConsentRepository : ConsentRepository {

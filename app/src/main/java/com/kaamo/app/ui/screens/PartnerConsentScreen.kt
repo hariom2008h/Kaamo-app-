@@ -86,7 +86,7 @@ fun PartnerConsentScreen(
                 Text("Show my mobile number", style = MaterialTheme.typography.titleMedium)
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    "Signed-in customers can tap Call Partner to reach you. Your full number never appears in lists.",
+                    "Signed-in customers can tap Call to reach you. Your full number never appears in lists.",
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }

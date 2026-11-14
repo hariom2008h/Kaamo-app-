@@ -8,6 +8,7 @@ import com.kaamo.app.data.supabase.SupabaseAuthRepository
 import com.kaamo.app.data.supabase.SupabaseConsentRepository
 import com.kaamo.app.data.supabase.SupabaseContactRepository
 import com.kaamo.app.data.supabase.SupabasePartnerRepository
+import com.kaamo.app.data.supabase.SupabasePolicyRepository
 
 object Backend {
     /** Demo mode (sample data, any 6-digit OTP works) unless both Supabase values are set in local.properties. */
@@ -20,6 +21,7 @@ object Backend {
                 partners = FakePartnerRepository(),
                 contacts = FakeContactRepository(),
                 consent = FakeConsentRepository(),
+                policy = FakePolicyRepository(),
                 account = FakeAccountRepository(),
                 isDemo = true,
             )
@@ -30,6 +32,7 @@ object Backend {
             partners = SupabasePartnerRepository(api),
             contacts = SupabaseContactRepository(api),
             consent = SupabaseConsentRepository(api),
+            policy = SupabasePolicyRepository(api),
             account = SupabaseAccountRepository(api),
             isDemo = false,
         )

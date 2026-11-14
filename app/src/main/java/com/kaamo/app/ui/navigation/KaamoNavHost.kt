@@ -33,6 +33,8 @@ import com.kaamo.app.ui.screens.AuthScreen
 import com.kaamo.app.ui.screens.CustomerDetailsScreen
 import com.kaamo.app.ui.screens.DirectoryScreen
 import com.kaamo.app.ui.screens.PartnerConsentScreen
+import com.kaamo.app.ui.screens.PolicyUpdateScreen
+import com.kaamo.app.data.PolicyStatus
 import com.kaamo.app.ui.screens.PartnerDeclarationScreen
 import com.kaamo.app.ui.screens.PartnerDetailsScreen
 import com.kaamo.app.ui.screens.RoleSelectionScreen
@@ -44,6 +46,7 @@ private object Routes {
     const val SPLASH = "splash"
     const val ROLE = "role"
     const val AUTH = "auth"
+    const val POLICY = "policy"
     const val CUSTOMER = "customer-details"
     const val PARTNER_DETAILS = "partner-details"
     const val PARTNER_DECLARATION = "partner-declaration"
@@ -61,6 +64,8 @@ fun KaamoNavHost() {
 
     // Demo data unless Supabase keys are set in local.properties (see README).
     val services = remember { Backend.create(context) }
+    var policyStatus by remember { mutableStateOf<PolicyStatus?>(null) }
+    var policyNext by remember { mutableStateOf(Routes.CUSTOMER) }
 
     var partners by remember { mutableStateOf(emptyList<Partner>()) }
     var reloadKey by remember { mutableStateOf(0) }
@@ -144,14 +149,52 @@ fun KaamoNavHost() {
                         done(ok)
                         if (ok) {
                             vm.mobile = mobile
-                            record(ConsentType.TermsAndPrivacy, ConsentAction.Granted, LegalConfig.TERMS_VERSION)
-                            nav.navigate(if (vm.role == UserRole.Partner) Routes.PARTNER_DETAILS else Routes.CUSTOMER)
+                            val next = if (vm.role == UserRole.Partner) Routes.PARTNER_DETAILS else Routes.CUSTOMER
+                            val status = services.policy.status()
+                            when {
+                                // No server check available (demo): behave as before.
+                                status == null -> {
+                                    record(ConsentType.TermsAndPrivacy, ConsentAction.Granted, LegalConfig.TERMS_VERSION)
+                                    nav.navigate(next)
+                                }
+                                // Returning user: terms changed or a year passed, so ask again.
+                                status.needsAccept && status.acceptedVersion != null -> {
+                                    policyStatus = status
+                                    policyNext = next
+                                    nav.navigate(Routes.POLICY)
+                                }
+                                // New user: they just ticked the box on the sign-in screen.
+                                status.needsAccept -> {
+                                    record(ConsentType.TermsAndPrivacy, ConsentAction.Granted, status.currentVersion)
+                                    nav.navigate(next)
+                                }
+                                else -> nav.navigate(next)
+                            }
                         }
                     }
                 },
                 onOpenTerms = { openUrl(LegalConfig.TERMS_URL) },
                 onOpenPrivacy = { openUrl(LegalConfig.PRIVACY_URL) },
             )
+        }
+
+        composable(Routes.POLICY) {
+            val status = policyStatus
+            if (status == null) {
+                LaunchedEffect(Unit) { nav.popBackStack() }
+            } else {
+                PolicyUpdateScreen(
+                    status = status,
+                    language = vm.language,
+                    onBack = { nav.popBackStack() },
+                    onAccept = {
+                        record(ConsentType.TermsAndPrivacy, ConsentAction.Granted, status.currentVersion)
+                        nav.navigate(policyNext) { popUpTo(Routes.POLICY) { inclusive = true } }
+                    },
+                    onOpenTerms = { openUrl(LegalConfig.TERMS_URL) },
+                    onOpenPrivacy = { openUrl(LegalConfig.PRIVACY_URL) },
+                )
+            }
         }
 
         composable(Routes.CUSTOMER) {

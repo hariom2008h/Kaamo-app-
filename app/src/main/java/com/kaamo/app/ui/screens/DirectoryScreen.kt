@@ -178,7 +178,7 @@ fun DirectoryScreen(
                 if (results.isEmpty()) {
                     item {
                         Text(
-                            text = "No partners found. Try a different search or filter.",
+                            text = "No one found. Try a different search or filter.",
                             style = MaterialTheme.typography.bodyLarge,
                             modifier = Modifier.padding(vertical = 32.dp),
                         )
@@ -235,9 +235,9 @@ fun DirectoryScreen(
                         RevealResult.RateLimited ->
                             snackbar.showSnackbar("You've reached the hourly call limit. Please try again later.")
                         RevealResult.ListingUnavailable ->
-                            snackbar.showSnackbar("This partner is no longer listed.")
+                            snackbar.showSnackbar("This listing is no longer available.")
                         RevealResult.SignInRequired ->
-                            snackbar.showSnackbar("Please sign in to call a partner.")
+                            snackbar.showSnackbar("Please sign in to call.")
                         RevealResult.NetworkError ->
                             snackbar.showSnackbar("Couldn't connect. Check your internet and try again.")
                     }
@@ -311,7 +311,7 @@ private fun PartnerCard(partner: Partner, onCall: () -> Unit, onReport: () -> Un
         }
 
         Spacer(Modifier.height(16.dp))
-        GradientButton(text = "Call Partner", onClick = onCall, height = 48.dp)
+        GradientButton(text = "Call", onClick = onCall, height = 48.dp)
     }
 }
 

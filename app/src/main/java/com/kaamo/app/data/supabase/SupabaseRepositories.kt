@@ -5,6 +5,8 @@ import com.kaamo.app.data.AuthRepository
 import com.kaamo.app.data.ConsentRepository
 import com.kaamo.app.data.ContactRepository
 import com.kaamo.app.data.PartnerRepository
+import com.kaamo.app.data.PolicyRepository
+import com.kaamo.app.data.PolicyStatus
 import com.kaamo.app.data.ReportReason
 import com.kaamo.app.data.RevealResult
 import com.kaamo.app.location.DeviceLocation
@@ -54,8 +56,8 @@ class SupabasePartnerRepository(private val api: SupabaseApi) : PartnerRepositor
                             name = row.getString("full_name"),
                             machine = category,
                             subCategories = buildList { if (subs != null) for (j in 0 until subs.length()) add(subs.getString(j)) },
-                            village = row.optString("village"),
-                            district = row.optString("district"),
+                            village = if (row.isNull("village")) "" else row.optString("village"),
+                            district = if (row.isNull("district")) "" else row.optString("district"),
                             distanceKm = if (row.isNull("distance_km")) null else row.getInt("distance_km"),
                             maskedPhone = row.optString("masked_phone").ifEmpty { maskIndianMobile("") },
                             phoneVerifiedAccount = row.optBoolean("phone_verified", false),
@@ -88,6 +90,26 @@ class SupabaseContactRepository(private val api: SupabaseApi) : ContactRepositor
             } catch (e: org.json.JSONException) {
                 RevealResult.NetworkError
             }
+        }
+    }
+}
+
+class SupabasePolicyRepository(private val api: SupabaseApi) : PolicyRepository {
+    override suspend fun status(): PolicyStatus? {
+        val response = api.rpc("get_policy_status")
+        if (!response.ok) return null
+        return try {
+            val json = JSONObject(response.body)
+            PolicyStatus(
+                currentVersion = json.getString("current_version"),
+                summaryEn = json.optString("summary_en"),
+                summaryHi = json.optString("summary_hi"),
+                acceptedVersion = if (json.isNull("accepted_version")) null else json.getString("accepted_version"),
+                needsAccept = json.optBoolean("needs_accept", false),
+                reason = if (json.isNull("reason")) null else json.optString("reason"),
+            )
+        } catch (e: org.json.JSONException) {
+            null
         }
     }
 }
