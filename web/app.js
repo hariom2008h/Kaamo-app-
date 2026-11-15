@@ -46,6 +46,10 @@ const T = {
     cevUse:"How will the machine be used?", cevOn:"On-site machine hire (excavation, demolition or loading at the worksite)", cevLow:"Low-bed trailer transport required (chain excavator)",
     serviceAreas:"Areas you serve", addArea:"Add", areaPh:"e.g. Hoshangabad Road", rate:"Indicative rate (optional)", ratePh:"e.g. ₹900 / hour",
     useGps:"Use my work location (GPS)", gpsSet:"Work location saved (approx. 1 km)", gpsFail:"Could not get location. You can continue without it.",
+    locUse:"Use my current location", locFinding:"Finding your place…", locDone:"We filled these from your location. Please check them.", locPart:"We could only fill part of it. Please pick the rest.", locFail:"Could not find your place. Please pick it from the lists.",
+    locState:"State", locDistrict:"District", locTehsil:"Tehsil", locVillage:"Village", locPickState:"Select state", locPickDistrict:"Select district", locPickTehsil:"Select tehsil",
+    locSearch:"Type the village name (English or हिन्दी)", locNone:"No village found with this name in this tehsil.", locNotListed:"My village is not in the list", locBackToList:"Pick from the list instead",
+    locChange:"Change", locOwnName:"Type your village name", locCredit:"Place lookup uses OpenStreetMap data (© OpenStreetMap contributors).", locLoading:"Loading…",
     gpsNote:"Only an approximate location (about 1 km) is stored and it is never shown to customers.",
     flagged:"Hauling sand, bricks, soil or other construction material is not allowed on Kaamo.",
     declTitle:"Your declaration", declAgree:"I make this declaration.", docs:"Documents", rc:"Vehicle RC number",
@@ -82,6 +86,10 @@ const T = {
     cevUse:"मशीन का उपयोग कैसे होगा?", cevOn:"साइट पर मशीन किराये पर (खुदाई, तोड़फोड़ या लोडिंग)", cevLow:"लो-बेड ट्रेलर से ढुलाई चाहिए (चेन एक्सकेवेटर)",
     serviceAreas:"आप किन इलाकों में सेवा देते हैं", addArea:"जोड़ें", areaPh:"जैसे होशंगाबाद रोड", rate:"अनुमानित दाम (वैकल्पिक)", ratePh:"जैसे ₹900 / घंटा",
     useGps:"मेरी काम की जगह (GPS) लें", gpsSet:"काम की जगह सेव हुई (लगभग 1 किमी)", gpsFail:"लोकेशन नहीं मिली। आप बिना इसके आगे बढ़ सकते हैं।",
+    locUse:"मेरी मौजूदा जगह लें", locFinding:"आपकी जगह खोज रहे हैं…", locDone:"हमने आपकी जगह से ये भर दिए हैं। कृपया जाँच लें।", locPart:"कुछ ही भर पाए। बाकी कृपया चुन लें।", locFail:"आपकी जगह नहीं मिली। कृपया सूची से चुनें।",
+    locState:"राज्य", locDistrict:"ज़िला", locTehsil:"तहसील", locVillage:"गाँव", locPickState:"राज्य चुनें", locPickDistrict:"ज़िला चुनें", locPickTehsil:"तहसील चुनें",
+    locSearch:"गाँव का नाम लिखें (हिन्दी या English)", locNone:"इस तहसील में इस नाम का गाँव नहीं मिला।", locNotListed:"मेरा गाँव सूची में नहीं है", locBackToList:"सूची से चुनें",
+    locChange:"बदलें", locOwnName:"अपने गाँव का नाम लिखें", locCredit:"जगह की खोज में OpenStreetMap का डेटा इस्तेमाल होता है (© OpenStreetMap contributors)।", locLoading:"लोड हो रहा है…",
     gpsNote:"केवल अनुमानित लोकेशन (लगभग 1 किमी) सेव होती है और ग्राहकों को कभी नहीं दिखती।",
     flagged:"रेत, ईंट, मिट्टी या अन्य निर्माण सामग्री की ढुलाई Kaamo पर मना है।",
     declTitle:"आपकी घोषणा", declAgree:"मैं यह घोषणा करता/करती हूँ।", docs:"दस्तावेज़", rc:"वाहन RC नंबर",
@@ -148,7 +156,7 @@ const S = {
   role: store.get("kaamo.role") || null,
   mobile: "", otpStage: false, otpBusy: false, termsOk: false, err: {},
   // registration
-  name:"", area:"", village:"", district:"", cat:"plumber", subs:[], cev:"on_site", areas:[], rate:"", lat:null, lng:null, gpsMsg:"",
+  name:"", area:"", village:"", district:"", tehsil:"", stateName:"", vcode:null, vfree:false, vq:"", geo:{states:[], districts:[], tehsils:[], villages:[], sc:0, dc:0, tc:0, loading:false, off:false, msg:"", busy:false}, cat:"plumber", subs:[], cev:"on_site", areas:[], rate:"", lat:null, lng:null, gpsMsg:"",
   extra:{}, invite:null, policy:null, afterPolicy:null, policyOk:false,
   rc:"", insurance:"", fitnessDate:"", declOk:false, noticeLang:"hi", phonePublic:false, lastChange:null,
   // directory
@@ -253,6 +261,27 @@ const repo = {
     if (DEMO) return true;
     return (await api.rpc("register_customer", { p_full_name:S.name.trim(), p_location:S.area.trim() })).ok;
   },
+  // official place lists (state > district > tehsil > village) and place lookup; not available in demo mode
+  async geoUnits(kind, parent){
+    if (DEMO) return null;
+    const r = await api.rpc("geo_units", { p_kind:kind, p_parent:parent || 0 });
+    return r.ok && Array.isArray(r.json) ? r.json : null;
+  },
+  async geoVillages(sub){
+    if (DEMO) return null;
+    const r = await api.rpc("geo_villages", { p_subdistrict:sub });
+    return r.ok && Array.isArray(r.json) ? r.json : null;
+  },
+  async geoFeedback(lat, lng, village, source){ if (!DEMO) api.rpc("geo_feedback", { p_lat:lat, p_lng:lng, p_village:village, p_source:source }); },
+  async geoReverse(lat, lng){
+    if (DEMO || !api.signedIn) return null;
+    const call = tok => fetch(CFG.url + "/functions/v1/reverse-geocode", { method:"POST", headers:{ "apikey":CFG.anonKey, "Authorization":"Bearer " + tok, "Content-Type":"application/json" }, body:JSON.stringify({ lat, lng }) });
+    try {
+      let r = await call(api.session.access_token);
+      if (r.status === 401 && await api.refresh()) r = await call(api.session.access_token);
+      return r.ok ? await r.json() : null;
+    } catch(e){ return null; }
+  },
   async savePartner(){
     if (DEMO) return { ok:true };
     const c = catBy(S.cat);
@@ -264,6 +293,7 @@ const repo = {
       p_insurance_until:c.vehicle ? isoDate(S.insurance) : null, p_fitness_until:c.fitness ? isoDate(S.fitnessDate) : null,
       p_cev_use:c.cev ? S.cev : null, p_latitude:S.lat, p_longitude:S.lng,
       p_extra:extra, p_invite_code:S.invite ? S.invite.code : null,
+      p_tehsil:S.tehsil || null, p_state:S.stateName || null, p_village_code:S.vcode || null,
     });
     return { ok:r.ok, err:(r.json && r.json.message) || "" };
   },
@@ -338,6 +368,68 @@ const extrasHtml = p => {
 };
 
 /* ---------------- screens ---------------- */
+/* ---------------- place picker: state > district > tehsil > village ---------------- */
+const G = window.KaamoGeo;
+const geoNeeded = () => fstate("village") !== "off" || fstate("district") !== "off";
+function geoInit(){ // load the state list the first time the form is shown
+  const g = S.geo;
+  if (DEMO) { g.off = true; return; }
+  if (g.states.length || g.loading || g.off) return;
+  g.loading = true;
+  repo.geoUnits("S").then(r => { g.loading = false; if (!r || !r.length) g.off = true; else g.states = r; render(); });
+}
+async function geoSet(level, code){
+  const g = S.geo, nameOf = (l, c) => (l.find(u => u.code === c) || {}).name || "";
+  if (level === "state") {
+    g.sc = code; g.dc = 0; g.tc = 0; g.districts = []; g.tehsils = []; g.villages = [];
+    S.stateName = nameOf(g.states, code); S.district = ""; S.tehsil = ""; S.village = ""; S.vcode = null; S.vq = "";
+    if (code) g.districts = (await repo.geoUnits("D", code)) || [];
+  } else if (level === "district") {
+    g.dc = code; g.tc = 0; g.tehsils = []; g.villages = [];
+    S.district = nameOf(g.districts, code); S.tehsil = ""; S.village = ""; S.vcode = null; S.vq = "";
+    if (code) g.tehsils = (await repo.geoUnits("T", code)) || [];
+  } else {
+    g.tc = code; g.villages = [];
+    S.tehsil = nameOf(g.tehsils, code); S.village = ""; S.vcode = null; S.vq = "";
+    if (code) g.villages = (await repo.geoVillages(code)) || [];
+  }
+}
+function pickVillage(v, fromUser){
+  S.vcode = v.code; S.village = v.name; S.vq = ""; S.vfree = false;
+  if (fromUser && S.lat != null) repo.geoFeedback(S.lat, S.lng, v.code, "search"); // anonymous: rounded position + village only
+}
+function locationBlock(){
+  if (!geoNeeded()) return "";
+  geoInit();
+  const g = S.geo;
+  if (g.off) return `${fstate("village") !== "off" ? field("village", flabel("village","homeVillage") + (fstate("village")==="required" ? " *" : ""), S.village) : ""}
+      ${fstate("district") !== "off" ? field("district", flabel("district","district") + (fstate("district")==="required" ? " *" : ""), S.district) : ""}`;
+  const sel = (id, label, items, val, ph, err) => `<div class="field ${err ? "err" : ""}"><label for="${id}">${esc(label)}</label><select id="${id}" data-geo="${id}" ${items.length ? "" : "disabled"}><option value="">${esc(items.length ? ph : t("locLoading"))}</option>${items.map(u => `<option value="${u.code}" ${u.code === val ? "selected" : ""}>${esc(u.name)}</option>`).join("")}</select>${err ? `<div class="errtxt">${esc(err)}</div>` : ""}</div>`;
+  let village;
+  if (S.vfree) {
+    village = `${field("village", t("locOwnName") + (fstate("village")==="required" ? " *" : ""), S.village)}<button class="link" data-act="vList">${esc(t("locBackToList"))}</button>`;
+  } else if (S.vcode) {
+    const v = g.villages.find(x => x.code === S.vcode);
+    village = `<div class="field"><label>${esc(t("locVillage"))}</label><div class="card row" style="justify-content:space-between;align-items:center"><div><b>${esc(S.village)}</b>${v && v.block ? `<div class="xs muted">${esc(v.block)}</div>` : ""}</div><button class="btn ghost sm" data-act="vChange">${esc(t("locChange"))}</button></div></div>`;
+  } else if (g.tc) {
+    const hits = G.findVillages(g.villages, S.vq, 10);
+    village = `<div class="field ${S.err.village ? "err" : ""}"><label for="vq">${esc(t("locVillage"))}${fstate("village")==="required" ? " *" : ""}</label>
+      <input id="vq" value="${esc(S.vq)}" placeholder="${esc(t("locSearch"))}" autocomplete="off">
+      ${S.err.village ? `<div class="errtxt">${esc(S.err.village)}</div>` : ""}
+      ${S.vq.trim() ? `<div class="stack" style="gap:6px;margin-top:8px">${hits.length ? hits.map(h => `<button class="pill" style="text-align:left;border-radius:12px;padding:10px 14px" data-vpick="${h.code}">${esc(h.name)}${h.block ? ` <span class="xs muted">· ${esc(h.block)}</span>` : ""}</button>`).join("") : `<p class="xs muted">${esc(t("locNone"))}</p>`}</div>` : ""}
+      <button class="link" style="margin-top:8px" data-act="vFree">${esc(t("locNotListed"))}</button></div>`;
+  } else {
+    village = "";
+  }
+  return `<div class="card stack" style="gap:12px">
+      <div><button class="btn ghost sm" data-act="useLoc" ${g.busy ? "disabled" : ""}>${esc(t("locUse"))}</button><p class="xs muted" style="margin-top:8px">${esc(g.msg || t("locCredit"))}</p></div>
+      ${sel("geoState", t("locState"), g.states, g.sc, t("locPickState"))}
+      ${g.sc ? sel("geoDistrict", t("locDistrict") + (fstate("district")==="required" ? " *" : ""), g.districts, g.dc, t("locPickDistrict"), S.err.district) : ""}
+      ${g.dc ? sel("geoTehsil", t("locTehsil"), g.tehsils, g.tc, t("locPickTehsil")) : ""}
+      ${village}
+    </div>`;
+}
+
 const views = {
   splash(){ return `<div class="center"><div class="splash-mark">${LOGO}</div><div class="splash-name">${APP_NAME}</div><p class="muted">${esc(t("tagline"))}</p></div>`; },
 
@@ -389,8 +481,7 @@ const views = {
     return `<div class="screen">${topbar(true)}${steps(1,3)}<div class="stack">
       ${S.invite ? `<div class="notice"><b>${esc(t("inviteBanner"))}</b></div>` : ""}
       ${field("name", t("yourName"), S.name)}
-      ${fstate("village") !== "off" ? field("village", flabel("village","homeVillage") + (fstate("village")==="required" ? " *" : ""), S.village) : ""}
-      ${fstate("district") !== "off" ? field("district", flabel("district","district") + (fstate("district")==="required" ? " *" : ""), S.district) : ""}
+      ${locationBlock()}
       <div class="field"><label>${esc(t("category"))}</label><div class="pills" style="flex-wrap:wrap;overflow:visible">${cats().map(x => `<button class="pill ${x.code===S.cat?"on":""}" data-cat="${x.code}">${esc(catName(x))}</button>`).join("")}</div></div>
       ${(c.subs||[]).length ? `<div><label class="small muted">${esc(t("subs"))}</label>${c.subs.map(sb => `<label class="check"><input type="checkbox" data-sub="${esc(sb.en)}" ${S.subs.includes(sb.en) ? "checked" : ""}><span>${esc(S.lang==="hi"?sb.hi:sb.en)}</span></label>`).join("")}</div>` : ""}
       ${c.cev ? `<div><label class="small muted">${esc(t("cevUse"))}</label>
@@ -592,10 +683,38 @@ const actions = {
     } catch(e){ S.gpsMsg = t("gpsFail"); }
     render();
   },
+  async useLoc(){
+    syncPartner();
+    const g = S.geo; g.busy = true; g.msg = t("locFinding"); render();
+    let pos;
+    try { pos = await getPosition(); } catch(e){ g.busy = false; g.msg = t("gpsFail"); return render(); }
+    S.lat = round2(pos.lat); S.lng = round2(pos.lng); S.gpsMsg = t("gpsSet");
+    const rv = await repo.geoReverse(pos.lat, pos.lng);
+    let filled = 0;
+    if (rv) {
+      const st = G.pick(g.states, [rv.state]);
+      if (st) { await geoSet("state", st.code); filled++;
+        const di = G.pick(g.districts, [rv.district, rv.county], true);
+        if (di) { await geoSet("district", di.code); filled++;
+          const te = G.pick(g.tehsils, [rv.county, rv.town, rv.district, rv.suburb, rv.village]);
+          if (te) { await geoSet("tehsil", te.code); filled++;
+            const vi = G.pick(g.villages, [rv.village, rv.suburb]);
+            if (vi) { pickVillage(vi, false); filled++; }
+          }
+        }
+      }
+    }
+    g.busy = false;
+    g.msg = filled >= 4 ? t("locDone") : filled > 0 ? t("locPart") : t("locFail");
+    render();
+  },
+  vChange(){ S.vcode = null; S.village = ""; S.vq = ""; render(); },
+  vFree(){ S.vfree = true; S.vcode = null; S.village = ""; render(); },
+  vList(){ S.vfree = false; S.village = ""; render(); },
   partnerNext(){
     syncPartner(); S.err = {};
     if (!S.name.trim()) S.err.name = t("required");
-    if (fstate("village") === "required" && !S.village.trim()) S.err.village = t("required");
+    if (fstate("village") === "required" && !(S.vcode || S.village.trim())) S.err.village = t("required");
     if (fstate("district") === "required" && !S.district.trim()) S.err.district = t("required");
     if (fstate("areas") === "required" && !S.areas.length) S.err.areas = t("required");
     if (fstate("rate") === "required" && !S.rate.trim()) S.err.rate = t("required");
@@ -675,8 +794,9 @@ function render(){
 }
 
 document.addEventListener("click", e => {
-  const el = e.target.closest("[data-lang],[data-act],[data-role],[data-cat],[data-rm],[data-filter],[data-call],[data-report],[data-nl],[data-close]");
+  const el = e.target.closest("[data-lang],[data-act],[data-role],[data-cat],[data-rm],[data-filter],[data-call],[data-report],[data-nl],[data-close],[data-vpick]");
   if (!el) return;
+  if (el.dataset.vpick) { const v = S.geo.villages.find(x => x.code === +el.dataset.vpick); if (v) { syncPartner(); pickVillage(v, true); render(); } return; }
   if (el.dataset.close && (el.classList.contains("scrim") ? e.target === el : true)) { if (el.dataset.close) return closeSheet(); }
   if (el.dataset.lang) return setLang(el.dataset.lang);
   if (el.dataset.act) return actions[el.dataset.act] && actions[el.dataset.act]();
@@ -693,6 +813,11 @@ document.addEventListener("click", e => {
 document.addEventListener("change", async e => {
   const el = e.target;
   if (el.dataset && el.dataset.sub) { syncPartner(); const s = el.dataset.sub; S.subs = el.checked ? [...S.subs, s] : S.subs.filter(x => x !== s); return; }
+  if (el.dataset && el.dataset.geo) {
+    syncPartner();
+    const level = { geoState:"state", geoDistrict:"district", geoTehsil:"tehsil" }[el.dataset.geo];
+    await geoSet(level, +el.value || 0); S.err = {}; return render();
+  }
   if (el.name === "cev") { S.cev = el.value; return; }
   if (el.dataset && el.dataset.cf) { S.extra[el.dataset.cf] = el.value; return; }
   if (el.id === "phoneAcc") {
@@ -704,6 +829,7 @@ document.addEventListener("change", async e => {
 
 document.addEventListener("input", e => {
   if (e.target.id === "q") { S.q = e.target.value; render(); }
+  if (e.target.id === "vq") { S.vq = e.target.value; render(); }
 });
 
 // Hardware back button in the app: returns true when the page handled it, false to let the app leave.

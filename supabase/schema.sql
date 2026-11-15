@@ -852,3 +852,6 @@ grant execute on function
   public.get_policy_status()
   to authenticated;
 grant execute on function public.get_invite(text) to anon, authenticated;
+
+-- Location autofill (LGD place lists, geo RPCs, register_partner with village code) lives in
+-- migrations/004_location_autofill.sql and migrations/005_geo_cache.sql; the data load is described in seed/lgd/README.md.
