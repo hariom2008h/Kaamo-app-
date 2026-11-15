@@ -1,0 +1,7640 @@
+S	1	0	Jammu And Kashmir
+S	2	0	Himachal Pradesh
+S	3	0	Punjab
+S	5	0	Uttarakhand
+S	6	0	Haryana
+S	7	0	Delhi
+S	8	0	Rajasthan
+S	9	0	Uttar Pradesh
+S	10	0	Bihar
+S	11	0	Sikkim
+S	12	0	Arunachal Pradesh
+S	13	0	Nagaland
+S	14	0	Manipur
+S	15	0	Mizoram
+S	16	0	Tripura
+S	17	0	Meghalaya
+S	18	0	Assam
+S	19	0	West Bengal
+S	20	0	Jharkhand
+S	21	0	Odisha
+S	22	0	Chhattisgarh
+S	23	0	Madhya Pradesh
+S	24	0	Gujarat
+S	27	0	Maharashtra
+S	28	0	Andhra Pradesh
+S	29	0	Karnataka
+S	30	0	Goa
+S	31	0	Lakshadweep
+S	32	0	Kerala
+S	33	0	Tamil Nadu
+S	34	0	Puducherry
+S	35	0	Andaman And Nicobar Islands
+S	36	0	Telangana
+S	37	0	Ladakh
+S	38	0	The Dadra And Nagar Haveli And Daman And Diu
+D	1	1	Anantnag
+D	2	1	Budgam
+D	3	1	Baramulla
+D	4	1	Doda
+D	5	1	Jammu
+D	6	37	Kargil
+D	7	1	Kathua
+D	8	1	Kupwara
+D	9	37	Leh Ladakh
+D	10	1	Poonch
+D	11	1	Pulwama
+D	12	1	Rajouri
+D	13	1	Srinagar
+D	14	1	Udhampur
+D	15	2	Bilaspur
+D	16	2	Chamba
+D	17	2	Hamirpur
+D	18	2	Kangra
+D	19	2	Kinnaur
+D	20	2	Kullu
+D	21	2	Lahul And Spiti
+D	22	2	Mandi
+D	23	2	Shimla
+D	24	2	Sirmaur
+D	25	2	Solan
+D	26	2	Una
+D	27	3	Amritsar
+D	28	3	Bathinda
+D	29	3	Faridkot
+D	30	3	Fatehgarh Sahib
+D	31	3	Ferozepur
+D	32	3	Gurdaspur
+D	33	3	Hoshiarpur
+D	34	3	Jalandhar
+D	35	3	Kapurthala
+D	36	3	Ludhiana
+D	37	3	Mansa
+D	38	3	Moga
+D	39	3	Sri Muktsar Sahib
+D	40	3	Shahid Bhagat Singh Nagar
+D	41	3	Patiala
+D	42	3	Rupnagar
+D	43	3	Sangrur
+D	45	5	Almora
+D	46	5	Bageshwar
+D	47	5	Chamoli
+D	48	5	Champawat
+D	49	5	Dehradun
+D	50	5	Haridwar
+D	51	5	Nainital
+D	52	5	Pauri Garhwal
+D	53	5	Pithoragarh
+D	54	5	Rudra Prayag
+D	55	5	Tehri Garhwal
+D	56	5	Udam Singh Nagar
+D	57	5	Uttar Kashi
+D	58	6	Ambala
+D	59	6	Bhiwani
+D	60	6	Faridabad
+D	61	6	Fatehabad
+D	62	6	Gurugram
+D	63	6	Hisar
+D	64	6	Jhajjar
+D	65	6	Jind
+D	66	6	Kaithal
+D	67	6	Karnal
+D	68	6	Kurukshetra
+D	69	6	Mahendragarh
+D	70	6	Panchkula
+D	71	6	Panipat
+D	72	6	Rewari
+D	73	6	Rohtak
+D	74	6	Sirsa
+D	75	6	Sonipat
+D	76	6	Yamunanagar
+D	77	7	Central
+D	78	7	East
+D	79	7	New Delhi
+D	80	7	North
+D	81	7	North East
+D	82	7	North West
+D	83	7	South
+D	84	7	South West
+D	85	7	West
+D	86	8	Ajmer
+D	87	8	Alwar
+D	88	8	Banswara
+D	89	8	Baran
+D	90	8	Barmer
+D	91	8	Bharatpur
+D	92	8	Bhilwara
+D	93	8	Bikaner
+D	94	8	Bundi
+D	95	8	Chittorgarh
+D	96	8	Churu
+D	97	8	Dausa
+D	98	8	Dholpur
+D	99	8	Dungarpur
+D	100	8	Ganganagar
+D	101	8	Hanumangarh
+D	102	8	Jaipur
+D	103	8	Jaisalmer
+D	104	8	Jalore
+D	105	8	Jhalawar
+D	106	8	Jhunjhunu
+D	107	8	Jodhpur
+D	108	8	Karauli
+D	109	8	Kota
+D	110	8	Nagaur
+D	111	8	Pali
+D	112	8	Rajsamand
+D	113	8	Sawai Madhopur
+D	114	8	Sikar
+D	115	8	Sirohi
+D	116	8	Tonk
+D	117	8	Udaipur
+D	118	9	Agra
+D	119	9	Aligarh
+D	120	9	Prayagraj
+D	121	9	Ambedkar Nagar
+D	122	9	Auraiya
+D	123	9	Azamgarh
+D	124	9	Baghpat
+D	125	9	Bahraich
+D	126	9	Ballia
+D	127	9	Balrampur
+D	128	9	Banda
+D	129	9	Barabanki
+D	130	9	Bareilly
+D	131	9	Basti
+D	132	9	Bijnor
+D	133	9	Budaun
+D	134	9	Bulandshahr
+D	135	9	Chandauli
+D	136	9	Chitrakoot
+D	137	9	Deoria
+D	138	9	Etah
+D	139	9	Etawah
+D	140	9	Ayodhya
+D	141	9	Farrukhabad
+D	142	9	Fatehpur
+D	143	9	Firozabad
+D	144	9	Gautam Buddha Nagar
+D	145	9	Ghaziabad
+D	146	9	Ghazipur
+D	147	9	Gonda
+D	148	9	Gorakhpur
+D	149	9	Hamirpur
+D	150	9	Hardoi
+D	151	9	Jalaun
+D	152	9	Jaunpur
+D	153	9	Jhansi
+D	154	9	Amroha
+D	155	9	Kannauj
+D	156	9	Kanpur Dehat
+D	157	9	Kanpur Nagar
+D	158	9	Kaushambi
+D	159	9	Kheri
+D	160	9	Kushi Nagar
+D	161	9	Lalitpur
+D	162	9	Lucknow
+D	163	9	Hathras
+D	164	9	Maharajganj
+D	165	9	Mahoba
+D	166	9	Mainpuri
+D	167	9	Mathura
+D	168	9	Mau
+D	169	9	Meerut
+D	170	9	Mirzapur
+D	171	9	Moradabad
+D	172	9	Muzaffarnagar
+D	173	9	Pilibhit
+D	174	9	Pratapgarh
+D	175	9	Rae Bareli
+D	176	9	Rampur
+D	177	9	Saharanpur
+D	178	9	Sant Kabeer Nagar
+D	179	9	Bhadohi
+D	180	9	Shahjahanpur
+D	181	9	Shravasti
+D	182	9	Siddharth Nagar
+D	183	9	Sitapur
+D	184	9	Sonbhadra
+D	185	9	Sultanpur
+D	186	9	Unnao
+D	187	9	Varanasi
+D	188	10	Araria
+D	189	10	Aurangabad
+D	190	10	Banka
+D	191	10	Begusarai
+D	192	10	Bhagalpur
+D	193	10	Bhojpur
+D	194	10	Buxar
+D	195	10	Darbhanga
+D	196	10	Gaya
+D	197	10	Gopalganj
+D	198	10	Jamui
+D	199	10	Jehanabad
+D	200	10	Kaimur (Bhabua)
+D	201	10	Katihar
+D	202	10	Khagaria
+D	203	10	Kishanganj
+D	204	10	Lakhisarai
+D	205	10	Madhepura
+D	206	10	Madhubani
+D	207	10	Munger
+D	208	10	Muzaffarpur
+D	209	10	Nalanda
+D	210	10	Nawada
+D	211	10	Pashchim Champaran
+D	212	10	Patna
+D	213	10	Purbi Champaran
+D	214	10	Purnia
+D	215	10	Rohtas
+D	216	10	Saharsa
+D	217	10	Samastipur
+D	218	10	Saran
+D	219	10	Sheikhpura
+D	220	10	Sheohar
+D	221	10	Sitamarhi
+D	222	10	Siwan
+D	223	10	Supaul
+D	224	10	Vaishali
+D	225	11	Gangtok
+D	226	11	Mangan
+D	227	11	Namchi
+D	228	11	Gyalshing
+D	229	12	Changlang
+D	230	12	Dibang Valley
+D	231	12	East Kameng
+D	232	12	East Siang
+D	233	12	Kurung Kumey
+D	234	12	Lohit
+D	235	12	Lower Dibang Valley
+D	236	12	Lower Subansiri
+D	237	12	Papum Pare
+D	238	12	Tawang
+D	239	12	Tirap
+D	240	12	Upper Siang
+D	241	12	Upper Subansiri
+D	242	12	West Kameng
+D	243	12	West Siang
+D	244	13	Dimapur
+D	245	13	Kohima
+D	246	13	Mokokchung
+D	247	13	Mon
+D	248	13	Phek
+D	249	13	Tuensang
+D	250	13	Wokha
+D	251	13	Zunheboto
+D	252	14	Bishnupur
+D	253	14	Chandel
+D	254	14	Churachandpur
+D	255	14	Imphal East
+D	256	14	Imphal West
+D	257	14	Senapati
+D	258	14	Tamenglong
+D	259	14	Thoubal
+D	260	14	Ukhrul
+D	261	15	Aizawl
+D	262	15	Champhai
+D	263	15	Kolasib
+D	264	15	Lawngtlai
+D	265	15	Lunglei
+D	266	15	Mamit
+D	267	15	Saiha
+D	268	15	Serchhip
+D	269	16	Dhalai
+D	270	16	North Tripura
+D	271	16	South Tripura
+D	272	16	West Tripura
+D	273	17	East Garo Hills
+D	274	17	East Khasi Hills
+D	275	17	West Jaintia Hills
+D	276	17	Ri Bhoi
+D	277	17	South Garo Hills
+D	278	17	West Garo Hills
+D	279	17	West Khasi Hills
+D	280	18	Barpeta
+D	281	18	Bongaigaon
+D	282	18	Cachar
+D	283	18	Darrang
+D	284	18	Dhemaji
+D	285	18	Dhubri
+D	286	18	Dibrugarh
+D	287	18	Goalpara
+D	288	18	Golaghat
+D	289	18	Hailakandi
+D	290	18	Jorhat
+D	291	18	Kamrup
+D	292	18	Karbi Anglong
+D	293	18	Karimganj
+D	294	18	Kokrajhar
+D	295	18	Lakhimpur
+D	296	18	Marigaon
+D	297	18	Nagaon
+D	298	18	Nalbari
+D	299	18	Dima Hasao
+D	300	18	Sivasagar
+D	301	18	Sonitpur
+D	302	18	Tinsukia
+D	303	19	24 Paraganas North
+D	304	19	24 Paraganas South
+D	305	19	Bankura
+D	306	19	Purba Bardhaman
+D	307	19	Birbhum
+D	308	19	Coochbehar
+D	309	19	Darjeeling
+D	310	19	Dinajpur Dakshin
+D	311	19	Dinajpur Uttar
+D	312	19	Hooghly
+D	313	19	Howrah
+D	314	19	Jalpaiguri
+D	316	19	Maldah
+D	317	19	Medinipur East
+D	318	19	Medinipur West
+D	319	19	Murshidabad
+D	320	19	Nadia
+D	321	19	Purulia
+D	322	20	Bokaro
+D	323	20	Chatra
+D	324	20	Deoghar
+D	325	20	Dhanbad
+D	326	20	Dumka
+D	327	20	East Singhbum
+D	328	20	Garhwa
+D	329	20	Giridih
+D	330	20	Godda
+D	331	20	Gumla
+D	332	20	Hazaribagh
+D	333	20	Jamtara
+D	334	20	Koderma
+D	335	20	Latehar
+D	336	20	Lohardaga
+D	337	20	Pakur
+D	338	20	Palamu
+D	339	20	Ranchi
+D	340	20	Sahebganj
+D	341	20	Saraikela Kharsawan
+D	342	20	Simdega
+D	343	20	West Singhbhum
+D	344	21	Anugul
+D	345	21	Balangir
+D	346	21	Baleshwar
+D	347	21	Bargarh
+D	348	21	Bhadrak
+D	349	21	Boudh
+D	350	21	Cuttack
+D	351	21	Deogarh
+D	352	21	Dhenkanal
+D	353	21	Gajapati
+D	354	21	Ganjam
+D	355	21	Jagatsinghapur
+D	356	21	Jajapur
+D	357	21	Jharsuguda
+D	358	21	Kalahandi
+D	359	21	Kandhamal
+D	360	21	Kendrapara
+D	361	21	Kendujhar
+D	362	21	Khordha
+D	363	21	Koraput
+D	364	21	Malkangiri
+D	365	21	Mayurbhanj
+D	366	21	Nabarangpur
+D	367	21	Nayagarh
+D	368	21	Nuapada
+D	369	21	Puri
+D	370	21	Rayagada
+D	371	21	Sambalpur
+D	372	21	Sonepur
+D	373	21	Sundargarh
+D	374	22	Bastar
+D	375	22	Bilaspur
+D	376	22	Dantewada
+D	377	22	Dhamtari
+D	378	22	Durg
+D	379	22	Janjgir-Champa
+D	380	22	Jashpur
+D	381	22	Kanker
+D	382	22	Kabirdham
+D	383	22	Korba
+D	384	22	Korea
+D	385	22	Mahasamund
+D	386	22	Raigarh
+D	387	22	Raipur
+D	388	22	Rajnandgaon
+D	389	22	Surguja
+D	390	23	Anuppur
+D	391	23	Ashoknagar
+D	392	23	Balaghat
+D	393	23	Barwani
+D	394	23	Betul
+D	395	23	Bhind
+D	396	23	Bhopal
+D	397	23	Burhanpur
+D	398	23	Chhatarpur
+D	399	23	Chhindwara
+D	400	23	Damoh
+D	401	23	Datia
+D	402	23	Dewas
+D	403	23	Dhar
+D	404	23	Dindori
+D	405	23	East Nimar
+D	406	23	Guna
+D	407	23	Gwalior
+D	408	23	Harda
+D	409	23	Hoshangabad
+D	410	23	Indore
+D	411	23	Jabalpur
+D	412	23	Jhabua
+D	413	23	Katni
+D	414	23	Khargone
+D	415	23	Mandla
+D	416	23	Mandsaur
+D	417	23	Morena
+D	418	23	Narsinghpur
+D	419	23	Neemuch
+D	420	23	Panna
+D	421	23	Raisen
+D	422	23	Rajgarh
+D	423	23	Ratlam
+D	424	23	Rewa
+D	425	23	Sagar
+D	426	23	Satna
+D	427	23	Sehore
+D	428	23	Seoni
+D	429	23	Shahdol
+D	430	23	Shajapur
+D	431	23	Sheopur
+D	432	23	Shivpuri
+D	433	23	Sidhi
+D	434	23	Tikamgarh
+D	435	23	Ujjain
+D	436	23	Umaria
+D	437	23	Vidisha
+D	438	24	Ahmadabad
+D	439	24	Amreli
+D	440	24	Anand
+D	441	24	Banas Kantha
+D	442	24	Bharuch
+D	443	24	Bhavnagar
+D	444	24	Dang
+D	445	24	Dohad
+D	446	24	Gandhinagar
+D	447	24	Jamnagar
+D	448	24	Junagadh
+D	449	24	Kachchh
+D	450	24	Kheda
+D	451	24	Mahesana
+D	452	24	Narmada
+D	453	24	Navsari
+D	454	24	Panch Mahals
+D	455	24	Patan
+D	456	24	Porbandar
+D	457	24	Rajkot
+D	458	24	Sabar Kantha
+D	459	24	Surat
+D	460	24	Surendranagar
+D	461	24	Vadodara
+D	462	24	Valsad
+D	463	38	Daman
+D	464	38	Diu
+D	465	38	Dadra And Nagar Haveli
+D	466	27	Ahmednagar
+D	467	27	Akola
+D	468	27	Amravati
+D	469	27	Aurangabad
+D	470	27	Beed
+D	471	27	Bhandara
+D	472	27	Buldhana
+D	473	27	Chandrapur
+D	474	27	Dhule
+D	475	27	Gadchiroli
+D	476	27	Gondia
+D	477	27	Hingoli
+D	478	27	Jalgaon
+D	479	27	Jalna
+D	480	27	Kolhapur
+D	481	27	Latur
+D	484	27	Nagpur
+D	485	27	Nanded
+D	486	27	Nandurbar
+D	487	27	Nashik
+D	488	27	Osmanabad
+D	489	27	Parbhani
+D	490	27	Pune
+D	491	27	Raigad
+D	492	27	Ratnagiri
+D	493	27	Sangli
+D	494	27	Satara
+D	495	27	Sindhudurg
+D	496	27	Solapur
+D	497	27	Thane
+D	498	27	Wardha
+D	499	27	Washim
+D	500	27	Yavatmal
+D	501	36	Adilabad
+D	502	28	Anantapur
+D	503	28	Chittoor
+D	504	28	Y.S.R.
+D	505	28	East Godavari
+D	506	28	Guntur
+D	507	36	Hyderabad
+D	508	36	Karimnagar
+D	509	36	Khammam
+D	510	28	Krishna
+D	511	28	Kurnool
+D	512	36	Mahabubnagar
+D	513	36	Medak
+D	514	36	Nalgonda
+D	515	28	Spsr Nellore
+D	516	36	Nizamabad
+D	517	28	Prakasam
+D	518	36	Ranga Reddy
+D	519	28	Srikakulam
+D	520	28	Visakhapatanam
+D	521	28	Vizianagaram
+D	522	36	Warangal
+D	523	28	West Godavari
+D	524	29	Bagalkote
+D	525	29	Bengaluru Urban
+D	526	29	Bengaluru Rural
+D	527	29	Belagavi
+D	528	29	Ballari
+D	529	29	Bidar
+D	530	29	Vijayapura
+D	531	29	Chamarajanagara
+D	532	29	Chikkamagaluru
+D	533	29	Chitradurga
+D	534	29	Dakshina Kannada
+D	535	29	Davangere
+D	536	29	Dharwad
+D	537	29	Gadag
+D	538	29	Kalaburagi
+D	539	29	Hassan
+D	540	29	Haveri
+D	541	29	Kodagu
+D	542	29	Kolar
+D	543	29	Koppal
+D	544	29	Mandya
+D	545	29	Mysuru
+D	546	29	Raichur
+D	547	29	Shivamogga
+D	548	29	Tumakuru
+D	549	29	Udupi
+D	550	29	Uttara Kannada
+D	551	30	North Goa
+D	552	30	South Goa
+D	553	31	Lakshadweep District
+D	554	32	Alappuzha
+D	555	32	Ernakulam
+D	556	32	Idukki
+D	557	32	Kannur
+D	558	32	Kasaragod
+D	559	32	Kollam
+D	560	32	Kottayam
+D	561	32	Kozhikode
+D	562	32	Malappuram
+D	563	32	Palakkad
+D	564	32	Pathanamthitta
+D	565	32	Thiruvananthapuram
+D	566	32	Thrissur
+D	567	32	Wayanad
+D	568	33	Chennai
+D	569	33	Coimbatore
+D	570	33	Cuddalore
+D	571	33	Dharmapuri
+D	572	33	Dindigul
+D	573	33	Erode
+D	574	33	Kanchipuram
+D	575	33	Kanniyakumari
+D	576	33	Karur
+D	577	33	Krishnagiri
+D	578	33	Madurai
+D	579	33	Nagapattinam
+D	580	33	Namakkal
+D	581	33	Perambalur
+D	582	33	Pudukkottai
+D	583	33	Ramanathapuram
+D	584	33	Salem
+D	585	33	Sivaganga
+D	586	33	Thanjavur
+D	587	33	The Nilgiris
+D	588	33	Theni
+D	589	33	Thiruvallur
+D	590	33	Thiruvarur
+D	591	33	Tiruchirappalli
+D	592	33	Tirunelveli
+D	593	33	Tiruvannamalai
+D	594	33	Tuticorin
+D	595	33	Vellore
+D	596	33	Villupuram
+D	597	33	Virudhunagar
+D	598	34	Karaikal
+D	600	34	Pondicherry
+D	602	35	South Andamans
+D	603	35	Nicobars
+D	604	6	Nuh
+D	605	3	Barnala
+D	606	20	Khunti
+D	607	20	Ramgarh
+D	608	3	S.A.S Nagar
+D	609	3	Tarn Taran
+D	610	33	Ariyalur
+D	611	10	Arwal
+D	612	18	Chirang
+D	613	13	Peren
+D	614	13	Kiphire
+D	615	13	Longleng
+D	616	18	Baksa
+D	617	18	Udalguri
+D	618	18	Kamrup Metro
+D	619	6	Palwal
+D	620	1	Kishtwar
+D	621	1	Ramban
+D	622	1	Kulgam
+D	623	1	Bandipora
+D	624	1	Samba
+D	625	1	Shopian
+D	626	1	Ganderbal
+D	627	1	Reasi
+D	628	12	Anjaw
+D	629	8	Pratapgarh
+D	630	29	Chikkaballapura
+D	631	29	Ramanagara
+D	632	35	North And Middle Andaman
+D	633	9	Kasganj
+D	634	33	Tiruppur
+D	635	29	Yadgir
+D	636	22	Bijapur
+D	637	22	Narayanpur
+D	638	23	Singrauli
+D	639	23	Alirajpur
+D	640	9	Amethi
+D	641	24	Tapi
+D	642	22	Sukma
+D	643	22	Kondagaon
+D	644	22	Baloda Bazar
+D	645	22	Gariyaband
+D	646	22	Balod
+D	647	22	Mungeli
+D	648	22	Surajpur
+D	649	22	Balrampur
+D	650	22	Bemetara
+D	651	3	Fazilka
+D	652	16	Khowai
+D	653	16	Sepahijala
+D	654	16	Gomati
+D	655	16	Unakoti
+D	656	17	North Garo Hills
+D	657	17	East Jaintia Hills
+D	658	17	South West Khasi Hills
+D	659	9	Sambhal
+D	660	9	Shamli
+D	661	9	Hapur
+D	662	3	Pathankot
+D	663	17	South West Garo Hills
+D	664	19	Alipurduar
+D	665	27	Palghar
+D	666	12	Longding
+D	667	23	Agar Malwa
+D	668	24	Chhotaudepur
+D	669	24	Mahisagar
+D	670	7	South East
+D	671	7	Shahdara
+D	672	24	Arvalli
+D	673	24	Morbi
+D	674	24	Devbhumi Dwarka
+D	675	24	Gir Somnath
+D	676	24	Botad
+D	677	12	Kra Daadi
+D	678	12	Namsai
+D	679	12	Siang
+D	680	36	Nirmal
+D	681	36	Jagitial
+D	682	36	Peddapalli
+D	683	36	Rajanna Sircilla
+D	684	36	Mancherial
+D	685	36	Kamareddy
+D	686	36	Hanumakonda
+D	687	36	Jayashankar Bhupalapally
+D	688	36	Mahabubabad
+D	689	36	Jangoan
+D	690	36	Bhadradri Kothagudem
+D	691	36	Sangareddy
+D	692	36	Siddipet
+D	693	36	Wanaparthy
+D	694	36	Nagarkurnool
+D	695	36	Jogulamba Gadwal
+D	696	36	Suryapet
+D	697	36	Yadadri Bhuvanagiri
+D	698	36	Vikarabad
+D	699	36	Kumuram Bheem Asifabad
+D	700	36	Medchal Malkajgiri
+D	701	6	Charki Dadri
+D	702	19	Kalimpong
+D	703	19	Jhargram
+D	704	19	Paschim Bardhaman
+D	705	18	Biswanath
+D	706	18	Majuli
+D	707	18	South Salmara Mancachar
+D	708	18	Charaideo
+D	709	18	Hojai
+D	710	18	West Karbi Anglong
+D	711	14	Kakching
+D	712	14	Kangpokpi
+D	713	14	Jiribam
+D	714	14	Noney
+D	715	14	Pherzawl
+D	716	14	Tengnoupal
+D	717	14	Kamjong
+D	718	12	Kamle
+D	719	12	Lower Siang
+D	720	36	Mulugu
+D	721	36	Narayanpet
+D	722	23	Niwari
+D	723	12	Pakke Kessang
+D	724	12	Leparada
+D	725	12	Shi Yomi
+D	726	15	Hnahthial
+D	727	15	Saitual
+D	728	15	Khawzawl
+D	729	33	Kallakurichi
+D	730	33	Chengalpattu
+D	731	33	Ranipet
+D	732	33	Tirupathur
+D	733	33	Tenkasi
+D	734	22	Gaurella Pendra Marwahi
+D	735	33	Mayiladuthurai
+D	736	13	Noklak
+D	737	3	Malerkotla
+D	739	18	Bajali
+D	740	17	Eastern West Khasi Hills
+D	741	11	Pakyong
+T	1	8	Kupwara
+T	2	8	Handwara
+T	3	8	Karnah
+T	4	2	Khag
+T	5	2	Beerwah
+T	6	2	Khansahib
+T	7	2	Budgam
+T	8	2	Chadoora
+T	9	2	Charar- E- Shrief
+T	10	9	Leh
+T	11	9	Nubra
+T	12	9	Khalsi
+T	13	6	Kargil
+T	14	6	Sanku
+T	15	6	Zanskar
+T	16	10	Haveli
+T	17	10	Mandi
+T	18	10	Mendhar
+T	19	10	Surankote
+T	20	12	Thana Mandi
+T	21	12	Darhal
+T	22	12	Rajouri
+T	24	12	Kalakote
+T	25	12	Nowshera
+T	26	12	Sundarbani
+T	27	7	Billawar
+T	28	7	Basohli
+T	29	7	Bani
+T	30	7	Kathua
+T	31	7	Hiranagar
+T	32	3	Sopore
+T	33	3	Rafiabad
+T	34	3	Pattan
+T	35	3	Baramulla
+T	36	3	Kreeri
+T	37	3	Uri
+T	38	3	Boniyar
+T	39	3	Tangmarg
+T	40	623	Gurez
+T	41	623	Bandipora
+T	42	623	Sonawari
+T	43	13	Srinagar (North)
+T	44	13	Srinagar (South)
+T	45	626	Lar
+T	46	626	Kangan
+T	47	626	Ganderbal
+T	48	11	Pampore
+T	49	11	Awantipora
+T	50	11	Tral
+T	51	11	Pulwama
+T	52	625	Shopian
+T	53	1	Pahalgam
+T	54	1	Bijbehara
+T	55	1	Anantnag
+T	56	1	Shangus
+T	57	1	Kokernag
+T	58	1	Dooru
+T	59	622	Kulgam
+T	60	622	Devsar
+T	61	622	D H Pora
+T	62	4	Doda
+T	63	4	Thathri
+T	65	4	Bhaderwah
+T	66	621	Banihal
+T	67	621	Ramban
+T	68	620	Kishtwar
+T	69	620	Marwah
+T	70	620	Chhatroo
+T	71	620	Atholi (Paddar)
+T	72	14	Udhampur
+T	73	14	Chenani
+T	74	14	Ramnagar
+T	75	14	Majalta
+T	77	627	Reasi
+T	78	5	Akhnoor
+T	79	5	Jammu
+T	80	5	Ranbir Singh Pura
+T	81	5	Bishnah
+T	82	624	Samba
+T	83	16	Pangi
+T	84	16	Churah
+T	85	16	Saluni
+T	86	16	Bhalai
+T	87	16	Dalhousie
+T	88	16	Bhattiyat
+T	89	16	Sihunta
+T	90	16	Chamba
+T	91	16	Holi
+T	92	16	Bharmour
+T	93	18	Nurpur
+T	94	18	Indora
+T	95	18	Fatehpur
+T	96	18	Jawali
+T	97	18	Harchakian
+T	98	18	Shahpur
+T	99	18	Dharmsala
+T	100	18	Kangra
+T	101	18	Nagrota Bagwan
+T	102	18	Baroh
+T	103	18	Dera Gopipur
+T	104	18	Jawalamukhi
+T	105	18	Jaswan
+T	106	18	Rakkar
+T	107	18	Khundian
+T	108	18	Thural
+T	109	18	Dhira
+T	110	18	Jaisinghpur
+T	111	18	Palampur
+T	112	18	Baijnath
+T	113	18	Multhan
+T	114	21	Udaipur
+T	115	21	Lahul
+T	116	21	Spiti
+T	117	20	Manali
+T	118	20	Kullu
+T	119	20	Sainj
+T	120	20	Banjar
+T	121	20	Ani
+T	122	20	Nirmand
+T	123	22	Padhar
+T	124	22	Jogindarnagar
+T	125	22	Lad Bharol
+T	126	22	Sandhol
+T	127	22	Dharmpur
+T	128	22	Kotli
+T	129	22	Sarkaghat
+T	130	22	Bhadrota
+T	131	22	Baldwara
+T	132	22	Sundarnagar
+T	133	22	Mandi
+T	134	22	Aut
+T	135	22	Bali Chowki
+T	136	22	Thunag
+T	137	22	Chachyot
+T	138	22	Nihri
+T	139	22	Karsog
+T	140	17	Tira Sujanpur
+T	141	17	Nadaun
+T	142	17	Galore
+T	143	17	Hamirpur
+T	144	17	Barsar
+T	145	17	Dhatwal
+T	146	17	Bhoranj
+T	147	26	Bharwain
+T	148	26	Amb
+T	149	26	Bangana
+T	150	26	Una
+T	151	26	Haroli
+T	152	15	Ghumarwin
+T	153	15	Bharari
+T	154	15	Jhanduta
+T	155	15	Naina Devi
+T	156	15	Bilaspur Sadar
+T	157	15	Namhol
+T	158	25	Arki
+T	159	25	Darlaghat
+T	160	25	Ramshahr
+T	161	25	Nalagarh
+T	162	25	Baddi
+T	163	25	Krishangarh
+T	164	25	Kasauli
+T	165	25	Solan
+T	166	25	Kandaghat
+T	167	24	Rajgarh
+T	168	24	Nohra
+T	169	24	Pachhad
+T	170	24	Renuka
+T	171	24	Dadahu
+T	172	24	Nahan
+T	173	24	Paonta Sahib
+T	174	24	Kamrau
+T	175	24	Shalai
+T	176	24	Ronhat
+T	177	23	Rampur
+T	178	23	Nankhari
+T	179	23	Kumarsain
+T	180	23	Sunni
+T	181	23	Shimla ( Rural )
+T	182	23	Shimla (urban)
+T	183	23	Junga
+T	184	23	Theog
+T	185	23	Chaupal
+T	186	22	Bagachnogi
+T	187	23	Nerwa
+T	188	23	Jubbal
+T	189	23	Kotkhai
+T	190	23	Tikar
+T	191	23	Rohru
+T	192	23	Chirgaon
+T	193	23	Dodra Kwar
+T	194	19	Hangrang
+T	195	19	Poo
+T	196	19	Morang
+T	197	19	Kalpa
+T	198	19	Nichar
+T	199	19	Sangla
+T	200	662	Dhar Kalan
+T	201	662	Pathankot
+T	202	32	Gurdaspur
+T	203	32	Batala
+T	204	32	Dera Baba Nanak
+T	205	35	Bhulath
+T	206	35	Kapurthala
+T	207	35	Sultanpur Lodhi
+T	208	35	Phagwara
+T	209	34	Shahkot
+T	210	34	Nakodar
+T	211	34	Phillaur
+T	212	34	Jalandhar - I
+T	213	34	Jalandhar - II
+T	214	33	Dasua
+T	215	33	Mukerian
+T	216	33	Hoshiarpur
+T	217	33	Garhshankar
+T	218	40	Nawanshahr
+T	219	40	Balachaur
+T	220	30	Bassi Pathana
+T	221	30	Fatehgarh Sahib
+T	222	30	Amloh
+T	223	30	Khamanon
+T	224	36	Samrala
+T	225	36	Khanna
+T	226	36	Payal
+T	227	36	Ludhiana (East)
+T	228	36	Ludhiana (West)
+T	229	36	Raikot
+T	230	36	Jagraon
+T	231	38	Nihal Singhwala
+T	232	38	Bagha Purana
+T	233	38	Moga
+T	234	31	Zira
+T	235	31	Firozpur
+T	236	651	Jalalabad
+T	237	651	Fazilka
+T	238	651	Abohar
+T	239	39	Malout
+T	240	39	Gidderbaha
+T	241	39	Muktsar
+T	242	29	Faridkot
+T	243	29	Jaitu
+T	244	28	Rampura Phul
+T	245	28	Bathinda
+T	246	28	Talwandi Sabo
+T	247	37	Sardulgarh
+T	248	37	Budhlada
+T	249	37	Mansa
+T	250	41	Samana
+T	251	41	Patran
+T	252	41	Nabha
+T	253	41	Patiala
+T	254	41	Rajpura
+T	255	27	Ajnala
+T	256	27	Amritsar -I
+T	257	27	Amritsar- II
+T	258	27	Baba Bakala
+T	259	609	Tarn Taran
+T	260	609	Patti
+T	261	609	Khadur Sahib
+T	262	42	Anandpur Sahib
+T	263	42	Nangal
+T	264	42	Rup Nagar
+T	265	42	Chamkaur Sahib
+T	266	608	Kharar
+T	267	608	SAS Nagar (Mohali)
+T	268	608	Dera Bassi
+T	269	737	Malerkotla
+T	270	43	Dhuri
+T	271	43	Sangrur
+T	272	43	Sunam
+T	273	43	Lehra
+T	274	43	Moonak
+T	275	605	Barnala
+T	276	605	Tapa
+T	278	57	Puraula
+T	279	57	Mori
+T	280	57	Rajgarhi
+T	281	57	Dunda
+T	282	57	Chinyali Saur
+T	283	57	Bhatwari
+T	284	47	Joshimath
+T	285	47	Chamoli
+T	286	47	Pokhari
+T	287	47	Karnaprayag
+T	288	47	Tharali
+T	289	47	Gairsain
+T	290	54	Ukhimath
+T	291	54	Rudraprayag
+T	292	54	Jakholi*
+T	293	55	Ghansali
+T	294	55	Devprayag
+T	295	55	Pratapnagar
+T	296	55	Jakhani Dhar
+T	297	55	Tehri
+T	298	55	Dhanaulti
+T	299	55	Narendra Nagar
+T	300	49	Chakrata
+T	301	49	Tyuni
+T	302	49	Kalsi
+T	303	49	Vikas Nagar
+T	304	49	Dehradun
+T	305	49	Rishikesh
+T	306	52	Srinagar
+T	307	52	Pauri
+T	308	52	Thailisain
+T	309	52	Dhoomakot
+T	310	52	Lansdowne
+T	311	52	Satpuli
+T	312	52	Chaubatta Khal
+T	313	52	Kotdwara
+T	314	52	Yamkeshwar
+T	315	53	Munsiari
+T	316	53	Dharchula
+T	317	53	Didihat
+T	318	53	Berinag
+T	319	53	Gangolihat
+T	320	53	Pithoragarh
+T	321	46	Kapkot
+T	322	46	Kanda
+T	323	46	Bageshwar
+T	324	46	Garud
+T	325	45	Bhikiasain
+T	326	45	Chaukhutiya
+T	327	45	Sult
+T	328	45	Ranikhet
+T	329	45	Dwarahat
+T	330	45	Almora
+T	331	45	Someshwar
+T	332	45	Jainti
+T	333	45	Bhanoli
+T	334	48	Champawat
+T	335	48	Pati
+T	336	48	Lohaghat
+T	337	48	Poornagiri
+T	338	51	Kosya Kutauli
+T	339	51	Betalghat
+T	340	51	Nainital
+T	341	51	Dhari
+T	342	51	Haldwani
+T	343	51	Ramnagar
+T	344	51	Kaladhungi
+T	345	51	Lalkuan
+T	346	56	Kashipur
+T	347	56	Jaspur
+T	348	56	Bajpur
+T	349	56	Kichha
+T	350	56	Gadarpur
+T	351	56	Sitarganj
+T	352	56	Khatima
+T	353	50	Roorkee
+T	354	50	Hardwar
+T	355	50	Laksar
+T	356	70	Kalka
+T	357	70	Panchkula
+T	358	58	Naraingarh
+T	359	58	Ambala
+T	360	58	Barara
+T	361	76	Jagadhri
+T	362	76	Bilaspur
+T	363	76	Chhachhrauli
+T	364	68	Shahbad
+T	365	68	Pehowa
+T	366	68	Thanesar
+T	367	66	Guhla
+T	368	66	Kaithal
+T	369	66	Fatehpur Pundri
+T	370	67	Nilokheri
+T	371	67	Indri
+T	372	67	Karnal
+T	373	67	Assandh
+T	374	67	Gharaunda
+T	375	71	Panipat
+T	376	71	Israna
+T	377	71	Samalkha
+T	378	75	Gohana
+T	379	75	Ganaur
+T	380	75	Sonipat
+T	381	75	Kharkhoda
+T	382	65	Narwana
+T	383	65	Jind
+T	384	65	Julana
+T	385	65	Safidon
+T	386	61	Ratia
+T	387	61	Tohana
+T	388	61	Fatehabad
+T	389	74	Dabwali
+T	390	74	Sirsa
+T	391	74	Rania
+T	392	74	Ellenabad
+T	393	63	Adampur
+T	394	63	Hisar
+T	395	63	Narnaund
+T	396	63	Hansi
+T	397	59	Bawani Khera
+T	398	59	Bhiwani
+T	399	59	Tosham
+T	400	59	Siwani
+T	401	59	Loharu
+T	402	701	Dadri
+T	403	701	Badhra
+T	404	73	Maham
+T	405	73	Rohtak
+T	406	73	Sampla
+T	407	64	Beri
+T	408	64	Bahadurgarh
+T	409	64	Jhajjar
+T	410	64	Matenhail
+T	411	69	Mahendragarh
+T	412	69	Narnaul
+T	413	72	Kosli
+T	414	72	Rewari
+T	415	72	Bawal
+T	416	62	Pataudi
+T	417	62	Gurgaon
+T	418	62	Farrukhnagar
+T	419	62	Manesar
+T	420	62	Sohna
+T	421	604	Taoru
+T	422	604	Nuh
+T	423	604	Ferozepur Jhirka
+T	424	604	Punahana
+T	425	60	Faridabad
+T	426	60	Ballabgarh
+T	427	619	Palwal
+T	428	619	Hathin
+T	429	619	Hodal
+T	430	80	Narela
+T	431	82	Saraswati Vihar
+T	432	80	Model Town
+T	433	77	Civil Lines
+T	436	81	Seelam Pur
+T	437	671	Shahdara
+T	438	671	Seema Puri
+T	439	78	Gandhi Nagar
+T	441	78	Preet Vihar
+T	448	85	Patel Nagar
+T	450	85	Punjabi Bagh
+T	451	84	Najafgarh
+T	452	79	Delhi Cantonment
+T	453	79	Vasant Vihar
+T	454	83	Hauz Khas
+T	455	670	Defence Colony
+T	456	670	Kalkaji
+T	457	100	Karanpur
+T	458	100	Ganganagar
+T	459	100	Sadulshahar
+T	460	100	Padampur
+T	461	100	Raisinghnagar
+T	462	100	Anupgarh
+T	463	100	Gharsana
+T	464	100	Vijainagar
+T	465	100	Suratgarh
+T	466	101	Sangaria
+T	467	101	Tibi
+T	468	101	Hanumangarh
+T	469	101	Pilibanga
+T	470	101	Rawatsar
+T	471	101	Nohar
+T	472	101	Bhadra
+T	473	93	Bikaner
+T	474	93	Poogal
+T	475	93	Lunkaransar
+T	476	93	Kolayat
+T	477	93	Nokha
+T	478	93	Khajuwala
+T	479	93	Chhatargarh
+T	480	93	Sridungargarh
+T	481	96	Taranagar
+T	482	96	Rajgarh
+T	483	96	Sardarshahar
+T	484	96	Churu
+T	485	96	Ratangarh
+T	486	96	Sujangarh
+T	487	106	Jhunjhunun
+T	488	106	Chirawa
+T	489	106	Buhana
+T	490	106	Khetri
+T	491	106	Nawalgarh
+T	492	106	Udaipurwati
+T	493	87	Behror
+T	494	87	Mandawar
+T	495	87	Kotkasim
+T	496	87	Tijara
+T	497	87	Kishangarh Bas
+T	498	87	Ramgarh
+T	499	87	Alwar
+T	500	87	Bansur
+T	501	87	Thanagazi
+T	502	87	Rajgarh
+T	503	87	Lachhmangarh
+T	504	87	Kathumar
+T	505	91	Pahari
+T	506	91	Kaman
+T	507	91	Nagar
+T	508	91	Deeg
+T	509	91	Nadbai
+T	510	91	Kumher
+T	511	91	Bharatpur
+T	512	91	Weir
+T	513	91	Bayana
+T	514	91	Rupbas
+T	515	98	Baseri
+T	516	98	Bari
+T	517	98	Sepau
+T	518	98	Dhaulpur
+T	519	98	Rajakhera
+T	520	108	Todabhim
+T	521	108	Nadoti
+T	522	108	Hindaun
+T	523	108	Karauli
+T	524	108	Mandrayal
+T	525	108	Sapotra
+T	526	113	Gangapur
+T	527	113	Bamanwas
+T	528	113	Malarna Doongar
+T	529	113	Bonli
+T	530	113	Chauth Ka Barwara
+T	531	113	Sawai Madhopur
+T	532	113	Khandar
+T	533	97	Baswa
+T	534	97	Mahwa
+T	535	97	Sikrai
+T	536	97	Dausa
+T	537	97	Lalsot
+T	538	102	Kotputli
+T	539	102	Viratnagar
+T	540	102	Shahpura
+T	541	102	Chomu
+T	542	102	Phulera (Hq.Sambhar)
+T	543	102	Mauzamabad
+T	544	102	Phagi
+T	545	102	Sanganer
+T	546	102	Jaipur
+T	547	102	Amber
+T	548	102	Jamwa Ramgarh
+T	549	102	Bassi
+T	550	102	Chaksu
+T	551	114	Fatehpur
+T	552	114	Lachhmangarh
+T	553	114	Sikar
+T	554	114	Danta Ramgarh
+T	555	114	Sri Madhopur
+T	556	114	Neem-Ka-Thana
+T	557	110	Ladnu
+T	558	110	Didwana
+T	559	110	Jayal
+T	560	110	Nagaur
+T	561	110	Kheenvsar
+T	562	110	Merta
+T	563	110	Degana
+T	564	110	Parbatsar
+T	565	110	Makrana
+T	566	110	Nawa
+T	567	107	Phalodi
+T	568	107	Osian
+T	569	107	Bhopalgarh
+T	570	107	Jodhpur
+T	571	107	Shergarh
+T	572	107	Luni
+T	573	107	Bilara
+T	574	103	Jaisalmer
+T	575	103	Pokaran
+T	576	103	Fatehgarh
+T	577	90	Sheo
+T	578	90	Baytoo
+T	579	90	Pachpadra
+T	580	90	Siwana
+T	581	90	Gudha Malani
+T	582	90	Barmer
+T	583	90	Ramsar
+T	584	90	Chohtan
+T	585	104	Sayla
+T	586	104	Ahore
+T	587	104	Jalor
+T	588	104	Bhinmal
+T	589	104	Bagora
+T	590	104	Sanchore
+T	591	104	Raniwara
+T	592	115	Sheoganj
+T	593	115	Sirohi
+T	594	115	Pindwara
+T	595	115	Abu Road
+T	596	115	Reodar
+T	597	111	Jaitaran
+T	598	111	Raipur
+T	599	111	Sojat
+T	600	111	Rohat
+T	601	111	Pali
+T	602	111	Marwar Junction
+T	603	111	Desuri
+T	604	111	Sumerpur
+T	605	111	Bali
+T	606	86	Kishangarh
+T	607	86	Ajmer
+T	608	86	Peesangan
+T	609	86	Beawar
+T	610	86	Masuda
+T	611	86	Nasirabad
+T	612	86	Bhinay
+T	613	86	Sarwar
+T	614	86	Kekri
+T	615	116	Malpura
+T	616	116	Peeplu
+T	617	116	Niwai
+T	618	116	Tonk
+T	619	116	Todaraisingh
+T	620	116	Deoli
+T	621	116	Uniara
+T	622	94	Hindoli
+T	623	94	Nainwa
+T	624	94	Indragarh
+T	625	94	Keshoraipatan
+T	626	94	Bundi
+T	627	92	Asind
+T	628	92	Hurda
+T	629	92	Shahpura
+T	630	92	Banera
+T	631	92	Mandal
+T	632	92	Raipur
+T	633	92	Sahara
+T	634	92	Bhilwara
+T	635	92	Kotri
+T	636	92	Jahazpur
+T	637	92	Mandalgarh
+T	638	92	Bijoliya
+T	639	112	Bhim
+T	640	112	Deogarh
+T	641	112	Amet
+T	642	112	Kumbhalgarh
+T	643	112	Rajsamand
+T	644	112	Railmagra
+T	645	112	Nathdwara
+T	646	99	Dungarpur
+T	647	99	Aspur
+T	648	99	Sagwara
+T	649	99	Simalwara
+T	650	88	Ghatol
+T	651	88	Garhi
+T	652	88	Banswara
+T	653	88	Bagidora
+T	654	88	Kushalgarh
+T	655	95	Rashmi
+T	656	95	Gangrar
+T	657	95	Begun
+T	658	95	Rawatbhata
+T	659	95	Chittaurgarh
+T	660	95	Kapasan
+T	661	95	Dungla
+T	662	95	Bhadesar
+T	663	95	Nimbahera
+T	664	95	Bari Sadri
+T	665	109	Pipalda
+T	666	109	Digod
+T	667	109	Ladpura
+T	668	109	Ramganj Mandi
+T	669	109	Sangod
+T	670	89	Mangrol
+T	671	89	Antah
+T	672	89	Baran
+T	673	89	Atru
+T	674	89	Kishanganj
+T	675	89	Shahbad
+T	676	89	Chhabra
+T	677	89	Chhipabarod
+T	678	105	Khanpur
+T	679	105	Jhalrapatan
+T	680	105	Aklera
+T	681	105	Manohar Thana
+T	682	105	Pachpahar
+T	683	105	Pirawa
+T	684	105	Gangdhar
+T	685	117	Mavli
+T	686	117	Gogunda
+T	687	117	Kotra
+T	688	117	Jhadol
+T	689	117	Girwa
+T	690	117	Vallabhnagar
+T	691	117	Lasadiya
+T	692	117	Salumbar
+T	693	117	Sarada
+T	694	117	Rishabhdeo
+T	695	117	Kherwara
+T	696	629	Dhariawad
+T	697	629	Peepalkhoont
+T	698	629	Chhoti Sadri
+T	699	629	Pratapgarh
+T	700	629	Arnod
+T	701	177	Behat
+T	702	177	Saharanpur
+T	703	177	Nakur
+T	704	177	Deoband
+T	705	177	Rampur Maniharan
+T	706	660	Kairana
+T	707	660	Shamli
+T	708	172	Muzaffarnagar
+T	709	172	Budhana
+T	710	172	Khatauli
+T	711	172	Jansath
+T	712	132	Najibabad
+T	713	132	Bijnor
+T	714	132	Nagina
+T	715	132	Dhampur
+T	716	132	Chandpur
+T	717	171	Thakurdwara
+T	718	171	Kanth
+T	719	171	Moradabad
+T	720	171	Bilari
+T	721	659	Sambhal
+T	722	659	Chandausi
+T	723	176	Suar
+T	724	176	Tanda
+T	725	176	Bilaspur
+T	726	176	Rampur
+T	727	176	Shahabad
+T	728	176	Milak
+T	729	154	Dhanaura
+T	730	154	Amroha
+T	731	154	Hasanpur
+T	732	169	Sardhana
+T	733	169	Mawana
+T	734	169	Meerut
+T	735	124	Baraut
+T	736	124	Baghpat
+T	737	124	Khekada
+T	738	145	Modinagar
+T	739	145	Ghaziabad
+T	740	661	Hapur
+T	741	661	Garhmukteshwar
+T	742	144	Dadri
+T	743	144	Gautam Buddha Nagar
+T	744	144	Jewar
+T	745	134	Sikandrabad
+T	746	134	Bulandshahr
+T	747	134	Siana
+T	748	134	Anupshahr
+T	749	134	Debai
+T	750	134	Shikarpur
+T	751	134	Khurja
+T	752	119	Khair
+T	753	119	Gabhana
+T	754	119	Atrauli
+T	755	119	Koil
+T	756	119	Iglas
+T	757	163	Sasni
+T	758	163	Sikandra Rao
+T	759	163	Hathras
+T	760	163	Sadabad
+T	761	167	Chhata
+T	762	167	Mat
+T	763	167	Mahavan
+T	764	167	Mathura
+T	765	118	Etmadpur
+T	766	118	Agra
+T	767	118	Kiraoli
+T	768	118	Kheragarh
+T	769	118	Fatehabad
+T	770	118	Bah
+T	771	143	Tundla
+T	772	143	Firozabad
+T	773	143	Jasrana
+T	774	143	Shikohabad
+T	775	166	Mainpuri
+T	776	166	Karhal
+T	777	166	Bhogaon
+T	778	659	Gunnaur
+T	779	133	Bisauli
+T	780	133	Bilsi
+T	781	133	Sahaswan
+T	782	133	Budaun
+T	783	133	Dataganj
+T	784	130	Baheri
+T	785	130	Meerganj
+T	786	130	Aonla
+T	787	130	Bareilly
+T	788	130	Nawabganj
+T	789	130	Faridpur
+T	790	173	Pilibhit
+T	791	173	Bisalpur
+T	792	173	Puranpur
+T	793	180	Powayan
+T	794	180	Tilhar
+T	795	180	Shahjahanpur
+T	796	180	Jalalabad
+T	797	159	Nighasan
+T	798	159	Palia
+T	799	159	Gola Gokaran Nath
+T	800	159	Mohammdi
+T	801	159	Lakhimpur
+T	802	159	Dhaurahara
+T	803	183	Misrikh
+T	804	183	Sitapur
+T	805	183	Laharpur
+T	806	183	Biswan
+T	807	183	Mahmudabad
+T	808	183	Sidhauli
+T	809	150	Shahabad
+T	810	150	Sawayajpur
+T	811	150	Hardoi
+T	812	150	Bilgram
+T	813	150	Sandila
+T	814	186	Safipur
+T	815	186	Hasanganj
+T	816	186	Unnao
+T	817	186	Purwa
+T	818	186	Bighapur
+T	819	162	Malihabad
+T	820	162	Bakshi Ka Talab
+T	821	162	Sadar
+T	822	162	Mohanlalganj
+T	823	175	Maharajganj
+T	824	640	Tiloi
+T	825	175	Rae Bareli
+T	826	175	Lalganj
+T	827	175	Dalmau
+T	828	175	Unchahar
+T	829	175	Salon
+T	830	141	Kaimganj
+T	831	141	Amritpur
+T	832	141	Farrukhabad
+T	833	155	Chhibramau
+T	834	155	Kannauj
+T	835	155	Tirwa
+T	836	139	Jaswantnagar
+T	837	139	Saifai
+T	838	139	Etawah
+T	839	139	Bharthana
+T	840	139	Chakarnagar
+T	841	122	Bidhuna
+T	842	122	Auraiya
+T	843	156	Rasulabad
+T	844	156	Derapur
+T	845	156	Akbarpur
+T	846	156	Bhognipur
+T	847	156	Sikandra
+T	848	157	Bilhaur
+T	849	157	Kanpur
+T	850	157	Ghatampur
+T	851	151	Madhogarh
+T	852	151	Jalaun
+T	853	151	Kalpi
+T	854	151	Orai
+T	855	151	Konch
+T	856	153	Moth
+T	857	153	Garautha
+T	858	153	Tahrauli
+T	859	153	Mauranipur
+T	860	153	Jhansi
+T	861	161	Talbehat
+T	862	161	Lalitpur
+T	863	161	Mahroni
+T	864	149	Hamirpur
+T	865	149	Rath
+T	866	149	Sarila
+T	867	149	Maudaha
+T	868	165	Kulpahar
+T	869	165	Charkhari
+T	870	165	Mahoba
+T	871	128	Banda
+T	872	128	Baberu
+T	873	128	Atarra
+T	874	128	Naraini
+T	875	136	Karwi
+T	876	136	Mau
+T	877	142	Bindki
+T	878	142	Fatehpur
+T	879	142	Khaga
+T	880	174	Lalganj
+T	881	174	Kunda
+T	882	174	Pratapgarh
+T	883	174	Patti
+T	884	174	Raniganj
+T	885	158	Sirathu
+T	886	158	Manjhanpur
+T	887	158	Chail
+T	888	120	Soraon
+T	889	120	Phulpur
+T	890	120	Allahabad
+T	891	120	Bara
+T	892	120	Karchhana
+T	893	120	Handia
+T	894	120	Meja
+T	895	120	Koraon
+T	896	129	Fatehpur
+T	897	129	Ramnagar
+T	898	129	Nawabganj
+T	899	129	Sirauli Gauspur
+T	900	129	Ramsanehighat
+T	901	129	Haidergarh
+T	902	140	Rudauli
+T	903	140	Milkipur
+T	904	140	Sohawal
+T	905	140	Faizabad
+T	906	140	Bikapur
+T	907	121	Tanda
+T	908	121	Allapur
+T	909	121	Jalalpur
+T	910	121	Akbarpur
+T	911	121	Bhiti
+T	912	640	Musafirkhana
+T	913	640	Gauriganj
+T	914	640	Amethi
+T	915	185	Sultanpur
+T	916	185	Jaisinghpur
+T	917	185	Lambhua
+T	918	185	Kadipur
+T	919	125	Nanpara
+T	920	125	Mahasi
+T	921	125	Bahraich
+T	922	125	Kaiserganj
+T	923	181	Bhinga
+T	924	181	Ikauna
+T	925	127	Balrampur
+T	926	127	Tulsipur
+T	927	127	Utraula
+T	928	147	Gonda
+T	929	147	Colonelganj
+T	930	147	Tarabganj
+T	931	147	Mankapur
+T	932	182	Shohratgarh
+T	933	182	Naugarh
+T	934	182	Bansi
+T	935	182	Itwa
+T	936	182	Domariyaganj
+T	937	131	Bhanpur
+T	938	131	Harraiya
+T	939	131	Basti
+T	940	131	Rudhauli
+T	941	178	Mehdawal
+T	942	178	Khalilabad
+T	943	178	Ghanghata
+T	944	164	Nautanwa
+T	945	164	Nichlaul
+T	946	164	Pharenda
+T	947	164	Maharajganj
+T	948	148	Campierganj
+T	949	148	Sahjanwa
+T	950	148	Gorakhpur
+T	951	148	Chauri Chaura
+T	952	148	Bansgaon
+T	953	148	Khajni
+T	954	148	Gola
+T	955	160	Padrauna
+T	956	160	Hata
+T	957	160	Kasya
+T	958	160	Tamkuhi Raj
+T	959	137	Deoria
+T	960	137	Rudrapur
+T	961	137	Barhaj
+T	962	137	Salempur
+T	963	137	Bhatpar Rani
+T	964	123	Burhanpur
+T	965	123	Sagri
+T	966	123	Azamgarh
+T	967	123	Nizamabad
+T	968	123	Phulpur
+T	969	123	Lalganj
+T	970	123	Mehnagar
+T	971	168	Ghosi
+T	972	168	Madhuban
+T	973	168	Maunath Bhanjan
+T	974	168	Muhammadabad Gohna
+T	975	126	Belthara Road
+T	976	126	Sikanderpur
+T	977	126	Rasra
+T	978	126	Ballia
+T	979	126	Bansdih
+T	980	126	Bairia
+T	981	152	Shahganj
+T	982	152	Badlapur
+T	983	152	Machhlishahr
+T	984	152	Jaunpur
+T	985	152	Mariahu
+T	986	152	Kerakat
+T	987	146	Jakhania
+T	988	146	Saidpur
+T	989	146	Ghazipur
+T	990	146	Mohammadabad
+T	991	146	Zamania
+T	992	135	Sakaldiha
+T	993	135	Chandauli
+T	994	135	Chakia
+T	995	187	Pindra
+T	996	187	Sadar
+T	997	179	Bhadohi
+T	998	179	Gyanpur
+T	999	179	Aurai
+T	1000	170	Mirzapur
+T	1001	170	Lalganj
+T	1002	170	Marihan
+T	1003	170	Chunar
+T	1004	184	Ghorawal
+T	1005	184	Robertsganj
+T	1006	184	Dudhi
+T	1007	138	Aliganj
+T	1008	138	Etah
+T	1009	138	Jalesar
+T	1010	633	Kasganj
+T	1011	633	Sahawar
+T	1012	633	Patiyali
+T	1013	211	Sidhaw
+T	1014	211	Ramnagar
+T	1015	211	Gaunaha
+T	1016	211	Mainatanr
+T	1017	211	Narkatiaganj
+T	1018	211	Lauriya
+T	1019	211	Bagaha
+T	1020	211	Piprasi
+T	1021	211	Madhubani
+T	1022	211	Bhitaha
+T	1023	211	Thakrahan
+T	1024	211	Jogapatti
+T	1025	211	Chanpatia
+T	1026	211	Sikta
+T	1027	211	Majhaulia
+T	1028	211	Bettiah
+T	1029	211	Bairia
+T	1030	211	Nautan
+T	1031	213	Raxaul
+T	1032	213	Adapur
+T	1033	213	Ramgarhwa
+T	1034	213	Sugauli
+T	1035	213	Banjaria
+T	1036	213	Narkatia
+T	1037	213	Bankatwa
+T	1038	213	Ghorasahan
+T	1039	213	Dhaka
+T	1040	213	Chiraia
+T	1041	213	Motihari
+T	1042	213	Turkaulia
+T	1043	213	Harsidhi
+T	1044	213	Paharpur
+T	1045	213	Areraj
+T	1046	213	Sangrampur
+T	1047	213	Kesaria
+T	1048	213	Kalyanpur
+T	1049	213	Kotwa
+T	1050	213	Piprakothi
+T	1051	213	Chakia(Pipra)
+T	1052	213	Pakri Dayal
+T	1053	213	Patahi
+T	1054	213	Phenhara
+T	1055	213	Madhuban
+T	1056	213	Tetaria
+T	1057	213	Mehsi
+T	1058	220	Purnahiya
+T	1059	220	Piprarhi
+T	1060	220	Sheohar
+T	1061	220	Dumri Katsari
+T	1062	220	Tariani Chowk
+T	1063	221	Bairgania
+T	1064	221	Suppi
+T	1065	221	Majorganj
+T	1066	221	Sonbarsa
+T	1067	221	Parihar
+T	1068	221	Sursand
+T	1069	221	Bathnaha
+T	1070	221	Riga
+T	1071	221	Parsauni
+T	1072	221	Belsand
+T	1073	221	Runisaidpur
+T	1074	221	Dumra
+T	1075	221	Bajpatti
+T	1076	221	Charaut
+T	1077	221	Pupri
+T	1078	221	Nanpur
+T	1079	221	Bokhara
+T	1080	206	Madhwapur
+T	1081	206	Harlakhi
+T	1082	206	Basopatti
+T	1083	206	Jainagar
+T	1084	206	Ladania
+T	1085	206	Laukaha
+T	1086	206	Laukahi
+T	1087	206	Phulparas
+T	1088	206	Babubarhi
+T	1089	206	Khajauli
+T	1090	206	Kaluahi
+T	1091	206	Benipatti
+T	1092	206	Bisfi
+T	1093	206	Madhubani
+T	1094	206	Pandaul
+T	1095	206	Rajnagar
+T	1096	206	Andhratharhi
+T	1097	206	Jhanjharpur
+T	1098	206	Ghoghardiha
+T	1099	206	Lakhnaur
+T	1100	206	Madhepur
+T	1101	223	Nirmali
+T	1102	223	Basantpur
+T	1103	223	Chhatapur
+T	1104	223	Pratapganj
+T	1105	223	Raghopur
+T	1106	223	Saraigarh Bhaptiyahi
+T	1107	223	Kishanpur
+T	1108	223	Marauna
+T	1109	223	Supaul
+T	1110	223	Pipra
+T	1111	223	Tribeniganj
+T	1112	188	Narpatganj
+T	1113	188	Forbesganj
+T	1114	188	Bhargama
+T	1115	188	Raniganj
+T	1116	188	Araria
+T	1117	188	Kursakatta
+T	1118	188	Sikti
+T	1119	188	Palasi
+T	1120	188	Jokihat
+T	1121	203	Terhagachh
+T	1122	203	Dighalbank
+T	1123	203	Thakurganj
+T	1124	203	Pothia
+T	1125	203	Bahadurganj
+T	1126	203	Kochadhamin
+T	1127	203	Kishanganj
+T	1128	214	Banmankhi
+T	1129	214	Barhara
+T	1130	214	Bhawanipur
+T	1131	214	Rupauli
+T	1132	214	Dhamdaha
+T	1133	214	Krityanand Nagar
+T	1134	214	Purnia East
+T	1135	214	Kasba
+T	1136	214	Srinagar
+T	1137	214	Jalalgarh
+T	1138	214	Amour
+T	1139	214	Baisa
+T	1140	214	Baisi
+T	1141	214	Dagarua
+T	1142	201	Falka
+T	1143	201	Korha
+T	1144	201	Hasanganj
+T	1145	201	Kadwa
+T	1146	201	Balrampur
+T	1147	201	Barsoi
+T	1148	201	Azamnagar
+T	1149	201	Pranpur
+T	1150	201	Dandkhora
+T	1151	201	Katihar
+T	1152	201	Mansahi
+T	1153	201	Barari
+T	1154	201	Sameli
+T	1155	201	Kursela
+T	1156	201	Manihari
+T	1157	201	Amdabad
+T	1158	205	Gamharia
+T	1159	205	Singheshwar
+T	1160	205	Ghailarh
+T	1161	205	Madhepura
+T	1162	205	Shankarpur
+T	1163	205	Kumarkhand
+T	1164	205	Murliganj
+T	1165	205	Gwalpara
+T	1166	205	Bihariganj
+T	1167	205	Kishanganj
+T	1168	205	Puraini
+T	1169	205	Alamnagar
+T	1170	205	Chausa
+T	1171	216	Nauhatta
+T	1172	216	Satar Kataiya
+T	1173	216	Mahishi
+T	1174	216	Kahara
+T	1175	216	Saur Bazar
+T	1176	216	Patarghat
+T	1177	216	Sonbarsa
+T	1178	216	Simri Bakhtiarpur
+T	1179	216	Salkhua
+T	1180	216	Banma Itahri
+T	1181	195	Jale
+T	1182	195	Singhwara
+T	1183	195	Keotiranway
+T	1184	195	Darbhanga
+T	1185	195	Manigachhi
+T	1186	195	Tardih
+T	1187	195	Alinagar
+T	1188	195	Benipur
+T	1189	195	Bahadurpur
+T	1190	195	Hanumannagar
+T	1191	195	Hayaghat
+T	1192	195	Baheri
+T	1193	195	Biraul
+T	1194	195	Ghanshyampur
+T	1195	195	Kiratpur
+T	1196	195	Gora Bauram
+T	1197	195	Kusheshwar Asthan
+T	1198	195	Kusheshwar Asthan Purbi
+T	1199	208	Sahebganj
+T	1200	208	Baruraj (Motipur)
+T	1201	208	Paroo
+T	1202	208	Saraiya
+T	1203	208	Marwan
+T	1204	208	Kanti
+T	1205	208	Minapur
+T	1206	208	Bochaha
+T	1207	208	Aurai
+T	1208	208	Katra
+T	1209	208	Gaighat
+T	1210	208	Bandra
+T	1211	208	Dholi (Moraul)
+T	1212	208	Musahri
+T	1213	208	Kurhani
+T	1214	208	Sakra
+T	1215	197	Katiya
+T	1216	197	Bijaipur
+T	1217	197	Bhorey
+T	1218	197	Pach Deuri
+T	1219	197	Kuchaikote
+T	1220	197	Phulwaria
+T	1221	197	Hathua
+T	1222	197	Uchkagaon
+T	1223	197	Thawe
+T	1224	197	Gopalganj
+T	1225	197	Manjha
+T	1226	197	Barauli
+T	1227	197	Sidhwalia
+T	1228	197	Baikunthpur
+T	1229	222	Nautan
+T	1230	222	Siwan
+T	1231	222	Barharia
+T	1232	222	Goriakothi
+T	1233	222	Lakri Nabiganj
+T	1234	222	Basantpur
+T	1235	222	Bhagwanpur Hat
+T	1236	222	Maharajganj
+T	1237	222	Pachrukhi
+T	1238	222	Hussainganj
+T	1239	222	Ziradei
+T	1240	222	Mairwa
+T	1241	222	Guthani
+T	1242	222	Darauli
+T	1243	222	Andar
+T	1244	222	Raghunathpur
+T	1245	222	Hasanpura
+T	1246	222	Daraundha
+T	1247	222	Siswan
+T	1248	218	Mashrakh
+T	1249	218	Panapur
+T	1250	218	Taraiya
+T	1251	218	Ishupur
+T	1252	218	Baniapur
+T	1253	218	Lahladpur
+T	1254	218	Ekma
+T	1255	218	Manjhi
+T	1256	218	Jalalpur
+T	1257	218	Revelganj
+T	1258	218	Chapra
+T	1259	218	Nagra
+T	1260	218	Marhaura
+T	1261	218	Amnour
+T	1262	218	Maker
+T	1263	218	Parsa
+T	1264	218	Dariapur
+T	1265	218	Garkha
+T	1266	218	Dighwara
+T	1267	218	Sonepur
+T	1268	224	Vaishali
+T	1269	224	Paterhi Belsar
+T	1270	224	Lalganj
+T	1271	224	Bhagwanpur
+T	1272	224	Goraul
+T	1273	224	Chehra Kalan
+T	1274	224	Patepur
+T	1275	224	Mahua
+T	1276	224	Jandaha
+T	1277	224	Raja Pakar
+T	1278	224	Hajipur
+T	1279	224	Raghopur
+T	1280	224	Bidupur
+T	1281	224	Desri
+T	1282	224	Sahdai Buzurg
+T	1283	224	Mahnar
+T	1284	217	Kalyanpur
+T	1285	217	Warisnagar
+T	1286	217	Shivaji Nagar
+T	1287	217	Khanpur
+T	1288	217	Samastipur
+T	1289	217	Pusa
+T	1290	217	Tajpur
+T	1291	217	Morwa
+T	1292	217	Patori
+T	1293	217	Mohanpur
+T	1294	217	Mohiuddinagar
+T	1295	217	Sarairanjan
+T	1296	217	Vidyapati Nagar
+T	1297	217	Dalsinghsarai
+T	1298	217	Ujiarpur
+T	1299	217	Bibhutpur
+T	1300	217	Rosera
+T	1301	217	Singhia
+T	1302	217	Hasanpur
+T	1303	217	Bithan
+T	1304	191	Khudabandpur
+T	1305	191	Chhorahi
+T	1306	191	Garhpura
+T	1307	191	Cheria Bariarpur
+T	1308	191	Bhagwanpur
+T	1309	191	Mansurchak
+T	1310	191	Bachhwara
+T	1311	191	Teghra
+T	1312	191	Barauni
+T	1313	191	Birpur
+T	1314	191	Begusarai
+T	1315	191	Naokothi
+T	1316	191	Bakhri
+T	1317	191	Dandari
+T	1318	191	Sahebpur Kamal
+T	1319	191	Balia
+T	1320	191	Matihani
+T	1321	191	Shamho Akha Kurha
+T	1322	202	Alauli
+T	1323	202	Khagaria
+T	1324	202	Mansi
+T	1325	202	Chautham
+T	1326	202	Beldaur
+T	1327	202	Gogri
+T	1328	202	Parbatta
+T	1329	192	Narayanpur
+T	1330	192	Bihpur
+T	1331	192	Kharik
+T	1332	192	Naugachhia
+T	1333	192	Rangra Chowk
+T	1334	192	Gopalpur
+T	1335	192	Pirpainti
+T	1336	192	Kahalgaon
+T	1337	192	Ismailpur
+T	1338	192	Sabour
+T	1339	192	Nathnagar
+T	1340	192	Sultanganj
+T	1341	192	Shahkund
+T	1342	192	Goradih
+T	1343	192	Jagdishpur
+T	1344	192	Sonhaula
+T	1345	190	Shambhuganj
+T	1346	190	Amarpur
+T	1347	190	Rajaun
+T	1348	190	Dhuraiya
+T	1349	190	Barahat
+T	1350	190	Banka
+T	1351	190	Phulidumar
+T	1352	190	Belhar
+T	1353	190	Chanan
+T	1354	190	Katoria
+T	1355	190	Bausi
+T	1356	207	Munger
+T	1357	207	Bariarpur
+T	1358	207	Jamalpur
+T	1359	207	Dharhara
+T	1360	207	Kharagpur
+T	1361	207	Asarganj
+T	1362	207	Tarapur
+T	1363	207	Tetiha Bambor
+T	1364	207	Sangrampur
+T	1365	204	Barahiya
+T	1366	204	Pipariya
+T	1367	204	Surajgarha
+T	1368	204	Lakhisarai
+T	1369	204	Chanan*
+T	1370	204	Ramgarh Chowk
+T	1371	204	Halsi
+T	1372	219	Barbigha
+T	1373	219	Shekhopur Sarai
+T	1374	219	Sheikhpura
+T	1375	219	Ghat Kusumbha
+T	1376	219	Chewara
+T	1377	219	Ariari
+T	1378	209	Karai Parsurai
+T	1379	209	Nagar Nausa
+T	1380	209	Harnaut
+T	1381	209	Chandi
+T	1382	209	Rahui
+T	1383	209	Bind
+T	1384	209	Sarmera
+T	1385	209	Asthawan
+T	1386	209	Bihar
+T	1387	209	Noorsarai
+T	1388	209	Tharthari
+T	1389	209	Parbalpur
+T	1390	209	Hilsa
+T	1391	209	Ekangarsarai
+T	1392	209	Islampur
+T	1393	209	Ben
+T	1394	209	Rajgir
+T	1395	209	Silao
+T	1396	209	Giriak
+T	1397	209	Katrisarai
+T	1398	212	Maner
+T	1399	212	Dinapur-Cum-Khagaul
+T	1400	212	Patna Rural
+T	1401	212	Sampatchak
+T	1402	212	Phulwari
+T	1403	212	Bihta
+T	1404	212	Naubatpur
+T	1405	212	Bikram
+T	1406	212	Dulhin Bazar
+T	1407	212	Paliganj
+T	1408	212	Masaurhi
+T	1409	212	Dhanarua
+T	1410	212	Punpun
+T	1411	212	Fatwah
+T	1412	212	Daniawan
+T	1413	212	Khusrupur
+T	1414	212	Bakhtiarpur
+T	1415	212	Athmalgola
+T	1416	212	Belchhi
+T	1417	212	Barh
+T	1418	212	Pandarak
+T	1419	212	Ghoswari
+T	1420	212	Mokameh
+T	1421	193	Shahpur
+T	1422	193	Arrah
+T	1423	193	Barhara
+T	1424	193	Koilwar
+T	1425	193	Sandesh
+T	1426	193	Udwant Nagar
+T	1427	193	Behea
+T	1428	193	Jagdishpur
+T	1429	193	Piro
+T	1430	193	Charpokhari
+T	1431	193	Garhani
+T	1432	193	Agiaon
+T	1433	193	Tarari
+T	1434	193	Sahar
+T	1435	194	Simri
+T	1436	194	Chakki
+T	1437	194	Barhampur
+T	1438	194	Chaugain
+T	1439	194	Kesath
+T	1440	194	Dumraon
+T	1441	194	Buxar
+T	1442	194	Chausa
+T	1443	194	Rajpur
+T	1444	194	Itarhi
+T	1445	194	Nawanagar
+T	1446	200	Ramgarh
+T	1447	200	Nuaon
+T	1448	200	Kudra
+T	1449	200	Mohania
+T	1450	200	Durgawati
+T	1451	200	Chand
+T	1452	200	Chainpur
+T	1453	200	Bhabua
+T	1454	200	Rampur
+T	1455	200	Bhagwanpur
+T	1456	200	Adhaura
+T	1457	215	Kochas
+T	1458	215	Dinara
+T	1459	215	Dawath
+T	1460	215	Suryapura
+T	1461	215	Bikramganj
+T	1462	215	Karakat
+T	1463	215	Nasriganj
+T	1464	215	Rajpur
+T	1465	215	Sanjhauli
+T	1466	215	Nokha
+T	1467	215	Kargahar
+T	1468	215	Chenari
+T	1469	215	Nauhatta
+T	1470	215	Sheosagar
+T	1471	215	Sasaram
+T	1472	215	Akorhi Gola
+T	1473	215	Dehri
+T	1474	215	Tilouthu
+T	1475	215	Rohtas
+T	1476	189	Daudnagar
+T	1477	189	Haspura
+T	1478	189	Goh
+T	1479	189	Rafiganj
+T	1480	189	Obra
+T	1481	189	Aurangabad
+T	1482	189	Barun
+T	1483	189	Nabinagar
+T	1484	189	Kutumba
+T	1485	189	Deo
+T	1486	189	Madanpur
+T	1487	196	Konch
+T	1488	196	Tikari
+T	1489	196	Belaganj
+T	1490	196	Khizirsarai
+T	1491	196	Neem Chak Bathani
+T	1492	196	Muhra
+T	1493	196	Atri
+T	1494	196	Manpur
+T	1495	196	Gaya Town C.D.Block
+T	1496	196	Paraiya
+T	1497	196	Guraru
+T	1498	196	Gurua
+T	1499	196	Amas
+T	1500	196	Banke Bazar
+T	1501	196	Imamganj
+T	1502	196	Dumaria
+T	1503	196	Sherghati
+T	1504	196	Dobhi
+T	1505	196	Bodh Gaya
+T	1506	196	Tan Kuppa
+T	1507	196	Wazirganj
+T	1508	196	Fatehpur
+T	1509	196	Mohanpur
+T	1510	196	Barachatti
+T	1511	210	Nardiganj
+T	1512	210	Nawada
+T	1513	210	Warisaliganj
+T	1514	210	Kashi Chak
+T	1515	210	Pakribarawan
+T	1516	210	Kawakol
+T	1517	210	Roh
+T	1518	210	Gobindpur
+T	1519	210	Akbarpur
+T	1520	210	Hisua
+T	1521	210	Narhat
+T	1522	210	Meskaur
+T	1523	210	Sirdala
+T	1524	210	Rajauli
+T	1525	198	Islamnagar Aliganj
+T	1526	198	Sikandra
+T	1527	198	Jamui
+T	1528	198	Barhat
+T	1529	198	Lakshmipur
+T	1530	198	Jhajha
+T	1531	198	Gidhaur
+T	1532	198	Khaira
+T	1533	198	Sono
+T	1534	198	Chakai
+T	1535	199	Ratni Faridpur
+T	1536	199	Jehanabad
+T	1537	199	Kako
+T	1538	199	Modanganj
+T	1539	199	Ghoshi
+T	1540	199	Makhdumpur
+T	1541	199	Hulasganj
+T	1542	611	Arwal
+T	1543	611	Kaler
+T	1544	611	Karpi
+T	1545	611	Sonbhadra Banshi Suryapur
+T	1546	611	Kurtha
+T	1547	226	Chungthang
+T	1548	226	Mangan
+T	1549	228	Gyalshing
+T	1550	228	Soreng
+T	1551	227	Namchi
+T	1552	227	Ravong
+T	1553	225	Gangtok
+T	1554	741	Pakyong
+T	1555	225	Rongli
+T	1556	238	Zemithang Circle
+T	1557	238	Lumla ADC
+T	1559	238	Tawang Hq
+T	1560	238	Kitpi Circle
+T	1561	238	Jang ADC
+T	1563	238	Mukto Circle
+T	1566	242	Dirang ADC
+T	1568	242	Nafra EAC
+T	1570	242	Kalaktang ADC
+T	1573	242	Singchung ADC
+T	1575	242	Thrizino ADC
+T	1581	723	Pakke Kessang EAC
+T	1584	231	Seppa HQ
+T	1586	231	Bameng ADC
+T	1587	231	Pipu Dipu Circle
+T	1588	231	Gyawe Purang Circle
+T	1590	231	Chayangtajo ADC
+T	1591	231	Sawa CIrcle
+T	1592	237	Balijan ADC
+T	1595	237	Taraso Circle
+T	1596	237	Naharlagun EAC
+T	1598	237	Doimukh SDO
+T	1600	237	Toru Circle
+T	1601	237	Sagalee ADC
+T	1602	237	Parang Circle
+T	1603	237	Leporiang Circle
+T	1604	237	Mengio EAC
+T	1605	237	Kimin SDO
+T	1608	241	Limeking Circle
+T	1609	241	Nacho SDO
+T	1610	241	Siyum ADC
+T	1611	241	Taliha ADC
+T	1612	241	Payeng Circle
+T	1613	241	Giba Circle
+T	1614	241	Chetam Peer Yapu Circle
+T	1615	241	Daporijo Hq
+T	1616	718	Puchi Geko Circle
+T	1617	241	Dumporijo ADC
+T	1620	241	Baririjo Circle
+T	1622	725	Mechuka ADC
+T	1623	725	Monigong EAC
+T	1627	679	Kaying EAC
+T	1628	243	Darak Circle
+T	1630	679	Rumgong ADC
+T	1632	243	Liromoba EAC
+T	1633	243	Yomcha ADC
+T	1635	724	Tirbin EAC
+T	1636	724	Basar ADC
+T	1637	724	Daring Circle
+T	1638	719	Gensi EAC
+T	1640	719	Likabali SDO
+T	1643	679	Boleng ADC
+T	1644	679	Riga EAC
+T	1645	679	Pangin EAC
+T	1646	679	Kebang Circle
+T	1647	679	Rebo Perging Circle
+T	1648	719	Koyu EAC
+T	1651	719	Nari ADC
+T	1652	232	Bilat Circle
+T	1653	232	Ruksin ADC
+T	1654	232	Oyan Circle
+T	1656	232	Mebo ADC
+T	1658	240	Tuting ADC
+T	1659	240	Migging Circle
+T	1660	240	Palling Circle
+T	1661	240	Gelling Circle
+T	1662	240	Singa Circle
+T	1663	240	Yingkiong Circle
+T	1664	240	Jengging Circle
+T	1665	240	Geku EAC
+T	1666	240	Mariyang ADC
+T	1667	240	Mopom Adipasi Circle
+T	1668	240	Katan Circle
+T	1669	229	Khimiyang EAC
+T	1671	229	Changlang HQ
+T	1673	229	Manmao EAC
+T	1676	229	Nampong SDO
+T	1679	229	Vijoynagar EAC
+T	1680	229	Miao ADC
+T	1681	229	Kharsang Circle
+T	1682	229	Diyun EAC
+T	1683	229	Bordumsa ADC
+T	1684	239	Deomali ADC
+T	1685	239	Soha Circle
+T	1686	239	Khonsa HQ
+T	1687	239	Dadam Circle
+T	1688	666	Kanubari ADC
+T	1689	666	Lawnu Circle
+T	1692	666	Pangchao SDO
+T	1694	239	Laju SDO
+T	1695	236	Ziro HQ
+T	1697	236	Yachuli ADC
+T	1698	236	Yazali Circle
+T	1700	718	Kamporijo Circle
+T	1701	718	Dollungmukh Circle
+T	1703	677	Palin Circle
+T	1704	677	Yangte Circle
+T	1705	233	Sangram Sdo
+T	1706	233	Nyapin Adc
+T	1707	233	Phassang Circle
+T	1709	677	Chambang Circle
+T	1710	677	Gangte Circle
+T	1711	677	Tarak Lengdi Cicle
+T	1712	233	Sarli Circle
+T	1714	233	Damin Circle
+T	1715	677	Pipsorang Circle
+T	1716	677	Tali ADC
+T	1717	230	Mipi
+T	1718	230	Anini
+T	1719	230	Etalin
+T	1720	230	Anelih
+T	1721	230	Kronli (Arzoo circle)
+T	1724	235	Roing HQ
+T	1725	235	Dambuk ADC
+T	1726	235	Tinali Paglam Circle
+T	1727	235	Koronu Circle
+T	1728	234	Sunpura Circle
+T	1729	234	Tezu HQ
+T	1730	234	Wakro Circle
+T	1731	678	Chongkham EAC
+T	1732	678	Namsai HQ
+T	1733	678	Lathao Circle
+T	1735	678	Lekang Mahadevpur Circle
+T	1736	628	Hayuliang ADC
+T	1737	628	Manchal Circle
+T	1738	628	Goiliang Circle
+T	1739	628	Chaglagam Circle
+T	1740	628	Metengliang Circle
+T	1741	628	Kibithoo Circle
+T	1742	628	Walong Circle
+T	1743	628	Hawai HQ
+T	1744	247	Naginimora
+T	1745	247	Tizit
+T	1746	247	Hunta
+T	1747	247	Shangnyu
+T	1748	247	Mon Sadar
+T	1749	247	Wakching
+T	1750	247	Aboi
+T	1751	247	Longshen
+T	1752	247	Phomching
+T	1753	247	Chen
+T	1754	247	Angjangyang
+T	1755	247	Mopong
+T	1756	247	Tobu
+T	1757	247	Monyakshu
+T	1758	246	Longchem
+T	1759	246	Alongkima
+T	1760	246	Tuli
+T	1761	246	Changtongya
+T	1762	246	Chuchuyimlang
+T	1763	246	Kubolong
+T	1764	246	Mangkolemba
+T	1765	246	Merangmen
+T	1766	246	Ongpangkong
+T	1767	251	V.K.
+T	1768	251	Akuluto
+T	1769	251	Suruhuto
+T	1770	251	Asuto
+T	1771	251	Aghunato
+T	1772	251	Zunheboto Sadar
+T	1773	251	Atoizu
+T	1774	251	Akuhaito
+T	1775	251	Pughoboto
+T	1776	251	Ghathashi
+T	1777	251	Satakha
+T	1778	251	Saptiqa
+T	1779	251	Satoi
+T	1780	250	Changpang
+T	1781	250	Aitepyong
+T	1782	250	Bhandari
+T	1783	250	Baghty
+T	1784	250	Sungro
+T	1785	250	Sanis
+T	1786	250	Lotsu
+T	1787	250	Ralan
+T	1788	250	Wozhuro
+T	1789	250	Wokha Sadar
+T	1790	250	Englan
+T	1791	250	Chukitong
+T	1792	244	Niuland
+T	1793	244	Aquqhnaqua
+T	1794	244	Kuhoboto
+T	1795	244	Nihokhu
+T	1796	244	Dimapur Sadar
+T	1797	244	Chumukedima
+T	1798	244	Dhansiripar
+T	1799	244	Medziphema
+T	1800	248	Sekruzu
+T	1801	248	Phek Sadar
+T	1802	248	Khuza
+T	1803	248	Meluri
+T	1804	248	Phor
+T	1805	248	Phokhungri
+T	1806	248	Chozuba
+T	1807	248	Chetheba
+T	1808	248	Sakraba
+T	1809	248	Pfutsero
+T	1810	248	Zuketsa
+T	1811	248	Khezhakeno
+T	1812	248	Chizami
+T	1813	248	Razieba
+T	1814	249	Noksen
+T	1815	249	Chare
+T	1816	249	Longkhim
+T	1817	249	Tuensang Sadar
+T	1818	249	Ngoungchung
+T	1819	249	Sangsangnyu
+T	1820	249	Sotokur
+T	1821	736	Noklak
+T	1822	249	Chingmei
+T	1823	736	Nokhu
+T	1824	736	Panso
+T	1825	249	Shamator
+T	1826	249	Tsurungto
+T	1827	249	Chessore
+T	1828	249	Mangko
+T	1829	736	Thonoknyu
+T	1830	615	Tamlu
+T	1831	615	Namsang
+T	1832	615	Yongnyah
+T	1833	615	Longleng
+T	1834	615	Sakshi
+T	1835	614	Seyochung
+T	1836	614	Amahator
+T	1837	614	Kiphire Sadar
+T	1838	614	Kiusam
+T	1839	614	Sitimi
+T	1840	614	Longmatra
+T	1841	614	Pungro
+T	1842	614	Khongsa
+T	1843	245	Tseminyu
+T	1844	245	Tsogin
+T	1845	245	Chiephobozou
+T	1846	245	Botsa
+T	1847	245	Kezocha
+T	1848	245	Jakhama
+T	1849	245	Kohima Sadar
+T	1850	245	Sechu-Zubza
+T	1851	613	Pedi (Ngwalwa)
+T	1852	613	Jalukie
+T	1853	613	Athibung
+T	1854	613	Kebai Khelma
+T	1855	613	Nsong
+T	1856	613	Tening
+T	1857	613	Peren
+T	1859	257	Paomata
+T	1860	257	Purul
+T	1861	712	Kangpokpi
+T	1862	712	Saitu-Gamphazol
+T	1864	258	Tamenglong West
+T	1865	258	Tamenglong North
+T	1866	258	Tamenglong
+T	1867	714	Nungba
+T	1868	715	Tipaimukh
+T	1869	715	Thanlon
+T	1870	254	Tuibong
+T	1871	254	Churachandpur
+T	1872	254	Singngat
+T	1873	252	Nambol
+T	1874	252	Bishnupur
+T	1875	252	Moirang
+T	1876	259	Lilong
+T	1877	259	Thoubal
+T	1878	711	Kakching
+T	1879	256	Lamsang
+T	1880	256	Patsoi
+T	1881	256	Lamphelpat
+T	1882	256	Wangoi
+T	1883	713	Jiribam
+T	1884	255	Sawombung
+T	1885	255	Porompat
+T	1886	255	Keirao Bitra
+T	1887	260	Chingai
+T	1888	260	Ukhrul
+T	1889	717	Kamjong
+T	1890	717	Phungyar
+T	1891	717	Kasom Khullen
+T	1892	716	Machi
+T	1893	716	Tengnoupal
+T	1894	253	Chandel
+T	1895	253	Chakpikarong
+T	1896	266	Zawlnuam
+T	1897	266	West Phaileng
+T	1898	266	Reiek
+T	1899	263	'N' Thingdawl
+T	1900	263	Bilkhawthlir
+T	1901	261	Tlangnuam
+T	1902	261	Darlawn
+T	1903	727	Phullen
+T	1904	261	Aibawk
+T	1905	261	Thingsulthliah
+T	1906	727	Ngopa
+T	1907	728	Khawzawl
+T	1908	262	Champhai
+T	1909	262	Khawbung
+T	1910	268	Serchhip
+T	1911	268	East Lungdar
+T	1912	265	West Bunghmun
+T	1913	265	Lungsen
+T	1914	265	Lunglei
+T	1915	726	Hnahthial
+T	1916	264	Chawngte
+T	1917	264	Lawngtlai
+T	1918	264	S' Bungtlang
+T	1919	264	Sangau
+T	1920	267	Tuipang
+T	1921	267	Saiha
+T	1962	278	Selsella
+T	1963	278	Dadenggiri
+T	1964	278	Tikrikilla
+T	1965	278	Rongram
+T	1966	663	Betasing
+T	1967	663	Zikzak
+T	1968	278	Gambegre
+T	1969	278	Dalu
+T	1970	656	Resubelpara
+T	1971	273	Dambo Rongjeng
+T	1972	656	Kharkutta
+T	1973	273	Songsak
+T	1974	273	Samanda
+T	1975	277	Chokpot
+T	1976	277	Gasuapara
+T	1977	277	Baghmara
+T	1978	277	Rongara
+T	1979	279	Mawshynrut
+T	1980	279	Nongstoin
+T	1981	740	Mawthadraishan
+T	1982	740	Mairang
+T	1983	658	Ranikor
+T	1984	658	Mawkyrwat
+T	1985	276	Umling
+T	1986	276	Jirang
+T	1987	276	Umsning
+T	1988	274	Mawphlang
+T	1989	274	Mylliem
+T	1990	274	Mawryngkneng
+T	1991	274	Mawkynrew
+T	1992	274	Khatarshnong Laitkroh
+T	1993	274	Mawsynram
+T	1994	274	Shella Bholaganj
+T	1995	274	Pynursla
+T	1996	275	Thadlaskein
+T	1997	275	Laskein
+T	1998	275	Amlarem
+T	1999	657	Khliehriat
+T	2000	657	Saipung
+T	2001	294	Gossaigaon (Pt)
+T	2002	294	Bhowraguri
+T	2003	294	Dotoma
+T	2005	294	Bagribari (Pt)
+T	2006	285	Agamoni
+T	2011	707	South Salmara
+T	2012	707	Mankachar
+T	2013	287	Lakhipur
+T	2014	287	Balijana
+T	2015	287	Matia
+T	2016	287	Dudhnai
+T	2017	287	Rangjuli
+T	2018	280	Barnagar (Pt)
+T	2019	280	Kalgachia
+T	2020	280	Baghbor
+T	2021	280	Chenga
+T	2022	280	Barpeta
+T	2023	280	Sarthebari
+T	2024	739	Bajali (Pt)
+T	2025	739	Sarupeta (Pt)
+T	2026	296	Mayong
+T	2027	296	Bhuragaon
+T	2028	296	Laharighat
+T	2029	296	Marigaon
+T	2030	296	Mikirbheta
+T	2031	297	Kaliabor
+T	2032	297	Samaguri
+T	2033	297	Rupahi
+T	2034	297	Dhing
+T	2035	297	Nagaon
+T	2036	297	Raha
+T	2037	297	Kampur
+T	2038	709	Hojai
+T	2039	709	Doboka
+T	2040	709	Lanka
+T	2041	301	Dhekiajuli (Pt)
+T	2042	301	Chariduar
+T	2043	301	Tezpur
+T	2044	705	Na-Duar
+T	2045	705	Biswanath
+T	2046	705	Helem
+T	2047	705	Gohpur
+T	2048	295	Narayanpur
+T	2049	295	Bihpuria
+T	2050	295	Naobaicha
+T	2051	295	Kadam
+T	2052	295	North Lakhimpur
+T	2053	295	Dhakuakhana (Pt-I)
+T	2054	295	Subansiri (Pt-I)
+T	2055	284	Dhemaji
+T	2056	284	Sissibargaon
+T	2057	284	Jonai
+T	2058	284	Gogamukh
+T	2059	302	Sadiya
+T	2060	302	Doom Dooma
+T	2061	302	Tinsukia
+T	2062	302	Margherita
+T	2063	286	Dibrugarh West
+T	2064	286	Dibrugarh East
+T	2065	286	Chabua
+T	2066	286	Tengakhat
+T	2067	286	Moran
+T	2068	286	Tingkhong
+T	2069	286	Naharkatiya
+T	2070	300	Dimow
+T	2071	300	Sibsagar
+T	2072	300	Amguri
+T	2073	300	Nazira
+T	2074	708	Sonari
+T	2075	708	Mahmora
+T	2076	706	Majuli
+T	2077	290	Jorhat West
+T	2078	290	Jorhat East
+T	2079	290	Teok
+T	2080	290	Titabor
+T	2081	290	Mariani
+T	2082	288	Bokakhat
+T	2083	288	Khumtai
+T	2084	288	Dergaon
+T	2085	288	Golaghat
+T	2086	288	Morangi
+T	2087	288	Sarupathar
+T	2088	710	Donka
+T	2089	292	Diphu
+T	2090	292	Phuloni
+T	2091	292	Silonijan
+T	2093	299	Haflong
+T	2096	282	Katigora
+T	2097	282	Silchar
+T	2098	282	Udarbond
+T	2099	282	Sonai
+T	2100	282	Lakhipur
+T	2101	293	Karimganj
+T	2102	293	Badarpur
+T	2103	293	Nilambazar
+T	2104	293	Patharkandi
+T	2105	293	Ramkrishna Nagar
+T	2106	289	Algapur
+T	2107	289	Hailakandi
+T	2108	289	Lala
+T	2109	289	Katlichara
+T	2110	281	Bongaigaon (Pt)
+T	2111	281	Boitamari
+T	2112	281	Srijangram
+T	2113	612	Bengtol
+T	2114	612	Sidli (Pt)
+T	2115	612	Bijni (Pt)
+T	2117	291	Koya
+T	2118	291	Kamalpur
+T	2119	291	Hajo
+T	2120	291	Chhaygaon
+T	2121	291	Goroimari
+T	2122	291	Chamaria
+T	2123	291	Nagarbera
+T	2124	291	Boko
+T	2125	291	Palasbari
+T	2126	291	North Guwahati (Pt)
+T	2127	618	Azara
+T	2129	618	Dispur
+T	2130	618	Sonapur
+T	2131	618	Chandrapur
+T	2132	298	Tihu (Pt)
+T	2133	298	Pachim Nalbari
+T	2134	298	Barkhetri
+T	2135	298	Barbhag
+T	2136	298	Nalbari
+T	2137	298	Banekuchi
+T	2138	298	Ghograpar (Pt)
+T	2141	616	Goreswar (Pt)
+T	2143	616	Baska
+T	2144	616	Tamulpur
+T	2146	283	Pathorighat (Pt)
+T	2147	283	Sipajhar
+T	2148	283	Mangaldoi (Pt)
+T	2149	283	Dalgaon (Pt)
+T	2151	617	Harisinga
+T	2152	617	Udalguri
+T	2153	617	Mazbat
+T	2154	309	Darjeeling Pulbazar
+T	2155	309	Rangli Rangliot
+T	2156	702	Kalimpong -I
+T	2157	702	Kalimpong - II
+T	2158	702	Gorubathan
+T	2159	309	Jorebunglow Sukiapokhri
+T	2160	309	Mirik
+T	2161	309	Kurseong
+T	2162	309	Matigara
+T	2163	309	Naxalbari
+T	2164	309	Phansidewa
+T	2165	309	Kharibari
+T	2166	314	Rajganj
+T	2167	314	Mal
+T	2168	314	Matiali
+T	2169	314	Nagrakata
+T	2170	664	Madarihat
+T	2171	664	Kalchini
+T	2172	664	Kumargram
+T	2173	664	Alipurduar - I
+T	2174	664	Alipurduar - II
+T	2175	664	Falakata
+T	2176	314	Dhupguri
+T	2177	314	Maynaguri
+T	2178	314	Jalpaiguri
+T	2179	308	Haldibari
+T	2180	308	Mekliganj
+T	2181	308	Mathabhanga - I
+T	2182	308	Mathabhanga Ii
+T	2183	308	Coochbehar I
+T	2184	308	Cooch Behar - II
+T	2185	308	Tufanganj - I
+T	2186	308	Tufanganj - II
+T	2187	308	Dinhata - I
+T	2188	308	Dinhata - II
+T	2189	308	Sitai
+T	2190	308	Sitalkuchi
+T	2191	311	Chopra
+T	2192	311	Islampur
+T	2193	311	Goalpokhar - I
+T	2194	311	Goalpokhar - II
+T	2195	311	Karandighi
+T	2196	311	Raiganj
+T	2197	311	Hemtabad
+T	2198	311	Kaliaganj
+T	2199	311	Itahar
+T	2200	310	Kushmundi
+T	2201	310	Gangarampur
+T	2202	310	Kumarganj
+T	2203	310	Hilli
+T	2204	310	Balurghat
+T	2205	310	Tapan
+T	2206	310	Bansihari
+T	2207	310	Harirampur
+T	2208	316	Harischandrapur - I
+T	2209	316	Harischandrapur - II
+T	2210	316	Chanchal - I
+T	2211	316	Chanchal - II
+T	2212	316	Ratua - I
+T	2213	316	Ratua - II
+T	2214	316	Gazole
+T	2215	316	Bamangola
+T	2216	316	Habibpur
+T	2217	316	Maldah (Old)
+T	2218	316	English Bazar
+T	2219	316	Manikchak
+T	2220	316	Kaliachak - I
+T	2221	316	Kaliachak - II
+T	2222	316	Kaliachak - III
+T	2223	319	Farakka
+T	2224	319	Samserganj
+T	2225	319	Suti - I
+T	2226	319	Suti - II
+T	2227	319	Raghunathganj - I
+T	2228	319	Raghunathganj - II
+T	2229	319	Lalgola
+T	2230	319	Sagardighi
+T	2231	319	Bhagawangola - I
+T	2232	319	Bhagawangola - II
+T	2233	319	Raninagar - II
+T	2234	319	Jalangi
+T	2235	319	Domkal
+T	2236	319	Raninagar - I
+T	2237	319	Murshidabad Jiaganj
+T	2238	319	Nabagram
+T	2239	319	Khargram
+T	2240	319	Kandi
+T	2241	319	Berhampore
+T	2242	319	Hariharpara
+T	2243	319	Nawda
+T	2244	319	Beldanga - I
+T	2245	319	Beldanga - II
+T	2246	319	Bharatpur - II
+T	2247	319	Bharatpur - I
+T	2248	319	Burwan
+T	2249	307	Murarai - I
+T	2250	307	Murarai - II
+T	2251	307	Nalhati - I
+T	2252	307	Nalhati - II
+T	2253	307	Rampurhat - I
+T	2254	307	Rampurhat - II
+T	2255	307	Mayureswar - I
+T	2256	307	Mayureswar - II
+T	2257	307	Mohammad Bazar
+T	2258	307	Rajnagar
+T	2259	307	Suri - I
+T	2260	307	Suri - II
+T	2261	307	Sainthia
+T	2262	307	Labpur
+T	2263	307	Nanoor
+T	2264	307	Bolpur Sriniketan
+T	2265	307	Illambazar
+T	2266	307	Dubrajpur
+T	2267	307	Khoyrasol
+T	2268	704	Salanpur
+T	2269	704	Barabani
+T	2270	704	Jamuria
+T	2271	704	Raniganj
+T	2272	704	Ondal
+T	2273	704	Pandabeswar
+T	2274	704	Faridpur Durgapur
+T	2275	704	Kanksa
+T	2276	306	Ausgram - II
+T	2277	306	Ausgram - I
+T	2278	306	Mangolkote
+T	2279	306	Ketugram - I
+T	2280	306	Ketugram - II
+T	2281	306	Katwa - I
+T	2282	306	Katwa - II
+T	2283	306	Purbasthali - I
+T	2284	306	Purbasthali - II
+T	2285	306	Manteswar
+T	2286	306	Bhatar
+T	2287	306	Galsi - I
+T	2288	306	Galsi - II
+T	2289	306	Burdwan - I
+T	2290	306	Burdwan - II
+T	2291	306	Memari - I
+T	2292	306	Memari - II
+T	2293	306	Kalna - I
+T	2294	306	Kalna - II
+T	2295	306	Jamalpur
+T	2296	306	Raina - I
+T	2297	306	Khandaghosh
+T	2298	306	Raina - II
+T	2299	320	Karimpur - I
+T	2300	320	Karimpur - II
+T	2301	320	Tehatta - I
+T	2302	320	Tehatta - II
+T	2303	320	Kaliganj
+T	2304	320	Nakashipara
+T	2305	320	Chapra
+T	2306	320	Krishnagar - II
+T	2307	320	Nabadwip
+T	2308	320	Krishnagar - I
+T	2309	320	Krishnaganj
+T	2310	320	Hanskhali
+T	2311	320	Santipur
+T	2312	320	Ranaghat - I
+T	2313	320	Ranaghat - II
+T	2314	320	Chakdah
+T	2315	320	Haringhata
+T	2316	303	Bagda
+T	2317	303	Bongaon
+T	2318	303	Gaighata
+T	2319	303	Swarupnagar
+T	2320	303	Habra - I
+T	2321	303	Habra - II
+T	2322	303	Amdanga
+T	2323	303	Barrackpur - I
+T	2324	303	Barrackpur - II
+T	2325	303	Barasat - I
+T	2326	303	Barasat - II
+T	2327	303	Deganga
+T	2328	303	Baduria
+T	2329	303	Basirhat - I
+T	2330	303	Basirhat - II
+T	2331	303	Haroa
+T	2332	303	Rajarhat
+T	2333	303	Minakhan
+T	2334	303	Sandeshkhali - I
+T	2335	303	Sandeshkhali - II
+T	2336	303	Hasnabad
+T	2337	303	Hingalganj
+T	2338	312	Goghat - I
+T	2339	312	Goghat - II
+T	2340	312	Arambag
+T	2341	312	Pursura
+T	2342	312	Tarakeswar
+T	2343	312	Dhaniakhali
+T	2344	312	Pandua
+T	2345	312	Balagarh
+T	2346	312	Chinsurah - Magra
+T	2347	312	Polba - Dadpur
+T	2348	312	Haripal
+T	2349	312	Singur
+T	2350	312	Serampur Uttarpara
+T	2351	312	Chanditala - I
+T	2352	312	Chanditala - II
+T	2353	312	Jangipara
+T	2354	312	Khanakul - I
+T	2355	312	Khanakul - II
+T	2356	305	Saltora
+T	2357	305	Mejhia
+T	2358	305	Gangajalghati
+T	2359	305	Chhatna
+T	2360	305	Indpur
+T	2361	305	Bankura - I
+T	2362	305	Bankura - II
+T	2363	305	Barjora
+T	2364	305	Sonamukhi
+T	2365	305	Patrasayer
+T	2366	305	Indus
+T	2367	305	Kotulpur
+T	2368	305	Jaypur
+T	2369	305	Vishnupur
+T	2370	305	Onda
+T	2371	305	Taldangra
+T	2372	305	Simlapal
+T	2373	305	Khatra
+T	2374	305	Hirbandh
+T	2375	305	Ranibundh
+T	2376	305	Raipur
+T	2377	305	Sarenga
+T	2378	321	Jaipur
+T	2379	321	Purulia - II
+T	2380	321	Para
+T	2381	321	Raghunathpur - II
+T	2382	321	Raghunathpur - I
+T	2383	321	Neturia
+T	2384	321	Santuri
+T	2385	321	Kashipur
+T	2386	321	Hura
+T	2387	321	Purulia - I
+T	2388	321	Puncha
+T	2389	321	Arsha
+T	2390	321	Jhalda - I
+T	2391	321	Jhalda - II
+T	2392	321	Bagmundi
+T	2393	321	Balarampur
+T	2394	321	Barabazar
+T	2395	321	Manbazar - I
+T	2396	321	Manbazar - II
+T	2397	321	Bundwan
+T	2398	313	Udaynarayanpur
+T	2399	313	Amta - II
+T	2400	313	Amta - I
+T	2401	313	Jagatballavpur
+T	2402	313	Domjur
+T	2403	313	Bally Jagachha
+T	2404	313	Sankrail
+T	2405	313	Panchla
+T	2406	313	Uluberia - II
+T	2407	313	Uluberia - I
+T	2408	313	Bagnan - I
+T	2409	313	Bagnan - II
+T	2410	313	Shyampur - I
+T	2411	313	Shyampur - II
+T	2412	304	Thakurpukur Mahestola
+T	2413	304	Budge Budge - I
+T	2414	304	Budge Budge - II
+T	2415	304	Bishnupur - I
+T	2416	304	Bishnupur - II
+T	2417	304	Sonar pur
+T	2418	304	Bhangar - I
+T	2419	304	Bhangar - II
+T	2420	304	Canning - I
+T	2421	304	Canning - II
+T	2422	304	Baruipur
+T	2423	304	Magrahat - II
+T	2424	304	Magrahat - I
+T	2425	304	Falta
+T	2426	304	Diamond Harbour - I
+T	2427	304	Diamond Harbour - II
+T	2428	304	Kulpi
+T	2429	304	Mandirbazar
+T	2430	304	Mathurapur - I
+T	2431	304	Jaynagar - I
+T	2432	304	Jaynagar - II
+T	2433	304	Kultali
+T	2434	304	Basanti
+T	2435	304	Gosaba
+T	2436	304	Mathurapur - II
+T	2437	304	Kakdwip
+T	2438	304	Sagar
+T	2439	304	Namkhana
+T	2440	304	Patharpratima
+T	2441	703	Binpur - II
+T	2442	703	Binpur - I
+T	2443	318	Garbeta - II
+T	2444	318	Garbeta - I
+T	2445	318	Garbeta - III
+T	2446	318	Chandrakona - I
+T	2447	318	Chandrakona - II
+T	2448	318	Ghatal
+T	2449	318	Daspur - I
+T	2450	318	Daspur - II
+T	2451	318	Keshpur
+T	2452	318	Salbani
+T	2453	318	Midnapore
+T	2454	703	Jhargram
+T	2455	703	Jamboni
+T	2456	703	Gopiballavpur - II
+T	2457	703	Gopiballavpur - I
+T	2458	703	Nayagram
+T	2459	703	Sankrail
+T	2460	318	Kharagpur - I
+T	2461	318	Kharagpur - II
+T	2462	318	Debra
+T	2463	318	Pingla
+T	2464	318	Sabang
+T	2465	318	Narayangarh
+T	2466	318	Keshiary
+T	2467	318	Dantan - I
+T	2468	318	Dantan - II
+T	2469	318	Mohanpur
+T	2470	317	Panskura
+T	2471	317	Kolaghat
+T	2472	317	Tamluk
+T	2473	317	Sahid Matangini
+T	2474	317	Nanda Kumar
+T	2475	317	Mahisadal
+T	2476	317	Moyna
+T	2477	317	Potashpur - I
+T	2478	317	Potashpur - II
+T	2479	317	Bhagawanpur - II
+T	2480	317	Bhagawanpur - I
+T	2481	317	Chandipur
+T	2482	317	Sutahata
+T	2483	317	Haldia
+T	2484	317	Nandigram - I
+T	2485	317	Nandigram - II
+T	2486	317	Khejuri - I
+T	2487	317	Khejuri - II
+T	2488	317	Contai - I
+T	2489	317	Deshopran
+T	2490	317	Contai - III
+T	2491	317	Egra - I
+T	2492	317	Egra - II
+T	2493	317	Ramnagar - I
+T	2494	317	Ramnagar - II
+T	2495	328	Kharaundhi
+T	2496	328	Bhawnathpur
+T	2497	328	Ketar*
+T	2498	328	Kandi
+T	2499	328	Majhiaon
+T	2500	328	Bardiha
+T	2501	328	Ramna
+T	2502	328	Bishunpura
+T	2503	328	Nagaruntari
+T	2504	328	Dhurki
+T	2505	328	Sagma
+T	2506	328	Dandai
+T	2507	328	Chinia
+T	2508	328	Meral (Pipra Kalan)
+T	2509	328	Garhwa
+T	2510	328	Danda
+T	2511	328	Ranka
+T	2512	328	Ramkanda
+T	2513	328	Bhandaria
+T	2514	323	Shaligram Ram Narayanpur(Hunterganj)
+T	2515	323	Pratappur
+T	2516	323	Kunda
+T	2517	323	Lawalaung
+T	2518	323	Chatra
+T	2519	323	Kanha Chatti
+T	2520	323	Itkhori
+T	2521	323	Mayur Hand
+T	2522	323	Gidhaur
+T	2523	323	Pathalgora
+T	2524	323	Simaria
+T	2525	323	Tandwa
+T	2526	334	Satgawan
+T	2527	334	Koderma
+T	2528	334	Domchanch
+T	2529	334	Jainagar
+T	2530	334	Chandwara
+T	2531	334	Markacho
+T	2532	329	Gawan
+T	2533	329	Tisri
+T	2534	329	Deori
+T	2535	329	Dhanwar
+T	2536	329	Jamua
+T	2537	329	Bengabad
+T	2538	329	Gande
+T	2539	329	Giridih
+T	2540	329	Birni
+T	2541	329	Bagodar
+T	2542	329	Suriya
+T	2543	329	Dumri
+T	2544	329	Pirtanr
+T	2545	324	Deoghar
+T	2546	324	Mohanpur
+T	2547	324	Sarwan
+T	2548	324	Sona Rai Tharhi
+T	2549	324	Devipur
+T	2550	324	Madhupur
+T	2551	324	Margo Munda
+T	2552	324	Karon
+T	2553	324	Sarath
+T	2554	324	Palojori
+T	2555	330	Meherma
+T	2556	330	Thakurgangti
+T	2557	330	Boarijor
+T	2558	330	Mahagama
+T	2559	330	Pathargama
+T	2560	330	Bashant Rai*
+T	2561	330	Godda
+T	2562	330	Poreyahat
+T	2563	330	Sundarpahari
+T	2564	340	Sahibganj
+T	2565	340	Mandro
+T	2566	340	Borio
+T	2567	340	Barhait
+T	2568	340	Taljhari
+T	2569	340	Rajmahal
+T	2570	340	Udhwa
+T	2571	340	Pathna
+T	2572	340	Barharwa
+T	2573	337	Litipara
+T	2574	337	Amrapara
+T	2575	337	Hiranpur
+T	2576	337	Pakaur
+T	2577	337	Maheshpur
+T	2578	337	Pakuria
+T	2579	325	Tundi
+T	2580	325	Purbi Tundi*
+T	2581	325	Topchanchi
+T	2582	325	Baghmara-Cum-Katras
+T	2583	325	Gobindpur
+T	2584	325	Dhanbad-Cum-Kenduadih-Cum-Jagata
+T	2586	325	Baliapur
+T	2587	325	Nirsa-Cum-Chirkunda
+T	2588	322	Nawadih
+T	2589	322	Chandrapura
+T	2590	322	Bermo
+T	2591	322	Gomia
+T	2592	322	Peterwar
+T	2593	322	Kasmar
+T	2594	322	Jaridih
+T	2595	322	Chas
+T	2596	322	Chandankiyari
+T	2597	336	Kisko
+T	2598	336	Peshrar
+T	2599	336	Kuru
+T	2600	336	Kairo
+T	2601	336	Lohardaga
+T	2602	336	Senha
+T	2603	336	Bhandra
+T	2604	327	Patamda
+T	2605	327	Boram
+T	2606	327	Golmuri-Cum-Jugsalai
+T	2607	327	Ghatshila
+T	2608	327	Potka
+T	2609	327	Musabani
+T	2610	327	Dumaria
+T	2611	327	Dhalbhumgarh
+T	2612	327	Gurbandha
+T	2613	327	Chakulia
+T	2614	327	Baharagora
+T	2615	338	Hussainabad
+T	2616	338	Haidernagar
+T	2617	338	Mohammad Ganj
+T	2618	338	Hariharganj
+T	2619	338	Pipra
+T	2620	338	Chhatarpur
+T	2621	338	Nawadiha Bazar/Nawadiha*
+T	2622	338	Pandu
+T	2623	338	Untari Road
+T	2624	338	Bishrampur
+T	2625	338	Nawa Bazar
+T	2626	338	Patan
+T	2627	338	Padwa
+T	2628	338	Manatu
+T	2629	338	Tarhasi
+T	2630	338	Panki
+T	2631	338	Satbarwa
+T	2632	338	Nilambar-Pitambarpur(Lesliganj)
+T	2633	338	Medininagar(Daltonganj)
+T	2634	338	Chainpur
+T	2635	335	Manika
+T	2636	335	Barwadih
+T	2637	335	Mahuadanr
+T	2638	335	Garu
+T	2639	335	Latehar
+T	2640	335	Balumath
+T	2641	335	Bariyatu
+T	2642	335	Herhanj
+T	2643	335	Chandwa
+T	2644	332	Chauparan
+T	2645	332	Barhi
+T	2646	332	Padma
+T	2647	332	Ichak
+T	2648	332	Tati Jhariya
+T	2649	332	Daru
+T	2650	332	Barkatha
+T	2651	332	Chalkusa
+T	2652	332	Bishungarh
+T	2653	332	Hazaribag
+T	2654	332	Katkamsandi
+T	2655	332	Katamdag
+T	2656	332	Keredari
+T	2657	332	Barkagaon
+T	2658	332	Churchu
+T	2659	332	Dadi
+T	2660	607	Patratu
+T	2661	607	Mandu
+T	2662	607	Ramgarh
+T	2663	607	Dulmi
+T	2664	607	Chitarpur
+T	2665	607	Gola
+T	2666	326	Saraiyahat
+T	2667	326	Jarmundi
+T	2668	326	Ramgarh
+T	2669	326	Gopikandar
+T	2670	326	Kathikund
+T	2671	326	Shikaripara
+T	2672	326	Ranishwar
+T	2673	326	Dumka
+T	2674	326	Jama
+T	2675	326	Masalia
+T	2676	333	Narayanpur
+T	2677	333	Karma Tanr Vidyasagar*
+T	2678	333	Jamtara
+T	2679	333	Nala
+T	2680	333	Fatehpur
+T	2681	333	Kundhit
+T	2682	339	Burmu
+T	2683	339	Khelari
+T	2684	339	Kanke
+T	2685	339	Ormanjhi
+T	2686	339	Angara
+T	2687	339	Rahe
+T	2688	339	Silli
+T	2689	339	Sonahatu
+T	2690	339	Namkum
+T	2691	339	Ratu
+T	2692	339	Nagri
+T	2693	339	Mandar
+T	2694	339	Chanho
+T	2695	339	Bero
+T	2696	339	Itki
+T	2697	339	Lapung
+T	2698	339	Bundu
+T	2699	339	Tamar I
+T	2700	606	Karra
+T	2701	606	Torpa
+T	2702	606	Rania
+T	2703	606	Murhu
+T	2704	606	Khunti
+T	2705	606	Erki(Tamar II)
+T	2706	331	Bishunpur
+T	2707	331	Ghaghra
+T	2708	331	Sisai
+T	2709	331	Bharno
+T	2710	331	Kamdara
+T	2711	331	Basia
+T	2712	331	Gumla
+T	2713	331	Chainpur
+T	2714	331	Dumri
+T	2715	331	Albert Ekka(Jari)
+T	2716	331	Raidih
+T	2717	331	Palkot
+T	2718	342	Simdega
+T	2719	342	Pakar Tanr
+T	2720	342	Kurdeg
+T	2721	342	Kersai
+T	2722	342	Bolba
+T	2723	342	Thethaitangar
+T	2724	342	Kolebira
+T	2725	342	Jaldega
+T	2726	342	Bansjor
+T	2727	342	Bano
+T	2728	343	Sonua
+T	2729	343	Gudri
+T	2730	343	Bandgaon
+T	2731	343	Chakradharpur
+T	2732	343	Khuntpani
+T	2733	343	Goilkera
+T	2734	343	Anandpur
+T	2735	343	Manoharpur
+T	2736	343	Noamundi
+T	2737	343	Tonto
+T	2738	343	Hat Gamharia
+T	2739	343	Chaibasa
+T	2740	343	Tantnagar
+T	2741	343	Manjhari
+T	2742	343	Jhinkpani
+T	2743	343	Jagannathpur
+T	2744	343	Kumardungi
+T	2745	343	Majhgaon
+T	2746	341	Kuchai
+T	2747	341	Kharsawan
+T	2748	341	Chandil
+T	2749	341	Ichagarh
+T	2750	341	Kukru
+T	2751	341	Nimdih
+T	2752	341	Adityapur(Gamharia)
+T	2753	341	Saraikela
+T	2754	341	Gobindpur(Rajnagar)
+T	2755	347	Paikamal
+T	2756	347	Jharbandha
+T	2757	347	Padmapur
+T	2758	347	BurdenP.S.
+T	2759	347	Gaisilet
+T	2760	347	Melchhamunda
+T	2761	347	Sohela
+T	2762	347	Bijepur
+T	2763	347	Barapali
+T	2764	347	Bheden
+T	2765	347	Bargarh
+T	2766	347	Bargarh Sadar
+T	2767	347	Bhatli
+T	2768	347	Ambabhona
+T	2769	347	Attabira
+T	2770	357	Rengali
+T	2771	357	Lakhanpur
+T	2772	357	Belpahar
+T	2773	357	Banaharapali
+T	2774	357	Orient
+T	2775	357	Brajarajnagar
+T	2776	357	Jharsuguda
+T	2777	357	Badmal
+T	2778	357	Laikera
+T	2779	357	Kolabira
+T	2780	371	Govindpur
+T	2781	371	Mahulpalli
+T	2782	371	Kochinda
+T	2783	371	Katarbaga
+T	2784	371	Thelkoloi
+T	2785	371	Rengali
+T	2786	371	Sasan
+T	2787	371	Hirakud
+T	2788	371	Burla
+T	2789	371	Dhanupali
+T	2790	371	Ainthapali
+T	2791	371	Sadar
+T	2792	371	Jamankira
+T	2793	371	Kisinda
+T	2794	371	Jujomura
+T	2795	371	Dhama
+T	2796	371	Charamal
+T	2797	371	Rairakhol
+T	2798	371	Naktideul
+T	2799	371	Sambalpur (M)
+T	2800	351	Debagarh
+T	2801	351	Barkot
+T	2802	351	Kundheigola
+T	2803	351	Reamal
+T	2804	373	Hemgir
+T	2805	373	Lephripara
+T	2806	373	Bhasma
+T	2807	373	Dharuadihi
+T	2808	373	Sundargarh Town
+T	2809	373	Sundargarh
+T	2810	373	Kinjirkela
+T	2811	373	Talasara
+T	2812	373	Baragaon
+T	2813	373	Kutra
+T	2814	373	Rajagangapur
+T	2815	373	Raiboga
+T	2816	373	Biramitrapur
+T	2817	373	Hatibari
+T	2818	373	Bisra
+T	2819	373	Bondamunda
+T	2820	373	Brahmani Tarang
+T	2821	373	Raghunathapali
+T	2822	373	Tangarapali
+T	2823	373	Lathikata
+T	2824	373	Chandiposh
+T	2825	373	Kamarposh Balang
+T	2826	373	Koida
+T	2827	373	Lahunipara
+T	2828	373	Gurundia
+T	2829	373	Tikaetpali
+T	2830	373	Banei
+T	2831	373	Mahulapada
+T	2832	373	Raurkela (M)
+T	2833	373	Raurkela (ITS)P.S.
+T	2834	361	Barbil
+T	2835	361	Bolani
+T	2836	361	Rugudi
+T	2837	361	Joda
+T	2838	361	Bamebari
+T	2839	361	Champua
+T	2840	361	Jhumpura
+T	2841	361	Baria
+T	2842	361	Turumunga
+T	2843	361	Patana
+T	2844	361	Kendujhar Sadar
+T	2845	361	Kendujhar Town
+T	2846	361	Nayakote
+T	2847	361	Kanjipani
+T	2848	361	Telkoi
+T	2849	361	Pandapara
+T	2850	361	Ghatgaon
+T	2851	361	Harichandanpur
+T	2852	361	Daitari
+T	2853	361	Ghasipura
+T	2854	361	Anandapur
+T	2855	361	Soso
+T	2856	361	Nandipada
+T	2857	361	Sainkul
+T	2858	365	Tiring
+T	2859	365	Bahalda
+T	2860	365	Jamda
+T	2861	365	Rairangpur Town
+T	2862	365	Gorumahisani
+T	2863	365	Jharpokharia
+T	2864	365	Bisoi
+T	2865	365	Rairangpur
+T	2866	365	Badampahar
+T	2867	365	Jashipur
+T	2868	365	Raruan
+T	2869	365	Ghagarbeda
+T	2870	365	Karanjia
+T	2871	365	Thakurmunda
+T	2872	365	Baripada Sadar
+T	2873	365	Baripada Town
+T	2874	365	Koliana
+T	2875	365	Bangiriposi
+T	2876	365	Chandua
+T	2877	365	Suliapada
+T	2878	365	Muruda
+T	2879	365	Rasagobindapur
+T	2880	365	Baisinga
+T	2881	365	Betanati
+T	2882	365	Barsahi
+T	2883	365	Khunta
+T	2884	365	Udala
+T	2885	365	Kaptipada
+T	2886	365	Sharata
+T	2887	365	Mahuldiha
+T	2888	365	Baripada (M)
+T	2889	346	Raibania
+T	2890	346	Jaleswar
+T	2891	346	Bhograi
+T	2892	346	Kamarda
+T	2893	346	Baliapal
+T	2894	346	Singla
+T	2895	346	Basta
+T	2896	346	Rupsa
+T	2897	346	Baleshwar Sadar
+T	2898	346	Sahadevkhunta
+T	2899	346	Chandipur
+T	2900	346	Balaramgadi Marine
+T	2901	346	Bampada
+T	2902	346	Remuna
+T	2903	346	Nilagiri
+T	2904	346	Berhampur
+T	2905	346	Oupada
+T	2906	346	Khaira
+T	2907	346	Soro
+T	2908	346	Similia
+T	2909	346	Baleshwar (M)
+T	2910	348	Agarpada
+T	2911	348	Bant
+T	2912	348	Bhandari Pokhari
+T	2913	348	Dhamanagar
+T	2914	348	Bhadrak Rural
+T	2915	348	Basudebpur
+T	2916	348	Naikanidihi
+T	2917	348	Tihidi
+T	2918	348	Dhusuri
+T	2919	348	Chandabali
+T	2920	348	Bansada
+T	2921	348	Dhamara Marine
+T	2922	360	Rajkanika
+T	2923	360	Rajnagar
+T	2924	360	Jamboo Marine
+T	2925	360	Aali
+T	2926	360	Pattamundai
+T	2928	360	Kendrapara Sadar
+T	2929	360	Nikirai
+T	2930	360	Derabish
+T	2931	360	Patkura
+T	2932	360	Marsaghai
+T	2933	360	Mahakalapada
+T	2934	355	Paradip
+T	2935	355	Paradeep Lock
+T	2936	355	Kujang
+T	2937	355	Abhyachandpur
+T	2938	355	Ersama
+T	2939	355	Tirtol
+T	2940	355	Jagatsinghapur
+T	2941	355	Biridi
+T	2942	355	Naugaon
+T	2943	355	Balikuda
+T	2944	350	Narasinghpur
+T	2945	350	Kanpur
+T	2946	350	Badamba
+T	2947	350	Baidyeswar
+T	2948	350	Banki
+T	2949	350	Tigiria
+T	2950	350	Athagad
+T	2951	350	Barang
+T	2952	350	Gurudijhatia
+T	2953	350	Khuntuni
+T	2954	350	Choudwar
+T	2955	350	Tangi
+T	2956	350	Mahanga
+T	2957	350	Salepur
+T	2958	350	Nischintakoili
+T	2959	350	Nemalo
+T	2960	350	Kishannagar
+T	2961	350	Jagatpur
+T	2962	350	Cuttack Sadar
+T	2963	350	Kandarpur
+T	2964	350	C.R.R.I.
+T	2965	350	Gobindpur
+T	2966	350	Olatapur
+T	2967	350	Niali
+T	2969	356	Sukinda
+T	2970	356	Tomka
+T	2971	356	Kaliapani
+T	2972	356	Kalinganagar
+T	2973	356	Jakhapura
+T	2974	356	Jajapur Road
+T	2975	356	Korai
+T	2976	356	Panikoili
+T	2977	356	Jajapur
+T	2978	356	Jajpur Sadar
+T	2979	356	Dharmasala
+T	2980	356	Jenapur
+T	2981	356	Kuakhia
+T	2982	356	Badachana
+T	2983	356	Balichandrapur
+T	2984	356	Binjharpur
+T	2985	356	Bari - Ramachandrapur
+T	2986	356	Mangalpur
+T	2987	352	Parajang
+T	2988	352	Kamakshyanagar
+T	2989	352	Kankadahad
+T	2990	352	Bhuban
+T	2991	352	Gandia
+T	2992	352	Nihalprasad
+T	2993	352	Tumusingha
+T	2994	352	Motunga
+T	2995	352	Bhusan Steel Limited
+T	2996	352	Balimi
+T	2997	352	Hindol
+T	2998	352	Rasol
+T	2999	352	Dhenkanal Sadar
+T	3000	344	Palalahada
+T	3001	344	Khamar
+T	3002	344	Rengali Damsite
+T	3003	344	Kaniha
+T	3004	344	N.T.P.C.
+T	3005	344	Samal Barrage
+T	3006	344	Talcher Sadar
+T	3007	344	Colliery
+T	3008	344	Bikrampur
+T	3009	344	Nalco
+T	3010	344	Banarpal
+T	3011	344	Anugul
+T	3012	344	Jarapada
+T	3013	344	Industrial
+T	3014	344	Chhendipada
+T	3015	344	Handapa
+T	3016	344	Kishorenagar
+T	3017	344	Athmallik
+T	3018	344	Kiakata
+T	3019	344	Thakurgarh
+T	3020	344	Purunakot
+T	3021	344	Bantala
+T	3022	367	Gania
+T	3023	367	Dasapalla
+T	3024	367	Banigochha
+T	3025	367	Nuagaon
+T	3026	367	Khandapada
+T	3027	367	Fategarh
+T	3028	367	Nayagarh
+T	3029	367	Itamati
+T	3030	367	Nayagarh Sadar
+T	3031	367	Odagaon
+T	3032	367	Sarankul
+T	3033	367	Ranapur
+T	3034	362	Bolagad
+T	3035	362	Begunia
+T	3036	362	Khordha
+T	3037	362	Khordha Sadar
+T	3038	362	Chandaka
+T	3039	362	Nandankanan
+T	3041	362	Mancheswar
+T	3042	362	Balianta
+T	3043	362	Balipatna
+T	3044	362	Lingaraj
+T	3045	362	Airfield (Kapila Prasad)
+T	3046	362	Uttara P.S
+T	3047	362	Khandagiri
+T	3048	362	Tamando
+T	3049	362	Jatani
+T	3050	362	Jankia
+T	3051	362	Nirakarpur
+T	3052	362	Tangi
+T	3053	362	Balugaon
+T	3054	362	Banapur
+T	3055	362	Bhubaneswar (M.Corp.)
+T	3056	369	Delanga
+T	3057	369	Pipili
+T	3058	369	Nimapada
+T	3059	369	Kakatpur
+T	3060	369	Astaranga
+T	3061	369	Konark
+T	3062	369	Gop
+T	3063	369	Ramachandi
+T	3064	369	Satyabadi
+T	3065	369	Chandanpur
+T	3066	369	Sadar
+T	3067	369	Brahmagiri
+T	3068	369	Gadisagada
+T	3069	369	Krushna Prasad
+T	3071	354	Tarasingi
+T	3072	354	Buguda
+T	3073	354	Jagannath Prasad
+T	3074	354	Bhanjanagar
+T	3075	354	Gangapur
+T	3076	354	Surada
+T	3077	354	Badagada
+T	3078	354	Asika
+T	3079	354	Dharakote
+T	3080	354	Kabisuryanagar
+T	3081	354	Polasara
+T	3082	354	Kodala
+T	3083	354	Khalikote
+T	3084	354	Rambha
+T	3085	354	Chhatrapur
+T	3086	354	Ganjam
+T	3087	354	Chamakhandi
+T	3088	354	Arjyapalli Marine
+T	3089	354	Purusottampur
+T	3090	354	Hinjili
+T	3091	354	Patapur
+T	3092	354	Seragad
+T	3093	354	Brahmapur Sadar
+T	3094	354	Gopalpur
+T	3095	354	Golanthara
+T	3096	354	Digapahandi
+T	3097	354	Nuagaon
+T	3098	354	Jarada
+T	3100	353	Adava
+T	3101	353	Mohana
+T	3102	353	R.Udayagiri
+T	3103	353	Serango
+T	3104	353	Kasinagar
+T	3105	353	Paralakhemundi
+T	3106	353	Gurandi
+T	3107	353	Rayagada
+T	3108	353	Garabandha
+T	3109	353	Ramagiri
+T	3110	359	Gochhapada
+T	3111	359	Phulabani
+T	3112	359	Phulabani Town
+T	3113	359	Khajuripada
+T	3114	359	G.Udayagiri
+T	3115	359	Tikabali
+T	3116	359	Chakapada
+T	3117	359	Sarangagarh
+T	3118	359	Phiringia
+T	3119	359	Baliguda
+T	3120	359	Nuagaon
+T	3121	359	Tumudibandha
+T	3122	359	Belaghar
+T	3123	359	Kotagarh
+T	3124	359	Brahmanigaon
+T	3125	359	Daringbadi
+T	3126	359	Raikia
+T	3127	349	Kantamal
+T	3128	349	Manamunda
+T	3129	349	Baunsuni
+T	3130	349	Baudh Sadar
+T	3131	349	Puruna Katak
+T	3132	349	Harbhanga
+T	3133	372	Dunguripali
+T	3134	372	Rampur
+T	3135	372	Binika
+T	3136	372	Ulunda
+T	3137	372	Biramaharajpur
+T	3138	372	Subalaya
+T	3139	372	Sonapur
+T	3140	372	Tarbha
+T	3141	345	Loisinga
+T	3142	345	Balangir
+T	3143	345	Tushura
+T	3144	345	Patnagarh
+T	3145	345	Khaprakhol
+T	3146	345	Turekela
+T	3147	345	Belpara
+T	3148	345	Saintala
+T	3149	345	Kantabanji
+T	3150	345	Bangomunda
+T	3151	345	Sindhekela
+T	3152	345	Titlagarh
+T	3153	368	Jonk
+T	3154	368	Nuapada
+T	3155	368	Komna
+T	3156	368	Khariar
+T	3157	368	Boden
+T	3158	368	Sinapali
+T	3159	358	Kesinga
+T	3160	358	Madanpur Rampur
+T	3161	358	Narala
+T	3162	358	Lanjigarh
+T	3163	358	Biswanathpur
+T	3164	358	Sadar
+T	3165	358	Kegaon
+T	3166	358	Junagarh
+T	3167	358	Golamunda
+T	3168	358	Dharamgarh
+T	3169	358	Kokasara
+T	3170	358	Jayapatna
+T	3171	358	Thuamul Rampur
+T	3172	370	Ambadala
+T	3173	370	Muniguda
+T	3174	370	Chandrapur
+T	3175	370	Bishamakatak
+T	3176	370	Kalyanasingpur
+T	3177	370	Kashipur
+T	3178	370	Andirakanch
+T	3179	370	Tikiri
+T	3180	370	Doraguda
+T	3181	370	Rayagada
+T	3182	370	Seskhal
+T	3183	370	Gunupur
+T	3184	370	Gudari
+T	3185	370	Padmapur
+T	3186	370	Puttasing
+T	3187	366	Raighar
+T	3188	366	Kundei
+T	3189	366	Umarkote
+T	3190	366	Chandahandi
+T	3191	366	Jharigan
+T	3192	366	Dabugan
+T	3193	366	Paparahandi
+T	3194	366	Kodinga
+T	3195	366	Kosagumuda
+T	3196	366	Nabarangapur P.S
+T	3197	366	Tentulikhunti
+T	3198	366	Khatiguda
+T	3199	363	Kotpad
+T	3200	363	Boriguma
+T	3201	363	Bhairabsingipur
+T	3202	363	Dasamantapur
+T	3203	363	Lakshmipur
+T	3204	363	Narayanpatana
+T	3205	363	Bandhugaon
+T	3206	363	Kakiriguma
+T	3207	363	Koraput
+T	3208	363	Koraput Town
+T	3209	363	Jeypore
+T	3210	363	Kundura
+T	3211	363	Boipariguda
+T	3212	363	Machh kund
+T	3213	363	Padua
+T	3214	363	Nandapur
+T	3215	363	Similiguda
+T	3216	363	Sunabeda
+T	3217	363	Damonjodi
+T	3218	363	Pottangi
+T	3219	363	Kotiya
+T	3220	364	Malkangiri
+T	3221	364	Mathili
+T	3222	364	Mudulipada
+T	3223	364	Chitrakonda
+T	3224	364	Paparmetla
+T	3225	364	Jodamba
+T	3226	364	Orkel
+T	3227	364	Kalimela
+T	3228	364	Podia
+T	3229	364	M.V. 79
+T	3230	364	Motu
+T	3231	384	Bharatpur
+T	3232	384	Baikunthpur
+T	3233	384	Sonhat
+T	3234	384	Manendragarh
+T	3235	384	Khadganva
+T	3236	649	Ramanujganj
+T	3237	649	Balrampur
+T	3238	649	Wadrafnagar
+T	3239	648	Pratappur
+T	3240	649	Samri(kusmi)
+T	3241	649	Shankargarh
+T	3242	648	Surajpur
+T	3243	648	Oudgi
+T	3244	648	Bhaiyathan
+T	3245	648	Ramanujnagar
+T	3246	648	Premnagar
+T	3247	389	Ambikapur
+T	3248	389	Lakhanpur
+T	3249	389	Udaypur
+T	3250	649	Rajpur
+T	3251	389	Lundra
+T	3252	389	Sitapur
+T	3253	389	Batouli
+T	3254	389	Mainpat
+T	3255	380	Bagicha
+T	3256	380	Kansabel
+T	3257	380	Jashpur
+T	3258	380	Manora
+T	3259	380	Kunkuri
+T	3260	380	Duldula
+T	3261	380	Farsabahar
+T	3262	380	Pathalgaon
+T	3263	386	Udaipur (Dharamjaigarh)
+T	3264	386	Lailunga
+T	3265	386	Gharghoda
+T	3266	386	Tamnar
+T	3267	386	Raigarh
+T	3268	386	Pusour
+T	3269	386	Kharsia
+T	3270	386	Sarangarh
+T	3271	386	Baramkela
+T	3272	383	Katghora
+T	3273	383	Poundi-Uproda
+T	3274	383	Pali
+T	3275	383	Korba
+T	3276	383	Kartala
+T	3277	379	Janjgir
+T	3278	379	Akaltara
+T	3279	379	Baloda
+T	3280	379	Nawagarh
+T	3281	379	Champa
+T	3282	379	Sakti
+T	3283	379	Pamgarh
+T	3284	379	Dabhra
+T	3285	379	Malkharoda
+T	3286	379	Jaijaipur
+T	3287	734	Pendra Road Gorella
+T	3288	734	Marwahi
+T	3289	734	Pendra
+T	3290	647	Lormi
+T	3291	375	Kota
+T	3292	647	Mungeli
+T	3293	647	Pathariya
+T	3294	375	Takhatpur
+T	3295	375	Bilaspur
+T	3296	375	Masturi
+T	3297	375	Bilha
+T	3298	382	Kawardha
+T	3299	382	Bodla
+T	3300	382	Sahaspur Lohara
+T	3301	382	Pandariya
+T	3302	388	Chhuikhadan
+T	3303	388	Khairagarh
+T	3304	388	Dongargarh
+T	3305	388	Rajnandgaon
+T	3306	388	Chhuriya
+T	3307	388	Dongargaon
+T	3308	388	Mohla
+T	3309	388	Manpur
+T	3310	388	Ambagarh
+T	3311	650	Nawagarh
+T	3312	650	Bemetara
+T	3313	650	Saja
+T	3314	650	Thanakhamria
+T	3315	650	Berla
+T	3316	378	Dhamdha
+T	3317	378	Durg
+T	3318	378	Patan
+T	3319	646	Gunderdehi
+T	3320	646	Dondi Luhara
+T	3321	646	Balod
+T	3322	646	Dondi
+T	3323	646	Gurur
+T	3324	644	Simga
+T	3325	644	Bhatapara
+T	3326	644	Baloda Bazar
+T	3327	644	Palari
+T	3328	644	Kasdol
+T	3329	644	Bilaigarh
+T	3330	387	Arang
+T	3331	387	Abhanpur
+T	3332	387	Raipur
+T	3333	645	Rajim
+T	3334	387	Tilda
+T	3335	645	Bindranavagarh(Gariyaband)
+T	3336	645	Chhura
+T	3337	645	Mainpur
+T	3338	645	Deobhog
+T	3339	385	Basna
+T	3340	385	Saraipali
+T	3341	385	Mahasamund
+T	3342	385	Pithora
+T	3343	385	Bagbahra
+T	3344	377	Kurud
+T	3345	377	Magarlod
+T	3346	377	Dhamtari
+T	3347	377	Nagri
+T	3348	381	Charama
+T	3349	381	Bhanupratappur
+T	3350	381	Durgkondal
+T	3351	381	Kanker
+T	3352	381	Narharpur
+T	3353	381	Antagarh
+T	3354	381	Pakhanjur
+T	3355	643	Keskal
+T	3356	643	Bade Rajpur
+T	3357	643	Kondagaon
+T	3358	643	Makdi
+T	3359	643	Farasgaon
+T	3360	374	Jagdalpur
+T	3361	374	Lohandiguda
+T	3362	374	Bastanar
+T	3363	374	Bastar
+T	3364	374	Bakavand
+T	3365	374	Tokapal
+T	3366	374	Darbha
+T	3367	637	Narayanpur
+T	3368	637	Orchha
+T	3369	376	Dantewada
+T	3370	376	Gidam
+T	3371	376	Katekalyan
+T	3372	376	Kuakonda
+T	3373	642	Konta
+T	3374	642	Chhindgarh
+T	3375	642	Sukma
+T	3376	636	Bhopalpattnam
+T	3377	636	Usur
+T	3378	636	Bijapur
+T	3379	636	Bhairamgarh
+T	3380	431	Vijaypur
+T	3381	431	Beerpur
+T	3382	431	Sheopur
+T	3383	431	Badoda
+T	3384	431	Karahal
+T	3385	417	Ambah
+T	3386	417	Porsa
+T	3387	417	Morena
+T	3388	417	Joura
+T	3389	417	Kailaras
+T	3390	417	Sabalgarh
+T	3391	395	Ater
+T	3392	395	Bhind
+T	3393	395	Mehgaon
+T	3394	395	Gormi
+T	3395	395	Gohad
+T	3396	395	Ron
+T	3397	395	Mihona
+T	3398	395	Lahar
+T	3399	407	Gird
+T	3400	407	Pichhore Or Dabra
+T	3401	407	Bhitarwar
+T	3402	407	Chinour
+T	3403	401	Seondha
+T	3404	401	Indergarh
+T	3405	401	Datia
+T	3406	401	Bhander
+T	3407	432	Pohri
+T	3408	432	Shivpuri
+T	3409	432	Narwar
+T	3410	432	Karera
+T	3411	432	Kolaras
+T	3412	432	Badarwas
+T	3413	432	Pichhore
+T	3414	432	Khaniyadhana
+T	3415	722	Niwari
+T	3416	722	Orchha
+T	3417	722	Prithvipur
+T	3418	434	Jatara
+T	3419	434	Mohangarh
+T	3420	434	Palera
+T	3421	434	Baldeogarh
+T	3422	434	Khargapur
+T	3423	434	Tikamgarh
+T	3424	398	Gaurihar
+T	3425	398	Laundi
+T	3426	398	Chandla
+T	3427	398	Nowgong
+T	3428	398	Maharajpur
+T	3429	398	Chhatarpur
+T	3430	398	Rajnagar
+T	3431	398	Bada Malhera
+T	3432	398	Ghuwara
+T	3433	398	Bijawar
+T	3434	398	Buxwaha
+T	3435	420	Ajaigarh
+T	3436	420	Panna
+T	3437	420	Devendranagar
+T	3438	420	Gunnor
+T	3439	420	Amanganj
+T	3440	420	Pawai
+T	3441	420	Shahnagar
+T	3442	420	Raipura
+T	3443	425	Bina
+T	3444	425	Khurai
+T	3445	425	Malthon
+T	3446	425	Banda
+T	3447	425	Shahgarh
+T	3448	425	Rahatgarh
+T	3449	425	Sagar
+T	3450	425	Garhakota
+T	3451	425	Rehli
+T	3452	425	Kesli
+T	3453	425	Deori
+T	3454	400	Hatta
+T	3455	400	Patera
+T	3456	400	Batiyagarh
+T	3457	400	Patharia
+T	3458	400	Damoh
+T	3459	400	Jabera
+T	3460	400	Tendukheda
+T	3461	426	Kothi
+T	3462	426	Majhgawan
+T	3463	426	Birsinghpur
+T	3464	426	Nagod
+T	3465	426	Unchahara
+T	3466	426	Rampur Baghelan
+T	3467	426	Kotar
+T	3468	426	Amarpatan
+T	3469	426	Ramnagar
+T	3470	426	Maihar
+T	3471	424	Teonthar
+T	3472	424	Jawa
+T	3473	424	Sirmour
+T	3474	424	Mangawan
+T	3475	424	Semaria
+T	3476	424	Hanumana
+T	3477	424	Mauganj
+T	3478	424	Naigarhi
+T	3479	424	Huzur
+T	3480	424	Raipur - Karchuliyan
+T	3481	424	Gurh
+T	3482	436	Bandhogarh
+T	3483	436	Chandia
+T	3484	436	Manpur
+T	3485	436	Pali
+T	3486	436	Nowrozabad
+T	3487	419	Jawad
+T	3488	419	Singoli
+T	3489	419	Neemuch
+T	3490	419	Jiran
+T	3491	419	Manasa
+T	3492	416	Bhanpura
+T	3493	416	Malhargarh
+T	3494	416	Garoth
+T	3495	416	Shamgarh
+T	3496	416	Mandsaur
+T	3497	416	Daloda
+T	3498	416	Sitamau
+T	3499	416	Suwasara
+T	3500	423	Piploda
+T	3501	423	Jaora
+T	3502	423	Alot
+T	3503	423	Tal
+T	3504	423	Sailana
+T	3505	423	Bajna
+T	3506	423	Rawti
+T	3507	423	Ratlam
+T	3508	435	Khacharod
+T	3509	435	Nagda
+T	3510	435	Mahidpur
+T	3511	435	Ghatiya
+T	3512	435	Tarana
+T	3513	435	Ujjain
+T	3514	435	Badnagar
+T	3515	667	Susner
+T	3516	667	Nalkheda
+T	3517	667	Badod
+T	3518	667	Agar
+T	3519	430	Shajapur
+T	3520	430	Gulana
+T	3521	430	Moman Badodiya
+T	3522	430	Shujalpur
+T	3523	430	Kalapipal
+T	3524	402	Tonk Khurd
+T	3525	402	Sonkatch
+T	3526	402	Dewas
+T	3527	402	Kannod
+T	3528	402	Satwas
+T	3529	402	Bagli
+T	3530	402	Hatpiplya
+T	3531	402	Khategaon
+T	3532	403	Badnawar
+T	3533	403	Sardarpur
+T	3534	403	Dhar
+T	3535	403	Gandhwani
+T	3536	403	Kukshi
+T	3537	403	Dahi
+T	3538	403	Manawar
+T	3539	403	Dharampuri
+T	3540	410	Depalpur
+T	3541	410	Hatod
+T	3542	410	Sawer
+T	3543	410	Indore
+T	3544	410	Mhow
+T	3545	414	Barwaha
+T	3546	414	Maheshwar
+T	3547	414	Kasrawad
+T	3548	414	Segaon
+T	3549	414	Bhikangaon
+T	3550	414	Khargone
+T	3551	414	Gogaon
+T	3552	414	Bhagwanpura
+T	3553	414	Jhiranya
+T	3554	393	Barwani
+T	3555	393	Pati
+T	3556	393	Thikri
+T	3557	393	Anjad
+T	3558	393	Rajpur
+T	3559	393	Pansemal
+T	3560	393	Niwali
+T	3561	393	Sendhwa
+T	3562	393	Varla
+T	3563	422	Jirapur
+T	3564	422	Khilchipur
+T	3565	422	Rajgarh
+T	3566	422	Biaora
+T	3567	422	Sarangpur
+T	3568	422	Narsinghgarh
+T	3569	422	Pachore
+T	3570	437	Lateri
+T	3571	437	Sironj
+T	3572	437	Kurwai
+T	3573	437	Basoda
+T	3574	437	Tyonda
+T	3575	437	Nateran
+T	3576	437	Shamshabad
+T	3577	437	Gyaraspur
+T	3578	437	Gulabganj
+T	3579	437	Vidisha
+T	3580	396	Berasia
+T	3581	396	Huzur
+T	3582	427	Sehore
+T	3583	427	Shyampur
+T	3584	427	Ashta
+T	3585	427	Jawar
+T	3586	427	Ichhawar
+T	3587	427	Nasrullaganj
+T	3588	427	Budni
+T	3589	427	Rehti
+T	3590	421	Raisen
+T	3591	421	Gairatganj
+T	3592	421	Begamganj
+T	3593	421	Goharganj
+T	3594	421	Baraily
+T	3595	421	Badi
+T	3596	421	Silwani
+T	3597	421	Udaipura
+T	3598	394	Bhainsdehi
+T	3599	394	Athner
+T	3600	394	Betul
+T	3601	394	Chicholi
+T	3602	394	Ghoda Dongri
+T	3603	394	Shahpur
+T	3604	394	Multai
+T	3605	394	Amla
+T	3606	408	Khirkiya
+T	3607	408	Sirali
+T	3608	408	Harda
+T	3609	408	Handiya
+T	3610	408	Timarni
+T	3611	408	Rehatgaon
+T	3612	409	Seoni-Malwa
+T	3613	409	Itarsi
+T	3614	409	Hoshangabad
+T	3615	409	Dolariya
+T	3616	409	Babai
+T	3617	409	Sohagpur
+T	3618	409	Pipariya
+T	3619	409	Bankhedi
+T	3620	413	Murwara or Katni
+T	3621	413	Rithi
+T	3622	413	Barhi
+T	3623	413	Badwara
+T	3624	413	Vijayraghavgarh
+T	3625	413	Bahoriband
+T	3626	413	Dhimarkheda
+T	3627	411	Sihora
+T	3628	411	Majholi
+T	3629	411	Patan
+T	3630	411	Shahpura
+T	3631	411	Jabalpur
+T	3632	411	Panagar
+T	3633	411	Kundam
+T	3634	418	Gotegaon
+T	3635	418	Gadarwara
+T	3636	418	Narsimhapur
+T	3637	418	Kareli
+T	3638	418	Tendukheda
+T	3639	404	Shahpura
+T	3640	404	Dindori
+T	3641	415	Niwas
+T	3642	415	Narayanganj
+T	3643	415	Mandla
+T	3644	415	Ghughari
+T	3645	415	Bichhiya
+T	3646	415	Nainpur
+T	3647	399	Tamia
+T	3648	399	Amarwara
+T	3649	399	Harrai
+T	3650	399	Chaurai
+T	3651	399	Jamai
+T	3652	399	Parasia
+T	3653	399	Umreth
+T	3654	399	Chhindwara
+T	3655	399	Mohkhed
+T	3656	399	Sausar
+T	3657	399	Bichhua
+T	3658	399	Pandhurna
+T	3659	428	Lakhnadon
+T	3660	428	Chhapara
+T	3661	428	Ghansaur
+T	3662	428	Dhanora
+T	3663	428	Keolari
+T	3664	428	Seoni
+T	3665	428	Barghat
+T	3666	428	Kurai
+T	3667	392	Katangi
+T	3668	392	Tirodi
+T	3669	392	Waraseoni
+T	3670	392	Khairlanji
+T	3671	392	Lalbarra
+T	3672	392	Balaghat
+T	3673	392	Kirnapur
+T	3674	392	Baihar
+T	3675	392	Paraswada
+T	3676	392	Lanji
+T	3677	406	Guna
+T	3678	406	Bamori
+T	3679	406	Raghogarh
+T	3680	406	Maksoodangarh
+T	3681	406	Kumbhraj
+T	3682	406	Aron
+T	3683	406	Chachaura
+T	3684	391	Isagarh
+T	3685	391	Chanderi
+T	3686	391	Ashoknagar
+T	3687	391	Shadhora
+T	3688	391	Mungaoli
+T	3689	429	Beohari
+T	3690	429	Jaisinghnagar
+T	3691	429	Sohagpur
+T	3692	429	Jaitpur
+T	3693	390	Kotma
+T	3694	390	Anuppur
+T	3695	390	Jaithari
+T	3696	390	Pushparajgarh
+T	3697	433	Rampur Naikin
+T	3698	433	Churhat
+T	3699	433	Gopadbanas
+T	3700	433	Sihawal
+T	3701	433	Majhauli
+T	3702	433	Kusmi
+T	3703	638	Chitrangi
+T	3704	638	Deosar
+T	3705	638	Singrauli
+T	3706	412	Thandla
+T	3707	412	Petlawad
+T	3708	412	Meghnagar
+T	3709	412	Jhabua
+T	3710	412	Ranapur
+T	3711	639	Bhavra
+T	3712	639	Jobat
+T	3713	639	Alirajpur
+T	3714	405	Harsud
+T	3715	405	Khalwa
+T	3716	405	Khandwa
+T	3717	405	Punasa
+T	3718	405	Pandhana
+T	3719	397	Burhanpur
+T	3720	397	Khaknar
+T	3721	397	Nepanagar
+T	3722	449	Lakhpat
+T	3723	449	Rapar
+T	3724	449	Bhachau
+T	3725	449	Anjar
+T	3726	449	Bhuj
+T	3727	449	Nakhatrana
+T	3728	449	Abdasa
+T	3729	449	Mandvi
+T	3730	449	Mundra
+T	3731	449	Gandhidham
+T	3732	441	Vav
+T	3733	441	Tharad
+T	3734	441	Dhanera
+T	3735	441	Dantiwada
+T	3736	441	Amirgadh
+T	3737	441	Danta
+T	3738	441	Vadgam
+T	3739	441	Palanpur
+T	3740	441	Deesa
+T	3741	441	Deodar
+T	3742	441	Bhabhar
+T	3743	441	Kankrej
+T	3744	455	Santalpur
+T	3745	455	Radhanpur
+T	3746	455	Sidhpur
+T	3747	455	Patan
+T	3748	455	Harij
+T	3749	455	Sami
+T	3750	455	Chanasma
+T	3751	451	Satlasana
+T	3752	451	Kheralu
+T	3753	451	Unjha
+T	3754	451	Visnagar
+T	3755	451	Vadnagar
+T	3756	451	Vijapur
+T	3757	451	Mahesana
+T	3758	451	Becharaji
+T	3759	451	Kadi
+T	3760	458	Khedbrahma
+T	3761	458	Vijaynagar
+T	3762	458	Vadali
+T	3763	458	Idar
+T	3764	672	Bhiloda
+T	3765	672	Meghraj
+T	3766	458	Himatnagar
+T	3767	458	Prantij
+T	3768	458	Talod
+T	3769	672	Modasa
+T	3770	672	Dhansura
+T	3771	672	Malpur
+T	3772	672	Bayad
+T	3773	446	Kalol Gandhinagar
+T	3774	446	Mansa
+T	3775	446	Gandhinagar
+T	3776	446	Dehgam
+T	3777	438	Mandal
+T	3778	438	Detroj-Rampura
+T	3779	438	Viramgam
+T	3780	438	Sanand
+T	3781	438	Sabarmati
+T	3782	438	Daskroi
+T	3783	438	Dholka
+T	3784	438	Bavla
+T	3785	676	Ranpur
+T	3786	676	Barwala
+T	3787	438	Dhandhuka
+T	3788	673	Halvad
+T	3789	460	Dhrangadhra
+T	3790	460	Dasada
+T	3791	460	Lakhtar
+T	3792	460	Wadhwan
+T	3793	460	Muli
+T	3794	460	Chotila
+T	3795	460	Sayla
+T	3796	460	Chuda
+T	3797	460	Limbdi
+T	3798	673	Maliya
+T	3799	673	Morvi
+T	3800	673	Tankara
+T	3801	673	Wankaner
+T	3802	457	Paddhari
+T	3803	457	Rajkot
+T	3804	457	Lodhika
+T	3805	457	Kotda Sangani
+T	3806	457	Jasdan
+T	3807	457	Gondal
+T	3808	457	Jamkandorna
+T	3809	457	Upleta
+T	3810	457	Dhoraji
+T	3811	457	Jetpur
+T	3812	674	Okhamandal
+T	3813	674	Khambhalia
+T	3814	447	Jamnagar Rural
+T	3815	447	Jodiya
+T	3816	447	Dhrol
+T	3817	447	Kalavad
+T	3818	447	Lalpur
+T	3819	674	Kalyanpur
+T	3820	674	Bhanvad
+T	3821	447	Jamjodhpur
+T	3822	456	Porbandar
+T	3823	456	Ranavav
+T	3824	456	Kutiyana
+T	3825	448	Manavadar
+T	3826	448	Vanthali
+T	3827	448	Junagadh
+T	3828	448	Bhesan
+T	3829	448	Visavadar
+T	3830	448	Mendarda
+T	3831	448	Keshod
+T	3832	448	Mangrol
+T	3833	448	Malia Hatina
+T	3834	675	Talala
+T	3835	675	Patan-Veraval
+T	3836	675	Sutrapada
+T	3837	675	Kodinar
+T	3838	675	Una
+T	3839	439	Kunkavav Vadia
+T	3840	439	Babra
+T	3841	439	Lathi
+T	3842	439	Lilia
+T	3843	439	Amreli
+T	3844	439	Bagasara
+T	3845	439	Dhari
+T	3846	439	Savar Kundla
+T	3847	439	Khambha
+T	3848	439	Jafrabad
+T	3849	439	Rajula
+T	3850	676	Botad
+T	3851	443	Vallabhipur
+T	3852	676	Gadhada
+T	3853	443	Umrala
+T	3854	443	Bhavnagar
+T	3855	443	Ghogha
+T	3856	443	Sihor
+T	3857	443	Gariadhar
+T	3858	443	Palitana
+T	3859	443	Talaja
+T	3860	443	Mahuva
+T	3861	440	Tarapur
+T	3862	440	Sojitra
+T	3863	440	Umreth
+T	3864	440	Anand Rural
+T	3865	440	Petlad
+T	3866	440	Khambhat
+T	3867	440	Borsad
+T	3868	440	Anklav
+T	3869	450	Kapadvanj
+T	3870	669	Virpur
+T	3871	669	Balasinor
+T	3872	450	Kathlal
+T	3873	450	Mehmedabad
+T	3874	450	Kheda
+T	3875	450	Matar
+T	3876	450	Nadiad
+T	3877	450	Mahudha
+T	3878	450	Thasra
+T	3879	669	Khanpur
+T	3880	669	Kadana
+T	3881	669	Santrampur
+T	3882	669	Lunawada
+T	3883	454	Shehera
+T	3884	454	Morwa (Hadaf)
+T	3885	454	Godhra
+T	3886	454	Kalol
+T	3887	454	Ghoghamba
+T	3888	454	Halol
+T	3889	454	Jambughoda
+T	3890	445	Fatepura
+T	3891	445	Jhalod
+T	3892	445	Limkheda
+T	3893	445	Dohad
+T	3894	445	Garbada
+T	3895	445	Devgadbaria
+T	3896	445	Dhanpur
+T	3897	461	Savli
+T	3898	461	Vadodara Rural
+T	3899	461	Vaghodia
+T	3900	668	Jetpur Pavi
+T	3901	668	Chhota Udaipur
+T	3902	668	Kavant
+T	3903	668	Nasvadi
+T	3904	668	Sankheda
+T	3905	461	Dabhoi
+T	3906	461	Padra
+T	3907	461	Karjan
+T	3908	461	Sinor
+T	3909	452	Tilakwada
+T	3910	452	Nandod
+T	3911	452	Dediapada
+T	3912	452	Sagbara
+T	3913	442	Jambusar
+T	3914	442	Amod
+T	3915	442	Vagra
+T	3916	442	Bharuch
+T	3917	442	Jhagadia
+T	3918	442	Anklesvar
+T	3919	442	Hansot
+T	3920	442	Valia
+T	3921	444	Ahwa
+T	3922	453	Navsari
+T	3923	453	Jalalpore
+T	3924	453	Gandevi
+T	3925	453	Chikhli
+T	3926	453	Bansda
+T	3927	462	Valsad
+T	3928	462	Dharampur
+T	3929	462	Pardi
+T	3930	462	Kaprada
+T	3931	462	Umbergaon
+T	3932	459	Olpad
+T	3933	459	Mangrol
+T	3934	459	Umarpada
+T	3935	459	Mandvi surat
+T	3936	459	Kamrej
+T	3937	459	Majura
+T	3938	459	Chorasi
+T	3939	459	Palsana
+T	3940	459	Bardoli
+T	3941	459	Mahuva
+T	3942	641	Nizar
+T	3943	641	Uchchhal
+T	3944	641	Songadh
+T	3945	641	Vyara
+T	3946	641	Valod
+T	3947	464	Diu
+T	3948	463	Daman
+T	3949	465	Dadra & Nagar Haveli
+T	3950	486	Akkalkuwa
+T	3951	486	Akrani
+T	3952	486	Talode
+T	3953	486	Shahade
+T	3954	486	Nandurbar
+T	3955	486	Nawapur
+T	3956	474	Shirpur
+T	3957	474	Sindkhede
+T	3958	474	Sakri
+T	3959	474	Dhule
+T	3960	478	Chopda
+T	3961	478	Yawal
+T	3962	478	Raver
+T	3963	478	Muktainagar (Edlabad)
+T	3964	478	Bodvad
+T	3965	478	Bhusawal
+T	3966	478	Jalgaon
+T	3967	478	Erandol
+T	3968	478	Dharangaon
+T	3969	478	Amalner
+T	3970	478	Parola
+T	3971	478	Bhadgaon
+T	3972	478	Chalisgaon
+T	3973	478	Pachora
+T	3974	478	Jamner
+T	3975	472	Jalgaon (Jamod)
+T	3976	472	Sangrampur
+T	3977	472	Shegaon
+T	3978	472	Nandura
+T	3979	472	Malkapur
+T	3980	472	Motala
+T	3981	472	Khamgaon
+T	3982	472	Mehkar
+T	3983	472	Chikhli
+T	3984	472	Buldana
+T	3985	472	Deolgaon Raja
+T	3986	472	Sindkhed Raja
+T	3987	472	Lonar
+T	3988	467	Telhara
+T	3989	467	Akot
+T	3990	467	Balapur
+T	3991	467	Akola
+T	3992	467	Murtijapur
+T	3993	467	Patur
+T	3994	467	Barshitakli
+T	3995	499	Malegaon
+T	3996	499	Mangrulpir
+T	3997	499	Karanja
+T	3998	499	Manora
+T	3999	499	Washim
+T	4000	499	Risod
+T	4001	468	Dharni
+T	4002	468	Chikhaldara
+T	4003	468	Anjangaon Surji
+T	4004	468	Achalpur
+T	4005	468	Chandurbazar
+T	4006	468	Morshi
+T	4007	468	Warud
+T	4008	468	Teosa
+T	4009	468	Amravati
+T	4010	468	Bhatkuli
+T	4011	468	Daryapur
+T	4012	468	Nandgaon-Khandeshwar
+T	4013	468	Chandur Railway
+T	4014	468	Dhamangaon Railway
+T	4015	498	Ashti
+T	4016	498	Karanja
+T	4017	498	Arvi
+T	4018	498	Seloo
+T	4019	498	Wardha
+T	4020	498	Deoli
+T	4021	498	Hinganghat
+T	4022	498	Samudrapur
+T	4023	484	Narkhed
+T	4024	484	Katol
+T	4025	484	Kalameshwar
+T	4026	484	Savner
+T	4027	484	Parseoni
+T	4028	484	Ramtek
+T	4029	484	Mauda
+T	4030	484	Kamptee
+T	4031	484	Nagpur (Rural)
+T	4032	484	Nagpur (Urban)
+T	4033	484	Hingna
+T	4034	484	Umred
+T	4035	484	Kuhi
+T	4036	484	Bhiwapur
+T	4037	471	Tumsar
+T	4038	471	Mohadi
+T	4039	471	Bhandara
+T	4040	471	Sakoli
+T	4041	471	Lakhani
+T	4042	471	Pauni
+T	4043	471	Lakhandur
+T	4044	476	Tirora
+T	4045	476	Goregaon
+T	4046	476	Gondiya
+T	4047	476	Amgaon
+T	4048	476	Salekasa
+T	4049	476	Sadak-Arjuni
+T	4050	476	Arjuni Morgaon
+T	4051	476	Deori
+T	4052	475	Desaiganj (Vadasa)
+T	4053	475	Armori
+T	4054	475	Kurkheda
+T	4055	475	Korchi
+T	4056	475	Dhanora
+T	4057	475	Gadchiroli
+T	4058	475	Chamorshi
+T	4059	475	Mulchera
+T	4060	475	Etapalli
+T	4061	475	Bhamragad
+T	4062	475	Aheri
+T	4063	475	Sironcha
+T	4064	473	Warora
+T	4065	473	Chimur
+T	4066	473	Nagbhir
+T	4067	473	Brahmapuri
+T	4068	473	Sawali
+T	4069	473	Sindewahi
+T	4070	473	Bhadravati
+T	4071	473	Chandrapur
+T	4072	473	Mul
+T	4073	473	Pombhurna
+T	4074	473	Ballarpur
+T	4075	473	Korpana
+T	4076	473	Jiwati
+T	4077	473	Rajura
+T	4078	473	Gondpipri
+T	4079	500	Ner
+T	4080	500	Babulgaon
+T	4081	500	Kalamb
+T	4082	500	Yavatmal
+T	4083	500	Darwha
+T	4084	500	Digras
+T	4085	500	Pusad
+T	4086	500	Umarkhed
+T	4087	500	Mahagaon
+T	4088	500	Arni
+T	4089	500	Ghatanji
+T	4090	500	Kelapur
+T	4091	500	Ralegaon
+T	4092	500	Maregaon
+T	4093	500	Zari-Jamani
+T	4094	500	Wani
+T	4095	485	Mahoor
+T	4096	485	Kinwat
+T	4097	485	Himayatnagar
+T	4098	485	Hadgaon
+T	4099	485	Ardhapur
+T	4100	485	Nanded
+T	4101	485	Mudkhed
+T	4102	485	Bhokar
+T	4103	485	Umri
+T	4104	485	Dharmabad
+T	4105	485	Biloli
+T	4106	485	Naigaon (Khairgaon)
+T	4107	485	Loha
+T	4108	485	Kandhar
+T	4109	485	Mukhed
+T	4110	485	Deglur
+T	4111	477	Sengaon
+T	4112	477	Hingoli
+T	4113	477	Aundha (Nagnath)
+T	4114	477	Kalamnuri
+T	4115	477	Basmath
+T	4116	489	Sailu
+T	4117	489	Jintur
+T	4118	489	Parbhani
+T	4119	489	Manwath
+T	4120	489	Pathri
+T	4121	489	Sonpeth
+T	4122	489	Gangakhed
+T	4123	489	Palam
+T	4124	489	Purna
+T	4125	479	Bhokardan
+T	4126	479	Jafferabad
+T	4127	479	Jalna
+T	4128	479	Badnapur
+T	4129	479	Ambad
+T	4130	479	Ghansawangi
+T	4131	479	Partur
+T	4132	479	Mantha
+T	4133	469	Kannad
+T	4134	469	Soegaon
+T	4135	469	Sillod
+T	4136	469	Phulambri
+T	4137	469	Aurangabad
+T	4138	469	Khuldabad
+T	4139	469	Vaijapur
+T	4140	469	Gangapur
+T	4141	469	Paithan
+T	4142	487	Surgana
+T	4143	487	Kalwan
+T	4144	487	Deola
+T	4145	487	Baglan
+T	4146	487	Malegaon
+T	4147	487	Nandgaon
+T	4148	487	Chandvad
+T	4149	487	Dindori
+T	4150	487	Peth
+T	4151	487	Trimbakeshwar
+T	4152	487	Nashik
+T	4153	487	Igatpuri
+T	4154	487	Sinnar
+T	4155	487	Niphad
+T	4156	487	Yevla
+T	4157	665	Talasari
+T	4158	665	Dahanu
+T	4159	665	Vikramgad
+T	4160	665	Jawhar
+T	4161	665	Mokhada
+T	4162	665	Vada
+T	4163	665	Palghar
+T	4164	665	Vasai
+T	4166	497	Bhiwandi
+T	4167	497	Shahapur
+T	4168	497	Kalyan
+T	4170	497	Ambarnath
+T	4171	497	Murbad
+T	4172	491	Uran
+T	4173	491	Panvel
+T	4174	491	Karjat
+T	4175	491	Khalapur
+T	4176	491	Pen
+T	4177	491	Alibag
+T	4178	491	Murud
+T	4179	491	Roha
+T	4180	491	Sudhagad
+T	4181	491	Mangaon
+T	4182	491	Tala
+T	4183	491	Shrivardhan
+T	4184	491	Mhasla
+T	4185	491	Mahad
+T	4186	491	Poladpur
+T	4187	490	Junnar
+T	4188	490	Ambegaon
+T	4189	490	Shirur
+T	4190	490	Khed
+T	4191	490	Mawal
+T	4192	490	Mulshi
+T	4193	490	Haveli
+T	4195	490	Daund
+T	4196	490	Purandhar
+T	4197	490	Velhe
+T	4198	490	Bhor
+T	4199	490	Baramati
+T	4200	490	Indapur
+T	4201	466	Akola
+T	4202	466	Sangamner
+T	4203	466	Kopargaon
+T	4204	466	Rahta
+T	4205	466	Shrirampur
+T	4206	466	Nevasa
+T	4207	466	Shevgaon
+T	4208	466	Pathardi
+T	4209	466	Nagar
+T	4210	466	Rahuri
+T	4211	466	Parner
+T	4212	466	Shrigonda
+T	4213	466	Karjat
+T	4214	466	Jamkhed
+T	4215	470	Ashti
+T	4216	470	Patoda
+T	4217	470	Shirur (Kasar)
+T	4218	470	Georai
+T	4219	470	Manjlegaon
+T	4220	470	Wadwani
+T	4221	470	Bid
+T	4222	470	Kaij
+T	4223	470	Dharur
+T	4224	470	Parli
+T	4225	470	Ambejogai
+T	4226	481	Latur
+T	4227	481	Renapur
+T	4228	481	Ahmadpur
+T	4229	481	Jalkot
+T	4230	481	Chakur
+T	4231	481	Shirur-Anantpal
+T	4232	481	Ausa
+T	4233	481	Nilanga
+T	4234	481	Deoni
+T	4235	481	Udgir
+T	4236	488	Paranda
+T	4237	488	Bhum
+T	4238	488	Washi
+T	4239	488	Kalamb
+T	4240	488	Osmanabad
+T	4241	488	Tuljapur
+T	4242	488	Lohara
+T	4243	488	Umarga
+T	4244	496	Karmala
+T	4245	496	Madha
+T	4246	496	Barshi
+T	4247	496	Solapur North
+T	4248	496	Mohol
+T	4249	496	Pandharpur
+T	4250	496	Malshiras
+T	4251	496	Sangole
+T	4252	496	Mangalvedhe
+T	4253	496	Solapur South
+T	4254	496	Akkalkot
+T	4255	494	Mahabaleshwar
+T	4256	494	Wai
+T	4257	494	Khandala
+T	4258	494	Phaltan
+T	4259	494	Man
+T	4260	494	Khatav
+T	4261	494	Koregaon
+T	4262	494	Satara
+T	4263	494	Jaoli
+T	4264	494	Patan
+T	4265	494	Karad
+T	4266	492	Mandangad
+T	4267	492	Dapoli
+T	4268	492	Khed
+T	4269	492	Chiplun
+T	4270	492	Guhagar
+T	4271	492	Ratnagiri
+T	4272	492	Sangameshwar
+T	4273	492	Lanja
+T	4274	492	Rajapur
+T	4275	495	Devgad
+T	4276	495	Vaibhavvadi
+T	4277	495	Kankavli
+T	4278	495	Malwan
+T	4279	495	Vengurla
+T	4280	495	Kudal
+T	4281	495	Sawantwadi
+T	4282	495	Dodamarg
+T	4283	480	Shahuwadi
+T	4284	480	Panhala
+T	4285	480	Hatkanangle
+T	4286	480	Shirol
+T	4287	480	Karvir
+T	4288	480	Bavda
+T	4289	480	Radhanagari
+T	4290	480	Kagal
+T	4291	480	Bhudargad
+T	4292	480	Ajra
+T	4293	480	Gadhinglaj
+T	4294	480	Chandgad
+T	4295	493	Shirala
+T	4296	493	Walwa
+T	4297	493	Palus
+T	4298	493	Kadegaon
+T	4299	493	Khanapur
+T	4300	493	Atpadi
+T	4301	493	Tasgaon
+T	4302	493	Miraj
+T	4303	493	Kavathemahankal
+T	4304	493	Jat
+T	4305	501	Tamsi
+T	4306	501	Adilabad Urban
+T	4307	501	Jainath
+T	4308	501	Bela
+T	4309	501	Talamadugu
+T	4310	501	Gudihatnoor
+T	4311	501	Inderavelly
+T	4312	501	Narnoor
+T	4313	699	Kerameri
+T	4314	699	Wankidi
+T	4315	699	Sirpur (T)
+T	4316	699	Koutala
+T	4317	699	Bejjur
+T	4318	699	Kagaznagar
+T	4319	699	Asifabad
+T	4320	699	Jainoor
+T	4321	501	Utnoor
+T	4322	501	Ichoda
+T	4323	501	Bazarhatnoor
+T	4324	501	Boath
+T	4325	501	Neradigonda
+T	4326	699	Sirpur U
+T	4327	699	Rebbena
+T	4328	684	Bheemini
+T	4329	699	Dahegoan
+T	4330	684	Vemanpally
+T	4331	684	Nennel
+T	4332	684	Tandur
+T	4333	699	Tiryani
+T	4334	684	Jannaram
+T	4335	680	Kaddam Peddur
+T	4336	680	Sarangapur
+T	4337	680	Kuntala
+T	4338	680	Kubeer
+T	4339	680	Bhainsa
+T	4340	680	Tanoor
+T	4341	680	Mudhole
+T	4342	680	Lokeswaram
+T	4343	680	Dilawarpur
+T	4344	680	Nirmal U
+T	4345	680	Laxmanchanda
+T	4346	680	Mamada
+T	4347	680	Khanapur
+T	4348	684	Dandepally
+T	4349	684	Kasipet
+T	4350	684	Bellampally
+T	4351	684	Kotapally
+T	4352	684	Mandamarri
+T	4353	684	Luxettipet
+T	4354	684	Mancherial
+T	4355	684	Jaipur
+T	4356	684	Chennur
+T	4357	516	Renjal
+T	4358	516	Navipet
+T	4359	516	Nandipet
+T	4360	516	Armoor
+T	4361	516	Balkonda
+T	4362	516	Morthad
+T	4363	516	Kammarpally
+T	4364	516	Bheemgal
+T	4365	516	Vailpoor
+T	4366	516	Jakranpally
+T	4367	516	Makloor
+T	4368	516	Nizamabad North
+T	4369	516	Yedapally
+T	4370	516	Bodhan
+T	4371	516	Kotagiri
+T	4372	685	Madnoor
+T	4373	685	Jukkal
+T	4374	685	Bichkunda
+T	4375	685	Birkur
+T	4376	516	Varni
+T	4377	516	Dichpally
+T	4378	516	Dharpally
+T	4379	516	Sirikonda
+T	4380	685	Machareddy
+T	4381	685	Sadashivanagar
+T	4382	685	Gandhari
+T	4383	685	Banswada
+T	4384	685	Pitlam
+T	4385	685	Nizamsagar
+T	4386	685	Yellareddy
+T	4387	685	Nagireddypet
+T	4388	685	Lingampet
+T	4389	685	Tadwai
+T	4390	685	Kamareddy
+T	4391	685	Bhiknoor
+T	4392	685	Domakonda
+T	4393	681	Ibrahimpatnam
+T	4394	681	Mallapur
+T	4395	681	Raikal
+T	4396	681	Sarangapur
+T	4397	681	Dharmapuri
+T	4398	681	Velgatur
+T	4400	682	Kamanpur
+T	4401	682	Manthani
+T	4402	687	Kataram
+T	4403	687	Mahadevpur
+T	4404	687	Mutharam Mahadevpur
+T	4405	687	Malharrao
+T	4406	682	Mutharam (Manthani)
+T	4407	682	Srirampur
+T	4408	682	Peddapalli
+T	4409	682	Julapalli
+T	4410	682	Eligaid
+T	4411	682	Dharmaram
+T	4412	681	Gollapalli
+T	4413	681	Mallial
+T	4414	681	Jagitial
+T	4415	681	Medipalli
+T	4416	681	Korutla
+T	4417	681	Metpalli
+T	4418	681	Kathlapur
+T	4419	683	Chandurthi
+T	4420	681	Kodimial
+T	4421	681	Pegadapalli
+T	4422	508	Gangadhara
+T	4423	508	Ramadugu
+T	4424	508	Choppadandi
+T	4425	682	Sulthanabad
+T	4426	682	Odela
+T	4427	508	Manakondur
+T	4428	508	Karimnagar Rural
+T	4429	683	Boinpalli
+T	4430	683	Vemulawada
+T	4431	683	Konaraopet
+T	4432	683	Yellareddipet
+T	4433	683	Gambhiraopet
+T	4434	683	Mustabad
+T	4435	683	Sircilla
+T	4436	683	Illanthakunta
+T	4437	692	Bejjanki
+T	4438	508	Thimmapur LMD
+T	4439	508	Veenavanka
+T	4440	508	Jammikunta
+T	4441	508	Shankarapatnam
+T	4442	508	Chigurumamidi
+T	4443	692	Koheda
+T	4444	692	Husnabad
+T	4445	508	V.Saidapur
+T	4446	508	Huzurabad
+T	4447	686	Kamalapur
+T	4448	686	Bheemadevarpalli
+T	4449	686	Elkathurthy
+T	4450	691	Kangti
+T	4451	691	Manoor
+T	4452	691	Narayankhed
+T	4453	691	Kalher
+T	4454	513	Shankarampet (A)
+T	4455	513	Papannapet
+T	4456	513	Medak
+T	4457	513	Ramayampet
+T	4458	692	Dubbak
+T	4459	692	Siddipet Urban
+T	4460	692	Chinnakodur
+T	4461	692	Nangnoor
+T	4462	692	Kondapak
+T	4463	692	Thoguta
+T	4464	692	Mirdoddi
+T	4465	692	Doultabad
+T	4466	513	Chegunta
+T	4467	513	Shankarampet (R)
+T	4468	513	Kulcharam
+T	4469	513	Tekmal
+T	4470	513	Alladurg
+T	4471	513	Regode
+T	4472	691	Raikode
+T	4473	691	Nyalkal
+T	4474	691	Zahirabad
+T	4475	691	Kohir
+T	4476	691	Jharasangam
+T	4477	691	Munipally
+T	4478	691	Pulkal
+T	4479	691	Andole
+T	4480	513	Kowdipally
+T	4481	513	Yeldurthy
+T	4482	513	Toopran
+T	4483	692	Gajwel
+T	4484	692	Jagdevpur
+T	4485	692	Wargal
+T	4486	692	Mulug
+T	4487	513	Shivampet
+T	4488	513	Narsapur
+T	4489	691	Hathnoora
+T	4490	691	Sadasivpet
+T	4491	691	Kondapur
+T	4492	691	Sangareddy
+T	4493	691	Jinnaram
+T	4494	691	Patancheru
+T	4495	691	Ramchandrapuram
+T	4496	507	Shaikpet
+T	4497	507	Ameerpet
+T	4498	507	Secunderabad
+T	4499	507	Tirumalgiri
+T	4500	507	Marredpally
+T	4501	507	Musheerabad
+T	4502	507	Amberpet
+T	4503	507	Himayatnagar
+T	4504	507	Nampally
+T	4505	507	Khairatabad
+T	4506	507	Asif Nagar
+T	4507	507	Golconda
+T	4508	507	Bahadurpura
+T	4509	507	Bandlaguda
+T	4510	507	Charminar
+T	4511	507	Saidabad
+T	4512	698	Marpalle
+T	4513	698	Mominpet
+T	4514	698	Nawabpet
+T	4515	518	Shankarpalle
+T	4517	700	Balanagar
+T	4518	700	Qutballapur
+T	4519	700	Medchal
+T	4520	700	Shamirpet
+T	4521	700	Malkajgiri
+T	4522	700	Keesara
+T	4523	700	Ghatkesar
+T	4524	700	Uppal
+T	4525	518	Hayathnagar
+T	4526	518	Saroornagar
+T	4527	518	Rajendranagar
+T	4528	518	Moinabad
+T	4529	518	Chevella
+T	4530	698	Vikarabad
+T	4531	698	Dharur
+T	4532	698	Bantwaram
+T	4533	698	Peddemul
+T	4534	698	Tandur
+T	4535	698	Basheerabad
+T	4536	698	Yelal
+T	4537	698	Doma
+T	4538	512	Gandeed
+T	4539	698	Kulkacharla
+T	4540	698	Pargi
+T	4541	698	Pudur
+T	4542	518	Shabad
+T	4543	518	Shamshabad
+T	4544	518	Maheshwaram
+T	4545	518	Kandukur
+T	4546	518	Ibrahimpatnam
+T	4547	518	Manchal
+T	4548	518	Yacharam
+T	4549	698	Kodangal
+T	4550	698	Bomaraspeta
+T	4551	721	Kosgi
+T	4552	698	Doulathabad
+T	4553	721	Damargidda
+T	4554	721	Maddur
+T	4555	512	Hanwada
+T	4556	512	Nawabpet
+T	4557	512	Balanagar
+T	4558	518	Kondurg
+T	4559	518	Farooqnagar
+T	4560	518	Kothur
+T	4561	518	Keshampet
+T	4562	518	Thalakondapally
+T	4563	518	Amangal
+T	4564	518	Madgul
+T	4565	694	Veldanda
+T	4566	512	Midjil
+T	4567	512	Jadcherla
+T	4568	512	Mahabubnagar Urban
+T	4569	512	Koilkonda
+T	4570	721	Narayanpet
+T	4571	721	Utkoor
+T	4572	721	Dhanwada
+T	4573	512	Devarakadra
+T	4574	512	Bhoothpur
+T	4575	694	Thimmajipet
+T	4576	694	Kalwakurthy
+T	4577	694	Vangoor
+T	4578	694	Amrabad
+T	4579	694	Achampet
+T	4580	694	Uppununthala
+T	4581	694	Telkapally
+T	4582	694	Tadoor
+T	4583	694	Nagarkurnool
+T	4584	694	Bijinapally
+T	4585	693	Ghanpur
+T	4586	512	Addakal
+T	4587	512	Chinnachintakunta
+T	4588	721	Narwa
+T	4589	721	Makthal
+T	4590	721	Maganoor
+T	4591	695	Dharoor
+T	4592	693	Atmakur
+T	4593	693	Kothakota
+T	4594	693	Peddamandadi
+T	4595	693	Wanaparthy
+T	4596	693	Gopalpeta
+T	4597	694	Balmoor
+T	4598	694	Lingal
+T	4599	694	Peddakothapally
+T	4600	694	Kodair
+T	4601	693	Pangal
+T	4602	693	Pebbair
+T	4603	695	Gadwal
+T	4604	695	Maldakal
+T	4605	695	Ghattu
+T	4606	695	Ieeja
+T	4607	695	Itikyala
+T	4608	693	Weepangandla
+T	4609	694	Kollapur
+T	4610	695	Waddepally
+T	4611	695	Manopad
+T	4612	695	Alampur
+T	4613	697	Bommalaramaram
+T	4614	697	Thurkapally
+T	4615	697	Rajapeta
+T	4616	697	Yadagirigutta
+T	4617	697	Alair
+T	4618	697	Gundala
+T	4619	696	Thirumalagiri
+T	4620	696	Thungaturthy
+T	4621	696	Nuthanakal
+T	4622	696	Atmakur (S)
+T	4623	696	JajiReddyGudem
+T	4624	514	ShaliGouraram
+T	4625	697	Mothkur
+T	4626	697	Atmakur (M)
+T	4627	697	Valigonda
+T	4628	697	Bhongir
+T	4629	697	Bibinagar
+T	4630	697	B Pochampally
+T	4631	697	Choutuppal
+T	4632	697	Ramannapet
+T	4633	514	Chityal
+T	4634	514	Narketpally
+T	4635	514	Kattangur
+T	4636	514	Nakrekal
+T	4637	514	KethePally
+T	4638	696	Suryapet
+T	4639	696	Chivemla
+T	4640	696	Mothey
+T	4641	696	Nadigudem
+T	4642	696	Munagala
+T	4643	696	Penpahad
+T	4644	514	Vemulapally
+T	4645	514	Thipparthy
+T	4646	514	Nalgonda
+T	4647	514	Munugode
+T	4648	697	Narayanpur
+T	4649	514	Marriguda
+T	4650	514	ChinthaPally
+T	4651	514	GundlaPally
+T	4652	514	ChandamPeta
+T	4653	514	Devarakonda
+T	4654	514	Nampally
+T	4655	514	Chandur
+T	4656	514	Kanagal
+T	4657	514	Gurrampode
+T	4658	514	Pedda Adesherlapally
+T	4659	514	Peddavoora
+T	4660	514	Anumula
+T	4661	514	Nidmanoor
+T	4662	514	Tripuraram
+T	4663	514	Dameracherla
+T	4664	514	Miryalaguda
+T	4665	696	Nereducherla
+T	4666	696	GaridePally
+T	4667	696	Chilkur
+T	4668	696	Kodad
+T	4669	696	Huzurnagar
+T	4670	696	MattamPally
+T	4671	696	MellaChervu
+T	4672	692	Cherial
+T	4673	692	Maddur
+T	4674	689	Bachannapet
+T	4675	689	Narmetta
+T	4676	689	Ghanpur (Station)
+T	4677	686	Dharmasagar
+T	4678	686	Hasanparthy
+T	4679	686	Parkal
+T	4680	687	Mogullapally
+T	4681	687	Chityal
+T	4682	687	Bhupalpally
+T	4683	687	Ghanpur (Mulug)
+T	4684	720	Venkatapur
+T	4685	720	Eturunagaram
+T	4686	720	Mangapet
+T	4687	720	Tadvai
+T	4688	720	Govindaraopet
+T	4689	720	Mulug
+T	4690	687	Regonda
+T	4691	686	Shayampet
+T	4692	522	Nallabelli
+T	4693	522	Duggondi
+T	4694	686	Athmakur
+T	4695	686	Hanamkonda
+T	4696	689	Zaffergadh
+T	4697	689	Palakurthy
+T	4698	689	Ragunathpally
+T	4699	689	Jangoan
+T	4700	689	LingalaGhanpur
+T	4701	689	Devaruppula
+T	4702	689	Kodakandla
+T	4703	522	Rayaparthy
+T	4704	522	Wardhannapet
+T	4705	522	Sangem
+T	4706	522	Warangal
+T	4707	522	Geesugonda
+T	4708	522	Narsampet
+T	4709	522	Khanapur
+T	4710	688	Kothaguda
+T	4711	688	Gudur
+T	4712	522	Chennaraopet
+T	4713	522	Nekkonda
+T	4714	522	Parvathagiri
+T	4715	688	Thorrur
+T	4716	688	Nellikudur
+T	4717	688	Kesamudram
+T	4718	688	Mahabubabad
+T	4719	688	Narsimhulapet
+T	4720	688	Maripeda
+T	4721	688	Kuravi
+T	4722	688	Dornakal
+T	4723	720	Wajedu
+T	4724	720	Venkatapuram
+T	4725	690	Pinapaka
+T	4726	690	Cherla
+T	4727	690	Manuguru
+T	4728	690	Aswapuram
+T	4729	690	Dummugudem
+T	4730	690	Bhadrachalam
+T	4731	505	Kunavaram
+T	4732	505	Chintur
+T	4733	505	Vararamachandrapuram
+T	4734	523	Velairpadu
+T	4735	523	Kukunoor
+T	4736	690	Burgampahad
+T	4737	690	Palvoncha
+T	4739	690	Tekulapalli
+T	4740	690	Yellandu
+T	4741	690	Gundala
+T	4742	688	Bayyaram
+T	4743	688	Garla
+T	4744	509	Singareni
+T	4745	509	Kamepalli
+T	4746	690	Julurpadu
+T	4747	690	Chandrugonda
+T	4748	690	Mulkalapally
+T	4749	690	Aswaraopeta
+T	4750	690	Dammapeta
+T	4751	509	Sathupalli
+T	4752	509	Penuballi
+T	4753	509	Enkoor
+T	4754	509	Tirumalayapalem
+T	4755	509	Kusumanchi
+T	4756	509	Khammam (Rural)
+T	4757	509	Raghunadhapalem
+T	4758	509	Mudigonda
+T	4759	509	Nelakondapalli
+T	4760	509	Chinthakani
+T	4761	509	Konijerla
+T	4762	509	Thallada
+T	4763	509	Kalluru
+T	4764	509	Wyra
+T	4765	509	Bonakal
+T	4766	509	Madhira
+T	4767	509	Yerrupalem
+T	4768	509	Vemsoor
+T	4769	519	Veeraghattam
+T	4770	519	Seethampeta
+T	4771	519	Bhamini
+T	4772	519	Kothuru
+T	4773	519	Pathapatnam
+T	4774	519	Meliaputti
+T	4775	519	Palasa
+T	4776	519	Mandasa
+T	4777	519	Kanchili
+T	4778	519	Ichchapuram
+T	4779	519	Kaviti
+T	4780	519	Sompeta
+T	4781	519	Vajrapukothuru
+T	4782	519	Nandigam
+T	4783	519	Hiramandalam
+T	4784	519	Palakonda
+T	4785	519	Vangara
+T	4786	519	Regidi Amadalavalasa
+T	4787	519	Lakshminarsupeta
+T	4788	519	Saravakota
+T	4789	519	Tekkali
+T	4790	519	Santhabommali
+T	4791	519	Kotabommali
+T	4792	519	Jalumuru
+T	4793	519	Sarubujjili
+T	4794	519	Burja
+T	4795	519	Santhakaviti
+T	4796	519	Rajam
+T	4797	519	Ganguvarisigadam
+T	4798	519	Amadalavalasa
+T	4799	519	Narasannapeta
+T	4800	519	Polaki
+T	4801	519	Gara
+T	4802	519	Srikakulam
+T	4803	519	Ponduru
+T	4804	519	Laveru
+T	4805	519	Ranastalam
+T	4806	519	Etcherla
+T	4807	521	Komarada
+T	4808	521	Gummalakshmipuram
+T	4809	521	Kurupam
+T	4810	521	Jiyyammavalasa
+T	4811	521	Garugubilli
+T	4812	521	Parvathipuram
+T	4813	521	Makkuva
+T	4814	521	Seethanagaram
+T	4815	521	Balijipeta
+T	4816	521	Bobbili
+T	4817	521	Salur
+T	4818	521	Pachipenta
+T	4819	521	Ramabhadrapuram
+T	4820	521	Badangi
+T	4821	521	Therlam
+T	4822	521	Merakamudidam
+T	4823	521	Dattirajeru
+T	4824	521	Mentada
+T	4825	521	Gajapathinagaram
+T	4826	521	Garividi
+T	4827	521	Cheepurupalle
+T	4828	521	Gurla
+T	4829	521	Bondapalle
+T	4830	521	Gantyada
+T	4831	521	Srungavarapukota
+T	4832	521	Vepada
+T	4833	521	Lakkavarapukota
+T	4834	521	Kothavalasa
+T	4835	521	Jami
+T	4836	521	Vizianagaram
+T	4837	521	Nellimarla
+T	4838	521	Pusapatirega
+T	4839	521	Denkada
+T	4840	521	Bhogapuram
+T	4841	520	Munchingi Puttu
+T	4842	520	Peda Bayalu
+T	4843	520	Dumbriguda
+T	4844	520	Araku Valley
+T	4845	520	Ananthagiri
+T	4846	520	Hukumpeta
+T	4847	520	Paderu
+T	4848	520	G.Madugula
+T	4849	520	Chintapalle
+T	4850	520	Gudem Kotha Veedhi
+T	4851	520	Koyyuru
+T	4852	520	Nathavaram
+T	4853	520	Golugonda
+T	4854	520	Narsipatnam
+T	4855	520	Rolugunta
+T	4856	520	Ravikamatham
+T	4857	520	Madugula
+T	4858	520	Cheedikada
+T	4859	520	Devarapalle
+T	4860	520	K.Kotapadu
+T	4861	520	Sabbavaram
+T	4862	520	Pendurthi
+T	4863	520	Anandapuram
+T	4864	520	Padmanabham
+T	4865	520	Bheemunipatnam
+T	4866	520	Visakhapatnam (Rural)
+T	4867	520	Visakhapatnam (Urban)
+T	4868	520	Pedagantyada
+T	4869	520	Gajuwaka
+T	4870	520	Paravada
+T	4871	520	Anakapalle
+T	4872	520	Chodavaram
+T	4873	520	Butchayyapeta
+T	4874	520	Kotauratla
+T	4875	520	Makavarapalem
+T	4876	520	Kasimkota
+T	4877	520	Munagapaka
+T	4878	520	Atchutapuram
+T	4879	520	Yelamanchili
+T	4880	520	Nakkapalle
+T	4881	520	Payakaraopeta
+T	4882	520	S.Rayavaram
+T	4883	520	Rambilli
+T	4884	505	Maredumilli
+T	4885	505	Devipatnam
+T	4886	505	Y. Ramavaram
+T	4887	505	Addateegala
+T	4888	505	Rajavommangi
+T	4889	505	Kotananduru
+T	4890	505	Tuni
+T	4891	505	Rowthulapudi
+T	4892	505	Sankhavaram
+T	4893	505	Yeleswaram
+T	4894	505	Gangavaram
+T	4895	505	Rampachodavaram
+T	4896	505	Seethanagaram
+T	4897	505	Gokavaram
+T	4898	505	Jaggampeta
+T	4899	505	Kirlampudi
+T	4900	505	Prathipadu
+T	4901	505	Thondangi
+T	4902	505	Gollaprolu
+T	4903	505	Peddapuram
+T	4904	505	Gandepalle
+T	4905	505	Korukonda
+T	4906	505	Rajahmundry (Urban)
+T	4907	505	Rajahmundry Rural
+T	4908	505	Rajanagaram
+T	4909	505	Rangampeta
+T	4910	505	Samalkota
+T	4911	505	Pithapuram
+T	4912	505	Kothapalle
+T	4913	505	Kakinada (Rural)
+T	4914	505	Kakinada (Urban)
+T	4915	505	Pedapudi
+T	4916	505	Biccavolu
+T	4917	505	Anaparthy
+T	4918	505	Kadiam
+T	4919	505	Atreyapuram
+T	4920	505	Mandapeta
+T	4921	505	Rayavaram
+T	4922	505	Karapa
+T	4923	505	Kajuluru
+T	4924	505	Ramachandrapuram
+T	4925	505	Alamuru
+T	4926	505	Ravulapalem
+T	4927	505	Kothapeta
+T	4928	505	Kapileswarapuram
+T	4929	505	K Gangavaram
+T	4930	505	Thallarevu
+T	4931	505	I. Polavaram
+T	4932	505	Mummidivaram
+T	4933	505	Ainavilli
+T	4934	505	P.Gannavaram
+T	4935	505	Ambajipeta
+T	4936	505	Mamidikuduru
+T	4937	505	Razole
+T	4938	505	Malikipuram
+T	4939	505	Sakhinetipalle
+T	4940	505	Allavaram
+T	4941	505	Amalapuram
+T	4942	505	Uppalaguptam
+T	4943	505	Katrenikona
+T	4944	523	Chintalapudi
+T	4945	523	Lingapalem
+T	4946	523	T.Narasapuram
+T	4947	523	Jeelugu Milli
+T	4948	523	Buttayagudem
+T	4949	523	Polavaram
+T	4950	523	Tallapudi
+T	4951	523	Gopalapuram
+T	4952	523	Koyyalagudem
+T	4953	523	Jangareddigudem
+T	4954	523	Kamavarapukota
+T	4955	523	Dwarakatirumala
+T	4956	523	Nallajerla
+T	4957	523	Devarapalle
+T	4958	523	Kovvur
+T	4959	523	Chagallu
+T	4960	523	Nidadavole
+T	4961	523	Tadepalligudem
+T	4962	523	Unguturu
+T	4963	523	Bhimadole
+T	4964	523	Pedavegi
+T	4965	523	Pedapadu
+T	4966	523	Eluru
+T	4967	523	Denduluru
+T	4968	523	Nidamarru
+T	4969	523	Pentapadu
+T	4970	523	Undrajavaram
+T	4971	523	Peravali
+T	4972	523	Tanuku
+T	4973	523	Attili
+T	4974	523	Ganapavaram
+T	4975	523	Akividu
+T	4976	523	Undi
+T	4977	523	Palacoderu
+T	4978	523	Penumantra
+T	4979	523	Iragavaram
+T	4980	523	Penugonda
+T	4981	523	Achanta
+T	4982	523	Poduru
+T	4983	523	Veeravasaram
+T	4984	523	Bhimavaram
+T	4985	523	Kalla
+T	4986	523	Mogalthur
+T	4987	523	Narasapuram
+T	4988	523	Palacole
+T	4989	523	Yelamanchili
+T	4990	510	Vatsavai
+T	4991	510	Jaggayyapeta
+T	4992	510	Penuganchiprolu
+T	4993	510	Nandigama
+T	4994	510	Veerullapadu
+T	4995	510	Mylavaram
+T	4996	510	Gampalagudem
+T	4997	510	Tiruvuru
+T	4998	510	A.Konduru
+T	4999	510	Reddigudem
+T	5000	510	Vissannapet
+T	5001	510	Chatrai
+T	5002	510	Musunuru
+T	5003	510	Nuzvid
+T	5004	510	Bapulapadu
+T	5005	510	Agiripalle
+T	5006	510	G.Konduru
+T	5007	510	Kanchikacherla
+T	5008	510	Chandarlapadu
+T	5009	510	Ibrahimpatnam
+T	5010	510	Vijayawada (Urban)
+T	5011	510	Vijayawada (Rural)
+T	5012	510	Gannavaram
+T	5013	510	Unguturu
+T	5014	510	Nandivada
+T	5015	510	Mandavalli
+T	5016	510	Kaikalur
+T	5017	510	Kalidindi
+T	5018	510	Kruthivennu
+T	5019	510	Bantumilli
+T	5020	510	Mudinepalle
+T	5021	510	Gudivada
+T	5022	510	Pedaparupudi
+T	5023	510	Kankipadu
+T	5024	510	Penamaluru
+T	5025	510	Thotlavalluru
+T	5026	510	Pamidimukkala
+T	5027	510	Vuyyuru
+T	5028	510	Pamarru
+T	5029	510	Gudlavalleru
+T	5030	510	Pedana
+T	5031	510	Guduru
+T	5032	510	Movva
+T	5033	510	Ghantasala
+T	5034	510	Machilipatnam
+T	5035	510	Challapalle
+T	5036	510	Mopidevi
+T	5037	510	Avanigadda
+T	5038	510	Nagayalanka
+T	5039	510	Koduru
+T	5040	506	Macherla
+T	5041	506	Veldurthi
+T	5042	506	Durgi
+T	5043	506	Rentachintala
+T	5044	506	Gurazala
+T	5045	506	Dachepalle
+T	5046	506	Karempudi
+T	5047	506	Piduguralla
+T	5048	506	Machavaram
+T	5049	506	Bellamkonda
+T	5050	506	Atchampet
+T	5051	506	Krosuru
+T	5052	506	Amaravathi
+T	5053	506	Thullur
+T	5054	506	Tadepalle
+T	5055	506	Mangalagiri
+T	5056	506	Tadikonda
+T	5057	506	Pedakurapadu
+T	5058	506	Sattenapalle
+T	5059	506	Rajupalem
+T	5060	506	Nekarikallu
+T	5061	506	Bollapalle
+T	5062	506	Vinukonda
+T	5063	506	Nuzendla
+T	5064	506	Savalyapuram H/O Kanamarlapudi
+T	5065	506	Ipur
+T	5066	506	Rompicherla
+T	5067	506	Narasaraopet
+T	5068	506	Muppalla
+T	5069	506	Nadendla
+T	5070	506	Chilakaluripet H/O.Purushotha Patnam
+T	5071	506	Edlapadu
+T	5072	506	Phirangipuram
+T	5073	506	Medikonduru
+T	5074	506	Guntur
+T	5075	506	Pedakakani
+T	5076	506	Duggirala
+T	5077	506	Kollipara
+T	5078	506	Tenali
+T	5079	506	Chebrolu
+T	5080	506	Vatticherukuru
+T	5081	506	Prathipadu
+T	5082	506	Pedanandipadu
+T	5083	506	Kakumanu
+T	5084	506	Ponnur
+T	5085	506	Tsundur
+T	5086	506	Amruthalur
+T	5087	506	Vemuru
+T	5088	506	Kollur
+T	5089	506	Bhattiprolu
+T	5090	506	Cherukupalle H/O Arumbaka
+T	5091	506	Pittalavanipalem
+T	5092	506	Karlapalem
+T	5093	506	Bapatla
+T	5094	506	Nizampatnam
+T	5095	506	Nagaram
+T	5096	506	Repalle
+T	5097	517	Yerragondapalem
+T	5098	517	Pullalacheruvu
+T	5099	517	Tripuranthakam
+T	5100	517	Dornala
+T	5101	517	Peda Araveedu
+T	5102	517	Donakonda
+T	5103	517	Kurichedu
+T	5104	517	Santhamaguluru
+T	5105	517	Ballikurava
+T	5106	517	Martur
+T	5107	517	Yeddana Pudi
+T	5108	517	Parchur
+T	5109	517	Karamchedu
+T	5110	517	Inkollu
+T	5111	517	Janakavarampanguluru
+T	5112	517	Addanki
+T	5113	517	Mundlamuru
+T	5114	517	Darsi
+T	5115	517	Markapur
+T	5116	517	Ardhaveedu
+T	5117	517	Cumbum
+T	5118	517	Tarlupadu
+T	5119	517	Konakanamitla
+T	5120	517	Podili
+T	5121	517	Tallur
+T	5122	517	Korisapadu
+T	5123	517	Chirala
+T	5124	517	Vetapalem
+T	5125	517	Chinaganjam
+T	5126	517	Naguluppala Padu
+T	5127	517	Maddipadu
+T	5128	517	Chimakurthi
+T	5129	517	Marripudi
+T	5130	517	Hanumanthuni Padu
+T	5131	517	Bestawaripeta
+T	5132	517	Racherla
+T	5133	517	Giddalur
+T	5134	517	Komarolu
+T	5135	517	Veligandla
+T	5136	517	Kanigiri
+T	5137	517	Kondapi
+T	5138	517	Santhanuthala Padu
+T	5139	517	Ongole
+T	5140	517	Kotha Patnam
+T	5141	517	Tangutur
+T	5142	517	Zarugumalli
+T	5143	517	Ponnaluru
+T	5144	517	Pedacherlo Palle
+T	5145	517	Chandra Sekhara Puram
+T	5146	517	Pamur
+T	5147	517	Voletivaripalem
+T	5148	517	Kandukur
+T	5149	517	Singarayakonda
+T	5150	517	Lingasamudram
+T	5151	517	Gudluru
+T	5152	517	Ulavapadu
+T	5153	515	Seetharamapuram
+T	5154	515	Udayagiri
+T	5155	515	Varikuntapadu
+T	5156	515	Kondapuram
+T	5157	515	Jaladanki
+T	5158	515	Kavali
+T	5159	515	Bogole
+T	5160	515	Kaligiri
+T	5161	515	Vinjamur
+T	5162	515	Duttalur
+T	5163	515	Marripadu
+T	5164	515	Atmakur
+T	5165	515	Anumasamudrampeta
+T	5166	515	Dagadarthi
+T	5167	515	Allur
+T	5168	515	Vidavalur
+T	5169	515	Kodavalur
+T	5170	515	Buchireddipalem
+T	5171	515	Sangam
+T	5172	515	Chejerla
+T	5173	515	Ananthasagaram
+T	5174	515	Kaluvoya
+T	5175	515	Rapur
+T	5176	515	Podalakur
+T	5177	515	Nellore
+T	5178	515	Kovur
+T	5179	515	Indukurpet
+T	5180	515	Thotapalligudur
+T	5181	515	Muthukur
+T	5182	515	Venkatachalam
+T	5183	515	Manubolu
+T	5184	515	Gudur
+T	5185	515	Sydapuram
+T	5186	515	Dakkili
+T	5187	515	Venkatagiri
+T	5188	515	Balayapalle
+T	5189	515	Ojili
+T	5190	515	Chillakur
+T	5191	515	Kota
+T	5192	515	Vakadu
+T	5193	515	Chittamur
+T	5194	515	Naidupet
+T	5195	515	Pellakur
+T	5196	515	Doravarisatram
+T	5197	515	Sullurpeta
+T	5198	515	Tada
+T	5199	504	Kondapuram
+T	5200	504	Mylavaram
+T	5201	504	Peddamudium
+T	5202	504	Rajupalem
+T	5203	504	Duvvur
+T	5204	504	S.Mydukur
+T	5205	504	Brahmamgarimattam
+T	5206	504	Sri Avadhutha Kasinayana
+T	5207	504	Kalasapadu
+T	5208	504	Porumamilla
+T	5209	504	B.Kodur
+T	5210	504	Badvel
+T	5211	504	Gopavaram
+T	5212	504	Khajipet
+T	5213	504	Chapad
+T	5214	504	Proddatur
+T	5215	504	Jammalamadugu
+T	5216	504	Muddanur
+T	5217	504	Simhadripuram
+T	5218	504	Lingala
+T	5219	504	Pulivendla
+T	5220	504	Vemula
+T	5221	504	Thondur
+T	5222	504	Veerapunayunipalle
+T	5223	504	Yerraguntla
+T	5224	504	Kamalapuram
+T	5225	504	Vallur
+T	5226	504	Chennur
+T	5227	504	Atlur
+T	5228	504	Vontimitta
+T	5229	504	Sidhout
+T	5230	504	Kadapa
+T	5231	504	Chinthakommadinne
+T	5232	504	Pendlimarri
+T	5233	504	Vempalle
+T	5234	504	Chakrayapet
+T	5235	504	Galiveedu
+T	5236	504	Chinnamandem
+T	5237	504	Sambepalle
+T	5238	504	T Sundupalle
+T	5239	504	Rayachoti
+T	5240	504	Lakkireddipalle
+T	5241	504	Ramapuram
+T	5242	504	Veeraballe
+T	5243	504	Nandalur
+T	5244	504	Penagalur
+T	5245	504	Chitvel
+T	5246	504	Rajampet
+T	5247	504	Pullampeta
+T	5248	504	Obulavaripalle
+T	5249	504	Kodur
+T	5250	511	Mantralayam
+T	5251	511	Kosigi
+T	5252	511	Kowthalam
+T	5253	511	Pedda Kadubur
+T	5254	511	Yemmiganur
+T	5255	511	Nandavaram
+T	5256	511	C.Belagal
+T	5257	511	Gudur
+T	5258	511	Kallur
+T	5259	511	Kurnool
+T	5260	511	Nandikotkur
+T	5261	511	Pagidyala
+T	5262	511	Jupadu Bungalow
+T	5263	511	Kothapalle
+T	5265	511	Atmakur
+T	5266	511	Pamulapadu
+T	5267	511	Midthur
+T	5268	511	Orvakal
+T	5269	511	Kodumur
+T	5270	511	Gonegandla
+T	5271	511	Adoni
+T	5272	511	Holagunda
+T	5273	511	Halaharvi
+T	5274	511	Alur
+T	5275	511	Aspari
+T	5276	511	Devanakonda
+T	5277	511	Krishnagiri
+T	5278	511	Veldurthi
+T	5279	511	Bethamcherla
+T	5280	511	Panyam
+T	5281	511	Gadivemula
+T	5282	511	Velgode
+T	5283	511	Bandi Atmakur
+T	5284	511	Nandyal
+T	5285	511	Mahanandi
+T	5286	511	Sirvel
+T	5287	511	Gospadu
+T	5288	511	Banaganapalle
+T	5289	511	Dhone
+T	5290	511	Pattikonda
+T	5291	511	Chippagiri
+T	5292	511	Maddikera (East)
+T	5293	511	Tuggali
+T	5294	511	Peapally
+T	5295	511	Owk
+T	5296	511	Koilkuntla
+T	5297	511	Rudravaram
+T	5298	511	Allagadda
+T	5299	511	Dornipadu
+T	5300	511	Sanjamala
+T	5301	511	Kolimigundla
+T	5302	511	Uyyalawada
+T	5303	511	Chagalamarri
+T	5304	502	D.Hirehal
+T	5305	502	Rayadurg
+T	5306	502	Kanekal
+T	5307	502	Bommanahal
+T	5308	502	Vidapanakal
+T	5309	502	Guntakal
+T	5310	502	Gooty
+T	5311	502	Peddavadugur
+T	5312	502	Yadiki
+T	5313	502	Tadpatri
+T	5314	502	Peddapappur
+T	5315	502	Pamidi
+T	5316	502	Vajrakarur
+T	5317	502	Uravakonda
+T	5318	502	Beluguppa
+T	5319	502	Gummagatta
+T	5320	502	Brahmasamudram
+T	5321	502	Kalyandurg
+T	5322	502	Atmakur
+T	5323	502	Kudair
+T	5324	502	Garladinne
+T	5325	502	Singanamala
+T	5326	502	Putlur
+T	5327	502	Yellanur
+T	5328	502	Narpala
+T	5329	502	Bukkaraya Samudram
+T	5330	502	Anantapur
+T	5331	502	Raptadu
+T	5332	502	Settur
+T	5333	502	Kundurpi
+T	5334	502	Kambadur
+T	5335	502	Kanaganapalle
+T	5336	502	Dharmavaram
+T	5337	502	Bathalapalle
+T	5338	502	Tadimarri
+T	5339	502	Mudigubba
+T	5340	502	Talupula
+T	5341	502	Nambulipulikunta
+T	5342	502	Gandlapenta
+T	5343	502	Kadiri
+T	5344	502	Nallamada
+T	5345	502	Bukkapatnam
+T	5346	502	Kothacheruvu
+T	5347	502	Chennekothapalle
+T	5348	502	Ramagiri
+T	5349	502	Roddam
+T	5350	502	Madakasira
+T	5351	502	Amarapuram
+T	5352	502	Gudibanda
+T	5353	502	Rolla
+T	5354	502	Agali
+T	5355	502	Parigi
+T	5356	502	Penukonda
+T	5357	502	Puttaparthi
+T	5358	502	Obuladevaracheruvu
+T	5359	502	Nallacheruvu
+T	5360	502	Tanakal
+T	5361	502	Amadagur
+T	5362	502	Gorantla
+T	5363	502	Somandepalle
+T	5364	502	Hindupur
+T	5365	502	Lepakshi
+T	5366	502	Chilamathur
+T	5367	503	Mulakalacheruvu
+T	5368	503	Thamballapalle
+T	5369	503	Peddamandyam
+T	5370	503	Gurramkonda
+T	5371	503	Kalakada
+T	5372	503	Kambhamvaripalle
+T	5373	503	Rompicherla
+T	5374	503	Yerravaripalem
+T	5375	503	Tirupati (Rural)
+T	5376	503	Renigunta
+T	5377	503	Yerpedu
+T	5378	503	Srikalahasti
+T	5379	503	Thottambedu
+T	5380	503	Buchinaidu Kandriga
+T	5381	503	Varadaiahpalem
+T	5382	503	K.V.B.Puram
+T	5383	503	Tirupati (Urban)
+T	5384	503	Chandragiri
+T	5385	503	Chinnagottigallu
+T	5386	503	Pileru
+T	5387	503	Kalikiri
+T	5388	503	Valmikipuram
+T	5389	503	Kurabalakota
+T	5390	503	Pedda Thippasamudram
+T	5391	503	B.Kothakota
+T	5392	503	Madanapalle
+T	5393	503	Nimmanapalle
+T	5394	503	Sodam
+T	5395	503	Pulicherla
+T	5396	503	Pakala
+T	5397	503	Vedurukuppam
+T	5398	503	Ramachandrapuram
+T	5399	503	Vadamalapeta
+T	5400	503	Narayanavanam
+T	5401	503	Pichatur
+T	5402	503	Satyavedu
+T	5403	503	Nagalapuram
+T	5404	503	Nindra
+T	5405	503	Vijayapuram
+T	5406	503	Nagari
+T	5407	503	Puttur
+T	5408	503	Karvetinagar
+T	5409	503	Penumuru
+T	5410	503	Puthalapattu
+T	5411	503	Irala
+T	5412	503	Somala
+T	5413	503	Chowdepalle
+T	5414	503	Ramasamudram
+T	5415	503	Punganur
+T	5416	503	Peddapanjani
+T	5417	503	Gangavaram
+T	5418	503	Thavanampalle
+T	5419	503	Srirangarajapuram
+T	5420	503	Gangadhara Nellore
+T	5421	503	Chittoor
+T	5422	503	Palamaner
+T	5423	503	Baireddipalle
+T	5424	503	Venkatagirikota
+T	5425	503	Santhipuram
+T	5426	503	Gudupalle
+T	5427	503	Kuppam
+T	5428	503	Ramakuppam
+T	5429	503	Bangarupalem
+T	5430	503	Yadamarri
+T	5431	503	Gudipala
+T	5432	503	Palasamudram
+T	5433	527	Chikodi
+T	5434	527	Athni
+T	5435	527	Raybag
+T	5436	527	Gokak
+T	5437	527	Hukeri
+T	5438	527	Belagavi
+T	5439	527	Khanapur
+T	5440	527	Bailahongala
+T	5441	527	Savadatti
+T	5442	527	Ramdurg
+T	5443	524	Jamkhandi
+T	5444	524	Bilgi
+T	5445	524	Mudhol
+T	5446	524	Badami
+T	5447	524	Bagalkot
+T	5448	524	Hungund
+T	5449	530	Vijayapura
+T	5450	530	Indi
+T	5451	530	Sindgi
+T	5452	530	Basavana Bagevadi
+T	5453	530	Muddebihal
+T	5454	529	Basavakalyan
+T	5455	529	Bhalki
+T	5456	529	Aurad
+T	5457	529	Bidar
+T	5458	529	Homnabad
+T	5459	546	Lingsugur
+T	5460	546	Devadurga
+T	5461	546	Raichur
+T	5462	546	Manvi
+T	5463	546	Sindhnur
+T	5464	543	Yelbarga
+T	5465	543	Kushtagi
+T	5466	543	Gangawati
+T	5467	543	Koppal
+T	5468	537	Nargund
+T	5469	537	Ron
+T	5470	537	Gadag
+T	5471	537	Shirhatti
+T	5472	537	Mundargi
+T	5473	536	Dharwad
+T	5474	536	Navalgund
+T	5475	536	Hubballi
+T	5476	536	Kalghatgi
+T	5477	536	Kundgol
+T	5478	550	Karwar
+T	5479	550	Supa
+T	5480	550	Haliyal
+T	5481	550	Yellapur
+T	5482	550	Mundgod
+T	5483	550	Sirsi
+T	5484	550	Ankola
+T	5485	550	Kumta
+T	5486	550	Siddapur
+T	5487	550	Honavar
+T	5488	550	Bhatkal
+T	5489	540	Shiggaon
+T	5490	540	Savanur
+T	5491	540	Hangal
+T	5492	540	Haveri
+T	5493	540	Byadgi
+T	5494	540	Hirekerur
+T	5495	540	Ranibennur
+T	5496	528	Hadagalli
+T	5497	528	Hagaribommanahalli
+T	5498	528	Hosapete
+T	5499	528	Siruguppa
+T	5500	528	Ballari
+T	5501	528	Sandur
+T	5502	528	Kudligi
+T	5503	533	Molakalmuru
+T	5504	533	Challakere
+T	5505	533	Chitradurga
+T	5506	533	Holalkere
+T	5507	533	Hosdurga
+T	5508	533	Hiriyur
+T	5509	535	Harihar
+T	5510	528	Harapanahalli
+T	5511	535	Jagalur
+T	5512	535	Davanagere
+T	5513	535	Honnali
+T	5514	535	Channagiri
+T	5515	547	Sagar
+T	5516	547	Sorab
+T	5517	547	Shikarpur
+T	5518	547	Hosanagara
+T	5519	547	Tirthahalli
+T	5520	547	Shivamogga
+T	5521	547	Bhadravati
+T	5522	549	Kundapura
+T	5523	549	Udupi
+T	5524	549	Karkal
+T	5525	532	Sringeri
+T	5526	532	Koppa
+T	5527	532	Narasimharajapura
+T	5528	532	Tarikere
+T	5529	532	Kadur
+T	5530	532	Chikkamagaluru
+T	5531	532	Mudigere
+T	5532	548	Chiknayakanhalli
+T	5533	548	Sira
+T	5534	548	Pavagada
+T	5535	548	Madhugiri
+T	5536	548	Koratagere
+T	5537	548	Tumakuru
+T	5538	548	Gubbi
+T	5539	548	Tiptur
+T	5540	548	Turuvekere
+T	5541	548	Kunigal
+T	5542	525	Bengaluru North
+T	5543	525	Bengaluru South
+T	5544	525	Bengaluru East
+T	5545	525	Anekal
+T	5546	544	Krishnarajpet
+T	5547	544	Nagamangala
+T	5548	544	Pandavapura
+T	5549	544	Shrirangapattana
+T	5550	544	Mandya
+T	5551	544	Maddur
+T	5552	544	Malavalli
+T	5553	539	Sakleshpur
+T	5554	539	Belur
+T	5555	539	Arsikere
+T	5556	539	Hassan
+T	5557	539	Alur
+T	5558	539	Arkalgud
+T	5559	539	Hole Narsipur
+T	5560	539	Channarayapatna
+T	5561	534	Mangaluru
+T	5562	534	Bantval
+T	5563	534	Beltangadi
+T	5564	534	Puttur
+T	5565	534	Sulya
+T	5566	541	Madikeri
+T	5567	541	Somvarpet
+T	5568	541	Virajpet
+T	5569	545	Piriyapatna
+T	5570	545	Hunsur
+T	5571	545	Krishnarajanagara
+T	5572	545	Mysuru
+T	5573	545	Heggadadevankote
+T	5574	545	Nanjangud
+T	5575	545	Tirumakudal - Narsipur
+T	5576	531	Gundlupet
+T	5577	531	Chamarajanagar
+T	5578	531	Yelandur
+T	5579	531	Kollegal
+T	5580	538	Aland
+T	5581	538	Afzalpur
+T	5582	538	Kalaburagi
+T	5583	538	Chincholi
+T	5584	538	Sedam
+T	5585	538	Chittapur
+T	5586	538	Jevargi
+T	5587	635	Shorapur
+T	5588	635	Shahpur
+T	5589	635	Yadgir
+T	5590	542	Srinivaspur
+T	5591	542	Kolar
+T	5592	542	Malur
+T	5593	542	Bangarapet
+T	5594	542	Mulbagal
+T	5595	630	Gauribidanur
+T	5596	630	Chikkaballapura
+T	5597	630	Gudibanda
+T	5598	630	Bagepalli
+T	5599	630	Sidlaghatta
+T	5600	630	Chintamani
+T	5601	526	Nelamangala
+T	5602	526	Dodda Ballapur
+T	5603	526	Devanahalli
+T	5604	526	Hosakote
+T	5605	631	Magadi
+T	5606	631	Ramanagara
+T	5607	631	Channapatna
+T	5608	631	Kanakapura
+T	5609	551	Pernem
+T	5610	551	Bardez
+T	5611	551	Tiswadi
+T	5612	551	Bicholim
+T	5613	551	Satari
+T	5614	552	Ponda
+T	5615	552	Mormugao
+T	5616	552	Salcete
+T	5617	552	Quepem
+T	5618	552	Sanguem
+T	5619	552	Canacona
+T	5620	553	Amini
+T	5621	553	Bitra
+T	5622	553	Chetlat
+T	5623	553	Kiltan
+T	5624	553	Kadmat
+T	5625	553	Kavaratti
+T	5626	553	Agatti
+T	5627	553	Andrott
+T	5628	553	Kalpeni
+T	5629	553	Minicoy
+T	5630	558	Kasaragod
+T	5631	558	Hosdurg
+T	5632	557	Taliparamba
+T	5633	557	Kannur
+T	5634	557	Thalassery
+T	5635	567	Mananthavady
+T	5636	567	Sulthanbathery
+T	5637	567	Vythiri
+T	5638	561	Vatakara
+T	5639	561	Koyilandi
+T	5640	561	Kozhikode
+T	5641	562	Ernad
+T	5642	562	Nilambur
+T	5643	562	Perinthalmanna
+T	5644	562	Tirur
+T	5645	562	Tirurangadi
+T	5646	562	Ponnani
+T	5647	563	Ottappalam
+T	5648	563	Mannarkad
+T	5649	563	Palakkad
+T	5650	563	Chittur
+T	5651	563	Alathur
+T	5652	566	Talappilly
+T	5653	566	Chavakkad
+T	5654	566	Thrissur
+T	5655	566	Kodungallur
+T	5656	566	Mukundapuram
+T	5657	555	Kunnathunad
+T	5658	555	Aluva
+T	5659	555	Paravur
+T	5660	555	Kochi
+T	5661	555	Kanayannur
+T	5662	555	Muvattupuzha
+T	5663	555	Kothamangalam
+T	5664	556	Devikulam
+T	5665	556	Udumbanchola
+T	5666	556	Thodupuzha
+T	5667	556	Peerumade
+T	5668	560	Meenachil
+T	5669	560	Vaikom
+T	5670	560	Kottayam
+T	5671	560	Changanassery
+T	5672	560	Kanjirappally
+T	5673	554	Cherthala
+T	5674	554	Ambalappuzha
+T	5675	554	Kuttanad
+T	5676	554	Karthikappally
+T	5677	554	Chengannur
+T	5678	554	Mavelikkara
+T	5679	564	Thiruvalla
+T	5680	564	Mallappally
+T	5681	564	Ranni
+T	5682	564	Kozhenchery
+T	5683	564	Adoor
+T	5684	559	Karunagappally
+T	5685	559	Kunnathur
+T	5686	559	Pathanapuram
+T	5687	559	Kottarakkara
+T	5688	559	Kollam
+T	5689	565	Chirayinkeezhu
+T	5690	565	Nedumangad
+T	5691	565	Thiruvananthapuram
+T	5692	565	Neyyattinkara
+T	5693	589	Gummidipoondi
+T	5694	589	Ponneri
+T	5695	589	Uthukkottai
+T	5696	589	Tiruttani
+T	5697	589	Pallipattu
+T	5698	589	Thiruvallur
+T	5699	589	Poonamallee
+T	5700	568	Ambattur
+T	5701	568	Mathavaram
+T	5702	574	Sriperumbudur
+T	5703	730	Tambaram
+T	5704	568	Alandur
+T	5705	568	Sholinganallur
+T	5706	730	Chengalpattu
+T	5707	574	Kancheepuram
+T	5708	574	Uthiramerur
+T	5709	730	Tirukalukundram
+T	5710	730	Maduranthakam
+T	5711	730	Cheyyur
+T	5712	595	Gudiyatham
+T	5713	595	Katpadi
+T	5714	731	Wallajah
+T	5715	731	Arakonam
+T	5716	731	Arcot
+T	5717	595	Vellore
+T	5718	732	Vaniyambadi
+T	5719	732	Ambur
+T	5720	732	Tirupathur
+T	5721	593	Arani
+T	5722	593	Cheyyar
+T	5723	593	Vandavasi
+T	5724	593	Polur
+T	5725	593	Chengam
+T	5726	593	Thandrampet
+T	5727	593	Tiruvannamalai
+T	5728	596	Gingee
+T	5729	596	Tindivanam
+T	5730	596	Vanur
+T	5731	596	Viluppuram
+T	5732	729	Tirukkoyilur
+T	5733	729	Sankarapuram
+T	5734	729	Kallakkurichi
+T	5735	729	Ulundurpettai
+T	5736	584	Mettur
+T	5737	584	Omalur
+T	5738	584	Edappadi
+T	5739	584	Sankari
+T	5740	584	Salem
+T	5741	584	Yercaud
+T	5742	584	Vazhapadi
+T	5743	584	Attur
+T	5744	584	Gangavalli
+T	5745	580	Tiruchengode
+T	5746	580	Rasipuram
+T	5747	580	Namakkal
+T	5748	580	Paramathi-Velur
+T	5749	573	Sathyamangalam
+T	5750	573	Bhavani
+T	5751	573	Gobichettipalayam
+T	5752	573	Perundurai
+T	5753	573	Erode
+T	5754	587	Panthalur
+T	5755	587	Gudalur
+T	5756	587	Udhagamandalam
+T	5757	587	Kotagiri
+T	5758	587	Coonoor
+T	5759	587	Kundah
+T	5760	572	Palani
+T	5761	572	Oddanchatram
+T	5762	572	Vedasandur
+T	5763	572	Natham
+T	5766	572	Kodaikanal
+T	5767	572	Nilakkottai
+T	5768	576	Aravakurichi
+T	5769	576	Karur
+T	5770	576	Krishnarayapuram
+T	5771	576	Kulithalai
+T	5772	576	Kadavur
+T	5773	591	Thottiyam
+T	5774	591	Musiri
+T	5775	591	Thuraiyur
+T	5776	591	Manachanallur
+T	5777	591	Lalgudi
+T	5778	591	Srirangam
+T	5779	591	Tiruchirappalli West
+T	5780	591	Thiruverumbur
+T	5781	591	Manapparai
+T	5785	610	Sendurai
+T	5786	610	Udayarpalayam
+T	5787	610	Ariyalur
+T	5788	570	Panruti
+T	5789	570	Cuddalore
+T	5790	570	Kurinjipadi
+T	5791	570	Chidambaram
+T	5792	570	Kattumannarkoil
+T	5793	570	Virudhachalam
+T	5794	570	Tittakudi
+T	5795	735	Sirkali
+T	5796	735	Mayiladuthurai
+T	5797	735	Kuthalam
+T	5798	735	Tharangambadi
+T	5799	579	Nagapattinam
+T	5800	579	Kilvelur
+T	5801	579	Thirukkuvalai
+T	5802	579	Vedaranyam
+T	5803	590	Valangaiman
+T	5804	590	Kudavasal
+T	5805	590	Nannilam
+T	5806	590	Thiruvarur
+T	5807	590	Needamangalam
+T	5808	590	Mannargudi
+T	5809	590	Thiruthuraipoondi
+T	5810	586	Thiruvidaimarudur
+T	5811	586	Kumbakonam
+T	5812	586	Papanasam
+T	5813	586	Thiruvaiyaru
+T	5814	586	Thanjavur
+T	5815	586	Orathanadu
+T	5816	586	Pattukkottai
+T	5817	586	Peravurani
+T	5818	582	Iluppur
+T	5819	582	Kulathur
+T	5820	582	Gandarvakkottai
+T	5821	582	Pudukkottai
+T	5822	582	Thirumayam
+T	5823	582	Ponnamaravathi
+T	5824	582	Alangudi
+T	5825	582	Karambakudi
+T	5826	582	Aranthangi
+T	5827	582	Manamelkudi
+T	5828	582	Avudayarkoil
+T	5829	585	Thiruppathur
+T	5830	585	Karaikkudi
+T	5831	585	Devakottai
+T	5832	585	Sivaganga
+T	5833	585	Manamadurai
+T	5834	585	Ilayangudi
+T	5835	578	Melur
+T	5836	578	Madurai North
+T	5837	578	Vadipatti
+T	5838	578	Usilampatti
+T	5839	578	Peraiyur
+T	5840	578	Thirumangalam
+T	5841	578	Madurai South
+T	5842	588	Bodinayakanur
+T	5843	588	Periyakulam
+T	5844	588	Theni
+T	5845	588	Uthamapalayam
+T	5846	588	Andipatti
+T	5847	597	Rajapalayam
+T	5848	597	Srivilliputhur
+T	5849	597	Sivakasi
+T	5850	597	Virudhunagar
+T	5851	597	Kariapatti
+T	5852	597	Tiruchuli
+T	5853	597	Aruppukkottai
+T	5854	597	Sattur
+T	5855	583	Tiruvadanai
+T	5856	583	Paramakudi
+T	5857	583	Mudukulathur
+T	5858	583	Kamuthi
+T	5859	583	Kadaladi
+T	5860	583	Ramanathapuram
+T	5861	583	Rameswaram
+T	5862	594	Kovilpatti
+T	5863	594	Ettayapuram
+T	5864	594	Vilathikulam
+T	5865	594	Ottapidaram
+T	5866	594	Thoothukkudi
+T	5867	594	Srivaikuntam
+T	5868	594	Tiruchendur
+T	5869	594	Sathankulam
+T	5870	733	Sivagiri
+T	5871	733	Sankarankoil
+T	5872	733	Veerakeralamputhur
+T	5873	733	Tenkasi
+T	5874	733	Shenkottai
+T	5875	733	Alangulam
+T	5876	592	Tirunelveli
+T	5877	592	Palayamkottai
+T	5878	592	Ambasamudram
+T	5879	592	Nanguneri
+T	5880	592	Radhapuram
+T	5881	575	Vilavancode
+T	5882	575	Kalkulam
+T	5883	575	Thovala
+T	5884	575	Agastheeswaram
+T	5885	571	Palakkodu
+T	5886	571	Harur
+T	5887	571	Pappireddipatti
+T	5888	571	Dharmapuri
+T	5889	571	Pennagaram
+T	5890	577	Hosur
+T	5891	577	Krishnagiri
+T	5892	577	Denkanikottai
+T	5893	577	Pochampalli
+T	5894	577	Uthangarai
+T	5895	569	Mettupalayam
+T	5896	569	Sulur
+T	5897	569	Coimbatore North
+T	5898	569	Coimbatore South
+T	5899	569	Pollachi
+T	5900	569	Valparai
+T	5901	634	Kangeyam
+T	5902	634	Dharapuram
+T	5903	634	Avanashi
+T	5905	634	Palladam
+T	5906	634	Udumalaipettai
+T	5907	634	Madathukulam
+T	5909	600	Puducherry Taluk
+T	5910	600	Ozhukarai Taluk
+T	5911	600	Villianur Taluk
+T	5912	600	Bahour Taluk
+T	5914	598	Karaikal Taluk
+T	5915	598	Thirunallar Taluk
+T	5916	603	Car Nicobar
+T	5917	603	Nancowry
+T	5918	603	Great Nicobar
+T	5919	632	Diglipur
+T	5920	632	Mayabunder
+T	5921	632	Rangat
+T	5922	602	Ferrargunj
+T	5923	602	Port Blair
+T	5924	602	Little Andaman
+T	5930	136	Manikpur
+T	5931	552	Dharbandora
+T	5932	558	Manjeswaram
+T	5933	558	Vellarikkundu
+T	5934	291	Rangia Pt
+T	5935	616	Barama Pt
+T	5937	557	Iritty
+T	5938	561	Thamarassery
+T	5939	566	Chalakkudy
+T	5940	563	Pattambi
+T	5941	562	Kondotty
+T	5942	556	Idukki
+T	5943	564	Konni
+T	5945	565	Kattakkada
+T	5946	565	Varkala
+T	5947	559	Punalur
+T	5951	581	Alathur
+T	5953	570	veppur
+T	5954	591	Marungapuri
+T	5955	569	annur
+T	5956	569	Kinathukadavu
+T	5957	569	Perur
+T	5958	730	Tiruporur
+T	5959	593	Kalasapakkam
+T	5960	578	Madurai East
+T	5961	578	Madurai West
+T	5962	578	Thirupparankundram
+T	5963	732	Natrampalli
+T	5964	595	Anaicut
+T	5965	585	Thiruppuvanam
+T	5966	586	Budalur
+T	5967	634	TiruppurNorth
+T	5968	634	Tiruppursouth
+T	5969	573	Anthiyur
+T	5970	584	Salem South
+T	5971	584	Salem West
+T	5973	581	Perambalur
+T	5974	581	Veppanthattai
+T	5976	581	Kunnam
+T	5977	729	Chinnasalem
+T	5978	596	Vikravandi
+T	5979	572	DindigulWest
+T	5980	572	DindigulEast
+T	5981	568	Maduravoyal
+T	5982	568	Tiruvottiyur
+T	5983	610	Andimadam
+T	5984	29	Kotakpura
+T	5985	576	Manmangalam
+T	5986	569	Madukkari
+T	5987	245	Chunlikha
+T	5988	251	Tokiye
+T	5989	246	Ongpangkong (N)
+T	5990	246	Tsurangkong
+T	5991	248	Kikruma
+T	5992	248	Weziho
+T	5993	40	Banga
+T	5994	572	Athoor
+T	5995	585	Singampunari
+T	5996	38	Dharamkot
+T	6011	31	Guruharsahai
+T	6012	666	Wakka SDO
+T	6013	237	Borum
+T	6014	285	Dhubri
+T	6015	285	Golakganj Pt
+T	6018	285	Bilasipara Pt
+T	6019	285	Chapar Pt
+T	6020	668	Bodeli
+T	6021	451	Jotana
+T	6022	50	Bhagwanpur
+T	6023	444	Waghai
+T	6024	444	Subir
+T	6025	450	Galteshwar
+T	6026	102	Kishangarh Renwal
+T	6027	102	Dudu
+T	6028	102	Kotkhawda
+T	6029	452	Garudeshwar
+T	6030	56	Rudrapur
+T	6031	462	Vapi
+T	6032	661	Dhaulana
+T	6033	94	Talera
+T	6034	450	Vaso
+T	6035	461	Desar
+T	6036	52	Chakisain
+T	6037	460	Thangadh
+T	6038	714	Khoupum
+T	6039	714	Haochong
+T	6040	103	Bhaniyana
+T	6042	88	Chhoti Sarwan
+T	6043	88	Sajjangarh
+T	6044	104	Jaswantpura
+T	6045	90	Sedwa
+T	6046	104	Chitalwana
+T	6047	107	Baori
+T	6048	107	Bap
+T	6049	107	Balesar
+T	6050	90	Dhorimanna
+T	6051	107	Pipar shahar
+T	6052	90	Sindhari
+T	6053	97	Nangal Rajawatan
+T	6054	109	Kanwas
+T	6055	105	Asnawar
+T	6057	95	Bhopalsagar
+T	6058	99	Bichiwara
+T	6059	99	Chikhali
+T	6060	99	Galiyakot
+T	6061	88	Anandpuri
+T	6062	99	Sabla
+T	6063	505	Nellipaka
+T	6064	92	Kareda
+T	6065	110	Kuchaman City
+T	6066	92	Badnor
+T	6067	92	Phooliya Kalan
+T	6068	92	Hameergarh
+T	6069	110	Riyan Badi
+T	6070	99	Jothari
+T	6071	404	Bajag
+T	6072	433	Bahari
+T	6074	666	Longding HQ
+T	6075	235	Hunli SDO
+T	6076	80	Alipur
+T	6077	82	Rohini
+T	6078	82	Kanjhawala
+T	6079	83	Saket
+T	6080	83	Mehrauli
+T	6081	670	Sarita Vihar
+T	6082	81	Yamuna Vihar
+T	6083	81	Karawal Nagar
+T	6084	78	Mayur Vihar
+T	6085	84	Kapeshera
+T	6086	84	Dwarka
+T	6087	243	Aalo HQ
+T	6088	458	Poshina
+T	6089	145	Loni
+T	6091	625	Keller
+T	6092	625	Keegam
+T	6093	187	Rajatalab
+T	6094	162	Sarojani Nagar
+T	6098	231	Lada Circle
+T	6099	723	Dissing Passo Circle
+T	6100	723	Pizirang Veo Circle
+T	6101	231	Richukrong Circle
+T	6102	231	Bana EAC
+T	6104	723	Seijosa ADC
+T	6107	236	Old Ziro SDO
+T	6115	232	Namsing Circle
+T	6118	232	Pasighat HQ
+T	6119	236	Pistana Circle
+T	6121	678	Piyong Circle
+T	6129	718	Raga ADC
+T	6130	233	Koloriang Hq
+T	6140	233	Patuk Adc
+T	6156	136	Rajapur
+T	6157	128	Pailani
+T	6158	139	Takha
+T	6159	660	Un
+T	6160	186	Bangarmau
+T	6161	143	Sirsaganj
+T	6163	157	Narwal
+T	6164	181	jamunaha
+T	6165	123	Martinganj
+T	6166	441	Suigam
+T	6167	438	Dholera
+T	6168	441	Lakhani
+T	6169	641	Kukarmunda
+T	6170	442	Netrang
+T	6191	6	Drass
+T	6192	6	Shaker Chiktan
+T	6193	622	Qaimoh
+T	6194	622	Pahloo
+T	6195	453	Khergam
+T	6196	455	Saraswati
+T	6197	455	Shankheshvar
+T	6198	457	Vinchchiya
+T	6199	675	Gir Gadhda
+T	6200	641	Dolvan
+T	6201	325	Egarkund
+T	6202	325	Kariasol
+T	6203	443	Jesar
+T	6204	445	Sanjeli
+T	6205	680	Basar
+T	6206	680	Pembi
+T	6207	680	Dasturabad
+T	6208	680	Narsapur G
+T	6209	680	Soan
+T	6210	680	Nirmal Rural
+T	6211	681	Jagitial Rural
+T	6212	681	Beerpur
+T	6213	681	Buggaram
+T	6214	682	Anthergaon
+T	6215	682	Palakurthy
+T	6216	682	Ramagiri
+T	6217	683	Thangallapalli
+T	6218	683	Vemulawada Rural
+T	6219	683	Rudrangi
+T	6220	683	Veernapalli
+T	6221	501	Aidilabad Rural
+T	6222	501	Mavala
+T	6223	501	Bheempur
+T	6224	501	Sirikonda
+T	6225	501	Gadiguda
+T	6226	684	Naspur
+T	6227	684	Hajipur
+T	6228	684	Bheemaram
+T	6229	684	Kannepally
+T	6230	508	Kothapally
+T	6231	508	Karimnagar
+T	6232	508	Ganneruvaram
+T	6233	516	Nizamabad Rural
+T	6234	508	Ellandakunta
+T	6235	516	Mugpal
+T	6236	516	Indalwai
+T	6237	516	Mendora
+T	6238	516	Mupkal
+T	6239	516	Yergatla
+T	6240	516	Rudrur
+T	6241	685	Rajampet
+T	6242	685	Bibipet
+T	6243	685	Ramareddy
+T	6244	685	Nasurullabad
+T	6245	685	Pedda Kodapgal
+T	6246	522	Khila Warangal
+T	6247	686	Khazipet
+T	6248	687	Tekumatla
+T	6249	686	Inavole
+T	6250	687	Palimela
+T	6251	720	Kannaigudem
+T	6252	686	Velair
+T	6253	688	Gangaram
+T	6254	688	Chinnagudur
+T	6255	688	Danthalapalle
+T	6256	688	Peddavangara
+T	6257	689	Tharigoppula
+T	6258	512	Mahabubnagar Rural
+T	6259	689	Chilpur
+T	6260	512	Moosapet
+T	6261	512	Rajapur
+T	6263	721	Marikal
+T	6264	721	Krishna
+T	6265	690	Sujathanagar
+T	6266	690	Laxmidevipalli
+T	6267	690	Allapalli
+T	6268	690	Annapureddypalli
+T	6269	690	Karakagudem
+T	6270	513	Havelighanapur
+T	6271	513	Nizampet
+T	6272	513	Narsingi
+T	6273	513	Manoharabad
+T	6274	513	Chilpched
+T	6275	691	Kandi
+T	6276	691	Ameenpur
+T	6277	691	Gummadidala
+T	6278	691	Mogudampally
+T	6279	691	Sirgapoor
+T	6280	691	Nagalgidda
+T	6281	692	Siddipet Rural
+T	6282	692	Markook
+T	6283	692	Raipole
+T	6284	692	Komuravelli
+T	6285	692	Akkannapet
+T	6286	693	Revally
+T	6287	693	Chinnambavi
+T	6288	693	Srirangapur
+T	6289	693	Madanapur
+T	6290	693	Amarchintha
+T	6291	691	Vatpally
+T	6292	694	Pentlavelli
+T	6293	694	Charakonda
+T	6294	694	Padara
+T	6295	694	Urkonda
+T	6296	695	Rajoli
+T	6297	695	Kaloor Thimmandoddi
+T	6298	696	Nagaram
+T	6299	695	Undavelly
+T	6300	696	Maddirala
+T	6301	696	Palakeedu
+T	6302	696	Ananthagiri
+T	6303	696	Chinthalapalem
+T	6304	514	Adavidevulapalli
+T	6305	514	Madugulapally
+T	6306	514	Tirumalagiri Sagar
+T	6307	514	Kondamallepally
+T	6308	514	Neredugommu
+T	6309	697	Motakonduru
+T	6310	697	Adda Guduru
+T	6311	699	Lingapur
+T	6312	698	Kotepally
+T	6313	699	Penchicalpet
+T	6314	699	Chintalamanepally
+T	6315	700	Bachupally
+T	6316	700	Gandimaisamma Dundigal
+T	6317	700	Kapra
+T	6318	700	Medipally
+T	6319	518	Abdullapurmet
+T	6320	518	Gandipet
+T	6321	518	Nandigama
+T	6322	518	Jilled Chowdergudem
+T	6323	518	Balapur
+T	6324	518	Kadthal
+T	6325	338	Ramgarh
+T	6327	700	Kukatpally
+T	6328	700	Alwal
+T	6329	328	Bargarh
+T	6330	45	Syalde
+T	6331	46	Dugnakuri
+T	6332	46	Kafligair
+T	6333	47	Narayanbagar
+T	6334	54	Basukedar
+T	6335	49	Doiwala
+T	6336	53	Ganai Gangoli
+T	6337	55	Nainbag
+T	6338	45	Dhaulchhina
+T	6339	45	Machhor
+T	6340	45	Jalali
+T	6341	45	Bagwalipokhar
+T	6342	45	Dhyari
+T	6343	47	Ghaat
+T	6344	47	Nandprayag
+T	6345	47	Adibadri
+T	6346	47	Jilasu
+T	6347	47	Dewal
+T	6348	48	Manch
+T	6349	48	Pulla Gumdesh
+T	6350	51	Okhalkanda
+T	6351	50	Laldhang
+T	6352	50	Narsan
+T	6353	51	Ramgarh
+T	6354	52	Bironkhal
+T	6355	52	Rikhanikhal
+T	6356	53	Bangapani
+T	6357	53	Tejam
+T	6358	53	Pankhu
+T	6359	53	Thal
+T	6360	55	Kandisaur
+T	6361	55	Kirtinagar
+T	6362	55	Madannegi
+T	6363	55	Pawkidevi
+T	6364	56	Nanakmatta
+T	6365	57	Dhauntari
+T	6366	57	Joshiyara
+T	6367	46	Shama
+T	6368	45	Lamgada
+T	6369	161	madawara
+T	6370	106	Malsisar
+T	6371	106	Surajgarh
+T	6372	55	Gaja
+T	6373	52	Jakhanikhal
+T	6374	55	Balganga
+T	6375	686	Damera
+T	6376	690	Chunchupalli
+T	6377	48	Barakot
+T	6378	110	Mundwa
+T	6379	108	Masalpur
+T	6380	87	Neemrana
+T	6381	87	Reni
+T	6382	87	Malakhera
+T	6383	87	Govindgarh
+T	6384	114	Khendela
+T	6385	516	Nizamabad South
+T	6386	113	Wazeerpur
+T	6387	114	Dhod
+T	6388	114	Ramgarh Shekawati
+T	6389	98	Sarmathura
+T	6390	107	Tinwari
+T	6391	107	Lohawat
+T	6392	112	Garhbor
+T	6393	112	Khamnor
+T	6396	741	Rangpo
+T	6397	228	Yuksom
+T	6398	228	Dentam
+T	6399	227	Jorethang
+T	6400	227	Yangang
+T	6401	226	Kabi
+T	6402	226	Dzongu
+T	6403	294	Kokrajhar
+T	6404	57	Sankari
+T	6405	57	Barnigad
+T	6406	58	Ambala Cantonment
+T	6407	60	Badkhal
+T	6408	63	Bass
+T	6409	65	Alewa
+T	6410	68	Ladwa
+T	6411	70	Raipur Rani
+T	6412	71	Matlauda
+T	6413	65	Uchana
+T	6414	60	Dhauj ST
+T	6415	60	Dayalpur ST
+T	6416	60	Gaunchi ST
+T	6417	76	Pratap Nagar ST
+T	6418	72	Palhawas ST
+T	6419	63	Kheri Jalab ST
+T	6420	62	Wazirabad ST
+T	6421	62	Badshahpur ST
+T	6422	62	Kadipur ST
+T	6423	62	Harsaru ST
+T	6424	53	Devalthal
+T	6425	53	Kanalichhina
+T	6426	96	Bidasar
+T	6427	617	Kalaigaon
+T	6428	617	Khoirabari
+T	6429	58	Saha ST
+T	6430	58	Mulana ST
+T	6431	58	Shahzadpur ST
+T	6432	59	Bahal ST
+T	6433	701	Bondkalan ST
+T	6434	60	Tigaon ST
+T	6435	60	Mohna ST
+T	6436	61	Bhattukalan ST
+T	6437	61	Bhuna ST
+T	6438	61	Jakhal ST
+T	6439	61	Kulan ST
+T	6440	63	Barwala
+T	6441	63	Uklana ST
+T	6442	63	Balsamand ST
+T	6443	64	Salhawas ST
+T	6444	64	Badli
+T	6445	65	Pillukhera ST
+T	6446	66	Kalayat
+T	6447	66	Rajaund ST
+T	6448	66	Dhand ST
+T	6449	66	Siwan ST
+T	6450	67	Nising ST
+T	6451	67	Nigdu ST
+T	6452	67	Ballah ST
+T	6453	68	Ismailabad ST
+T	6454	68	Babain ST
+T	6456	69	Nangal Chawdhary
+T	6457	69	Ateli
+T	6458	69	Kanina
+T	6459	69	Satnali ST
+T	6460	70	Barwala ST
+T	6461	70	Morni ST
+T	6462	71	Bapoli
+T	6463	72	Dharuhera ST
+T	6464	72	Dahina ST
+T	6465	72	Nahar ST
+T	6466	72	Manethi ST
+T	6467	73	Kalanaur
+T	6468	73	Lakhan Majra ST
+T	6469	74	Kalanwali
+T	6470	74	Nathusari Chopta
+T	6471	74	Goriwala ST
+T	6472	75	Khanpur ST
+T	6473	75	Rai ST
+T	6474	76	Radaur
+T	6475	76	Sadhaura ST
+T	6476	76	Saraswati Nagar ST
+T	6477	604	Nagina ST
+T	6478	619	Hassanpur ST
+T	6479	619	Bahin ST
+T	6480	445	Singvad
+T	6481	260	Jessami
+T	6482	260	Lm
+T	6483	257	Chilivai Phaibung
+T	6484	257	Song Song
+T	6485	257	Willong
+T	6486	711	Waikhong
+T	6487	712	Island
+T	6488	712	Bungte Chiru
+T	6489	712	Champhai
+T	6490	713	Borobekra
+T	6491	714	Longmai
+T	6492	712	T Vaichong
+T	6493	712	Saikul
+T	6495	712	Kangchup Geljang
+T	6496	253	Khengjoy
+T	6497	712	Lhungtin
+T	6498	716	Moreh
+T	6499	717	Sahamphung
+T	6500	254	Kangvai
+T	6501	254	Saikot
+T	6502	254	Henglep
+T	6503	254	Sangaikot
+T	6504	254	Mualnuam
+T	6505	254	Samulamlan
+T	6506	254	Suangdoh
+T	6507	715	Vangai Range
+T	6508	257	Tadubi
+T	6509	376	Bade Bacheli
+T	6510	430	Awantipur Badodiya
+T	6511	430	Polaykala
+T	6512	438	Asarva
+T	6513	438	Ghatlodiya
+T	6514	438	Vejalpur
+T	6515	438	Maninagar
+T	6516	438	Vatva
+T	6517	448	Junagadh City
+T	6518	459	Adajan
+T	6519	459	Katargam
+T	6520	457	Rajkot East
+T	6521	459	Puna
+T	6522	459	Udhna
+T	6523	457	Rajkot West
+T	6524	457	Rajkot South
+T	6525	447	Jamnagar City
+T	6526	461	Vadodara South
+T	6527	461	Vadodara North
+T	6528	461	Vadodara West
+T	6529	461	Vadodara East
+T	6530	440	Anand City
+T	6531	450	Nadiad City
+T	6532	421	Sultanpur
+T	6533	436	Karkeli
+T	6534	432	Bairad
+T	6535	402	Udainagar
+T	6536	434	Lidhora
+T	6538	511	Srisailam
+T	6539	573	Thalavadi
+T	6540	274	Mawlai
+T	6541	274	Mawpat
+T	6542	274	Sohiong
+T	6543	276	Bhoirymbong
+T	6544	656	Bajengdoba
+T	6545	663	Rerapara
+T	6546	278	Demdema
+T	6547	686	Nadikuda
+T	6549	241	Taksing Circle
+T	6550	238	Dudunghar Circle
+T	6551	241	Gite Ripa Circle
+T	6552	241	Nilling Circle
+T	6553	241	Segi Gusar Circle
+T	6554	241	Maro Circle
+T	6555	238	Lhou Circle
+T	6556	238	Thingbu Circle
+T	6557	238	Bongkhar Circle
+T	6559	718	Gepen Circle
+T	6560	242	Rupa SDO
+T	6561	242	Bhalukpong EAC
+T	6563	242	Jamiri Circle
+T	6564	242	Balemu Circle
+T	6565	242	Thembang Circle
+T	6566	242	Shergaon Circle
+T	6567	242	Kamengbari Doimara Circle
+T	6568	242	Bomdila HQ
+T	6569	235	Desali Circle
+T	6572	719	Kangku Circle
+T	6573	719	Sibe Circle
+T	6574	719	Kora Circle
+T	6575	719	New Seren Circle
+T	6577	229	Renuk Circle
+T	6578	229	Lyngok Longtoi Circle
+T	6579	229	Yatdam Circle
+T	6580	229	Namtok EAC
+T	6581	229	Tikhak Rima Putok Circle
+T	6582	229	Jairampur ADC
+T	6584	666	Pumao Circle
+T	6585	243	Kamba ADC
+T	6586	243	Kombo Circle
+T	6587	243	Nikte Kodum Circle
+T	6588	243	Bagra Circle
+T	6589	725	Tato EAC
+T	6590	725	Pidi Circle
+T	6591	230	Dambuen Circle
+T	6594	239	Borduria Circle
+T	6596	239	Katang Circle
+T	6597	239	Longo Circle
+T	6598	566	Kunnamkulam
+T	6599	557	Payyannur
+T	6600	237	Sangdupota Basar Nello Circle
+T	6601	237	Kakoi Circle
+T	6602	237	Gumto Circle
+T	6603	237	Banderdewa Circle
+T	6604	237	Itanagar EAC
+T	6605	231	Khenawa Circle
+T	6606	679	Jomlo Mobuk Circle
+T	6607	679	Payum Circle
+T	6608	229	Kantang Circle
+T	6609	406	Guna Nagar
+T	6610	88	Gangadtalai
+T	6611	88	Ganoda
+T	6612	88	Abapura
+T	6613	577	Bargur
+T	6614	582	Viralimalai
+T	6615	578	Kalligudi
+T	6616	634	Uthukuli
+T	6617	593	Chetpet
+T	6618	584	Pethanaickanpalayam
+T	6619	584	Kadayampatti
+T	6620	591	Tiruchirappalli East
+T	6621	589	Avadi
+T	6622	571	Karimangalam
+T	6623	571	Nallampalli
+T	6624	593	Vembakkam
+T	6625	580	Kolli Hills
+T	6626	574	Walajabad
+T	6627	590	Koothanallur
+T	6628	594	Kayathar
+T	6629	730	Pallavaram
+T	6630	593	Kilpennathur
+T	6631	593	Jamunamarathoor
+T	6632	580	Sendamangalam
+T	6633	594	Eral
+T	6634	580	Kumarapalayam
+T	6635	580	Mohanur
+T	6636	573	Modakkurichi
+T	6637	573	Kodumudi
+T	6638	573	Nambiyur
+T	6639	733	Kadayanallur
+T	6640	597	Vembakottai
+T	6641	577	Shoolagiri
+T	6642	733	Tiruvengadam
+T	6643	569	Anaimalai
+T	6644	585	Kalaiyarkoil
+T	6645	570	Bhuvanagiri
+T	6646	570	Srimushnam
+T	6647	592	Manur
+T	6648	592	Cheranmahadevi
+T	6649	592	Tisayanvilai
+T	6650	596	Marakanam
+T	6651	596	Kandachipuram
+T	6652	596	Melmalaiyanur
+T	6653	583	Rajasingamangalam
+T	6654	583	Kilakarai
+T	6655	86	Pushkar
+T	6656	86	Tatgarh
+T	6657	86	Roopangarh
+T	6658	86	Tantoli
+T	6659	86	Arain
+T	6660	86	Sawar
+T	6661	86	Vijaynagar
+T	6662	577	Anchetty
+T	6663	595	Pernambut
+T	6664	731	Nemili
+T	6665	91	Bhusawar
+T	6666	105	Bakani
+T	6667	105	Sunel
+T	6668	516	Mosara
+T	6669	516	Chandur
+T	6670	692	Narayanaraopet
+T	6671	700	Muduchinthalapally
+T	6672	575	Thiruvattar
+T	6673	575	Killiyoor
+T	6674	589	R K Pet
+T	6675	597	Watrap
+T	6676	576	Pugalur
+T	6677	653	Jampuijala
+T	6678	270	Panisagar
+T	6679	272	Jirania
+T	6680	653	Sonamura
+T	6681	269	Kamalpur
+T	6682	655	Kailashahar
+T	6683	271	Santirbazar
+T	6684	652	Khowai
+T	6685	270	Kanchanpur
+T	6686	269	Gandacherra
+T	6687	271	Belonia
+T	6688	271	Sabroom
+T	6689	272	Mohanpur
+T	6690	654	Karbook
+T	6691	270	Dharmanagar
+T	6692	269	Longtharai Valley
+T	6693	654	Udaipur
+T	6694	655	Kumarghat
+T	6695	654	Amarpur
+T	6696	272	Sadar
+T	6697	269	Ambassa
+T	6698	652	Teliamura
+T	6699	653	Bishalgarh
+T	6700	572	Gujiliamparai
+T	6701	5	Jourian
+T	6702	5	Maira Mandrian
+T	6703	5	Chowki Choura
+T	6704	5	Kharah Balli
+T	6705	5	Pargwal
+T	6706	5	Jammu South
+T	6707	5	Bahu
+T	6708	5	Jammu North
+T	6709	5	Bhalwal
+T	6711	5	Nagrota
+T	6712	5	Dansal
+T	6713	5	Mandal
+T	6714	5	Khour
+T	6715	5	Marh
+T	6716	5	Suchetgarh
+T	6717	5	Arnia
+T	6718	5	Jammu West
+T	6719	624	Rajpura
+T	6720	624	Bari Brahamana
+T	6721	624	Ghagwal
+T	6722	624	Vijaypur
+T	6724	624	Ramgarh
+T	6725	7	Mahanpur
+T	6726	7	Dinga Amb
+T	6727	7	Nagri
+T	6728	7	Ramkote
+T	6729	7	Lohai Malhar
+T	6731	7	Marheen
+T	6734	14	Moungri
+T	6735	14	Panchari
+T	6736	14	Basantgarh
+T	6737	14	Latti
+T	6738	627	Chassana
+T	6739	627	Thuroo
+T	6740	627	Arnas
+T	6741	627	Katra
+T	6742	627	Pouni
+T	6744	627	Bhomag
+T	6745	627	Thakrakote
+T	6746	4	Bharath Bagla
+T	6747	4	Bhagwah
+T	6748	4	Kashtigarh
+T	6749	4	Gundna
+T	6750	4	Mohalla
+T	6751	4	Marmat
+T	6752	4	Assar
+T	6753	4	Bhalessa
+T	6754	4	Chilly Pingal
+T	6755	4	Bhalla
+T	6756	4	Kahara
+T	6757	4	Phigsoo
+T	6758	4	Chiralla
+T	6759	621	Khari
+T	6760	621	Pogal Paristan
+T	6761	621	Batote
+T	6762	621	Rajgarh
+T	6763	621	Gool
+T	6764	620	Mughalmaidan
+T	6765	620	Dachhan
+T	6766	620	Warwan
+T	6767	620	Machail
+T	6768	620	Nagseni
+T	6769	620	Drabshalla
+T	6770	620	Bounjwah
+T	6771	12	Khawas
+T	6772	12	Manjakote
+T	6773	12	Qila Darhal
+T	6774	12	Laroka
+T	6775	12	Taryath
+T	6776	12	Beri Pattan
+T	6777	12	Siot
+T	6778	10	Balakote
+T	6779	10	Mankote
+T	6780	622	Frisal
+T	6781	622	Yaripora
+T	6782	8	Keran
+T	6783	8	Kralpora
+T	6784	8	Trehgam
+T	6785	8	Machil
+T	6786	8	Drugmulla
+T	6787	8	Ramhal
+T	6788	8	Qaziabad
+T	6789	8	Langate
+T	6790	8	Zachaldara
+T	6791	8	Lolab
+T	6792	8	Lalpora
+T	6793	11	Kakapora
+T	6794	11	Shahoora
+T	6795	11	Aripal
+T	6796	11	Rajpora
+T	6797	625	Zainapora
+T	6798	625	Barbugh
+T	6799	625	Chitragam
+T	6800	625	Hermain
+T	6801	13	Khanyar
+T	6802	13	Channapora
+T	6803	13	Eidgah
+T	6804	13	Panthachowk
+T	6805	13	Srinagar Central
+T	6806	626	Gund
+T	6807	626	Tullamulla Khirbhawani
+T	6808	626	Wakoora
+T	6809	623	Aloosa
+T	6810	623	Ajas
+T	6811	623	Hajin
+T	6812	623	Tulail
+T	6813	2	Narbal
+T	6814	2	Magam
+T	6815	2	BK Pora
+T	6816	1	Shahbad Bala
+T	6817	1	Qazigund
+T	6818	1	Sallar
+T	6819	1	Srigufwara
+T	6820	1	Larnoo
+T	6822	1	Anantnag East
+T	6823	3	Wagoora
+T	6824	3	Danghiwacha
+T	6825	3	Watergam
+T	6826	3	Zaingeer
+T	6827	3	Dangarpora
+T	6828	3	Khoie
+T	6829	3	Kawarhama
+T	6830	3	Kunzar
+T	6831	154	Naugawan Sadat
+T	6832	167	Govardhan
+T	6833	506	Guntur East
+T	6834	146	Kasimabad
+T	6835	146	Sevrai
+T	6836	520	Seethammadhara
+T	6837	520	Maharanipeta
+T	6838	520	Gopalapatnam
+T	6839	520	Mulagada
+T	6840	724	Sago
+T	6841	235	Parbuk Sdo
+T	6842	236	Deed Circle
+T	6843	237	Silsango Circle
+T	6844	233	Nyobia Circle
+T	6845	233	Polosang Circle
+T	6846	723	Passa Valley Circle
+T	6847	242	Buragaon Eac
+T	6848	231	Pakoti Circle
+T	6849	41	Dudhan Sadhan
+T	6850	627	Mahore
+T	6851	12	Koteranka
+T	6852	43	Dirba
+T	6853	609	Bhikhiwind
+T	6854	27	Majitha
+T	6855	43	Bhawanigarh
+T	6856	737	Ahmedgarh
+T	6857	42	Morinda
+T	6858	28	Maur
+T	6859	32	Kalanaur
+T	6860	32	Dinanagar
+T	6861	125	Payagpur
+T	6862	125	Mihinpurwa Motipur
+T	6863	510	Vijayawada East
+T	6864	510	Vijayawada North
+T	6865	510	Vijayawada West
+T	6866	173	Kalinagar
+T	6867	173	Amariya
+T	6868	185	Baldirai
+T	6869	135	Mugalsarai
+T	6870	135	Naugarh
+T	6871	156	Maitha
+T	6872	166	Kishni
+T	6873	166	Ghiror
+T	6874	166	Kurawali
+T	6875	159	Mitauli
+T	6877	122	Ajitmal
+T	6878	160	Khadda
+T	6879	160	Kaptanganj
+T	6880	183	Maholi
+T	6881	161	Pali
+T	6882	180	Kalan
+T	6883	17	Tauni Devi Bamson
+T	6884	17	Kangoo
+T	6885	17	Bhota
+T	6886	20	Nither
+T	6887	20	Bhuntar
+T	6888	26	Ghanari
+T	6889	26	Ispur
+T	6890	26	Jol
+T	6891	26	Dulahar
+T	6892	26	Birhu Kalan
+T	6893	26	Gagret
+T	6894	26	Mehatpur
+T	6895	18	Nagrota Surian
+T	6896	18	Kotla
+T	6897	18	Chadiyar
+T	6898	111	Rani
+T	6899	18	Panchrukhi
+T	6900	18	Alampur
+T	6901	18	Dareeni
+T	6902	18	Lagru
+T	6903	117	Badgaon
+T	6904	90	Samdari
+T	6905	18	Pragpur
+T	6906	90	Gadraroad
+T	6907	90	Gida
+T	6908	97	Ramgarh Pachwara
+T	6909	97	Lawan
+T	6910	116	Duni
+T	6911	117	Semari
+T	6912	90	Dhanaau
+T	6913	93	Bajju
+T	6914	97	Mandawar
+T	6915	100	Ravla
+T	6916	107	Bapini
+T	6917	117	Bhindar
+T	6918	18	Dadasiba
+T	6919	18	Majheen
+T	6920	18	Haripur
+T	6921	18	Gangath
+T	6922	88	Artuna
+T	6923	91	Uchhain
+T	6924	102	Pavta
+T	6925	105	Raipur
+T	6926	105	Dug
+T	6927	107	Shekhala
+T	6928	112	Kuwaria
+T	6929	117	Kanod
+T	6930	91	Sikri
+T	6931	96	Sidhmukh
+T	6932	97	Rahuwas
+T	6933	98	Mania
+T	6934	108	Suroth
+T	6935	112	Delwara
+T	6936	87	Narayanpur
+T	6937	107	Dechu
+T	6938	15	Kalol
+T	6939	18	Bhawarna
+T	6940	25	Panjehra
+T	6941	19	Tapri
+T	6942	16	Pukhri
+T	6943	16	Kakira
+T	6944	16	Dharwala
+T	6945	22	Katoula
+T	6946	22	Tihra
+T	6947	22	Balh
+T	6948	22	Tikken
+T	6949	22	Dehar
+T	6950	22	Chhatri
+T	6951	22	Pangna
+T	6952	22	Rewalsar
+T	6953	24	Haripurdhar
+T	6954	24	Narag
+T	6955	24	Pajhota
+T	6956	23	Kotgarh
+T	6957	23	Jangla
+T	6958	23	Deha
+T	6959	23	Sarahan
+T	6960	23	Sarawati Nagar
+T	6961	23	Jalog
+T	6962	23	Kupvi
+T	6963	23	Taklech
+T	6964	23	Dhami
+T	6965	31	Mamdot
+T	6966	320	Kalyani
+T	6967	25	Mamlig
+T	6969	22	Makridi
+T	6970	22	Mandap
+T	6971	437	Pathari
+T	6972	397	Burhanpur nagar
+T	6973	391	Nai Sarai
+T	6974	436	Bilaspur
+T	6975	420	Simariya
+T	6976	432	Rannod
+T	6977	413	Sleemnbad
+T	6978	391	Bahadurpur
+T	6979	429	Gohparu
+T	6980	639	Kathiwara
+T	6981	639	Sondawa
+T	6983	435	Jharda
+T	6984	425	Jaisinagar
+T	6986	638	Sarai
+T	6987	638	Mada
+T	6988	429	Budar
+T	6989	394	Betul Nagar
+T	6991	401	Datia Nagar
+T	6992	422	Suthaliya
+T	6993	422	Khujner
+T	6994	395	Bhind Nagar
+T	6995	435	Makdon
+T	6996	399	Chand
+T	6997	414	Sanawad
+T	6998	434	Badgaon Dhasan
+T	6999	400	Danyantinagar
+T	7000	395	Mau
+T	7001	401	Badoni
+T	7002	542	Kolar Gold Field
+T	7003	418	Saikheda
+T	7004	412	Rama
+T	7005	416	Mandsaur Nagar
+T	7006	398	Chhatarpur Nagar
+T	7007	435	Kothi Mahal
+T	7008	427	Sehore Nagar
+T	7009	423	Ratlam Nagar
+T	7010	421	Deori
+T	7011	411	Gorakhpur
+T	7012	410	Kanadiya
+T	7013	410	BhicholiHapsi
+T	7014	410	Malharganj
+T	7015	410	Khudel
+T	7016	410	Rau
+T	7017	437	Vidisha Nagar
+T	7018	428	Seoni Nagar
+T	7019	405	Khandwa Nagar
+T	7020	399	Chhindwara Nagar
+T	7021	231	Debeyar Co Circle
+T	7022	394	PrabhatPattan
+T	7024	411	Adhartal
+T	7025	411	Ranjhi
+T	7026	407	Ghatigaon
+T	7027	394	Bhimpur
+T	7028	413	Katni Nagar
+T	7029	414	Khargone Nagar
+T	7030	425	Sagar Nagar
+T	7031	402	Dewas Nagar
+T	7032	419	Rampura
+T	7033	392	Birsa
+T	7034	396	Kolar
+T	7035	419	Neemuch Nagar
+T	7036	391	Piprai
+T	7037	407	Tansen
+T	7038	407	Murar
+T	7039	407	City center
+T	7040	638	Singrauli Nagar
+T	7041	424	Huzur nagar
+T	7042	403	Pithampur
+T	7043	527	Kittur
+T	7044	432	Shivpuri nagar
+T	7045	409	Hoshangabad nagar
+T	7048	18	Sulah
+T	7049	301	Thelamara
+T	7050	702	Lava
+T	7051	702	Pedong
+T	7052	595	K V Kuppam
+T	7053	596	Thiruvennainallur
+T	7054	708	Sapekhati
+T	7055	729	Kalvarayan Hills
+T	7056	25	Kunihar
+T	7057	574	Kundrathur
+T	7058	730	Vandalur
+T	7059	731	Kalavai
+T	7060	731	Sholinghur
+T	7061	524	Guledgudda
+T	7062	524	Ilkal
+T	7063	524	Rabakavi Banahatti
+T	7064	550	Dandeli
+T	7065	549	Hebri
+T	7066	549	Bainduru
+T	7067	549	Kapu
+T	7068	549	Brahmavara
+T	7069	530	Babaleshwar
+T	7070	530	Chadachan
+T	7071	530	Devara Hipparagi
+T	7072	530	Kolhar
+T	7073	530	Talikoti
+T	7074	530	Tikota
+T	7075	530	Nidagundi
+T	7076	535	Nyamathi
+T	7077	531	Hanur
+T	7078	532	Ajjampura
+T	7079	536	Hubballi Urban
+T	7080	536	Annigeri
+T	7081	536	Alnavar
+T	7082	537	Gajendragad
+T	7083	537	Laxmeshwar
+T	7084	529	Chitaguppa
+T	7085	529	Kamalnagar
+T	7086	529	Hulsoor
+T	7087	538	Kalagi
+T	7088	538	Shahabad
+T	7089	538	Yadrami
+T	7090	538	Kamalapur
+T	7091	543	Kanakagiri
+T	7092	543	Karatagi
+T	7093	543	Kukunoor
+T	7094	635	Gurumitkal
+T	7095	635	Wadagera
+T	7096	635	Hunasagi
+T	7097	546	Sirwar
+T	7098	545	Saraguru
+T	7099	527	Mudalgi
+T	7100	527	Kagwad
+T	7101	546	Maski
+T	7102	534	Moodubidire
+T	7103	525	Yelahanka
+T	7104	534	Kadaba
+T	7105	527	Nippani
+T	7106	540	Rattihalli
+T	7107	528	Kampli
+T	7108	528	Kotturu
+T	7109	528	Kurugodu
+T	7110	281	Dangtal Revenue Circle
+T	7111	426	Raghurajnagar Nagareey
+T	7112	417	Bamor
+T	7113	87	Tehla
+T	7114	706	Ujani Majuli Circle
+T	7115	285	Gauripur
+T	7116	285	Athani
+T	7118	314	Banarhat
+T	7119	314	Kranti
+T	7120	584	Thalaivasal
+T	7121	24	Majra
+T	7122	737	Amargarh
+T	7123	530	Almel
+T	7124	541	Kushalanagar
+T	7125	541	Ponnampet
+T	7126	25	Parwanoo
+T	7127	184	Obra
+T	7128	87	Tapukara
+T	7129	87	Naugaon
+T	7144	106	Gudhagorji
+T	7145	106	Mandawa
+T	7146	107	Aau
+T	7147	107	Setrawa
+T	7158	9	Durbuk
+T	7159	9	Kharu
+T	7160	9	Likir
+T	7161	568	Aminjikarai
+T	7162	9	Nyoma
+T	7163	568	Ayanavaram
+T	7164	568	Egmore
+T	7165	568	Mambalam
+T	7166	568	Perambur
+T	7167	568	Purasawalkam
+T	7168	568	Tondiarpet
+T	7169	568	Guindy
+T	7170	568	Mylapore
+T	7171	568	Velachery
+T	7172	604	Indri
+T	7173	128	Test Subdistrict
+T	7174	22	Bagshad
+T	7175	22	Dhalwan
+T	7176	563	Attappadi
+T	7177	225	Rabdang
+T	7178	228	Mangalbarey
