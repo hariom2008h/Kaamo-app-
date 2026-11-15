@@ -71,6 +71,7 @@ fun KaamoNavHost(inviteCode: String? = null) {
     LaunchedEffect(inviteCode) {
         if (inviteCode != null) {
             vm.role = UserRole.Partner
+            services.api?.role = UserRole.Partner.name
             val route = nav.currentDestination?.route
             if (route != null && route != Routes.SPLASH && route != Routes.AUTH) nav.navigate(Routes.AUTH) { launchSingleTop = true }
         }
@@ -130,7 +131,24 @@ fun KaamoNavHost(inviteCode: String? = null) {
         composable(Routes.SPLASH) {
             SplashScreen(
                 onFinished = {
-                    nav.navigate(if (inviteCode != null) Routes.AUTH else Routes.ROLE) { popUpTo(Routes.SPLASH) { inclusive = true } }
+                    val api = services.api
+                    val savedRole = api?.role?.let { r -> UserRole.values().firstOrNull { it.name == r } }
+                    if (inviteCode == null && api != null && api.signedIn && savedRole != null) {
+                        // Returning user with a saved session: skip role selection and sign-in.
+                        vm.role = savedRole
+                        scope.launch {
+                            val status = services.policy.status()
+                            if (status != null && status.needsAccept && status.acceptedVersion != null) {
+                                policyStatus = status
+                                policyNext = Routes.DIRECTORY
+                                nav.navigate(Routes.POLICY) { popUpTo(Routes.SPLASH) { inclusive = true } }
+                            } else {
+                                goToDirectory()
+                            }
+                        }
+                    } else {
+                        nav.navigate(if (inviteCode != null) Routes.AUTH else Routes.ROLE) { popUpTo(Routes.SPLASH) { inclusive = true } }
+                    }
                 },
             )
         }
@@ -142,6 +160,7 @@ fun KaamoNavHost(inviteCode: String? = null) {
                 onRequestLanguage = ::requestLanguage,
                 onContinue = { role ->
                     vm.role = role
+                    services.api?.role = role.name
                     nav.navigate(Routes.AUTH)
                 },
             )

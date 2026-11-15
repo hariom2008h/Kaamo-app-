@@ -39,6 +39,11 @@ class SupabaseApi(context: Context, baseUrl: String, private val anonKey: String
 
     val signedIn: Boolean get() = accessToken != null
 
+    /** "Customer" or "Partner": remembered with the session so a returning user skips role selection and sign-in. */
+    var role: String?
+        get() = prefs.getString("role", null)
+        set(value) { prefs.edit().putString("role", value).apply() }
+
     fun saveSession(body: String) {
         val json = JSONObject(body)
         accessToken = json.optString("access_token").ifEmpty { null }
@@ -54,6 +59,7 @@ class SupabaseApi(context: Context, baseUrl: String, private val anonKey: String
     fun clearSession() {
         accessToken = null
         refreshToken = null
+        role = null
     }
 
     /** Auth endpoints (/auth/v1/...) never send the user token. */
