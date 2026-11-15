@@ -1,7 +1,9 @@
 (() => {
 "use strict";
 const CFGX = window.KAAMO_CONFIG || {};
-const DEMO = !CFGX.url || !CFGX.anonKey || /[?&]demo\b/.test(location.search);
+// Demo mode only when Supabase is not configured, or when testing on this computer. On the live site ?demo does nothing.
+const LOCAL = ["localhost","127.0.0.1"].includes(location.hostname);
+const DEMO = !CFGX.url || !CFGX.anonKey || (LOCAL && /[?&]demo\b/.test(location.search));
 const BUILTIN = ["plumber","electrician","construction","borewell","jcb","tractor","transport"];
 const LOCK_VEHICLE = ["borewell","jcb","tractor","transport"], LOCK_FIT = ["borewell","jcb","transport"];
 const $ = s => document.querySelector(s);
