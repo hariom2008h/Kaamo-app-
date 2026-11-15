@@ -38,6 +38,7 @@ const T = {
     directoryOnly:"Kaamo is a directory only. We don't own, verify, insure or supervise any service provider, machine, operator or work.",
     back:"Back", continue:"Continue", language:"Language",
     mobile:"Mobile number", sendOtp:"Send OTP", enterOtp:"Enter the 6-digit OTP", verify:"Verify & continue", resend:"Change number",
+    email:"Email address", emailBad:"Enter a valid email address.", sendCode:"Send code", enterCode:"Enter the 6-digit code", codeSentTo:"Code sent to ", useEmail:"Use email instead", usePhone:"Use mobile number instead", custMobile:"Mobile number (optional for now)", custMobileNote:"Service providers may call you on this number. It is not verified yet.",
     otpSent:"OTP sent to +91 ", otpFail:"Could not send OTP. Try again.", otpBad:"Wrong or expired OTP.",
     demoNote:"Demo mode: any 6-digit code works.",
     agreeTerms:"I have read and agree to the Terms of Use and Privacy Notice.", terms:"Terms", privacy:"Privacy",
@@ -78,6 +79,7 @@ const T = {
     directoryOnly:"Kaamo केवल एक डायरेक्टरी है। हम किसी सेवा देने वाले, मशीन, ऑपरेटर या काम के मालिक नहीं हैं, और न ही उनकी जाँच, बीमा या निगरानी करते हैं।",
     back:"वापस", continue:"आगे बढ़ें", language:"भाषा",
     mobile:"मोबाइल नंबर", sendOtp:"OTP भेजें", enterOtp:"6 अंकों का OTP डालें", verify:"जाँचें और आगे बढ़ें", resend:"नंबर बदलें",
+    email:"ईमेल पता", emailBad:"सही ईमेल पता डालें।", sendCode:"कोड भेजें", enterCode:"6 अंकों का कोड डालें", codeSentTo:"कोड भेजा गया: ", useEmail:"ईमेल से लॉगिन करें", usePhone:"मोबाइल नंबर से लॉगिन करें", custMobile:"मोबाइल नंबर (अभी वैकल्पिक)", custMobileNote:"सेवा देने वाले इस नंबर पर आपसे बात कर सकते हैं। यह अभी सत्यापित नहीं है।",
     otpSent:"OTP भेजा गया: +91 ", otpFail:"OTP नहीं भेज पाए। फिर कोशिश करें।", otpBad:"OTP गलत है या समाप्त हो गया।",
     demoNote:"डेमो मोड: कोई भी 6 अंकों का कोड चलेगा।",
     agreeTerms:"मैंने उपयोग की शर्तें और गोपनीयता सूचना पढ़ ली हैं और सहमत हूँ।", terms:"शर्तें", privacy:"गोपनीयता",
@@ -154,7 +156,7 @@ const S = {
   lang: (BR && ["hi","en"].includes(QS.get("lang")) ? QS.get("lang") : null) || store.get("kaamo.lang") || "hi",
   screen: "splash",
   role: store.get("kaamo.role") || null,
-  mobile: "", otpStage: false, otpBusy: false, termsOk: false, err: {},
+  mobile: "", authMode: "phone", email: "", cmobile: "", otpStage: false, otpBusy: false, termsOk: false, err: {},
   // registration
   name:"", area:"", village:"", district:"", tehsil:"", stateName:"", vcode:null, vfree:false, vq:"", geo:{states:[], districts:[], tehsils:[], villages:[], sc:0, dc:0, tc:0, loading:false, off:false, msg:"", busy:false}, cat:"plumber", subs:[], cev:"on_site", areas:[], rate:"", lat:null, lng:null, gpsMsg:"",
   extra:{}, invite:null, policy:null, afterPolicy:null, policyOk:false,
@@ -226,13 +228,13 @@ const DEMO_PARTNERS = [
 const demoPhone = id => "+91 98765 4" + String(1000 + (id.charCodeAt(1) || 0)).slice(-4) ;
 
 const repo = {
-  async sendOtp(m){
+  async sendOtp(m, email){
     if (DEMO) return true;
-    return (await api.auth("/otp", { phone:"+91" + m, create_user:true })).ok;
+    return (await api.auth("/otp", email ? { email, create_user:true } : { phone:"+91" + m, create_user:true })).ok;
   },
-  async verifyOtp(m, code){
+  async verifyOtp(m, code, email){
     if (DEMO) { api.session = { access_token:"demo" }; return /^\d{6}$/.test(code); }
-    const r = await api.auth("/verify", { type:"sms", phone:"+91" + m, token:code });
+    const r = await api.auth("/verify", email ? { type:"email", email, token:code } : { type:"sms", phone:"+91" + m, token:code });
     return r.ok && api.save(r.json);
   },
   async list(){
@@ -259,7 +261,7 @@ const repo = {
   },
   async saveCustomer(){
     if (DEMO) return true;
-    return (await api.rpc("register_customer", { p_full_name:S.name.trim(), p_location:S.area.trim() })).ok;
+    return (await api.rpc("register_customer", { p_full_name:S.name.trim(), p_location:S.area.trim(), p_mobile:S.cmobile })).ok;
   },
   // official place lists (state > district > tehsil > village) and place lookup; not available in demo mode
   async geoUnits(kind, parent){
@@ -445,18 +447,27 @@ const views = {
 
   auth(){
     const stage = S.otpStage;
+    const em = S.authMode === "email" && S.role !== "partner";
     return `<div class="screen">${topbar(true)}
-      <div class="stack" style="margin-top:12px">${S.invite ? `<div class="notice"><b>${esc(t("inviteBanner"))}</b>${S.invite.name ? esc(S.invite.name) : ""}</div>` : ""}<h2>${esc(stage ? t("enterOtp") : t("mobile"))}</h2>
-      ${stage ? `<p class="muted small">${esc(t("otpSent"))}${esc(S.mobile)}</p>
+      <div class="stack" style="margin-top:12px">${S.invite ? `<div class="notice"><b>${esc(t("inviteBanner"))}</b>${S.invite.name ? esc(S.invite.name) : ""}</div>` : ""}<h2>${esc(stage ? (em ? t("enterCode") : t("enterOtp")) : (em ? t("email") : t("mobile")))}</h2>
+      ${stage ? `<p class="muted small">${em ? esc(t("codeSentTo")) + esc(S.email) : esc(t("otpSent")) + esc(S.mobile)}</p>
         <div class="field ${S.err.otp ? "err" : ""}"><input id="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" aria-label="OTP" style="letter-spacing:8px;text-align:center;font-size:22px">${S.err.otp ? `<div class="errtxt">${esc(S.err.otp)}</div>` : ""}</div>
         ${DEMO ? `<p class="xs muted">${esc(t("demoNote"))}</p>` : ""}
         <button class="btn" data-act="verify" ${S.otpBusy ? "disabled" : ""}>${esc(t("verify"))}</button>
         <button class="link mut" data-act="changeNum">${esc(t("resend"))}</button>`
+      : em ? `<div class="field ${S.err.email ? "err" : ""}"><label for="email">${esc(t("email"))}</label><input id="email" type="email" value="${esc(S.email)}" inputmode="email" autocomplete="email" maxlength="120">${S.err.email ? `<div class="errtxt">${esc(S.err.email)}</div>` : ""}</div>
+        <label class="check"><input type="checkbox" id="terms" ${S.termsOk ? "checked" : ""}><span>${esc(t("agreeTerms"))}</span></label>
+        ${S.err.terms ? `<div class="errtxt">${esc(S.err.terms)}</div>` : ""}
+        <p class="xs">${legalLinks()}</p>
+        <button class="btn" data-act="sendOtp" ${S.otpBusy ? "disabled" : ""}>${esc(t("sendCode"))}</button>
+        <button class="link mut" data-act="authSwitch">${esc(t("usePhone"))}</button>
+        <div class="notice">${esc(t("directoryOnly"))}</div>`
       : `<div class="field ${S.err.mobile ? "err" : ""}"><label for="mobile">${esc(t("mobile"))}</label><div class="prefix"><span>+91</span><input id="mobile" value="${esc(S.mobile)}" inputmode="numeric" maxlength="10" autocomplete="tel-national"></div>${S.err.mobile ? `<div class="errtxt">${esc(S.err.mobile)}</div>` : ""}</div>
         <label class="check"><input type="checkbox" id="terms" ${S.termsOk ? "checked" : ""}><span>${esc(t("agreeTerms"))}</span></label>
         ${S.err.terms ? `<div class="errtxt">${esc(S.err.terms)}</div>` : ""}
         <p class="xs">${legalLinks()}</p>
         <button class="btn" data-act="sendOtp" ${S.otpBusy ? "disabled" : ""}>${esc(t("sendOtp"))}</button>
+        ${S.role !== "partner" ? `<button class="link mut" data-act="authSwitch">${esc(t("useEmail"))}</button>` : ""}
         <div class="notice">${esc(t("directoryOnly"))}</div>`}
       </div></div>`;
   },
@@ -464,6 +475,7 @@ const views = {
   customer(){
     return `<div class="screen">${topbar(true)}<div class="stack" style="margin-top:12px"><h2>${esc(t("yourName"))}</h2>
       ${field("name", t("yourName"), S.name)}${field("area", t("yourArea"), S.area)}
+      <div class="field ${S.err.cmobile ? "err" : ""}"><label for="cmobile">${esc(t("custMobile"))}</label><div class="prefix"><span>+91</span><input id="cmobile" value="${esc(S.cmobile)}" inputmode="numeric" maxlength="10" autocomplete="tel-national"></div><p class="xs muted">${esc(t("custMobileNote"))}</p>${S.err.cmobile ? `<div class="errtxt">${esc(S.err.cmobile)}</div>` : ""}</div>
       <button class="btn" data-act="saveCustomer">${esc(t("finish"))}</button></div></div>`;
   },
 
@@ -637,22 +649,25 @@ const actions = {
     if (S.screen === "auth" && S.otpStage) { S.otpStage = false; return render(); }
     go(prev || "role");
   },
+  authSwitch(){ S.authMode = S.authMode === "email" ? "phone" : "email"; S.err = {}; render(); },
   async sendOtp(){
-    S.mobile = ($("#mobile").value || "").replace(/\D/g, ""); S.termsOk = $("#terms").checked; S.err = {};
-    if (!validMobile(S.mobile)) S.err.mobile = t("mobileBad");
+    const em = S.authMode === "email" && S.role !== "partner";
+    if (em) S.email = ($("#email").value || "").trim().toLowerCase(); else S.mobile = ($("#mobile").value || "").replace(/\D/g, "");
+    S.termsOk = $("#terms").checked; S.err = {};
+    if (em ? !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(S.email) : !validMobile(S.mobile)) S.err[em ? "email" : "mobile"] = t(em ? "emailBad" : "mobileBad");
     if (!S.termsOk) S.err.terms = t("tick");
-    if (S.err.mobile || S.err.terms) return render();
+    if (S.err.mobile || S.err.email || S.err.terms) return render();
     S.otpBusy = true; render();
-    const ok = await repo.sendOtp(S.mobile);
+    const ok = await repo.sendOtp(S.mobile, em ? S.email : null);
     S.otpBusy = false;
-    if (ok) { S.otpStage = true; S.err = {}; } else S.err.mobile = t("otpFail");
+    if (ok) { S.otpStage = true; S.err = {}; } else S.err[em ? "email" : "mobile"] = t("otpFail");
     render();
   },
   changeNum(){ S.otpStage = false; render(); },
   async verify(){
     const code = ($("#otp").value || "").trim();
     S.otpBusy = true; render();
-    const ok = await repo.verifyOtp(S.mobile, code);
+    const ok = await repo.verifyOtp(S.mobile, code, S.authMode === "email" && S.role !== "partner" ? S.email : null);
     S.otpBusy = false;
     if (!ok) { S.err.otp = t("otpBad"); return render(); }
     store.set("kaamo.role", S.role);
@@ -667,7 +682,9 @@ const actions = {
   },
   async saveCustomer(){
     S.name = ($("#name").value || ""); S.area = ($("#area").value || "");
+    S.cmobile = ($("#cmobile").value || "").replace(/\D/g, "");
     if (!S.name.trim()) { S.err.name = t("required"); return render(); }
+    if (S.cmobile && !validMobile(S.cmobile)) { S.err.cmobile = t("mobileBad"); return render(); }
     if (!(await repo.saveCustomer())) return toast(t("fail"));
     enterDirectory();
   },
