@@ -39,6 +39,12 @@ fun AuthScreen(
     onOpenPrivacy: () -> Unit,
 ) {
     var mobile by rememberSaveable { mutableStateOf("") }
+    var email by rememberSaveable { mutableStateOf("") }
+    // Customers may sign in with an email code instead; service providers always use a mobile OTP.
+    var useEmail by rememberSaveable { mutableStateOf(false) }
+    val byEmail = useEmail && role != UserRole.Partner
+    val identifier = if (byEmail) email.trim().lowercase() else mobile
+    val identifierOk = if (byEmail) Regex("^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$").matches(identifier) else mobile.length == 10
     var otp by rememberSaveable { mutableStateOf("") }
     var otpSent by rememberSaveable { mutableStateOf(false) }
     var accepted by rememberSaveable { mutableStateOf(false) }
@@ -46,17 +52,17 @@ fun AuthScreen(
     var otpError by remember { mutableStateOf(false) }
 
     FormScaffold(
-        title = "Confirm your mobile number",
-        subtitle = "We'll send a one-time password by SMS.",
+        title = if (byEmail) "Confirm your email" else "Confirm your mobile number",
+        subtitle = if (byEmail) "We'll send a 6-digit code to your email." else "We'll send a one-time password by SMS.",
         onBack = onBack,
         step = if (role == UserRole.Partner) 1 else null,
         footer = {
             if (!otpSent) {
                 GradientButton(
-                    text = "Send OTP",
-                    enabled = mobile.length == 10,
+                    text = if (byEmail) "Send code" else "Send OTP",
+                    enabled = identifierOk,
                     onClick = {
-                        onSendOtp(mobile)
+                        onSendOtp(identifier)
                         otpSent = true
                     },
                 )
@@ -67,7 +73,7 @@ fun AuthScreen(
                     onClick = {
                         busy = true
                         otpError = false
-                        onVerify(mobile, otp) { ok ->
+                        onVerify(identifier, otp) { ok ->
                             busy = false
                             otpError = !ok
                         }
@@ -77,12 +83,18 @@ fun AuthScreen(
         },
     ) {
         KaamoTextField(
-            value = mobile,
-            onValueChange = { if (it.length <= 10 && it.all(Char::isDigit)) mobile = it },
-            label = "Mobile number",
-            prefix = "+91  ",
+            value = if (byEmail) email else mobile,
+            onValueChange = {
+                if (byEmail) { if (it.length <= 120) email = it }
+                else if (it.length <= 10 && it.all(Char::isDigit)) mobile = it
+            },
+            label = if (byEmail) "Email address" else "Mobile number",
+            prefix = if (byEmail) null else "+91  ",
             readOnly = otpSent,
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
+            keyboardOptions = KeyboardOptions(
+                keyboardType = if (byEmail) KeyboardType.Email else KeyboardType.Phone,
+                imeAction = ImeAction.Done,
+            ),
             trailingIcon = if (otpSent) {
                 {
                     TextButton(onClick = { otpSent = false; otp = ""; accepted = false }) {
@@ -92,18 +104,24 @@ fun AuthScreen(
             } else null,
         )
 
+        if (!otpSent && role != UserRole.Partner) {
+            TextButton(onClick = { useEmail = !useEmail }) {
+                Text(if (byEmail) "Use mobile number instead" else "Use email instead", color = KaamoColors.Forest)
+            }
+        }
+
         if (otpSent) {
             Spacer(Modifier.height(16.dp))
             KaamoTextField(
                 value = otp,
                 onValueChange = { if (it.length <= 6 && it.all(Char::isDigit)) { otp = it; otpError = false } },
-                label = "6-digit OTP",
+                label = if (byEmail) "6-digit code" else "6-digit OTP",
                 isError = otpError,
                 supportingText = if (otpError) "That code didn't work. Check it and try again." else null,
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword, imeAction = ImeAction.Done),
             )
-            TextButton(onClick = { onSendOtp(mobile) }) {
-                Text("Resend OTP", color = KaamoColors.Forest)
+            TextButton(onClick = { onSendOtp(identifier) }) {
+                Text(if (byEmail) "Resend code" else "Resend OTP", color = KaamoColors.Forest)
             }
 
             Spacer(Modifier.height(20.dp))

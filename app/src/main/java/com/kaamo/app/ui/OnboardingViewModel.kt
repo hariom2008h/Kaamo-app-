@@ -18,6 +18,8 @@ class OnboardingViewModel : ViewModel() {
     var role by mutableStateOf(UserRole.Customer)
     var language by mutableStateOf(NoticeLanguage.English)
     var mobile by mutableStateOf("")
+    /** Set when a customer signed in with an email code; the mobile number is then entered separately (not OTP-verified). */
+    var email by mutableStateOf("")
 
     // Shared by customer ("location") and partner ("home village")
     var name by mutableStateOf("")

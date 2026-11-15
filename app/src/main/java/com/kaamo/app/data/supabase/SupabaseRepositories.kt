@@ -23,14 +23,16 @@ import org.json.JSONObject
 private fun List<String>.toJson(): JSONArray = JSONArray().also { array -> forEach { array.put(it) } }
 
 class SupabaseAuthRepository(private val api: SupabaseApi) : AuthRepository {
-    override suspend fun sendOtp(mobile: String): Boolean =
-        api.auth("/otp", JSONObject().put("phone", "+91$mobile").put("create_user", true)).ok
+    // [mobile] is either a 10-digit mobile number (SMS code) or an email address (email code).
+    override suspend fun sendOtp(mobile: String): Boolean {
+        val body = if ('@' in mobile) JSONObject().put("email", mobile) else JSONObject().put("phone", "+91$mobile")
+        return api.auth("/otp", body.put("create_user", true)).ok
+    }
 
     override suspend fun verifyOtp(mobile: String, code: String): Boolean {
-        val response = api.auth(
-            "/verify",
-            JSONObject().put("type", "sms").put("phone", "+91$mobile").put("token", code),
-        )
+        val body = if ('@' in mobile) JSONObject().put("type", "email").put("email", mobile)
+        else JSONObject().put("type", "sms").put("phone", "+91$mobile")
+        val response = api.auth("/verify", body.put("token", code))
         if (!response.ok) return false
         api.saveSession(response.body)
         return api.signedIn
@@ -131,7 +133,10 @@ class SupabaseAccountRepository(private val api: SupabaseApi) : AccountRepositor
     override suspend fun saveCustomer(registration: CustomerRegistration): Boolean =
         api.rpc(
             "register_customer",
-            JSONObject().put("p_full_name", registration.fullName).put("p_location", registration.location),
+            JSONObject()
+                .put("p_full_name", registration.fullName)
+                .put("p_location", registration.location)
+                .put("p_mobile", registration.mobile),
         ).ok
 
     override suspend fun savePartner(registration: PartnerRegistration): Boolean {

@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.kaamo.app.legal.LegalCopy
 import com.kaamo.app.model.maskIndianMobile
@@ -29,7 +30,8 @@ fun CustomerDetailsScreen(
         footer = {
             GradientButton(
                 text = "Get started",
-                enabled = vm.name.isNotBlank() && vm.village.isNotBlank(),
+                enabled = vm.name.isNotBlank() && vm.village.isNotBlank() &&
+                    (vm.email.isBlank() || vm.mobile.isEmpty() || vm.mobile.length == 10),
                 onClick = onSubmit,
             )
         },
@@ -41,12 +43,25 @@ fun CustomerDetailsScreen(
             keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Words, imeAction = ImeAction.Next),
         )
         Spacer(Modifier.height(16.dp))
-        KaamoTextField(
-            value = maskIndianMobile(vm.mobile),
-            onValueChange = {},
-            label = "Mobile number (confirmed by OTP)",
-            readOnly = true,
-        )
+        if (vm.email.isBlank()) {
+            KaamoTextField(
+                value = maskIndianMobile(vm.mobile),
+                onValueChange = {},
+                label = "Mobile number (confirmed by OTP)",
+                readOnly = true,
+            )
+        } else {
+            KaamoTextField(value = vm.email, onValueChange = {}, label = "Email (confirmed by code)", readOnly = true)
+            Spacer(Modifier.height(16.dp))
+            KaamoTextField(
+                value = vm.mobile,
+                onValueChange = { if (it.length <= 10 && it.all(Char::isDigit)) vm.mobile = it },
+                label = "Mobile number (optional for now)",
+                prefix = "+91  ",
+                supportingText = "Service providers may call you on this number. It is not verified yet.",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Next),
+            )
+        }
         Spacer(Modifier.height(16.dp))
         KaamoTextField(
             value = vm.village,

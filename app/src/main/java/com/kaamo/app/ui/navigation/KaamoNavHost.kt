@@ -172,7 +172,7 @@ fun KaamoNavHost(inviteCode: String? = null) {
                 onBack = { nav.popBackStack() },
                 onSendOtp = { mobile ->
                     scope.launch {
-                        if (!services.auth.sendOtp(mobile)) toast("Couldn't send the OTP. Check the number and internet.")
+                        if (!services.auth.sendOtp(mobile)) toast("Couldn't send the code. Check the details and internet.")
                     }
                 },
                 onVerify = { mobile, otp, done ->
@@ -180,7 +180,7 @@ fun KaamoNavHost(inviteCode: String? = null) {
                         val ok = services.auth.verifyOtp(mobile, otp)
                         done(ok)
                         if (ok) {
-                            vm.mobile = mobile
+                            if ('@' in mobile) { vm.email = mobile; vm.mobile = "" } else { vm.email = ""; vm.mobile = mobile }
                             val next = when {
                                 // Live backend: the registration form is the hosted web form, managed from the admin panel.
                                 vm.role == UserRole.Partner && !services.isDemo -> Routes.PARTNER_WEB
