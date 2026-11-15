@@ -1,19 +1,89 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
-  <title>Kaamo</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Old links: the app used to live at "/". Invite links, the Android form and demo links still arrive here.
+if(/[?&](invite|embed|demo|role)=?/.test(location.search))location.replace("app.html"+location.search);
+</script>
+<title>Kaamo | पास के प्लंबर, JCB, बोरवेल और मज़दूर | Local service providers in India</title>
+<meta name="description" content="Kaamo: अपने इलाके के प्लंबर, इलेक्ट्रीशियन, बोरवेल, JCB, ट्रैक्टर, ट्रांसपोर्ट और निर्माण मज़दूर ढूँढें और सीधे फ़ोन पर बात करें। Find local service providers in India and call them directly.">
+<meta name="theme-color" content="#064E3B">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Kaamo">
+<meta property="og:title" content="Kaamo | आपको क्या काम है? What work do you need?">
+<meta property="og:description" content="अपने इलाके के प्लंबर, JCB, बोरवेल और मज़दूर ढूँढें, सीधे फ़ोन करें। Find local service providers and call them directly.">
+<meta property="og:url" content="https://kaamo-web.vercel.app/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://kaamo-web.vercel.app/">
+<link rel="stylesheet" href="landing.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Kaamo", "url": "https://kaamo-web.vercel.app/", "inLanguage": ["hi", "en"], "description": "Find local plumbers, electricians, borewell, JCB, tractor, transport and construction workers in India and call them directly."}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Kaamo book or send someone to my door?", "acceptedAnswer": {"@type": "Answer", "text": "No. Kaamo is a directory only. We do not take bookings or payments, and we do not guarantee the work. You talk to the service provider directly and agree everything with them."}}, {"@type": "Question", "name": "Is my phone number shown to everyone?", "acceptedAnswer": {"@type": "Answer", "text": "No. A service provider's number stays hidden unless they choose to show it. Customers' numbers are not shown in the directory."}}, {"@type": "Question", "name": "I provide a service. How do I get listed?", "acceptedAnswer": {"@type": "Answer", "text": "Choose “Service provider”, sign in with an OTP on your mobile number and fill in the form. You can remove your listing at any time."}}, {"@type": "Question", "name": "Are all providers checked?", "acceptedAnswer": {"@type": "Answer", "text": "Listing details are filled in by the providers themselves. Phone numbers are confirmed by OTP, but Kaamo does not check the quality of anyone's work. Please ask around before you hire."}}, {"@type": "Question", "name": "Where do I report a problem?", "acceptedAnswer": {"@type": "Answer", "text": "Every card has a Report button, and you can also use the grievance page. We aim to acknowledge within 24 hours and resolve within 15 days."}}]}]}</script>
 </head>
-<body>
-  <noscript>Kaamo needs JavaScript to run.</noscript>
-  <main id="app" aria-live="polite"></main>
-  <div id="sheet-root"></div>
-  <div id="toast" class="toast" role="status" hidden></div>
-  <script src="config.js"></script>
-  <script src="defaults.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<body class="lang-hi">
+<a class="skip" href="#main"><span lang="hi">मुख्य सामग्री पर जाएँ</span><span lang="en">Skip to content</span></a>
+<header class="nav"><div class="in">
+  <a class="brand" href="./"><svg viewBox="0 0 525 781" aria-hidden="true"><defs><linearGradient id="lg" gradientUnits="userSpaceOnUse" x1="0" y1="177" x2="0" y2="958"><stop offset="0" stop-color="#036450"/><stop offset="1" stop-color="#05918A"/></linearGradient></defs><g transform="translate(-377,-177)"><path fill="url(#lg)" d="M377,180H464A88,88 0 0 1 552,268V870A88,88 0 0 1 464,958H377Z M815,177H902V453A88,88 0 0 1 814,541H572V453A88,88 0 0 1 660,365H727V265A88,88 0 0 1 815,177Z M572,653A88,88 0 0 1 660,565H814A88,88 0 0 1 902,653V955H815A88,88 0 0 1 727,867V740H660A88,88 0 0 1 572,653Z"/></g></svg><b>Kaamo</b></a>
+  <nav aria-label="Main"><a href="#how"><span lang="hi">कैसे काम करता है</span><span lang="en">How it works</span></a><a href="#providers"><span lang="hi">सेवा देने वालों के लिए</span><span lang="en">For providers</span></a><a href="#faq"><span lang="hi">सवाल-जवाब</span><span lang="en">Questions</span></a></nav>
+  <div class="tools"><div class="seg" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="hi">हिन्दी</button></div><a class="btn sm" href="app.html"><span lang="hi">ऐप खोलें</span><span lang="en">Open app</span></a></div>
+</div></header>
+<main id="main">
+<section class="hero"><div class="in">
+  <h1><span lang="hi">आपको क्या काम है?</span><span lang="en">What work do you need done?</span></h1>
+  <p lang="hi">अपने इलाके के प्लंबर, इलेक्ट्रीशियन, बोरवेल, JCB, ट्रैक्टर और मज़दूर ढूँढें। पसंद आए तो सीधे फ़ोन करें।</p><p lang="en">Find plumbers, electricians, borewell and JCB operators, tractor owners and labour near you. Call the one you like, directly.</p>
+  <div class="cta"><a class="btn" href="app.html?role=customer"><span lang="hi">काम के लिए ढूँढें</span><span lang="en">Find someone for a job</span></a><a class="btn ghost" href="app.html?role=partner"><span lang="hi">मैं सेवा देता हूँ</span><span lang="en">I provide a service</span></a></div>
+  <p class="fine"><span lang="hi">हिंदी और English में। मोबाइल नंबर से OTP लॉगिन।</span><span lang="en">In Hindi and English. Sign in with an OTP on your mobile number.</span></p>
+</div></section>
+
+<section class="jobs" aria-labelledby="jobs-h"><div class="in">
+  <h2 id="jobs-h"><span lang="hi">किस काम के लिए ढूँढ रहे हैं?</span><span lang="en">What are you looking for?</span></h2>
+  <ul class="joblist"><li><a href="app.html?role=customer&amp;cat=plumber"><span class="jn"><span lang="hi">प्लंबर</span><span lang="en">Plumber</span></span><span class="jh"><span lang="hi">पाइप, लीकेज, बाथरूम, पानी की टंकी</span><span lang="en">Pipes, leaks, bathrooms, water tanks</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app.html?role=customer&amp;cat=electrician"><span class="jn"><span lang="hi">इलेक्ट्रीशियन</span><span lang="en">Electrician</span></span><span class="jh"><span lang="hi">घर की वायरिंग, पंखा, लाइट, इन्वर्टर</span><span lang="en">House wiring, fans, lights, inverters</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app.html?role=customer&amp;cat=construction"><span class="jn"><span lang="hi">निर्माण मज़दूर</span><span lang="en">Construction workers</span></span><span class="jh"><span lang="hi">राजमिस्त्री, मज़दूर, पेंटर, बढ़ई, टाइल्स</span><span lang="en">Masons, labour, painters, carpenters, tiles</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app.html?role=customer&amp;cat=borewell"><span class="jn"><span lang="hi">बोरवेल</span><span lang="en">Borewell</span></span><span class="jh"><span lang="hi">बोरवेल ड्रिलिंग, मोटर</span><span lang="en">Borewell drilling, motors</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app.html?role=customer&amp;cat=jcb"><span class="jn"><span lang="hi">JCB / अर्थमूवर</span><span lang="en">JCB and earthmovers</span></span><span class="jh"><span lang="hi">खुदाई और मशीन का काम</span><span lang="en">Digging and machine work</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app.html?role=customer&amp;cat=tractor"><span class="jn"><span lang="hi">ट्रैक्टर</span><span lang="en">Tractors</span></span><span class="jh"><span lang="hi">खेत और ट्रॉली का काम</span><span lang="en">Farm and trolley work</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+<li><a href="app.html?role=customer&amp;cat=transport"><span class="jn"><span lang="hi">ट्रांसपोर्ट / ट्रेलर</span><span lang="en">Transport and trailers</span></span><span class="jh"><span lang="hi">ट्रक, ट्रेलर, टिपर</span><span lang="en">Trucks, trailers, tippers</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li></ul>
+</div></section>
+
+<section class="how" id="how"><div class="in">
+  <h2><span lang="hi">कैसे काम करता है</span><span lang="en">How it works</span></h2>
+  <ol class="steps"><li><b class="n">1</b><div><h3><span lang="hi">काम और इलाका चुनें</span><span lang="en">Pick the work and your area</span></h3><p lang="hi">प्लंबर, JCB, बोरवेल या मज़दूर। चाहें तो अपनी लाइव लोकेशन से सबसे पास वाले ऊपर देखें।</p><p lang="en">Plumber, JCB, borewell or labour. Allow your location if you want the nearest ones first.</p></div></li>
+<li><b class="n">2</b><div><h3><span lang="hi">सूची देखें</span><span lang="en">Browse the list</span></h3><p lang="hi">हर कार्ड पर नाम, इलाका, काम और अनुमानित दाम दिखता है। नंबर छिपा रहता है।</p><p lang="en">Each card shows the name, area, work and an indicative rate. The number stays hidden.</p></div></li>
+<li><b class="n">3</b><div><h3><span lang="hi">सीधे फ़ोन करें</span><span lang="en">Call them directly</span></h3><p lang="hi">“कॉल करें” दबाने पर नंबर खुलता है। दाम और समय आप सीधे तय करते हैं।</p><p lang="en">Tap Call to reveal the number. You agree on price and time directly with them.</p></div></li></ol>
+</div></section>
+
+<section class="who"><div class="in two">
+  <div><h2><span lang="hi">नए शहर या नए घर में?</span><span lang="en">New to a city or a house?</span></h2>
+    <p lang="hi">पड़ोसियों और रिश्तेदारों से नंबर पूछने की जगह अपने इलाके के लोग यहीं देखें। गाँव और छोटे शहर के कारीगर भी लिस्ट हैं, जो Google या Justdial पर नहीं मिलते।</p><p lang="en">Instead of asking neighbours and relatives for a number, look up people around you here, including village and small-town workers you will not find on Google or Justdial.</p></div>
+  <div class="panel" id="providers"><h2><span lang="hi">सेवा देने वालों के लिए</span><span lang="en">For service providers</span></h2>
+    <p lang="hi">अपना काम, इलाका और अनुमानित दाम डालें और ग्राहकों के फ़ोन पाएँ। आपका नंबर तभी दिखेगा जब आप चाहेंगे, और आप लिस्टिंग कभी भी हटा सकते हैं।</p><p lang="en">Add your work, area and an indicative rate and get calls from customers. Your number is shown only when you choose, and you can remove your listing at any time.</p>
+    <a class="btn" href="app.html?role=partner"><span lang="hi">अपनी सेवा लिस्ट करें</span><span lang="en">List your service</span></a></div>
+</div></section>
+
+<section class="trust"><div class="in">
+  <h2><span lang="hi">Kaamo सिर्फ़ एक डायरेक्टरी है</span><span lang="en">Kaamo is a directory, nothing more</span></h2>
+  <ul class="facts">
+    <li><span lang="hi">बुकिंग और भुगतान नहीं। दाम और समय आप सीधे तय करते हैं।</span><span lang="en">No bookings and no payments. You agree price and time directly.</span></li>
+    <li><span lang="hi">फ़ोन नंबर डिफ़ॉल्ट रूप से निजी रहता है और सहमति से ही दिखता है।</span><span lang="en">Phone numbers are private by default and shown only with consent.</span></li>
+    <li><span lang="hi">नंबर OTP से सत्यापित होते हैं। काम की गुणवत्ता की जाँच हम नहीं करते।</span><span lang="en">Numbers are confirmed by OTP. We do not check the quality of the work.</span></li>
+    <li><span lang="hi">गाड़ी या मशीन वालों के बीमा और फिटनेस की तारीख खत्म होते ही लिस्टिंग अपने आप छिप जाती है।</span><span lang="en">Listings for vehicles and machines hide themselves when the insurance or fitness date passes.</span></li>
+  </ul>
+  <p class="more"><a href="privacy.html"><span lang="hi">गोपनीयता सूचना पढ़ें</span><span lang="en">Read the privacy notice</span></a> · <a href="terms.html"><span lang="hi">शर्तें</span><span lang="en">Terms</span></a> · <a href="rules.html"><span lang="hi">नियम</span><span lang="en">Rules</span></a></p>
+</div></section>
+
+<section class="faq" id="faq"><div class="in">
+  <h2><span lang="hi">सवाल-जवाब</span><span lang="en">Questions</span></h2>
+  <details><summary><span lang="hi">क्या Kaamo किसी को भेजता या बुक करता है?</span><span lang="en">Does Kaamo book or send someone to my door?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p lang="hi">नहीं। Kaamo सिर्फ़ एक डायरेक्टरी है। हम बुकिंग, भुगतान या काम की गारंटी नहीं देते। आप सेवा देने वाले से सीधे बात करके सब तय करते हैं।</p><p lang="en">No. Kaamo is a directory only. We do not take bookings or payments, and we do not guarantee the work. You talk to the service provider directly and agree everything with them.</p></details>
+<details><summary><span lang="hi">क्या मेरा फ़ोन नंबर सबको दिखता है?</span><span lang="en">Is my phone number shown to everyone?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p lang="hi">नहीं। सेवा देने वाले का नंबर तब तक छिपा रहता है जब तक वह खुद “नंबर दिखाएँ” न चुने। डायरेक्टरी में ग्राहकों के नंबर नहीं दिखाए जाते।</p><p lang="en">No. A service provider's number stays hidden unless they choose to show it. Customers' numbers are not shown in the directory.</p></details>
+<details><summary><span lang="hi">मैं सेवा देता हूँ। लिस्ट कैसे होऊँ?</span><span lang="en">I provide a service. How do I get listed?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p lang="hi">“सेवा देने वाले” चुनें, मोबाइल नंबर से OTP लेकर लॉगिन करें और फ़ॉर्म भरें। आप कभी भी अपनी लिस्टिंग हटा सकते हैं।</p><p lang="en">Choose “Service provider”, sign in with an OTP on your mobile number and fill in the form. You can remove your listing at any time.</p></details>
+<details><summary><span lang="hi">क्या सभी सेवा देने वालों की जाँच हुई है?</span><span lang="en">Are all providers checked?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p lang="hi">लिस्टिंग की जानकारी सेवा देने वाले खुद भरते हैं। नंबर OTP से सत्यापित होता है, पर काम की गुणवत्ता की जाँच Kaamo नहीं करता। काम देने से पहले खुद पूछताछ करें।</p><p lang="en">Listing details are filled in by the providers themselves. Phone numbers are confirmed by OTP, but Kaamo does not check the quality of anyone's work. Please ask around before you hire.</p></details>
+<details><summary><span lang="hi">गड़बड़ दिखे तो कहाँ बताएँ?</span><span lang="en">Where do I report a problem?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p lang="hi">हर कार्ड पर “रिपोर्ट” बटन है। आप शिकायत पेज से भी लिख सकते हैं। हम 24 घंटे में पावती और 15 दिन में जवाब देने का लक्ष्य रखते हैं।</p><p lang="en">Every card has a Report button, and you can also use the grievance page. We aim to acknowledge within 24 hours and resolve within 15 days.</p></details>
+</div></section>
+</main>
+<footer><div class="in">
+  <div class="fl"><a class="brand" href="./"><svg viewBox="0 0 525 781" aria-hidden="true"><defs><linearGradient id="lg" gradientUnits="userSpaceOnUse" x1="0" y1="177" x2="0" y2="958"><stop offset="0" stop-color="#036450"/><stop offset="1" stop-color="#05918A"/></linearGradient></defs><g transform="translate(-377,-177)"><path fill="url(#lg)" d="M377,180H464A88,88 0 0 1 552,268V870A88,88 0 0 1 464,958H377Z M815,177H902V453A88,88 0 0 1 814,541H572V453A88,88 0 0 1 660,365H727V265A88,88 0 0 1 815,177Z M572,653A88,88 0 0 1 660,565H814A88,88 0 0 1 902,653V955H815A88,88 0 0 1 727,867V740H660A88,88 0 0 1 572,653Z"/></g></svg><b>Kaamo</b></a><p lang="hi">Kaamo केवल एक डायरेक्टरी है। हम सेवा नहीं देते, बुकिंग या भुगतान नहीं लेते।</p><p lang="en">Kaamo is a directory only. We do not provide services or take bookings or payments.</p></div>
+  <nav class="fr" aria-label="Legal"><a href="terms.html"><span lang="hi">शर्तें</span><span lang="en">Terms</span></a><a href="privacy.html"><span lang="hi">गोपनीयता</span><span lang="en">Privacy</span></a><a href="rules.html"><span lang="hi">नियम</span><span lang="en">Rules</span></a><a href="grievance.html"><span lang="hi">शिकायत</span><span lang="en">Grievance</span></a></nav>
+  <p class="copy">© 2026 Kaamo</p>
+</div></footer>
+<script src="landing.js"></script>
+</body></html>

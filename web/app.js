@@ -533,6 +533,8 @@ async function gate(next){
 }
 
 async function enterDirectory(){
+  if (S.preCat && catBy(S.preCat)) S.filter = S.preCat; // arrived from a landing-page job link
+  S.preCat = null;
   go("directory");
   loadPartners();
 }
@@ -729,8 +731,12 @@ render();
     await loadCfg();
     return gate(() => go("partner"));
   }
+  // Landing-page links: ?role=customer|partner and ?cat=<category code>
+  const qRole = QS.get("role"); const roleGiven = qRole === "customer" || qRole === "partner";
+  if (roleGiven && !S.invite) { S.role = qRole; store.set("kaamo.role", qRole); }
+  const qCat = (QS.get("cat") || "").trim(); if (/^[a-z0-9_]{2,30}$/.test(qCat)) S.preCat = qCat;
   await new Promise(r => setTimeout(r, 1000));
-  if (api.signedIn && S.role && !DEMO) { await loadCfg(); gate(() => S.invite ? go("partner") : enterDirectory()); }
-  else go(S.invite ? "auth" : "role");
+  if (api.signedIn && S.role && !DEMO) { await loadCfg(); gate(() => (S.invite || (roleGiven && S.role === "partner")) ? go("partner") : enterDirectory()); }
+  else go(S.invite || roleGiven ? "auth" : "role");
 })();
 })();

@@ -235,7 +235,7 @@ fun KaamoNavHost(inviteCode: String? = null) {
             } else {
                 val lang = vm.language.code
                 val url = remember(lang, inviteCode) {
-                    val base = "${AppConfig.WEB_URL}/?embed=1&lang=$lang"
+                    val base = "${AppConfig.WEB_URL}/app.html?embed=1&lang=$lang"
                     if (inviteCode != null) "$base&invite=${Uri.encode(inviteCode)}" else base
                 }
                 PartnerWebFormScreen(

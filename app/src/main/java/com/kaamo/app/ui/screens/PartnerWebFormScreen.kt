@@ -112,7 +112,7 @@ fun PartnerWebFormScreen(
                         override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean {
                             val target = request.url
                             val inForm = target.scheme == "https" && target.host == host &&
-                                (target.path.isNullOrEmpty() || target.path == "/" || target.path == "/index.html")
+                                target.path == "/app.html"
                             if (inForm) return false
                             // Policy pages and anything else open in the browser, never next to the sign-in bridge.
                             latestExternal(target.toString())
